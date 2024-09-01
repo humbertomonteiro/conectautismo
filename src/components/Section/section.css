@@ -12,7 +12,7 @@
   justify-content: space-between;
   border: 2px dashed var(--color-2);
   border-radius: 2rem;
-  padding: 2rem;
+  padding: 1rem;
   border-radius: 1rem;
 }
 
@@ -73,7 +73,7 @@
 
 .textSection p {
   line-height: 150%;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .buttonsSection {
