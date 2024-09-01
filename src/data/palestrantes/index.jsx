@@ -150,6 +150,10 @@ export const arrayPalestrantes = [
       name: "Cassia",
       img: cassia,
     },
+    {
+      name: "Graziella Gadia",
+      img: graziellaGadia,
+    },
     // {
     //   name: "Jacson Marçal",
     //   img: jacsonMarcal,
@@ -194,10 +198,6 @@ export const arrayPalestrantes = [
       name: "Kadu Lins",
       img: kaduLins,
     },
-    {
-      name: "dr. Andre Pessoa",
-      img: drAndrePessoa,
-    },
   ],
   [
     {
@@ -209,8 +209,8 @@ export const arrayPalestrantes = [
       img: leticiaMello,
     },
     {
-      name: "Graziella Gadia",
-      img: graziellaGadia,
+      name: "dr. Andre Pessoa",
+      img: drAndrePessoa,
     },
   ],
   // [

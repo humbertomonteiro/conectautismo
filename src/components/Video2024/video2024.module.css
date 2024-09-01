@@ -12,7 +12,7 @@
   display: flex;
   gap: 2rem;
   justify-content: space-between;
-  border: 2px dashed var(--color-2);
+  border: 2px solid var(--color-2);
   border-radius: 2rem;
   padding: 2rem;
   border-radius: 1rem;

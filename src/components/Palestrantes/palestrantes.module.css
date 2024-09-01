@@ -11,7 +11,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .box {
@@ -22,6 +22,9 @@
 }
 
 @media (max-width: 450px) {
+  .boxes {
+    gap: 2.5rem;
+  }
   .box {
     width: 150px;
     height: 150px;

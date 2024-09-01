@@ -9,7 +9,7 @@ import Social from "../../components/Social";
 import Section from "../../components/Section";
 
 //meia entrada
-import imgMeiaEntrada from "../../assets/imgs/meia-entrada/img3.jpg";
+import imgMeiaEntrada from "../../assets/imgs/meia-entrada/img.jpg";
 import MeiaEntrada from "../../contentSections/MeiaEntrada";
 
 //sobre nos
