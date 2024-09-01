@@ -35,7 +35,7 @@
 
 @media (max-width: 450px) {
   .boxes {
-    gap: 2.5rem;
+    gap: 1.5rem;
   }
   .box {
     width: 150px;

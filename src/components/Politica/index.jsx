@@ -31,7 +31,7 @@ export default function Politica() {
           erros na compra. Recomendamos atenção no processo de compra, pois,
           dentro do prazo legal, é possível solicitar o reembolso integral.
         </p>
-        <h3>Modalidades de Ingressos</h3>
+        {/* <h3>Modalidades de Ingressos</h3>
         <p>
           Presencial Completo: Acesso a todas as atividades e conteúdos,
           incluindo conteúdo gravado disponível por 24 meses.
@@ -47,7 +47,7 @@ export default function Politica() {
         <p>
           Festa Pré-Conect: Acesso exclusivo à festa em 23 de Agosto de 2024,
           com jantar e show.
-        </p>
+        </p> */}
         <h3>Política de Cupons</h3>
         <p>
           A utilização de cupons de desconto está sujeita à responsabilidade
@@ -100,13 +100,12 @@ export default function Politica() {
         </p>
         <h3>Objetivo do Evento</h3>
         <p>
-          O Conect Autismo 2024 tem como missão oferecer uma experiência
-          educativa e inspiradora, focada na qualidade, segurança e impacto
-          social positivo. Agradecemos sua participação e apoio nesta jornada
-          significativa.
+          O Conect Autismo tem como missão oferecer uma experiência educativa e
+          inspiradora, focada na qualidade, segurança e impacto social positivo.
+          Agradecemos sua participação e apoio nesta jornada significativa.
         </p>
         <p>Atenciosamente,</p>
-        <p>Equipe Conect Autismo 2024</p>
+        <p>Equipe Conect Autismo</p>
       </div>
     </div>
   );
