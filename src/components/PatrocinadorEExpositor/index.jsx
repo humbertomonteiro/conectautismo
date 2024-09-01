@@ -1,7 +1,10 @@
 import Title from "../Title";
 import styles from "./patrocinadorEExpositor.module.css";
 
-import { FaArrowRight } from "react-icons/fa";
+import ButtonBasic from "../ButtonBasic";
+import ButtonPretty from "../ButtonPretty";
+
+import { FaArrowDown } from "react-icons/fa";
 
 export default function PatrocinadorEExpositor() {
   return (
@@ -14,14 +17,18 @@ export default function PatrocinadorEExpositor() {
             posicionar e mostrar sua marca. Focado em trazer sua relevância ao
             mercado.
           </p>
-          <a
-            href="https://api.whatsapp.com/send/?phone=558592742323&text&type=phone_number&app_absent=0"
-            target="_blank"
-            className={styles.button}
-          >
-            ADQUIRA SEU ESPAÇO
-            <FaArrowRight />
-          </a>
+          <div className={styles.buttons}>
+            <ButtonBasic
+              link="#patrocinador"
+              text="Todos os patrocinadores"
+              icon={<FaArrowDown />}
+            />
+
+            <ButtonPretty
+              link="https://api.whatsapp.com/send/?phone=558592742323&text&type=phone_number&app_absent=0"
+              text="ADQUIRA SEU ESPAÇO AQUI"
+            />
+          </div>
         </div>
       </div>
     </div>

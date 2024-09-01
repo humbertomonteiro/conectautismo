@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow-x: hidden;
 }
 
 .content {
@@ -26,8 +27,8 @@
 }
 
 .video iframe {
-  width: 330px;
-  height: 550px;
+  width: 315px;
+  height: 560px;
   max-width: 100%;
   border-radius: 18px;
 }
@@ -40,21 +41,6 @@
   align-items: center;
   gap: 1rem;
   border-right: dashed 2px var(--color-2);
-}
-
-.text a {
-  display: block;
-  margin: 1rem 0;
-  color: var(--color-text);
-  background-color: var(--color-2);
-  padding: 0.5rem 1rem;
-  border-radius: 1rem;
-  font-weight: bold;
-  transition: 0.5s all ease-in-out;
-}
-
-.text a:hover {
-  transform: scale(1.05);
 }
 
 .swiperSlide {
@@ -89,5 +75,16 @@
 
   .video {
     width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .swiperSlide {
+    width: 220px;
+    height: 370px;
+  }
+
+  .video iframe {
+    height: 495px;
   }
 }

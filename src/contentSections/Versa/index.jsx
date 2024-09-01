@@ -1,6 +1,8 @@
 import { FaInstagram } from "react-icons/fa";
 import { TbWorld } from "react-icons/tb";
 
+import ButtonBasic from "../../components/ButtonBasic";
+
 export default function Versa() {
   return (
     <>
@@ -32,14 +34,17 @@ export default function Versa() {
         <p>Conheça a Versa. Transforme com a gente.</p>
       </div>
       <div className="buttonsSection">
-        <a href="https://www.instagram.com/versaconsultorias/" target="_blank">
-          Instagram Versa
-          <FaInstagram />
-        </a>
-        <a href="https://www.conectautismo.com/">
-          Versa Web
-          <TbWorld />
-        </a>
+        <ButtonBasic
+          link="https://www.instagram.com/versaconsultorias/"
+          text="Instagram Versa"
+          icon={<FaInstagram />}
+        />
+
+        <ButtonBasic
+          link="https://www.conectautismo.com/"
+          text="Versa Web"
+          icon={<TbWorld />}
+        />
       </div>
     </>
   );

@@ -1,4 +1,5 @@
 import { FaInstagram } from "react-icons/fa";
+import ButtonBasic from "../../components/ButtonBasic";
 
 export default function SobreNos() {
   return (
@@ -44,14 +45,17 @@ export default function SobreNos() {
         </p>
       </div>
       <div className="buttonsSection">
-        <a href="https://www.instagram.com/conect.autismo/" target="_blank">
-          Instagram ConectAutismo
-          <FaInstagram />
-        </a>
-        <a href="https://www.instagram.com/expedicaoteafrica/" target="_blank">
-          Instagram TEAFRICA
-          <FaInstagram />
-        </a>
+        <ButtonBasic
+          link="https://www.instagram.com/conect.autismo/"
+          text="Instagram ConectAutismo"
+          icon={<FaInstagram />}
+        />
+
+        <ButtonBasic
+          link="https://www.instagram.com/expedicaoteafrica/"
+          text="Instagram TEAFRICA"
+          icon={<FaInstagram />}
+        />
       </div>
     </>
   );

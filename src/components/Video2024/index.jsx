@@ -6,7 +6,10 @@ import { EffectCards } from "swiper/modules";
 
 import { arrayImgsEvent } from "../../data/evento2024";
 
+import { FaArrowRight } from "react-icons/fa";
+
 import Title from "../Title";
+import ButtonBasic from "../ButtonBasic";
 
 export default function Video2024() {
   return (
@@ -28,17 +31,15 @@ export default function Video2024() {
               ))}
             </Swiper>
           </div>
-          <a
-            href="https://conectautismo.pixieset.com"
-            target="_blank"
-            rel="noreferer"
-          >
-            Ver todas as imagens
-          </a>
+          <ButtonBasic
+            link="https://conectautismo.pixieset.com"
+            text=" Ver todas as imagens"
+            icon={<FaArrowRight />}
+          />
         </div>
         <div className={styles.video}>
           <iframe
-            src="https://www.youtube.com/embed/TEs7VEat7vM?si=7TASDQTJZ-e_HFx7"
+            src="https://www.youtube.com/embed/vhyD2sDpzvo?si=2w4AhEj7EClq6uep"
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

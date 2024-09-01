@@ -34,6 +34,8 @@ import RedesSociais from "../../components/RedesSociais";
 import Politica from "../../components/Politica";
 import Footer from "../../components/Footer";
 
+import ButtonBasic from "../../components/ButtonBasic";
+
 export default function Home() {
   return (
     <div className={styles.container} data-aos="fade-down">
@@ -51,9 +53,11 @@ export default function Home() {
           </p>
         </div>
         <div className={styles.buttons}>
-          <a href="#about" className={styles.button}>
-            Sobre o Evento <FaArrowDown />
-          </a>
+          <ButtonBasic
+            link="#about"
+            text="Sobre o Evento"
+            icon={<FaArrowDown />}
+          />
         </div>
       </div>
       <Video2024 />
@@ -78,9 +82,9 @@ export default function Home() {
       />
       <Palestrantes />
 
+      <PatrocinadorEExpositor />
       <Patrocinador title="PATROCINADORES" array={arrayPatrocinadores} />
       <Patrocinador title="APOIO" array={arrayApoio} />
-      <PatrocinadorEExpositor />
       <Section
         styleImg={"imgSectionNoBorder"}
         img={imgVersa}
