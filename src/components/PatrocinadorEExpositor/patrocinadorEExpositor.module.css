@@ -1,0 +1,45 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerContent {
+  width: 1200px;
+  max-width: 90%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content p {
+  width: 500px;
+  max-width: 90%;
+  text-align: center;
+  line-height: 150%;
+  margin-bottom: 2rem;
+}
+
+.button {
+  padding: 1.5rem 4rem;
+  background-image: linear-gradient(45deg, var(--color-2) 0%, #062c4e 100%);
+  color: var(--color-text);
+  border-radius: 50px;
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  transition: 0.2s;
+}
+
+.button:hover {
+  background-image: linear-gradient(45deg, var(--color-2) 25%, #cd932ea6 100%);
+  transform: scale(1.1);
+  font-weight: bold;
+}

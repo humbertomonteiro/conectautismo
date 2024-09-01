@@ -1,0 +1,38 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 0;
+}
+
+.boxes {
+  width: 600px;
+  max-width: 90%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.box a {
+  border: 2px solid var(--color-1);
+  border-radius: 50%;
+  color: var(--color-text);
+  font-size: 2.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.7rem;
+  transition: 0.5s;
+}
+
+.box a:hover {
+  border: 2px solid var(--color-2);
+  color: var(--color-2);
+  transform: scale(1.05);
+}
+
+@media (max-width: 450px) {
+  .box a {
+    font-size: 1.7rem;
+  }
+}
