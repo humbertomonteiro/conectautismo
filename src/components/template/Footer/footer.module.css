@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+  align-items: center;
+  height: 130px;
+  background-color: #00000075;
+}
+
+.box p {
+  color: var(--color-text-gray);
+}

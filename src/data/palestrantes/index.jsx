@@ -41,178 +41,178 @@ import drMarcone from "../../assets/imgs/palestrantes/dr-marcone-11.jpg";
 import drThiagoCastro from "../../assets/imgs/palestrantes/dr-thiago-castro-12.jpg";
 
 export const arrayPalestrantes = [
-  [
-    // {
-    //   name: "Juiz Borelli",
-    //   img: juizBorelli,
-    // },
-    {
-      name: "Fábio Coelho",
-      img: fabioCoelho,
-    },
-    // {
-    //   name: "Graciela Pignatari",
-    //   img: gracielaPignatari,
-    // },
-    {
-      name: "dra. Carolina Quedas",
-      img: draCarolinaQuedas,
-    },
-    {
-      name: "dr. Thiago Castro",
-      img: drThiagoCastro,
-    },
-    {
-      name: "dr. Marcone",
-      img: drMarcone,
-    },
-  ],
-  [
-    {
-      name: "Fatima de Kwant",
-      img: fatimaDeKwant,
-    },
-    {
-      name: "dr. Hélio Van Der",
-      img: drHelioVanDer,
-    },
-    // {
-    //   name: "dr. Saulo Serrano",
-    //   img: drSauloSerrano,
-    // },
-    {
-      name: "Carolina Nobre",
-      img: carolinaNobre,
-    },
-    {
-      name: "Fernanda Carneiro",
-      img: fernandaCarneiro,
-    },
-  ],
-  [
-    // {
-    //   name: "Silvi",
-    //   img: silvi,
-    // },
-    {
-      name: "Professor Fábio",
-      img: professorFabio,
-    },
-    // {
-    //   name: "dr. Raphael Rangel",
-    //   img: drRaphaelRangel,
-    // },
-    {
-      name: "Bethania Mends",
-      img: bethaniaMends,
-    },
-    {
-      name: "dra. Vanessa Fioreze",
-      img: draVanessaFioreze,
-    },
-    {
-      name: "dra. Adriana Moraes",
-      img: draAdrianaMoraes,
-    },
-  ],
-  [
-    {
-      name: "Paulo Victor",
-      img: pauloVictor,
-    },
-    {
-      name: "Paulo Victor Loureiro",
-      img: pauloVictorLoureiro,
-    },
-    {
-      name: "dr. Andre Cabral",
-      img: drAndreCabral,
-    },
-    {
-      name: "dra. Ellen Manfrim",
-      img: draEllenManfrim,
-    },
-  ],
-  [
-    {
-      name: "Temple Grandin",
-      img: templeGrandin,
-    },
-    // {
-    //   name: "Willian Chimura",
-    //   img: willianChimura,
-    // },
-    {
-      name: "dr. Thiago Gusmão",
-      img: drThiagoGusmao,
-    },
-    {
-      name: "Cassia",
-      img: cassia,
-    },
-    {
-      name: "Graziella Gadia",
-      img: graziellaGadia,
-    },
-    // {
-    //   name: "Jacson Marçal",
-    //   img: jacsonMarcal,
-    // },
-  ],
-  [
-    {
-      name: "Romulo Porto",
-      img: romuloPorto,
-    },
-    {
-      name: "Luciana Xavier",
-      img: lucianaXavier,
-    },
-    {
-      name: "Gisele Albuquerque",
-      img: giseleAlbuquerque,
-    },
-    {
-      name: "dr. Marcelo Masruha",
-      img: drMarceloMasruha,
-    },
-  ],
-  [
-    {
-      name: "Lucelmo Lacerda",
-      img: lucelmoLacerda,
-    },
-    {
-      name: "dra. Juracy",
-      img: draJuracy,
-    },
-    // {
-    //   name: "Júlia Matos",
-    //   img: juliaMatos,
-    // },
-    {
-      name: "dra. Deborah Kerches",
-      img: draDeborahKerches,
-    },
-    {
-      name: "Kadu Lins",
-      img: kaduLins,
-    },
-  ],
-  [
-    {
-      name: "dr. Carlos Gadia",
-      img: drCarlosGadia,
-    },
-    {
-      name: "Letica Mello",
-      img: leticiaMello,
-    },
-    {
-      name: "dr. Andre Pessoa",
-      img: drAndrePessoa,
-    },
-  ],
+  // [
+  // {
+  //   name: "Juiz Borelli",
+  //   img: juizBorelli,
+  // },
+  {
+    name: "Fábio Coelho",
+    img: fabioCoelho,
+  },
+  // {
+  //   name: "Graciela Pignatari",
+  //   img: gracielaPignatari,
+  // },
+  {
+    name: "dra. Carolina Quedas",
+    img: draCarolinaQuedas,
+  },
+  {
+    name: "dr. Thiago Castro",
+    img: drThiagoCastro,
+  },
+  {
+    name: "dr. Marcone",
+    img: drMarcone,
+  },
+  // ],
+  // [
+  {
+    name: "Fatima de Kwant",
+    img: fatimaDeKwant,
+  },
+  {
+    name: "dr. Hélio Van Der",
+    img: drHelioVanDer,
+  },
+  // {
+  //   name: "dr. Saulo Serrano",
+  //   img: drSauloSerrano,
+  // },
+  {
+    name: "Carolina Nobre",
+    img: carolinaNobre,
+  },
+  {
+    name: "Fernanda Carneiro",
+    img: fernandaCarneiro,
+  },
+  // ],
+  // [
+  // {
+  //   name: "Silvi",
+  //   img: silvi,
+  // },
+  {
+    name: "Professor Fábio",
+    img: professorFabio,
+  },
+  // {
+  //   name: "dr. Raphael Rangel",
+  //   img: drRaphaelRangel,
+  // },
+  {
+    name: "Bethania Mends",
+    img: bethaniaMends,
+  },
+  {
+    name: "dra. Vanessa Fioreze",
+    img: draVanessaFioreze,
+  },
+  {
+    name: "dra. Adriana Moraes",
+    img: draAdrianaMoraes,
+  },
+  // ],
+  // [
+  {
+    name: "Paulo Victor",
+    img: pauloVictor,
+  },
+  {
+    name: "Paulo Victor Loureiro",
+    img: pauloVictorLoureiro,
+  },
+  {
+    name: "dr. Andre Cabral",
+    img: drAndreCabral,
+  },
+  {
+    name: "dra. Ellen Manfrim",
+    img: draEllenManfrim,
+  },
+  // ],
+  // [
+  {
+    name: "Temple Grandin",
+    img: templeGrandin,
+  },
+  // {
+  //   name: "Willian Chimura",
+  //   img: willianChimura,
+  // },
+  {
+    name: "dr. Thiago Gusmão",
+    img: drThiagoGusmao,
+  },
+  {
+    name: "Cassia",
+    img: cassia,
+  },
+  {
+    name: "Graziella Gadia",
+    img: graziellaGadia,
+  },
+  // {
+  //   name: "Jacson Marçal",
+  //   img: jacsonMarcal,
+  // },
+  // ],
+  // [
+  {
+    name: "Romulo Porto",
+    img: romuloPorto,
+  },
+  {
+    name: "Luciana Xavier",
+    img: lucianaXavier,
+  },
+  {
+    name: "Gisele Albuquerque",
+    img: giseleAlbuquerque,
+  },
+  {
+    name: "dr. Marcelo Masruha",
+    img: drMarceloMasruha,
+  },
+  // ],
+  // [
+  {
+    name: "Lucelmo Lacerda",
+    img: lucelmoLacerda,
+  },
+  {
+    name: "dra. Juracy",
+    img: draJuracy,
+  },
+  // {
+  //   name: "Júlia Matos",
+  //   img: juliaMatos,
+  // },
+  {
+    name: "dra. Deborah Kerches",
+    img: draDeborahKerches,
+  },
+  {
+    name: "Kadu Lins",
+    img: kaduLins,
+  },
+  // ],
+  // [
+  {
+    name: "dr. Carlos Gadia",
+    img: drCarlosGadia,
+  },
+  {
+    name: "Letica Mello",
+    img: leticiaMello,
+  },
+  {
+    name: "dr. Andre Pessoa",
+    img: drAndrePessoa,
+  },
+  // ],
   // [
   // {
   //   name: "Kadu Lins",

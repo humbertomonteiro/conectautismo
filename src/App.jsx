@@ -9,12 +9,15 @@ import "swiper/css/effect-cards";
 
 import { useEffect } from "react";
 
+import TopPromoBar from "./components/shared/TopPromoBar";
+
 function App() {
   useEffect(() => {
     Aos.init({ duration: 800 });
   }, []);
   return (
     <main className="main">
+      <TopPromoBar />
       <Home />
       <div class="area">
         <ul class="circles">

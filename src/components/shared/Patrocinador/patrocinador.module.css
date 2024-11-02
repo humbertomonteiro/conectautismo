@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.boxes {
+  width: 1200px;
+  max-width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+}
+
+/* .boxSlide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.box h3 {
+  font-size: 1.7rem;
+}
+
+@media (max-width: 450px) {
+  .boxes {
+    gap: 1.5rem;
+  }
+  .box {
+    width: 150px;
+    height: 150px;
+  }
+}

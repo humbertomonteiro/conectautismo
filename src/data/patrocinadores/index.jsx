@@ -60,216 +60,216 @@ import habilito from "../../assets/imgs/patrocinadores/habilito.jpg";
 // import Evolvik from "../../assets/imgs/patrocinadores/Evolvik.png";
 
 export const arrayPatrocinadores = [
-  [
-    {
-      name: "1pure",
-      img: pure,
-    },
-    {
-      name: "academia do autismo",
-      img: academiaAutismo,
-    },
-    {
-      name: "apabb",
-      img: apabb,
-    },
-    {
-      name: "aquacoco",
-      img: aquacoco,
-    },
-  ],
-  [
-    {
-      name: "aspa",
-      img: aspa,
-    },
-    {
-      name: "BOOKTOY",
-      img: BOOKTOY,
-    },
-    {
-      name: "brisanet",
-      img: brisanet,
-    },
-    {
-      name: "casaLube",
-      img: casaLube,
-    },
-  ],
-  [
-    {
-      name: "criandoEDesenvolvendo",
-      img: criandoEDesenvolvendo,
-    },
-    {
-      name: "criando",
-      img: criando,
-    },
-    {
-      name: "doceGula",
-      img: doceGula,
-    },
-    {
-      name: "emi",
-      img: emi,
-    },
-  ],
-  [
-    {
-      name: "ENFANCE",
-      img: ENFANCE,
-    },
-    {
-      name: "Engenhoca",
-      img: Engenhoca,
-    },
-    {
-      name: "evolude",
-      img: evolude,
-    },
-    {
-      name: "Evolvik",
-      img: Evolvik,
-    },
-  ],
-  [
-    {
-      name: "FarmaUSA",
-      img: FarmaUSA,
-    },
-    {
-      name: "FortalezaAzul",
-      img: FortalezaAzul,
-    },
-    {
-      name: "hg",
-      img: hg,
-    },
-    {
-      name: "institutoSingular",
-      img: institutoSingular,
-    },
-  ],
-  [
-    {
-      name: "intKids",
-      img: intKids,
-    },
-    {
-      name: "LivreD",
-      img: LivreD,
-    },
-    {
-      name: "LONVIE",
-      img: LONVIE,
-    },
-    {
-      name: "marilan",
-      img: marilan,
-    },
-  ],
-  [
-    {
-      name: "Markoo",
-      img: Markoo,
-    },
-    {
-      name: "mirleneBorges",
-      img: mirleneBorges,
-    },
-    {
-      name: "MYCOAT",
-      img: MYCOAT,
-    },
-    {
-      name: "NACIONAL",
-      img: NACIONAL,
-    },
-  ],
-  [
-    {
-      name: "nesaX",
-      img: nesaX,
-    },
-    {
-      name: "neuroAvance",
-      img: neuroAvance,
-    },
-    {
-      name: "nicole",
-      img: nicole,
-    },
-    {
-      name: "nissanJangada",
-      img: nissanJangada,
-    },
-  ],
-  [
-    {
-      name: "NPC",
-      img: NPC,
-    },
-    {
-      name: "PediaSuit",
-      img: PediaSuit,
-    },
-    {
-      name: "QI",
-      img: QI,
-    },
-    {
-      name: "samsClub",
-      img: samsClub,
-    },
-  ],
-  [
-    {
-      name: "semear",
-      img: semear,
-    },
-    {
-      name: "sinapse",
-      img: sinapse,
-    },
-    {
-      name: "Spider",
-      img: Spider,
-    },
-    {
-      name: "superaKids",
-      img: superaKids,
-    },
-  ],
-  [
-    {
-      name: "teacolhe",
-      img: teacolhe,
-    },
-    {
-      name: "toyt",
-      img: toyt,
-    },
-    {
-      name: "Trebeschi",
-      img: Trebeschi,
-    },
-    // {
-    //   name: "Unifor",
-    //   img: Unifor,
-    // },
-  ],
-  [
-    {
-      name: "vozEmPapel",
-      img: vozEmPapel,
-    },
-    {
-      name: "zabone",
-      img: zabone,
-    },
-    {
-      name: "habilito",
-      img: habilito,
-    },
-  ],
+  // [
+  {
+    name: "1pure",
+    img: pure,
+  },
+  {
+    name: "academia do autismo",
+    img: academiaAutismo,
+  },
+  {
+    name: "apabb",
+    img: apabb,
+  },
+  {
+    name: "aquacoco",
+    img: aquacoco,
+  },
+  // ],
+  // [
+  {
+    name: "aspa",
+    img: aspa,
+  },
+  {
+    name: "BOOKTOY",
+    img: BOOKTOY,
+  },
+  {
+    name: "brisanet",
+    img: brisanet,
+  },
+  {
+    name: "casaLube",
+    img: casaLube,
+  },
+  // ],
+  // [
+  {
+    name: "criandoEDesenvolvendo",
+    img: criandoEDesenvolvendo,
+  },
+  {
+    name: "criando",
+    img: criando,
+  },
+  {
+    name: "doceGula",
+    img: doceGula,
+  },
+  {
+    name: "emi",
+    img: emi,
+  },
+  // ],
+  // [
+  {
+    name: "ENFANCE",
+    img: ENFANCE,
+  },
+  {
+    name: "Engenhoca",
+    img: Engenhoca,
+  },
+  {
+    name: "evolude",
+    img: evolude,
+  },
+  {
+    name: "Evolvik",
+    img: Evolvik,
+  },
+  // ],
+  // [
+  {
+    name: "FarmaUSA",
+    img: FarmaUSA,
+  },
+  {
+    name: "FortalezaAzul",
+    img: FortalezaAzul,
+  },
+  {
+    name: "hg",
+    img: hg,
+  },
+  {
+    name: "institutoSingular",
+    img: institutoSingular,
+  },
+  // ],
+  // [
+  {
+    name: "intKids",
+    img: intKids,
+  },
+  {
+    name: "LivreD",
+    img: LivreD,
+  },
+  {
+    name: "LONVIE",
+    img: LONVIE,
+  },
+  {
+    name: "marilan",
+    img: marilan,
+  },
+  // ],
+  // [
+  {
+    name: "Markoo",
+    img: Markoo,
+  },
+  {
+    name: "mirleneBorges",
+    img: mirleneBorges,
+  },
+  {
+    name: "MYCOAT",
+    img: MYCOAT,
+  },
+  {
+    name: "NACIONAL",
+    img: NACIONAL,
+  },
+  // ],
+  // [
+  {
+    name: "nesaX",
+    img: nesaX,
+  },
+  {
+    name: "neuroAvance",
+    img: neuroAvance,
+  },
+  {
+    name: "nicole",
+    img: nicole,
+  },
+  {
+    name: "nissanJangada",
+    img: nissanJangada,
+  },
+  // ],
+  // [
+  {
+    name: "NPC",
+    img: NPC,
+  },
+  {
+    name: "PediaSuit",
+    img: PediaSuit,
+  },
+  {
+    name: "QI",
+    img: QI,
+  },
+  {
+    name: "samsClub",
+    img: samsClub,
+  },
+  // ],
+  // [
+  {
+    name: "semear",
+    img: semear,
+  },
+  {
+    name: "sinapse",
+    img: sinapse,
+  },
+  {
+    name: "Spider",
+    img: Spider,
+  },
+  {
+    name: "superaKids",
+    img: superaKids,
+  },
+  // ],
+  // [
+  {
+    name: "teacolhe",
+    img: teacolhe,
+  },
+  {
+    name: "toyt",
+    img: toyt,
+  },
+  {
+    name: "Trebeschi",
+    img: Trebeschi,
+  },
+  // {
+  //   name: "Unifor",
+  //   img: Unifor,
+  // },
+  // ],
+  // [
+  {
+    name: "vozEmPapel",
+    img: vozEmPapel,
+  },
+  {
+    name: "zabone",
+    img: zabone,
+  },
+  {
+    name: "habilito",
+    img: habilito,
+  },
+  // ],
 ];

@@ -1,0 +1,122 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img img {
+  width: 600px;
+  max-width: 90%;
+  margin-bottom: 2rem;
+  border-radius: 15px;
+}
+
+.boxesTexts {
+  display: flex;
+  justify-content: space-around;
+  width: 1200px;
+  max-width: 90%;
+  border: 2px dashed #5f476b;
+  border-radius: 2rem;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 45%;
+  padding: 2rem 0;
+  border-radius: 1rem;
+  /* backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  box-shadow: 0px 1px 5px #6d6d6d; */
+  /* backdrop-filter: invert(80%);
+  -webkit-backdrop-filter: invert(80%);
+  backdrop-filter: sepia(90%);
+  -webkit-backdrop-filter: sepia(90%); */
+}
+
+.box h3 {
+  font-size: 1.8rem;
+  text-align: center;
+  max-width: 95%;
+  padding: 1.5rem 0;
+  min-height: 130px;
+  border-top: 4px solid var(--color-text);
+}
+
+.box ul {
+  width: 80%;
+}
+
+.box ul li {
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.5rem 2.5rem;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  background-image: linear-gradient(
+    360deg,
+    #560787 0%,
+    rgba(30, 0, 148, 0.952) 100%
+  );
+  color: var(--color-text);
+  transition: 0.3s;
+}
+
+.button:hover {
+  transform: scale(1.1);
+  background-image: linear-gradient(360deg, #6609a0 0%, #880dd4 100%);
+}
+
+@media (max-width: 750px) {
+  .boxesTexts {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .box {
+    width: 100%;
+  }
+
+  .box h3 {
+    font-size: 1.5rem;
+    max-width: 70%;
+    min-height: 80px;
+  }
+
+  .box ul li {
+    margin-bottom: 10px;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .box h3 {
+    font-size: 1.2rem;
+  }
+
+  .box {
+    padding: 1rem;
+  }
+
+  .box ul {
+    width: 90%;
+  }
+}

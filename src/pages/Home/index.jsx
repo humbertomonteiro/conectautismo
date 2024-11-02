@@ -1,87 +1,48 @@
 import styles from "./home.module.css";
 
-import logo from "../../assets/imgs/logo/logo-png.png";
-
-import Oportunidades from "../../components/Oportunidades";
-import Video2024 from "../../components/Video2024";
-import Social from "../../components/Social";
-
-import Section from "../../components/Section";
+import FormEvent from "../../components/sections/FormEvent";
+import Oportunidades from "../../components/sections/Oportunidades";
+import Video2024 from "../../components/sections/Video2024";
+import Social from "../../components/sections/Social";
+import Section from "../../components/shared/Section";
 
 //meia entrada
 import imgMeiaEntrada from "../../assets/imgs/meia-entrada/img.jpg";
 import MeiaEntrada from "../../contentSections/MeiaEntrada";
 
-//sobre nos
-import imgSobreNos from "../../assets/imgs/sobre-nos/sobre-nos.jpg";
-import SobreNos from "../../contentSections/SobreNos";
+// //sobre nos
+// import imgSobreNos from "../../assets/imgs/sobre-nos/sobre-nos.jpg";
+// import SobreNos from "../../contentSections/SobreNos";
 
-import Palestrantes from "../../components/Palestrantes";
+import Palestrantes from "../../components/sections/Palestrantes";
 
-import Patrocinador from "../../components/Patrocinador";
+import Patrocinador from "../../components/shared/Patrocinador";
 import { arrayPatrocinadores } from "../../data/patrocinadores";
 
 import { arrayApoio } from "../../data/apoio";
-import { FaArrowDown } from "react-icons/fa";
+// import { FaArrowDown } from "react-icons/fa";
 
-import PatrocinadorEExpositor from "../../components/PatrocinadorEExpositor";
+import PatrocinadorEExpositor from "../../components/sections/PatrocinadorEExpositor";
 
 //versa
 import imgVersa from "../../assets/imgs/logo/logoVersa.png";
 import Versa from "../../contentSections/Versa";
 
-import RedesSociais from "../../components/RedesSociais";
-import Politica from "../../components/Politica";
-import Footer from "../../components/Footer";
+import RedesSociais from "../../components/sections/RedesSociais";
+import Politica from "../../components/sections/Politica";
+import Footer from "../../components/template/Footer";
+import Testionials from "../../components/sections/Testionials";
 
-import ButtonBasic from "../../components/ButtonBasic";
+// import ButtonBasic from "../../components/shared/ButtonBasic";
 
 export default function Home() {
   return (
     <div className={styles.container} data-aos="fade-down">
-      <div className={styles.containerHome}>
-        <div className={styles.logo}>
-          <img src={logo} alt="logo" />
-        </div>
-        <div className={styles.text}>
-          <h1>Conect Autismo</h1>
-          <h1> ESTÃO PRONTOS PARA SE CONECTAR EM 2025?</h1>
-          <p>
-            A sua oportunidade de fazer parte de uma história de transformação e
-            esperança. Venha e conecte-se com um futuro mais inclusivo e
-            compreensivo.
-          </p>
-        </div>
-        <div className={styles.buttons}>
-          <ButtonBasic
-            link="#about"
-            text="Sobre o Evento"
-            icon={<FaArrowDown />}
-          />
-        </div>
-      </div>
+      <FormEvent />
       <Video2024 />
-      <Oportunidades />
+      {/* <Testionials /> */}
       <Social />
-
-      <Section
-        title={"MEIA-ENTRADA CONECT AUTISMO"}
-        styleImg={"imgSection"}
-        img={imgMeiaEntrada}
-        descriptionImg={"Inclusão"}
-        styleComponent={"list2Section"}
-        component={<MeiaEntrada />}
-      />
-      <Section
-        title={"SOBRE NÓS"}
-        styleImg={"imgSection"}
-        img={imgSobreNos}
-        descriptionImg={"Aline Sales"}
-        styleComponent={"textSection"}
-        component={<SobreNos />}
-      />
       <Palestrantes />
-
       <PatrocinadorEExpositor />
       <Patrocinador title="PATROCINADORES" array={arrayPatrocinadores} />
       <Patrocinador title="APOIO" array={arrayApoio} />
@@ -91,6 +52,16 @@ export default function Home() {
         descriptionImg={"Logo Versa"}
         styleComponent={"textSection"}
         component={<Versa />}
+        title={"Versa"}
+      />
+      <Oportunidades />
+      <Section
+        title={"MEIA-ENTRADA CONECT AUTISMO"}
+        styleImg={"imgSection"}
+        img={imgMeiaEntrada}
+        descriptionImg={"Inclusão"}
+        styleComponent={"list2Section"}
+        component={<MeiaEntrada />}
       />
       <RedesSociais />
       <Politica />

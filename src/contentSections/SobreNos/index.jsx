@@ -1,5 +1,5 @@
 import { FaInstagram } from "react-icons/fa";
-import ButtonBasic from "../../components/ButtonBasic";
+import ButtonBasic from "../../components/shared/ButtonBasic";
 
 export default function SobreNos() {
   return (

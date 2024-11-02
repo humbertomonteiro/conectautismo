@@ -1,0 +1,24 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000af;
+}
+
+.content {
+  width: 1200px;
+  max-width: 90%;
+  padding: 0 1rem;
+}
+
+.content h3 {
+  font-size: 0.8rem;
+  margin: 1rem 0;
+}
+
+.content p {
+  font-size: 0.7rem;
+  margin-bottom: 0.5rem;
+  line-height: 150%;
+}
