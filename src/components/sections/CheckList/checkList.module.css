@@ -1,0 +1,42 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap;
+  width: 1200px;
+  max-width: 90%;
+  margin: 0 auto;
+  gap: 1rem;
+}
+
+.item {
+  width: 47%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.2rem;
+  border: 1px solid var(--color-text);
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+
+.item p {
+  align-items: center;
+  gap: 1rem;
+}
+
+.item svg {
+  width: 30px;
+  color: var(--color-2);
+}
+
+@media (max-width: 780px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .item {
+    width: 100%;
+    border: 0;
+  }
+}

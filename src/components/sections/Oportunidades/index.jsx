@@ -10,7 +10,12 @@ import atualizacao from "../../../assets/imgs/oportunidades/atualizacao.png";
 import acoesSociais from "../../../assets/imgs/oportunidades/acoes-sociais.png";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectCoverflow, Pagination, Autoplay } from "swiper/modules";
+import {
+  EffectCoverflow,
+  Pagination,
+  Autoplay,
+  Navigation,
+} from "swiper/modules";
 
 import Title from "../../shared/Title";
 
@@ -39,7 +44,10 @@ export default function oportunidades() {
               modifier: 1,
               slideShadows: true,
             }}
-            pagination={true}
+            navigation={true}
+            pagination={{
+              clickable: true,
+            }}
             breakpoints={{
               "@0.00": {
                 slidesPerView: 1,
@@ -49,7 +57,7 @@ export default function oportunidades() {
                 slidesPerView: 2,
               },
             }}
-            modules={[EffectCoverflow, Pagination, Autoplay]}
+            modules={[EffectCoverflow, Pagination, Autoplay, Navigation]}
             className="mySwiper"
           >
             <SwiperSlide>

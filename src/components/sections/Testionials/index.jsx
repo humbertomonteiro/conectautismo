@@ -1,25 +1,30 @@
 import styles from "./testimonials.module.css";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectCoverflow, Pagination, Autoplay } from "swiper/modules";
+import {
+  EffectCoverflow,
+  Pagination,
+  Autoplay,
+  Navigation,
+} from "swiper/modules";
 
-// import Title from "../../shared/Title";
 import { testimonials } from "../../../data/testimonials";
 import logo from "../../../assets/imgs/logo/logo.jpg";
-// import ButtonPretty from "../../shared/ButtonPretty";
+import Title from "../../shared/Title";
 
 import { FaStar } from "react-icons/fa";
 
 export default function Testionials() {
   return (
     <section className={styles.container}>
-      {/* <Title text={"REVIEWS"} /> */}
-      <div className={styles.testimonials}>
+      <Title text="reviews" />
+      <div className={styles.testimonials} data-aos={"zoom-in"}>
         <>
           <Swiper
             effect={"coverflow"}
             grabCursor={true}
             centeredSlides={true}
+            navigation={true}
             autoplay={{
               delay: 3500,
               disableOnInteraction: false,
@@ -31,7 +36,9 @@ export default function Testionials() {
               modifier: 1,
               slideShadows: true,
             }}
-            pagination={true}
+            pagination={{
+              clickable: true,
+            }}
             breakpoints={{
               "@0.00": {
                 slidesPerView: 1,
@@ -41,7 +48,7 @@ export default function Testionials() {
                 slidesPerView: 2,
               },
             }}
-            modules={[EffectCoverflow, Pagination, Autoplay]}
+            modules={[EffectCoverflow, Pagination, Autoplay, Navigation]}
             className="mySwiper"
           >
             {testimonials.map((testimony) => (

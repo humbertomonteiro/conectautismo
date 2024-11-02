@@ -10,14 +10,11 @@
   max-width: 90%;
   display: flex;
   justify-content: space-between;
-  border: 2px solid var(--color-2);
-  background: linear-gradient(45deg, #062c4ea4, var(--color-1));
-
+  /* border: 2px solid var(--color-2); */
+  background: linear-gradient(to top, #00a2ff59, var(--color-1));
   border-radius: 2rem;
   padding: 1rem;
   border-radius: 1rem;
-  /* backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px); */
 }
 
 .imgSection,
@@ -25,7 +22,7 @@
   width: 40%;
   max-height: 500px;
   border-radius: 15px;
-  border: 2px dashed var(--color-2);
+  /* border: 2px dashed var(--color-2); */
   overflow: hidden;
 }
 
@@ -79,12 +76,12 @@
   display: block;
   margin-bottom: 1rem;
 }
-
+/* 
 .textLong {
   max-height: 300px;
   overflow-y: scroll;
   margin-bottom: 1rem;
-}
+} */
 
 .textSection p {
   line-height: 150%;

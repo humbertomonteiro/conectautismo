@@ -11,14 +11,12 @@ import { FaArrowRight } from "react-icons/fa";
 import Title from "../../shared/Title";
 import ButtonBasic from "../../shared/ButtonBasic";
 import ButtonPretty from "../../shared/ButtonPretty";
-import Testionials from "../Testionials";
 
 export default function Video2024() {
   return (
     <section id="about" className={styles.container}>
       <Title text="Como foi Conect 2024?" />
       <div className={styles.content} data-aos="zoom-in">
-        <Testionials />
         <div className={styles.midia}>
           <div className={styles.video}>
             <iframe
@@ -48,6 +46,7 @@ export default function Video2024() {
           </div>
         </div>
       </div>
+
       <div className={styles.buttons}>
         <ButtonPretty link={"#formEvent"} text={"Participe do próximo"} />
         <ButtonBasic
