@@ -3,7 +3,7 @@ import styles from "./testimonials.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCoverflow, Pagination, Autoplay } from "swiper/modules";
 
-import Title from "../../shared/Title";
+// import Title from "../../shared/Title";
 import { testimonials } from "../../../data/testimonials";
 import logo from "../../../assets/imgs/logo/logo.jpg";
 // import ButtonPretty from "../../shared/ButtonPretty";
