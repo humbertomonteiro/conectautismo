@@ -14,11 +14,11 @@ export default function FormEvent() {
   function handleSubmit(event) {
     event.preventDefault();
 
-    fbq("track", "lead", {
-      name,
-      email,
-      number,
-    });
+    // fbq("track", "lead", {
+    //   name,
+    //   email,
+    //   number,
+    // });
 
     navigate("/confirmation");
   }

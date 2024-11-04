@@ -10,8 +10,8 @@
   align-items: center;
   width: 1400px;
   max-width: 90%;
-  padding-top: 12rem;
   margin: 0 auto;
+  margin-top: 150px;
 }
 
 .content {
@@ -106,8 +106,7 @@
 @media (max-width: 780px) {
   .container {
     flex-direction: column;
-    padding-top: 60px;
-    min-height: 100vh;
+    margin-top: 100px;
   }
 
   .content {
