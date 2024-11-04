@@ -70,7 +70,7 @@ export default function CheckList() {
 
       <div className={styles.item}>
         <FiCheckSquare />
-        <p>pré festa white party, open bar.</p>
+        <p>Pré festa white party, open bar.</p>
       </div>
     </section>
   );
