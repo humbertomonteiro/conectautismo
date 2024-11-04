@@ -16,7 +16,6 @@ import Title from "../../shared/Title";
 import { FaStar } from "react-icons/fa";
 
 export default function Testimonials() {
-  // Memoize the Swiper slides to prevent re-renders when testimonials array hasn't changed
   const slides = useMemo(
     () =>
       testimonials.map((testimony) => (

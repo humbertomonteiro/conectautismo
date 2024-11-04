@@ -1,5 +1,4 @@
 import "./App.css";
-import Home from "./pages/Home";
 
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -9,8 +8,11 @@ import "swiper/css/pagination";
 import "swiper/css/effect-coverflow";
 
 import { useEffect } from "react";
+import { BrowserRouter } from "react-router-dom";
 
-import TopPromoBar from "./components/shared/TopPromoBar";
+// import TopPromoBar from "./components/shared/TopPromoBar";
+
+import RouterApp from "./routes/routes";
 
 function App() {
   useEffect(() => {
@@ -18,8 +20,10 @@ function App() {
   }, []);
   return (
     <main className="main">
-      <TopPromoBar />
-      <Home />
+      {/* <TopPromoBar /> */}
+      <BrowserRouter>
+        <RouterApp />
+      </BrowserRouter>
       <div class="area">
         <ul class="circles">
           <li></li>

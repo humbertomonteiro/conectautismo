@@ -1,5 +1,6 @@
 import styles from "./formEvent.module.css";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 import logo from "../../../assets/imgs/logo/logo-png.png";
 
@@ -7,6 +8,8 @@ export default function FormEvent() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [number, setNumber] = useState("");
+
+  const navigate = useNavigate();
 
   function handleSubmit(event) {
     event.preventDefault();
@@ -17,9 +20,7 @@ export default function FormEvent() {
       number,
     });
 
-    setName("");
-    setEmail("");
-    setNumber("");
+    navigate("/confirmation");
   }
 
   return (
