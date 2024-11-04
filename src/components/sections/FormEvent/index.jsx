@@ -1,8 +1,27 @@
 import styles from "./formEvent.module.css";
+import { useState } from "react";
 
 import logo from "../../../assets/imgs/logo/logo-png.png";
 
 export default function FormEvent() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [number, setNumber] = useState("");
+
+  function handleSubmit(event) {
+    event.preventDefault();
+
+    fbq("track", "lead", {
+      name,
+      email,
+      number,
+    });
+
+    setName("");
+    setEmail("");
+    setNumber("");
+  }
+
   return (
     <section id="formEvent">
       <div className={styles.container}>
@@ -16,11 +35,26 @@ export default function FormEvent() {
             limitado conect 2025.
           </p>
         </div>
-        <form className={styles.form}>
-          <input type="text" placeholder="Digite seu nome" required />
-          <input type="number" placeholder="Digite seu número" required />
-          <input type="email" placeholder="Digite seu email" required />
-          <button>QUERO ME CONECTAR</button>
+        <form className={styles.form} onSubmit={handleSubmit}>
+          <input
+            type="text"
+            placeholder="Digite seu nome"
+            onChange={(e) => setName(e.target.value)}
+            required
+          />
+          <input
+            type="number"
+            placeholder="Digite seu número"
+            onChange={(e) => setNumber(e.target.value)}
+            required
+          />
+          <input
+            type="email"
+            placeholder="Digite seu email"
+            onChange={(e) => setEmail(e.target.value)}
+            required
+          />
+          <button type="submit">QUERO ME CONECTAR</button>
         </form>
       </div>
     </section>
