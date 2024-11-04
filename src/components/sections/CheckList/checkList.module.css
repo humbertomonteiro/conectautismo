@@ -23,6 +23,7 @@
 .item p {
   align-items: center;
   gap: 1rem;
+  flex: 1;
 }
 
 .item svg {

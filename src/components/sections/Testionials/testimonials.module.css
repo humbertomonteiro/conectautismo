@@ -20,6 +20,10 @@
   border-radius: 1rem;
 }
 
+.mySwiper .swiper-pagination {
+  bottom: -100px;
+}
+
 .testimony {
   display: flex;
   justify-content: space-around;
@@ -28,6 +32,12 @@
   padding: 1rem;
   border-radius: 1rem;
   gap: 1rem;
+  max-height: 250px;
+  overflow-y: scroll;
+}
+
+.testimony::-webkit-scrollbar {
+  display: none;
 }
 
 .testimony .img {
@@ -71,6 +81,10 @@
 }
 
 @media (max-width: 780px) {
+  .testimony {
+    margin-bottom: 3rem;
+  }
+
   .testimony .img {
     width: 50px;
     height: 50px;

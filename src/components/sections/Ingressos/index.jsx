@@ -11,7 +11,7 @@ export default function Ingressos() {
     <div id="ingresso" className={styles.container}>
       <Title text={"INGRESSOS"} />
       <div className={styles.img} data-aos="zoom-in">
-        <img src={ingressos} alt="Ingressos" />
+        <img loading="lazy" src={ingressos} alt="Ingressos" />
       </div>
       <div className={styles.boxesTexts}>
         <div className={styles.box} data-aos="zoom-in">

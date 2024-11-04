@@ -17,7 +17,7 @@ export default function BoxSlider({ array }) {
                     : "slide2"
                 }
               >
-                <img src={e.img} alt={e?.name} />
+                <img loading="lazy" src={e.img} alt={e?.name} />
               </div>
             ))}
           </div>
@@ -26,7 +26,12 @@ export default function BoxSlider({ array }) {
         <>
           {array?.map((item) => (
             <div className="slideShow">
-              <img key={item.name} src={item.img} alt={item?.name} />
+              <img
+                loading="lazy"
+                key={item.name}
+                src={item.img}
+                alt={item?.name}
+              />
             </div>
           ))}
         </>

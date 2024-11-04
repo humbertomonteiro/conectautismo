@@ -10,7 +10,7 @@ export default function Social() {
     <div className={styles.container}>
       <Title text="SOCIAL" />
       <div className={styles.boxImg} data-aos="zoom-in">
-        <img src={social} alt="social" />
+        <img loading="lazy" src={social} alt="social" />
         <ButtonPretty link={"#formEvent"} text={"Quero ajudar o mundo"} />
       </div>
     </div>

@@ -5,7 +5,8 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 
 import "swiper/css";
-import "swiper/css/effect-cards";
+import "swiper/css/pagination";
+import "swiper/css/effect-coverflow";
 
 import { useEffect } from "react";
 

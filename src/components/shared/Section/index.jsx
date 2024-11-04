@@ -16,7 +16,7 @@ export default function Section({
 
       <div className="boxSection" data-aos="zoom-in">
         <div className={styleImg}>
-          <img src={img} alt={descriptionImg} />
+          <img loading="lazy" src={img} alt={descriptionImg} />
         </div>
         <div className={styleComponent}>{component}</div>
       </div>

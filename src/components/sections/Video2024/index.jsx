@@ -38,7 +38,7 @@ export default function Video2024() {
               >
                 {arrayImgsEvent.map((img, index) => (
                   <SwiperSlide key={index}>
-                    <img src={img.img} alt={`imagem ${index}`} />
+                    <img loading="lazy" src={img.img} alt={`imagem ${index}`} />
                   </SwiperSlide>
                 ))}
               </Swiper>

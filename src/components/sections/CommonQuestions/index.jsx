@@ -73,6 +73,10 @@ export default function CommunQuestions() {
             {q3 && (
               <div className={styles.text}>
                 <ul>
+                  <li>1 Grande palco.</li>
+                  <li>Grandes palestrantes inusitados.</li>
+                  <li>Dois dias de muita imersão</li>
+                  <li>Mais tempo de ricas palestras.</li>
                   <li>Acesso a palestrantes renomados e inusitados.</li>
                   <li>Certificado de 30 horas.</li>
                   <li>Acesso ao conteúdo gravado por 24 meses.</li>

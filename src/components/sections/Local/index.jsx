@@ -12,7 +12,7 @@ export default function Local() {
       <div className={styles.boxes} data-aos="zoom-in">
         <div className={styles.box}>
           <div className={styles.img}>
-            <img src={logo} alt="logo" />
+            <img loading="lazy" src={logo} alt="logo" />
           </div>
           <a
             href="https://www.instagram.com/conect.autismo/"

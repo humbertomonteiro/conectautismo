@@ -62,7 +62,11 @@ export default function oportunidades() {
           >
             <SwiperSlide>
               <div className={styles.box} data-aos="zoom-in">
-                <img src={ampliacao} alt="Ampliação de Conhecimento" />
+                <img
+                  loading="lazy"
+                  src={ampliacao}
+                  alt="Ampliação de Conhecimento"
+                />
                 <h3>Ampliação de Conhecimento</h3>
                 <p>
                   Mergulhe no universo do autismo com o Conect Autismo. Este
@@ -76,7 +80,7 @@ export default function oportunidades() {
             </SwiperSlide>
             <SwiperSlide>
               <div className={styles.box} data-aos="zoom-in">
-                <img src={acesso} alt="Acesso a Recursos" />
+                <img loading="lazy" src={acesso} alt="Acesso a Recursos" />
                 <h3>Acesso a Recursos</h3>
                 <p>
                   Participar do Conect Autismo significa ter acesso a um arsenal
@@ -90,7 +94,11 @@ export default function oportunidades() {
             </SwiperSlide>
             <SwiperSlide>
               <div className={styles.box} data-aos="zoom-in">
-                <img src={desenvolvimento} alt="Desenvolvimento Profissional" />
+                <img
+                  loading="lazy"
+                  src={desenvolvimento}
+                  alt="Desenvolvimento Profissional"
+                />
                 <h3>Desenvolvimento Profissional</h3>
                 <p>
                   Para profissionais da saúde, educadores e terapeutas, o Conect
@@ -104,7 +112,11 @@ export default function oportunidades() {
             </SwiperSlide>
             <SwiperSlide>
               <div className={styles.box} data-aos="zoom-in">
-                <img src={aprendizado} alt="Aprendizado Contínuo" />
+                <img
+                  loading="lazy"
+                  src={aprendizado}
+                  alt="Aprendizado Contínuo"
+                />
                 <h3>Aprendizado Contínuo</h3>
                 <p>
                   Com uma diversidade de palestrantes e especialistas de elite,
@@ -118,7 +130,11 @@ export default function oportunidades() {
 
             <SwiperSlide>
               <div className={styles.box} data-aos="zoom-in">
-                <img src={trocaExperiencias} alt="Troca de Experiências" />
+                <img
+                  loading="lazy"
+                  src={trocaExperiencias}
+                  alt="Troca de Experiências"
+                />
                 <h3>Troca de Experiências</h3>
                 <p>
                   O Conect Autismo é um ponto de encontro para líderes,
@@ -133,7 +149,11 @@ export default function oportunidades() {
 
             <SwiperSlide>
               <div className={styles.box} data-aos="zoom-in">
-                <img src={visibilidade} alt="Visibilidade e Reconhecimento" />
+                <img
+                  loading="lazy"
+                  src={visibilidade}
+                  alt="Visibilidade e Reconhecimento"
+                />
                 <h3>Visibilidade e Reconhecimento</h3>
                 <p>
                   Para expositores e palestrantes, o evento oferece uma
@@ -147,7 +167,11 @@ export default function oportunidades() {
 
             <SwiperSlide>
               <div className={styles.box} data-aos="zoom-in">
-                <img src={atualizacao} alt="Atualização Pessoal" />
+                <img
+                  loading="lazy"
+                  src={atualizacao}
+                  alt="Atualização Pessoal"
+                />
                 <h3>Atualização Pessoal</h3>
                 <p>
                   O Conect Autismo é um centro vibrante de atualização e
@@ -161,7 +185,7 @@ export default function oportunidades() {
 
             <SwiperSlide>
               <div className={styles.box} data-aos="zoom-in">
-                <img src={acoesSociais} alt="Ações Sociais" />
+                <img loading="lazy" src={acoesSociais} alt="Ações Sociais" />
                 <h3>Ações Sociais</h3>
                 <p>
                   Compromisso Social e Transformação: Conect Autismo & Casa
