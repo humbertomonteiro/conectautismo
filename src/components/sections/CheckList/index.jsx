@@ -10,12 +10,7 @@ export default function CheckList() {
 
       <div className={styles.item}>
         <FiCheckSquare />
-        <p>Festa open bar.</p>
-      </div>
-
-      <div className={styles.item}>
-        <FiCheckSquare />
-        <p>Certificado qualificado</p>
+        <p>Certificado qualificado.</p>
       </div>
 
       <div className={styles.item}>
@@ -25,22 +20,22 @@ export default function CheckList() {
 
       <div className={styles.item}>
         <FiCheckSquare />
-        <p>Expositores internacionais</p>
+        <p>Expositores internacionais.</p>
       </div>
 
       <div className={styles.item}>
         <FiCheckSquare />
-        <p>Dois dias de muita imersão</p>
+        <p>Dois dias de muita imersão.</p>
       </div>
 
       <div className={styles.item}>
         <FiCheckSquare />
-        <p>Kit congressista alta qualidade</p>
+        <p>Kit congressista alta qualidade.</p>
       </div>
 
       <div className={styles.item}>
         <FiCheckSquare />
-        <p>Conteúdo Online Gravado 24 messes</p>
+        <p>Conteúdo Online Gravado 24 messes.</p>
       </div>
 
       <div className={styles.item}>
@@ -60,7 +55,7 @@ export default function CheckList() {
 
       <div className={styles.item}>
         <FiCheckSquare />
-        <p>Kit coffee break</p>
+        <p>Kit coffee break.</p>
       </div>
 
       <div className={styles.item}>
@@ -70,7 +65,12 @@ export default function CheckList() {
 
       <div className={styles.item}>
         <FiCheckSquare />
-        <p>Sessão de autografo com os maiores nomes do TEA</p>
+        <p>Sessão de autografo com os maiores nomes do TEA.</p>
+      </div>
+
+      <div className={styles.item}>
+        <FiCheckSquare />
+        <p>pré festa white party, open bar.</p>
       </div>
     </section>
   );
