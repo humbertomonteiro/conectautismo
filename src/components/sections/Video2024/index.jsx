@@ -48,7 +48,13 @@ export default function Video2024() {
       </div>
 
       <div className={styles.buttons}>
-        <ButtonPretty link={"#formEvent"} text={"Participe do próximo"} />
+        <ButtonPretty
+          link={
+            "https://pay.hotmart.com/A96222789P?off=2bsyn86r&bid=1730990288806"
+          }
+          target="_blank"
+          text={"Participe do próximo"}
+        />
         <ButtonBasic
           link="https://conectautismo.pixieset.com"
           text=" Ver todas as imagens"

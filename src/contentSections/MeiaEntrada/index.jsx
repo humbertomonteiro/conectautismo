@@ -41,7 +41,13 @@ export default function MeiaEntrada() {
         Caso contrario. Teremos a opção de upgrade no dia do credenciamento.
       </span>
 
-      <ButtonPretty text={"Faça a sua pré-inscrição"} link={"#formEvent"} />
+      <ButtonPretty
+        text={"Faça a sua pré-inscrição"}
+        link={
+          "https://pay.hotmart.com/A96222789P?off=2bsyn86r&bid=1730990288806"
+        }
+        target="_blank"
+      />
       {/* <p>
         Lembre-se: os documentos comprobatórios devem ser apresentados na
         entrada do evento. A meia entrada é um direito que promove a inclusão e
