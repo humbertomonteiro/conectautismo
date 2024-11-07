@@ -10,7 +10,7 @@ export default function Footer() {
         <p>CONECTAUTISMO LTDA</p>
       </div>
       <div className={styles.box}>
-        <p>53.145.083/0001-73</p>
+        <p>CNPJ: 53.145.083/0001-73</p>
       </div>
     </div>
   );

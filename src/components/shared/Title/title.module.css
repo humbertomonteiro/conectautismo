@@ -19,10 +19,6 @@
 }
 
 @media (max-width: 450px) {
-  /* .title {
-    margin: 5rem 0 1rem;
-  } */
-
   .title h2 {
     font-size: 1.7rem;
   }

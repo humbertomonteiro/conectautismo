@@ -10,7 +10,7 @@ import "swiper/css/effect-coverflow";
 import { useEffect } from "react";
 import { BrowserRouter } from "react-router-dom";
 
-import TopPromoBar from "./components/shared/TopPromoBar";
+// import TopPromoBar from "./components/shared/TopPromoBar";
 
 import RouterApp from "./routes/routes";
 
@@ -20,7 +20,7 @@ function App() {
   }, []);
   return (
     <main className="main">
-      <TopPromoBar />
+      {/* <TopPromoBar /> */}
       <BrowserRouter>
         <RouterApp />
       </BrowserRouter>

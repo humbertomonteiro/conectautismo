@@ -1,5 +1,6 @@
 import styles from "./home.module.css";
 
+import Welcome from "../../components/sections/Welcome";
 import FormEvent from "../../components/sections/FormEvent";
 import Video2024 from "../../components/sections/Video2024";
 import Testionials from "../../components/sections/Testionials";
@@ -29,7 +30,8 @@ import CheckList from "../../components/sections/CheckList";
 export default function Home() {
   return (
     <div className={styles.container} data-aos="fade-down">
-      <FormEvent />
+      <Welcome />
+      {/* <FormEvent /> */}
       <Video2024 />
       <Testionials />
       <Palestrantes />

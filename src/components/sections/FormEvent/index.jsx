@@ -3,6 +3,8 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 import logo from "../../../assets/imgs/logo/logo-png.png";
+import { addDoc, collection } from "firebase/firestore";
+import { db } from "../../../firebaseConfig";
 
 export default function FormEvent() {
   const [name, setName] = useState("");
@@ -11,14 +13,23 @@ export default function FormEvent() {
 
   const navigate = useNavigate();
 
-  function handleSubmit(event) {
+  async function handleSubmit(event) {
     event.preventDefault();
 
-    fbq("track", "lead", {
+    const data = {
       name,
       email,
       number,
-    });
+    };
+
+    try {
+      await addDoc(collection(db, "cadastros"), data)
+        .then((e) => console.log("Cadastro feito"))
+        .catch((error) => console.error("Error ", error));
+      fbq("track", "lead", data);
+    } catch (error) {
+      console.log("Error");
+    }
 
     navigate("/confirmation");
   }
@@ -32,7 +43,7 @@ export default function FormEvent() {
           </div>
           <h1>PRÉ-VENDA LOTE PROMOCIONAL. </h1>
           <p>
-            Se inscreva pra ter acesso a pré-venda exclusiva do lote promocial
+            Se inscreva pra ter acesso a pré-venda exclusiva do lote promocional
             limitado conect 2025.
           </p>
         </div>
