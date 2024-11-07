@@ -53,7 +53,7 @@ export default function Video2024() {
             "https://pay.hotmart.com/A96222789P?off=2bsyn86r&bid=1730990288806"
           }
           target="_blank"
-          text={"Participe do próximo"}
+          text={"quero me conectar também"}
         />
         <ButtonBasic
           link="https://conectautismo.pixieset.com"

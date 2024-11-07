@@ -21,7 +21,7 @@ export default function Welcome() {
             target="_blank"
             type="submit"
           >
-            COMPRAR AGORA
+            GARANTIR PRÉ-VENDA
           </a>
         </div>
       </div>
