@@ -11,7 +11,7 @@ export default function Welcome() {
             <img loading="lazy" src={logo} alt="Logo Conect Autismo" />
           </div>
           <h1>VENDA LOTE PROMOCIONAL. </h1>
-          <p>Faça parte desse evento, não perca!</p>
+          <p>Faça parte desse evento, lote promocional limitado conect 2025!</p>
           <button type="submit">COMPRAR AGORA</button>
         </div>
       </div>

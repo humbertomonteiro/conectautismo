@@ -17,6 +17,7 @@ export default function Admin() {
       const snapshot = await getDocs(cadRef);
 
       const list = snapshot.docs.map((doc) => ({ ...doc.data() }));
+      console.log(list);
 
       setListCad(list);
     } catch (error) {

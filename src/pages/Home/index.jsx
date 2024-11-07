@@ -1,7 +1,7 @@
 import styles from "./home.module.css";
 
 import Welcome from "../../components/sections/Welcome";
-import FormEvent from "../../components/sections/FormEvent";
+// import FormEvent from "../../components/sections/FormEvent";
 import Video2024 from "../../components/sections/Video2024";
 import Testionials from "../../components/sections/Testionials";
 import Palestrantes from "../../components/sections/Palestrantes";
@@ -20,8 +20,8 @@ import imgMeiaEntrada from "../../assets/imgs/meia-entrada/img.jpg";
 import MeiaEntrada from "../../contentSections/MeiaEntrada";
 
 //versa
-import imgVersa from "../../assets/imgs/logo/logoVersa.png";
-import Versa from "../../contentSections/Versa";
+// import imgVersa from "../../assets/imgs/logo/logoVersa.png";
+// import Versa from "../../contentSections/Versa";
 
 import { arrayPatrocinadores } from "../../data/patrocinadores";
 import { arrayApoio } from "../../data/apoio";
@@ -40,14 +40,14 @@ export default function Home() {
       <Patrocinador title="PATROCINADORES" array={arrayPatrocinadores} />
       <Patrocinador title="APOIO" array={arrayApoio} />
       <Oportunidades />
-      <Section
+      {/* <Section
         styleImg={"imgSectionNoBorder"}
         img={imgVersa}
         descriptionImg={"Logo Versa"}
         styleComponent={"textSection"}
         component={<Versa />}
         title={"Versa"}
-      />
+      /> */}
       <Section
         title={"MEIA-ENTRADA CONECT AUTISMO"}
         styleImg={"imgSection"}

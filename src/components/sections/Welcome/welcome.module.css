@@ -4,8 +4,7 @@
   align-items: center;
   width: 1400px;
   max-width: 90%;
-  margin: 0 auto;
-  margin-top: 150px;
+  margin: 4rem auto 0;
 }
 
 .content {
@@ -76,7 +75,6 @@
 @media (max-width: 780px) {
   .container {
     flex-direction: column;
-    margin-top: 100px;
   }
 
   .content {

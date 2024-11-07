@@ -3,14 +3,10 @@ import ButtonPretty from "../../components/shared/ButtonPretty";
 export default function MeiaEntrada() {
   return (
     <>
-      <p>
-        No Conect Autismo, estamos empenhados em garantir o acesso ao
-        conhecimento sobre o autismo para todos. Com isso, oferecemos meia
-        entrada para as seguintes categorias:
-      </p>
+      <p>Veja se você se encaixa na meia entrada:</p>
       <ul>
         <li>
-          ✔︎ Pessoas com Deficiência (PcD), incluindo autistas: Apresentar
+          ✔︎Pessoas com Deficiência (PcD), incluindo autistas: Apresentar
           documento comprovativo da condição.
         </li>
 
@@ -30,17 +26,19 @@ export default function MeiaEntrada() {
           ✔︎ Pais de autistas: Documento que comprove a condição de responsável
           legal.
         </li>
-
-        <li>
-          ✔︎ Pessoas de Baixa Renda: Apresentar comprovante de renda ou outro
-          documento válido.
-        </li>
       </ul>
 
       <span>
         🔖 Para obter o benefício da meia entrada, utilize o CUPOM: MEIAENTRADA
         (tudo em maiúsculo, sem espaços) no momento da compra. Este cupom não é
         acumulativo com outros descontos ou promoções.
+      </span>
+
+      <span>
+        Lembre-se: os documentos comprobatórios devem ser apresentados na
+        entrada do evento. A meia entrada é um direito que promove a inclusão e
+        o acesso, e sua colaboração na apresentação dos documentos é necessário.
+        Caso contrario. Teremos a opção de upgrade no dia do credenciamento.
       </span>
 
       <ButtonPretty text={"Faça a sua pré-inscrição"} link={"#formEvent"} />
