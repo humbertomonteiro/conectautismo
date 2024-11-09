@@ -1,6 +1,6 @@
 .button {
-  width: 300px;
-  height: 55px;
+  width: fit-content;
+  padding: 1rem 2rem;
   font-size: 16px;
   font-weight: 600;
   color: #fff;

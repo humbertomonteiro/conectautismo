@@ -12,6 +12,11 @@ export default function Footer() {
       <div className={styles.box}>
         <p>CNPJ: 53.145.083/0001-73</p>
       </div>
+      <div className={styles.box}>
+        <p className={styles.create}>
+          Criado por <a href="">Hum Dev</a> com ❤️
+        </p>
+      </div>
     </div>
   );
 }

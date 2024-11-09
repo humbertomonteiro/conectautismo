@@ -13,9 +13,10 @@
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  border-radius: 30px;
+  border-radius: 2rem;
   border: 2px solid var(--color-2);
   padding: 2rem 1rem;
+  background: linear-gradient(to top, #00a2ff59, var(--color-1));
 }
 
 .boxImg img {

@@ -3,7 +3,7 @@ import ButtonPretty from "../../components/shared/ButtonPretty";
 export default function MeiaEntrada() {
   return (
     <>
-      <p>Veja se você se encaixa na meia entrada:</p>
+      <p id="meia-entrada">Veja se você se encaixa na meia entrada:</p>
       <ul>
         <li>
           ✔︎Pessoas com Deficiência (PcD), incluindo autistas: Apresentar
@@ -42,7 +42,7 @@ export default function MeiaEntrada() {
       </span>
 
       <ButtonPretty
-        text={"Faça a sua pré-inscrição"}
+        text={"garanta agora"}
         link={
           "https://pay.hotmart.com/A96222789P?off=2bsyn86r&bid=1730990288806"
         }

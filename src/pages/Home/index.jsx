@@ -9,6 +9,7 @@ import Social from "../../components/sections/Social";
 import PatrocinadorEExpositor from "../../components/sections/PatrocinadorEExpositor";
 import Patrocinador from "../../components/shared/Patrocinador";
 import Oportunidades from "../../components/sections/Oportunidades";
+import BoxesTickts from "../../components/sections/BoxesTickts";
 import CommonQuestions from "../../components/sections/CommonQuestions";
 import Section from "../../components/shared/Section";
 import RedesSociais from "../../components/sections/RedesSociais";
@@ -35,11 +36,9 @@ export default function Home() {
       <Video2024 />
       <Testionials />
       <Palestrantes />
-      <Social />
       <PatrocinadorEExpositor />
-      <Patrocinador title="PATROCINADORES" array={arrayPatrocinadores} />
-      <Patrocinador title="APOIO" array={arrayApoio} />
       <Oportunidades />
+      <BoxesTickts />
       {/* <Section
         styleImg={"imgSectionNoBorder"}
         img={imgVersa}
@@ -47,8 +46,9 @@ export default function Home() {
         styleComponent={"textSection"}
         component={<Versa />}
         title={"Versa"}
-      /> */}
+        /> */}
       <Section
+        id={"meia-entrada"}
         title={"MEIA-ENTRADA CONECT AUTISMO"}
         styleImg={"imgSection"}
         img={imgMeiaEntrada}
@@ -56,6 +56,9 @@ export default function Home() {
         styleComponent={"list2Section"}
         component={<MeiaEntrada />}
       />
+      <Social />
+      <Patrocinador title="PATROCINADORES" array={arrayPatrocinadores} />
+      <Patrocinador title="APOIO" array={arrayApoio} />
       <CommonQuestions />
       <CheckList />
       <RedesSociais />

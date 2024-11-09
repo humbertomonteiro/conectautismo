@@ -55,6 +55,10 @@
   .container a {
     font-size: 0.8rem;
   }
+
+  .container p {
+    font-size: 0.8rem;
+  }
   .container > span {
     display: none;
   }

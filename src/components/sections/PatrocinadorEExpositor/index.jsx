@@ -8,10 +8,10 @@ import { FaArrowDown } from "react-icons/fa";
 
 export default function PatrocinadorEExpositor() {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} data-aos="zoom-in">
       <div className={styles.containerContent}>
-        <Title text={"Patrocinador & Expositor"} />
-        <div className={styles.content} data-aos="zoom-in">
+        <h2>Patrocinador & Expositor</h2>
+        <div className={styles.content}>
           <p>
             Garantindo visibilidade e posicionamento. Ideal para quem quer se
             posicionar e mostrar sua marca. Focado em trazer sua relevância ao

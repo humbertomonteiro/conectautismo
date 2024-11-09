@@ -9,8 +9,8 @@ export default function TopPromoBar() {
       {/* <Contagem dateEvent={"07 nov 2024"} /> */}
       <p>DISPONIVEL POR TEMPO LIMITADO</p>
       <a
-        href="https://pay.hotmart.com/A96222789P?off=2bsyn86r&bid=1730990288806"
-        target="_blank"
+        href="#tickts"
+        // target="_blank"
       >
         GARANTIR AGORA
       </a>

@@ -22,10 +22,9 @@ export default function Video2024() {
             <iframe
               src="https://www.youtube.com/embed/vhyD2sDpzvo?si=2w4AhEj7EClq6uep"
               title="YouTube video player"
-              frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
+              referrerolicy="strict-origin-when-cross-origin"
+              allowFullScreen
             ></iframe>
           </div>
           <div className={styles.images}>
@@ -49,15 +48,13 @@ export default function Video2024() {
 
       <div className={styles.buttons}>
         <ButtonPretty
-          link={
-            "https://pay.hotmart.com/A96222789P?off=2bsyn86r&bid=1730990288806"
-          }
-          target="_blank"
+          link={"#tickts"}
+          // target="_blank"
           text={"quero me conectar também"}
         />
         <ButtonBasic
           link="https://conectautismo.pixieset.com"
-          text=" Ver todas as imagens"
+          text="Fotos Conect 2024"
           icon={<FaArrowRight />}
         />
       </div>

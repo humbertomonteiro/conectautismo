@@ -11,3 +11,11 @@
 .box p {
   color: var(--color-text-gray);
 }
+
+.create {
+  font-size: 0.7rem;
+}
+
+.create a {
+  color: var(--color-text);
+}

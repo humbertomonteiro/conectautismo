@@ -6,6 +6,10 @@
   width: 1400px;
   max-width: 90%;
   margin: 0 auto;
+  background: linear-gradient(to top, #00a2ff59, var(--color-1));
+  border: 1px solid var(--color-border);
+  border-radius: 2rem;
+  padding: 1rem;
 }
 
 .ballonWhatsapp {
@@ -16,6 +20,7 @@
   background: linear-gradient(45deg, var(--color-3), var(--color-1));
   padding: 1.5rem;
   border-radius: 1rem;
+  border: 1px solid var(--color-border);
 }
 
 .ballonWhatsapp > svg {
@@ -30,7 +35,7 @@
 
 .ballonWhatsapp p {
   display: block;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .questions {
@@ -45,7 +50,7 @@
   background-color: transparent;
   color: var(--color-text);
   border: 0;
-  border-bottom: 1px solid var(--color-text);
+  border-bottom: 1px solid var(--color-border);
   font-weight: bold;
   font-size: 1rem;
   display: flex;

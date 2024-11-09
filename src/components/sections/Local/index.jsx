@@ -28,9 +28,9 @@ export default function Local() {
           <div className={styles.map}>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7962.645344873391!2d-38.453857000000006!3d-3.7396969999999996!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c7464d784ca471%3A0x2401a6bfcd1dc08d!2sGran%20Mareiro%20Hotel!5e0!3m2!1spt-BR!2sbr!4v1720821138262!5m2!1spt-BR!2sbr"
-              allowfullscreen=""
+              allowFullScreen=""
               loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
+              referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
           <div className={styles.text}>
@@ -47,7 +47,7 @@ export default function Local() {
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7962.707493618353!2d-38.456573!3d-3.7328489999999994!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c7479bd21e6f1d%3A0xc36dd965f8cfa4ca!2sOrla%20Praia%20Club%3A%20Gastronomia%2C%20Drinks%2C%20Happy%20Hour%2C%20Barraca%20de%20Praia%20em%20Fortaleza!5e0!3m2!1spt-BR!2sbr!4v1720821271519!5m2!1spt-BR!2sbr"
               allowfullscreen=""
               loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
+              referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
           <div className={styles.text}>

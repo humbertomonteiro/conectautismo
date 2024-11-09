@@ -3,11 +3,16 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 8rem;
 }
 
 .containerContent {
-  width: 1200px;
-  max-width: 90%;
+  /* width: 1200px; */
+  width: 100%;
+  background: linear-gradient(to top, #00a2ff59, var(--color-1));
+  /* border-radius: 1rem;
+  border: 1px solid #ffffff8f; */
+  padding: 1rem;
 }
 
 .content {
@@ -15,6 +20,16 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-bottom: 2rem;
+}
+
+.containerContent h2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+  font-size: 2.2rem;
 }
 
 .content p {
@@ -35,5 +50,13 @@
 @media (max-width: 720px) {
   .buttons {
     flex-direction: column-reverse;
+  }
+
+  .container {
+    margin-top: 4rem;
+  }
+
+  .containerContent h2 {
+    font-size: 1.7rem;
   }
 }
