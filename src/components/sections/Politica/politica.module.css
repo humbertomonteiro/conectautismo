@@ -3,7 +3,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #1d1d1daf;
+  background-color: #151d30d5;
+  border-top: 2px solid var(--color-border);
+  border-bottom: 2px solid var(--color-border);
   padding-top: 1rem;
 }
 

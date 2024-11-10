@@ -1,4 +1,3 @@
-import { useMemo } from "react";
 import styles from "./testimonials.module.css";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -11,44 +10,38 @@ import {
 
 import { testimonials } from "../../../data/testimonials";
 import logo from "../../../assets/imgs/logo/logo.jpg";
-import Title from "../../shared/Title";
+// import Title from "../../shared/Title";
 
 import { FaStar } from "react-icons/fa";
 
 export default function Testimonials() {
-  const slides = useMemo(
-    () =>
-      testimonials.map((testimony) => (
-        <SwiperSlide key={testimony.name}>
-          <div className={styles.testimony}>
-            <div className={styles.img}>
-              <img
-                src={
-                  testimony.img === "" || !testimony.img ? logo : testimony.img
-                }
-                alt={testimony.name}
-              />
-            </div>
-            <div className={styles.content}>
-              <strong>{testimony.name}</strong>
-              <div className={styles.stars}>
-                <FaStar />
-                <FaStar />
-                <FaStar />
-                <FaStar />
-                <FaStar />
-              </div>
-              <p>{testimony.comment}</p>
-            </div>
+  const slides = testimonials.map((testimony) => (
+    <SwiperSlide key={testimony.name}>
+      <div className={styles.testimony}>
+        <div className={styles.img}>
+          <img
+            src={testimony.img === "" || !testimony.img ? logo : testimony.img}
+            alt={testimony.name}
+          />
+        </div>
+        <div className={styles.content}>
+          <strong>{testimony.name}</strong>
+          <div className={styles.stars}>
+            <FaStar />
+            <FaStar />
+            <FaStar />
+            <FaStar />
+            <FaStar />
           </div>
-        </SwiperSlide>
-      )),
-    [testimonials]
-  );
+          <p>{testimony.comment}</p>
+        </div>
+      </div>
+    </SwiperSlide>
+  ));
 
   return (
     <section className={styles.container}>
-      <Title text="reviews" />
+      {/* <Title text="reviews" /> */}
       <div className={styles.testimonials} data-aos={"zoom-in"}>
         <Swiper
           effect={"coverflow"}
@@ -72,7 +65,7 @@ export default function Testimonials() {
               spaceBetween: 10,
             },
             "@0.75": {
-              slidesPerView: 2,
+              slidesPerView: 1,
             },
           }}
           pagination={{

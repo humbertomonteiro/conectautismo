@@ -8,7 +8,7 @@ import { FaArrowDown } from "react-icons/fa";
 
 export default function PatrocinadorEExpositor() {
   return (
-    <div className={styles.container} data-aos="zoom-in">
+    <div className={styles.container} data-aos="fade-up">
       <div className={styles.containerContent}>
         <h2>Patrocinador & Expositor</h2>
         <div className={styles.content}>

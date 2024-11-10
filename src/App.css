@@ -3,12 +3,13 @@
 :root {
   --color-text: #fff;
   --color-text-gray: #9c9c9c;
-  --color-1: #062c4e;
-  --color-2: #cd932e;
-  --color-3: #00a3ff;
-  --color-4: #cf40db;
+  --color-1: #151d30;
+  --color-2: #c78317;
+  --color-3: #339ccc;
+  --color-4: #dfa99e;
 
-  --color-border: #6672a3;
+  --color-border: #fff;
+  --bg-gradient: linear-gradient(15deg, #125c7ed8 0%, #151d30c5 90%);
 }
 
 * {
@@ -32,9 +33,7 @@ img {
 }
 
 .area {
-  /* background: url("./assets/imgs/background/background.png") no-repeat top fixed;
-  background-size: cover; */
-  background-image: linear-gradient(to top, #02213a, #086488a6),
+  background-image: linear-gradient(to top, #02213a, #01befd93),
     url("./assets/imgs/background/bg.jpg");
   background-size: cover;
   background-position: center;

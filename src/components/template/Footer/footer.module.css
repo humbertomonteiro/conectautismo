@@ -5,7 +5,7 @@
   gap: 0.5rem;
   align-items: center;
   height: 130px;
-  background-color: #00000075;
+  background-color: #151d30;
 }
 
 .box p {
@@ -17,5 +17,5 @@
 }
 
 .create a {
-  color: var(--color-text);
+  color: var(--color-text-gray);
 }

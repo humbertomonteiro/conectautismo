@@ -11,12 +11,10 @@
   max-width: 100%;
   display: flex;
   gap: 2rem;
-  justify-content: space-between;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   border-radius: 2rem;
-  padding: 0 2rem;
-  margin-top: 2rem;
   border-radius: 1rem;
 }
 
@@ -32,8 +30,10 @@
   padding: 1rem;
   border-radius: 1rem;
   gap: 1rem;
-  max-height: 250px;
+  width: 100%;
+  max-height: 200px;
   overflow-y: scroll;
+  margin-bottom: 2rem;
 }
 
 .testimony::-webkit-scrollbar {
@@ -80,9 +80,14 @@
   align-items: center;
 }
 
-@media (max-width: 780px) {
-  .testimony {
+@media (max-width: 884px) {
+  /* .testimony {
     margin-bottom: 3rem;
+  } */
+
+  .testimonials {
+    width: 800px;
+    max-width: 90%;
   }
 
   .testimony .img {

@@ -3,7 +3,7 @@ import styles from "./home.module.css";
 import Welcome from "../../components/sections/Welcome";
 // import FormEvent from "../../components/sections/FormEvent";
 import Video2024 from "../../components/sections/Video2024";
-import Testionials from "../../components/sections/Testionials";
+// import Testionials from "../../components/sections/Testionials";
 import Palestrantes from "../../components/sections/Palestrantes";
 import Social from "../../components/sections/Social";
 import PatrocinadorEExpositor from "../../components/sections/PatrocinadorEExpositor";
@@ -27,6 +27,7 @@ import MeiaEntrada from "../../contentSections/MeiaEntrada";
 import { arrayPatrocinadores } from "../../data/patrocinadores";
 import { arrayApoio } from "../../data/apoio";
 import CheckList from "../../components/sections/CheckList";
+import CarouselScrollInfinit from "../../components/shared/CarouselScrollInfinit";
 
 export default function Home() {
   return (
@@ -34,7 +35,7 @@ export default function Home() {
       <Welcome />
       {/* <FormEvent /> */}
       <Video2024 />
-      <Testionials />
+      {/* <Testionials /> */}
       <Palestrantes />
       <PatrocinadorEExpositor />
       <Oportunidades />
@@ -57,6 +58,10 @@ export default function Home() {
         component={<MeiaEntrada />}
       />
       <Social />
+      {/* <CarouselScrollInfinit
+        title={"Patrocinadores"}
+        array={arrayPatrocinadores}
+      /> */}
       <Patrocinador title="PATROCINADORES" array={arrayPatrocinadores} />
       <Patrocinador title="APOIO" array={arrayApoio} />
       <CommonQuestions />

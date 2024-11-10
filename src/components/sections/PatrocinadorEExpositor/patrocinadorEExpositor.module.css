@@ -7,11 +7,10 @@
 }
 
 .containerContent {
-  /* width: 1200px; */
   width: 100%;
-  background: linear-gradient(to top, #00a2ff59, var(--color-1));
-  /* border-radius: 1rem;
-  border: 1px solid #ffffff8f; */
+  background: var(--bg-gradient);
+  border-top: 2px solid var(--color-border);
+  border-bottom: 2px solid var(--color-border);
   padding: 1rem;
 }
 

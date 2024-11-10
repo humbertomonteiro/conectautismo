@@ -6,6 +6,7 @@ import "aos/dist/aos.css";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/effect-coverflow";
+import "swiper/css/effect-cards";
 
 import { useEffect } from "react";
 import { BrowserRouter } from "react-router-dom";

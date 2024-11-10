@@ -2,14 +2,14 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  gap: 1rem;
+  gap: 2rem;
   width: 1400px;
   max-width: 90%;
   margin: 0 auto;
-  background: linear-gradient(to top, #00a2ff59, var(--color-1));
-  border: 1px solid var(--color-border);
-  border-radius: 2rem;
-  padding: 1rem;
+  background: var(--bg-gradient);
+  border: 2px solid var(--color-border);
+  border-radius: 1rem;
+  padding: 2rem;
 }
 
 .ballonWhatsapp {
@@ -17,7 +17,7 @@
   display: flex;
   flex-direction: column;
   max-width: 100%;
-  background: linear-gradient(45deg, var(--color-3), var(--color-1));
+  background: linear-gradient(-15deg, var(--color-3), var(--color-1));
   padding: 1.5rem;
   border-radius: 1rem;
   border: 1px solid var(--color-border);

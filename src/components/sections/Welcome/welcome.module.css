@@ -31,11 +31,10 @@
 }
 
 .content p {
-  font-size: 0.9rem;
-  line-height: 150%;
+  font-size: 1.1rem;
+  line-height: 120%;
   padding: 0 1.5rem;
-  width: 70%;
-  color: #dfdfdf;
+  width: 80%;
 }
 
 .container a {
@@ -91,5 +90,6 @@
 
   .content p {
     width: 100%;
+    font-size: 0.9rem;
   }
 }

@@ -24,11 +24,10 @@
   margin-bottom: 2rem;
   text-align: center;
   line-height: 150%;
+  background: var(--bg-gradient);
+  border-radius: 1rem;
+  border: 2px solid var(--color-border);
 }
-
-/* .box {
-  border-left: dashed 2px var(--color-2);
-} */
 
 .box img {
   width: 30%;
@@ -60,6 +59,9 @@
 }
 
 @media (max-width: 450px) {
+  .box {
+    border-radius: 0rem;
+  }
   .box p {
     font-size: 0.95rem;
   }
