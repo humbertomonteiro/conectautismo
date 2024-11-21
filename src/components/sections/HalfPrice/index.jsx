@@ -61,9 +61,7 @@ export default function HalfiPrice() {
 
           <ButtonPretty
             text={"garanta agora"}
-            link={
-              "https://pay.hotmart.com/A96222789P?off=2bsyn86r&bid=1730990288806"
-            }
+            link={"https://pay.hotmart.com/A96222789P?off=dw8zuz6z"}
             target="_blank"
           />
         </div>

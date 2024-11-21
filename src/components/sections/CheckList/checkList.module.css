@@ -4,7 +4,7 @@
   background: var(--bg-gradient);
   border-top: var(--color-border);
   border-bottom: var(--color-border);
-  padding: 2rem;
+  padding: 1.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;

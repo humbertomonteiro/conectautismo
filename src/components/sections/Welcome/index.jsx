@@ -10,18 +10,17 @@ export default function Welcome() {
           <div className={styles.logo}>
             <img loading="lazy" src={logo} alt="Logo Conect Autismo" />
           </div>
-          <h1>PRE VENDA CONECT AUTISMO LIBERADO</h1>
+          <h1>Segunda edição Conect Autismo</h1>
           <p>
-            Venha fazer parte do evento mais aguardado do ano! Se você está em
-            busca de inspiração, conexões verdadeiras e momentos inesquecíveis,
-            seu lugar é aqui!
+            Prepare-se para a 2ª edição do maior Congresso de TEA Norte e
+            Nordeste. 23 & 24 de agosto de 2025.
           </p>
           <a
             href="#tickts"
             // target="_blank"
             type="submit"
           >
-            GARANTIR PRÉ-VENDA
+            {"Ingressos limitados".toUpperCase()}
           </a>
         </div>
       </div>

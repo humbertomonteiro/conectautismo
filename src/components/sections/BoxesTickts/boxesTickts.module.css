@@ -23,7 +23,7 @@
 .box {
   flex: 1;
   background: var(--bg-gradient);
-  padding: 2rem;
+  padding: 1.5rem;
   border-radius: 1rem;
   border: var(--color-border);
   height: fit-content;
@@ -73,8 +73,11 @@
 .shop a {
   color: #fff;
   font-weight: bold;
-  text-decoration: underline;
   text-align: center;
+}
+
+.shop .link {
+  text-decoration: underline;
 }
 
 @media (max-width: 930px) {

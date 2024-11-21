@@ -61,9 +61,8 @@ export default function CheckList() {
         </div>
         <ButtonPretty
           text={"Garantir minha vaga"}
-          link={
-            "https://pay.hotmart.com/A96222789P?off=2bsyn86r&bid=1730990288806&_gl=1*1vuf1r1*_ga*NzA2OTE0OTMuMTY4NTU2MzQzMg..*_ga_1PCEYDM0JC*MTczMTIyNzU1NS4xMi4xLjE3MzEyMzgzOTQuNjAuMC4w"
-          }
+          target="_blank"
+          link={"https://pay.hotmart.com/A96222789P?off=dw8zuz6z"}
         />
       </section>
     </>

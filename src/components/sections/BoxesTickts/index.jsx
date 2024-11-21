@@ -9,11 +9,9 @@ export default function BoxesTickts() {
       <Title text={"INGRESSO CONECT AUTISMO 2025"} />
       <div className={styles.content}>
         <ButtonPretty
-          link={
-            "https://pay.hotmart.com/A96222789P?off=2bsyn86r&bid=1730990288806"
-          }
+          link={"https://pay.hotmart.com/A96222789P?off=dw8zuz6z"}
           target="_blank"
-          text={"LOTE LIMITADO PRE VENDA"}
+          text={"LOTE LIMITADO"}
         />
         <div className={styles.boxes}>
           <div className={styles.box} data-aos="fade-up">
@@ -31,7 +29,7 @@ export default function BoxesTickts() {
                 Especialistas renomados compartilharão insights valiosos e
                 histórias inspiradoras do mundo do autismo.
               </li>
-              <li>Conteúdo gravado por 12 messes.</li>
+              <li>Conteúdo gravado por 24 messes.</li>
               <li>
                 Enriqueça seu portfólio profissional com um certificado
                 qualificado de comprovação de horas cursadas.
@@ -46,20 +44,27 @@ export default function BoxesTickts() {
             </ul>
             <div className={styles.shop}>
               <ButtonPretty
-                link={
-                  "https://pay.hotmart.com/A96222789P?off=2bsyn86r&bid=1730990288806"
-                }
+                link={"https://pay.hotmart.com/A96222789P?off=dw8zuz6z"}
                 target="_blank"
-                text={"garantir agora"}
+                text={"Garantir Com festa"}
               />
-              <strong>R$ 898,00</strong>
-              <a href="#meia-entrada">Conferir condições de meia-entrada</a>
+
+              <strong>R$ 1098,00</strong>
+              <ButtonPretty
+                link={"https://pay.hotmart.com/A96222789P?off=vlgr3q0z"}
+                target="_blank"
+                text={"Garantir Sem festa"}
+              />
+              <strong>R$ 948,00</strong>
+              <a className={styles.link} href="#meia-entrada">
+                Conferir condições de meia-entrada
+              </a>
             </div>
           </div>
 
           <div className={styles.box} data-aos="fade-up">
             <h2>
-              Festa Pré Conet Autismo <br />
+              Festa Pré Conect Autismo <br />
               22/08/2025 em Fortaleza.
             </h2>
             <p>
@@ -68,8 +73,8 @@ export default function BoxesTickts() {
               interação entre palestrantes e congressistas.
             </p>
             <ul>
-              <li>Open Bar.</li>
-              <li>Festa.</li>
+              <li>Open Bar Premium.</li>
+              <li>Finguer Foods Buffet.</li>
               <li>Local Aconchegante.</li>
               <li>Bate-Papo.</li>
               <li>Show AO VIVO.</li>

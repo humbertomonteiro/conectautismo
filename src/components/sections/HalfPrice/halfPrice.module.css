@@ -8,7 +8,7 @@
   background: var(--bg-gradient);
   border: var(--color-border);
   border-radius: 1rem;
-  padding: 2rem;
+  padding: 1.5rem;
 }
 
 .img {

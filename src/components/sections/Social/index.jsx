@@ -12,9 +12,7 @@ export default function Social() {
       <div className={styles.boxImg} data-aos="zoom-in">
         <img loading="lazy" src={social} alt="social" />
         <ButtonPretty
-          link={
-            "https://pay.hotmart.com/A96222789P?off=2bsyn86r&bid=1730990288806"
-          }
+          link={"https://pay.hotmart.com/A96222789P?off=dw8zuz6z"}
           target="_blank"
           text={"Quero ajudar o mundo"}
         />
