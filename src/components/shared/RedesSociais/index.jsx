@@ -1,8 +1,7 @@
 import styles from "./redesSociais.module.css";
 import { IoLogoInstagram } from "react-icons/io";
-import { FaWhatsapp, FaFacebookF } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
-import { FaXTwitter } from "react-icons/fa6";
 
 export default function RedesSociais() {
   return (

@@ -2,8 +2,8 @@
   width: 100%;
   margin: auto 0;
   background: var(--bg-gradient);
-  border-top: 2px solid var(--color-border);
-  border-bottom: 2px solid var(--color-border);
+  border-top: var(--color-border);
+  border-bottom: var(--color-border);
   padding: 2rem;
   display: flex;
   flex-direction: column;

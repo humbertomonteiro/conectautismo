@@ -9,8 +9,8 @@
 .containerContent {
   width: 100%;
   background: var(--bg-gradient);
-  border-top: 2px solid var(--color-border);
-  border-bottom: 2px solid var(--color-border);
+  border-top: var(--color-border);
+  border-bottom: var(--color-border);
   padding: 1rem;
 }
 

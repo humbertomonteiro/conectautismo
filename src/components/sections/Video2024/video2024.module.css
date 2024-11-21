@@ -1,7 +1,4 @@
 .container {
-  background: var(--bg-gradient);
-  border-top: 2px solid var(--color-border);
-  border-bottom: 2px solid var(--color-border);
   padding: 2rem 0;
   margin: 0 auto;
   display: flex;

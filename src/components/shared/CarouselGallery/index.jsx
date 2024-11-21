@@ -25,6 +25,7 @@ export default function CarouselGallery({ array }) {
         delay: 2000,
         disableOnInteraction: false,
       }}
+      grabCursor={true}
       pagination={{
         clickable: true,
       }}
@@ -34,12 +35,8 @@ export default function CarouselGallery({ array }) {
           spaceBetween: 10,
         },
         "@0.75": {
-          slidesPerView: 2,
+          slidesPerView: 4,
           spaceBetween: 20,
-        },
-        "@1.00": {
-          slidesPerView: 3,
-          spaceBetween: 40,
         },
         "@1.50": {
           slidesPerView: 4,
