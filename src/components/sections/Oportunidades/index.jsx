@@ -21,13 +21,9 @@ import Title from "../../shared/Title";
 
 export default function oportunidades() {
   return (
-    <div>
+    <div className={styles.container}>
       <Title text={"OPORTUNIDADES"} />
-      <div
-        className={styles.containerBoxes}
-        data-aos="zoom-in"
-        data-delay="200"
-      >
+      <div className={styles.boxes} data-aos="zoom-in" data-delay="200">
         <>
           <Swiper
             effect={"coverflow"}

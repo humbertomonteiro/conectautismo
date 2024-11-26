@@ -1,7 +1,5 @@
 import styles from "./patrocinadorEExpositor.module.css";
 
-import Title from "../../shared/Title";
-import ButtonBasic from "../../shared/ButtonBasic";
 import ButtonPretty from "../../shared/ButtonPretty";
 
 import { FaArrowDown } from "react-icons/fa";
@@ -18,7 +16,8 @@ export default function PatrocinadorEExpositor() {
             mercado.
           </p>
           <div className={styles.buttons}>
-            <ButtonBasic
+            <ButtonPretty
+              data-color="blue"
               link="#patrocinador"
               text="Todos os patrocinadores"
               icon={<FaArrowDown />}

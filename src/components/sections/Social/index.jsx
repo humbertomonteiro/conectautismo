@@ -7,7 +7,7 @@ import ButtonPretty from "../../shared/ButtonPretty";
 
 export default function Social() {
   return (
-    <div className={styles.container}>
+    <section className={styles.container}>
       <Title text="SOCIAL" />
       <div className={styles.boxImg} data-aos="zoom-in">
         <img loading="lazy" src={social} alt="social" />
@@ -17,6 +17,6 @@ export default function Social() {
           text={"Quero ajudar o mundo"}
         />
       </div>
-    </div>
+    </section>
   );
 }

@@ -3,13 +3,13 @@
 :root {
   --color-text: #fff;
   --color-text-gray: #9c9c9c;
-  --color-1: #151d30;
+  --color-1: #0a0f1d;
   --color-2: #c78317;
   --color-3: #339ccc;
   --color-4: #dfa99e;
 
   --color-border: 1px solid #339ccccb;
-  --bg-gradient: linear-gradient(15deg, #125c7ed8 0%, #151d30c5 90%);
+  --bg-gradient: linear-gradient(15deg, #004e72ec 0%, #072c3dbd 90%);
 }
 
 * {
@@ -33,7 +33,7 @@ img {
 }
 
 .area {
-  background-image: linear-gradient(to top, #02213a, #01befd93),
+  background-image: linear-gradient(to top, #02213a, #086488a6),
     url("./assets/imgs/background/bg.jpg");
   background-size: cover;
   background-position: center;

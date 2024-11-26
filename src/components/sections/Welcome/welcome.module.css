@@ -35,42 +35,7 @@
   line-height: 120%;
   padding: 0 1.5rem;
   width: 80%;
-}
-
-.container a {
-  margin-top: 1rem;
-  padding: 1rem 2rem;
-  font-size: 1.3rem;
-  color: #fff;
-  cursor: pointer;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5rem;
-  border: none;
-  background-size: 300% 100%;
-  border-radius: 50px;
-  moz-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
-  background-image: linear-gradient(
-    to right,
-    #fc6076,
-    #ff9a44,
-    #ef9d43,
-    #e75516
-  );
-  box-shadow: 0 4px 15px 0 rgba(252, 104, 110, 0.75);
-}
-
-.container a:hover {
-  background-position: 100% 0;
-  moz-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
+  margin-bottom: 1rem;
 }
 
 @media (max-width: 780px) {

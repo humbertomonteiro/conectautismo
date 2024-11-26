@@ -7,7 +7,7 @@
 }
 
 .testimonials {
-  width: 1400px;
+  width: 400px;
   max-width: 100%;
   display: flex;
   gap: 2rem;
@@ -81,12 +81,7 @@
 }
 
 @media (max-width: 884px) {
-  /* .testimony {
-    margin-bottom: 3rem;
-  } */
-
   .testimonials {
-    width: 800px;
     max-width: 90%;
   }
 

@@ -3,15 +3,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   width: 1400px;
-  max-width: 90%;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 .boxes {
@@ -22,6 +16,7 @@
 
 .box {
   flex: 1;
+  max-width: 90%;
   background: var(--bg-gradient);
   padding: 1.5rem;
   border-radius: 1rem;
@@ -80,9 +75,10 @@
   text-decoration: underline;
 }
 
-@media (max-width: 930px) {
+@media (max-width: 1270px) {
   .boxes {
     flex-direction: column;
+    align-items: center;
   }
 }
 

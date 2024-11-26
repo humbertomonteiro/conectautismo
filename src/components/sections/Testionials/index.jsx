@@ -42,7 +42,7 @@ export default function Testimonials() {
   return (
     <section className={styles.container}>
       {/* <Title text="reviews" /> */}
-      <div className={styles.testimonials} data-aos={"zoom-in"}>
+      <div className={styles.testimonials}>
         <Swiper
           effect={"coverflow"}
           grabCursor={true}

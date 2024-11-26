@@ -1,6 +1,7 @@
 import styles from "./welcome.module.css";
 
 import logo from "../../../assets/imgs/logo/logo-png.png";
+import ButtonPretty from "../../shared/ButtonPretty";
 
 export default function Welcome() {
   return (
@@ -15,13 +16,7 @@ export default function Welcome() {
             Prepare-se para a 2ª edição do maior Congresso de TEA Norte e
             Nordeste. 23 & 24 de agosto de 2025.
           </p>
-          <a
-            href="#tickts"
-            // target="_blank"
-            type="submit"
-          >
-            {"Ingressos limitados".toUpperCase()}
-          </a>
+          <ButtonPretty link={"#tickts"} text={"ingressos limitados"} />
         </div>
       </div>
     </section>

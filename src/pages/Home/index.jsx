@@ -3,6 +3,7 @@ import styles from "./home.module.css";
 import Welcome from "../../components/sections/Welcome";
 import Video2024 from "../../components/sections/Video2024";
 import Palestrantes from "../../components/sections/Palestrantes";
+import SchoolConect from "../../components/sections/SchoolConect";
 import Social from "../../components/sections/Social";
 import PatrocinadorEExpositor from "../../components/sections/PatrocinadorEExpositor";
 import Patrocinador from "../../components/shared/Patrocinador";
@@ -28,6 +29,7 @@ export default function Home() {
       <Oportunidades />
       <BoxesTickts />
       <HalfiPrice />
+      <SchoolConect />
       <Social />
       <Patrocinador title="PATROCINADORES" array={arrayPatrocinadores} />
       <Patrocinador title="APOIO" array={arrayApoio} />

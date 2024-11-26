@@ -13,11 +13,10 @@
 }
 
 .ballonWhatsapp {
-  width: 350px;
   display: flex;
   flex-direction: column;
   max-width: 100%;
-  background: linear-gradient(-15deg, var(--color-3), var(--color-1));
+  background: linear-gradient(-15deg, var(--color-1), var(--color-3));
   padding: 1rem;
   border-radius: 1rem;
   border: var(--color-border);
