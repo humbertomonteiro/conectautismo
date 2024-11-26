@@ -13,7 +13,7 @@ export default function BoxesTickts() {
         text={"LOTE LIMITADO"}
       />
       <div className={styles.boxes}>
-        <div className={styles.box} data-aos="fade-up">
+        <div className={styles.box} data-aos="zoom-in">
           <h2>INGRESSO COMPLETO CONECT 2025</h2>
           <h3>2 dias de congresso + PRÉ-Festa.</h3>
 
@@ -65,7 +65,7 @@ export default function BoxesTickts() {
           </div>
         </div>
 
-        <div className={styles.box} data-aos="fade-up">
+        <div className={styles.box} data-aos="zoom-in">
           <h2>
             Festa Pré Conect Autismo <br />
             22/08/2025 em Fortaleza.
@@ -97,7 +97,7 @@ export default function BoxesTickts() {
           </div>
         </div>
 
-        <div className={styles.box} data-aos="fade-up">
+        <div className={styles.box} data-aos="zoom-in">
           <h2>GRUPO 20% DE DESCONTO</h2>
           <p></p>
           <ul>
