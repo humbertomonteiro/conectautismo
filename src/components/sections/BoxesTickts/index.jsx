@@ -10,7 +10,7 @@ export default function BoxesTickts() {
       <ButtonPretty
         link={"https://pay.hotmart.com/A96222789P?off=dw8zuz6z"}
         target="_blank"
-        text={"LOTE LIMITADO"}
+        text={"garantir agora"}
       />
       <div className={styles.boxes}>
         <div className={styles.box} data-aos="zoom-in">
