@@ -54,7 +54,7 @@ export default function oportunidades() {
               },
             }}
             modules={[EffectCoverflow, Pagination, Autoplay, Navigation]}
-            className="mySwiper"
+            className={styles.mySwiper}
           >
             <SwiperSlide>
               <div className={styles.box} data-aos="zoom-in">

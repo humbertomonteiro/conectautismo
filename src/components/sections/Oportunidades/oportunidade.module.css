@@ -42,11 +42,6 @@
   line-height: 120%;
 }
 
-/* .box p::-webkit-scrollbar,
-.firstBox p::-webkit-scrollbar {
-  display: none;
-} */
-
 .borderLeft {
   border-left: dashed 2px #5f476b;
 }

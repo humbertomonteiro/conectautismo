@@ -112,10 +112,23 @@ export default function BoxesTickts() {
           </ul>
           <div className={styles.shop}>
             <ButtonPretty
+              link={
+                "https://pay.hotmart.com/A96222789P?off=fwurs0rj&bid=1732896360049"
+              }
+              target="_blank"
+              text="Grupo com festa"
+            />
+            <strong>
+              R$ 878,40 <span>cada</span>
+            </strong>
+            <ButtonPretty
               link={"https://pay.hotmart.com/A96222789P?off=gndkzfaq"}
               target="_blank"
-              text={"quero muito ir"}
+              text="Grupo sem festa"
             />
+            <strong>
+              R$ 750,40 <span>cada</span>
+            </strong>
           </div>
         </div>
       </div>

@@ -66,6 +66,10 @@
   text-align: center;
 }
 
+.shop strong span {
+  font-size: 1rem;
+}
+
 .shop a {
   color: #fff;
   font-weight: bold;
