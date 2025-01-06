@@ -55,14 +55,14 @@ export default function Local() {
           <div className={styles.list}>
             <h3>Gran Mareiro Hotel</h3>
             <ul>
-              <li>local mais glamuroso da cidade</li>
+              <li>Local mais glamuroso da cidade</li>
               <li>Com 1 grande palco na Expo</li>
               <li>⁠Stands na área secundária</li>
-              <li>coffe break</li>
-              <li>⁠opção de almoço buffer no local</li>
-              <li>comodidade para hospedagem</li>
-              <li>⁠fácil acesso</li>
-              <li>⁠estacionamento seguro e amplo</li>
+              <li>Coffe break</li>
+              <li>⁠Opção de almoço buffer no local</li>
+              <li>Comodidade para hospedagem</li>
+              <li>⁠Fácil acesso</li>
+              <li>⁠Estacionamento seguro e amplo</li>
             </ul>
           </div>
           <div className={styles.map}>
