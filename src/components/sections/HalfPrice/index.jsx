@@ -18,7 +18,7 @@ export default function HalfiPrice() {
           />
         </div>
         <div className={styles.content}>
-          <p id="meia-entrada">Veja se você se encaixa na meia entrada:</p>
+          <h3 id="meia-entrada">Veja se você se encaixa na meia entrada:</h3>
           <ul>
             <li>
               ✔︎ Pessoas com Deficiência (PcD), incluindo autistas: Apresentar
@@ -58,12 +58,28 @@ export default function HalfiPrice() {
             documentos é necessário. Caso contrario. Teremos a opção de upgrade
             no dia do credenciamento.
           </span>
+        </div>
 
+        <div className={styles.button}>
           <ButtonPretty
-            text={"garanta agora"}
-            link={"https://pay.hotmart.com/A96222789P?off=dw8zuz6z"}
+            text={"garanta meia com festa"}
+            link={
+              "https://pay.hotmart.com/A96222789P?checkoutMode=6&off=dsj40qa5&offDiscount=MEIAENTRADA"
+            }
             target="_blank"
           />
+          <strong>R$ 574,00</strong>
+        </div>
+
+        <div className={styles.button}>
+          <ButtonPretty
+            text={"garanta meia sem festa"}
+            link={
+              "https://pay.hotmart.com/A96222789P?checkoutMode=6&off=t35c4yn3&offDiscount=MEIAENTRADA"
+            }
+            target="_blank"
+          />
+          <strong>R$ 499,00</strong>
         </div>
       </div>
     </section>

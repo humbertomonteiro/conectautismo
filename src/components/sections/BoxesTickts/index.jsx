@@ -2,19 +2,32 @@ import styles from "./boxesTickts.module.css";
 
 import Title from "../../shared/Title";
 import ButtonPretty from "../../shared/ButtonPretty";
+import { IoRocketOutline } from "react-icons/io5";
+import { MdDoneOutline } from "react-icons/md";
 
 export default function BoxesTickts() {
   return (
     <section id="tickts" className={styles.container}>
       <Title text={"INGRESSO CONECT AUTISMO 2025"} />
+      <ul>
+        <li>
+          Pré-venda - Esgotada <MdDoneOutline />
+        </li>
+        <li>
+          Primeiro lote - Esgotado <MdDoneOutline />
+        </li>
+        <li>
+          Segundo lote - Voando <IoRocketOutline />
+        </li>
+      </ul>
       <ButtonPretty
-        link={"https://pay.hotmart.com/A96222789P?off=dw8zuz6z"}
+        link={"https://pay.hotmart.com/A96222789P?off=dsj40qa5"}
         target="_blank"
         text={"garantir agora"}
       />
       <div className={styles.boxes}>
         <div className={styles.box} data-aos="zoom-in">
-          <h2>INGRESSO COMPLETO CONECT 2025</h2>
+          <h2>INGRESSO COMPLETO CONECT 2025 - (2º Lote)</h2>
           <h3>2 dias de congresso + PRÉ-Festa.</h3>
 
           <ul>
@@ -47,18 +60,18 @@ export default function BoxesTickts() {
           </ul>
           <div className={styles.shop}>
             <ButtonPretty
-              link={"https://pay.hotmart.com/A96222789P?off=dw8zuz6z"}
+              link={"https://pay.hotmart.com/A96222789P?off=dsj40qa5"}
               target="_blank"
               text={"Garantir Com festa"}
             />
 
-            <strong>R$ 1098,00</strong>
+            <strong>R$ 1148,00</strong>
             <ButtonPretty
-              link={"https://pay.hotmart.com/A96222789P?off=vlgr3q0z"}
+              link={"https://pay.hotmart.com/A96222789P?off=t35c4yn3"}
               target="_blank"
               text={"Garantir Sem festa"}
             />
-            <strong>R$ 948,00</strong>
+            <strong>R$ 998,00</strong>
             <a className={styles.link} href="#meia-entrada">
               Conferir condições de meia-entrada
             </a>

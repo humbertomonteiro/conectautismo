@@ -8,6 +8,24 @@
   margin: 0 auto;
 }
 
+.container > ul {
+  padding: 1rem 2rem;
+  margin-bottom: 1.5rem;
+  background: var(--bg-gradient);
+  border: var(--color-border);
+  border-radius: 1rem;
+  font-size: 1.2rem;
+}
+
+.container > ul li {
+  display: flex;
+  align-items: center;
+}
+
+.container > ul li svg {
+  margin-left: 0.5rem;
+}
+
 .boxes {
   display: flex;
   gap: 1rem;
