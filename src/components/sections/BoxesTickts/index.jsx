@@ -76,7 +76,7 @@ export default function BoxesTickts() {
               target="_blank"
               text={"Entrar na lista de espera"}
             />
-            <strong>R$ 1048,00</strong>
+            <strong>R$ 1148,00</strong>
             <a className={styles.link} href="#meia-entrada">
               Conferir condições de meia-entrada
             </a>
