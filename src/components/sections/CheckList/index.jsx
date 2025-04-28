@@ -60,9 +60,12 @@ export default function CheckList() {
           </div>
         </div>
         <ButtonPretty
-          text={"Garantir minha vaga"}
+          text={"Entrar na lista de espera"}
           target="_blank"
-          link={"https://pay.hotmart.com/A96222789P?off=dw8zuz6z"}
+          // link={"https://pay.hotmart.com/A96222789P?off=dw8zuz6z"}
+          link={
+            "https://wa.me/558592742323?text=Olá! Quero entrar na lista de espera do evento Conect Autismo."
+          }
         />
       </section>
     </>

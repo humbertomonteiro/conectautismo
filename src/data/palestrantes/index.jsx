@@ -1,12 +1,12 @@
 import fabioCoelho from "../../assets/imgs/palestrantes/fabio-coelho-1.jpg";
 import mayraGaiato from "../../assets/imgs/palestrantes/mayra-gaiato.png";
-import alissonMoutri from "../../assets/imgs/palestrantes/alisson-moutri.png";
-import draCarolinaQuedas from "../../assets/imgs/palestrantes/dra-carolina-quedas-1.jpg";
+// import alissonMoutri from "../../assets/imgs/palestrantes/alisson-moutri.png";
+// import draCarolinaQuedas from "../../assets/imgs/palestrantes/dra-carolina-quedas-1.jpg";
 import fatimaDeKwant from "../../assets/imgs/palestrantes/fatima-de-kwant-2.jpg";
 import drHelioVanDer from "../../assets/imgs/palestrantes/dr-helio-van-der-2.jpg";
 import carolinaNobre from "../../assets/imgs/palestrantes/carolina-nobre-2.jpg";
 import professorFabio from "../../assets/imgs/palestrantes/professor-fabio-3.jpg";
-import bethaniaMends from "../../assets/imgs/palestrantes/bethania-mends-3.jpg";
+// import bethaniaMends from "../../assets/imgs/palestrantes/bethania-mends-3.jpg";
 import enaResende from "../../assets/imgs/palestrantes/ena-resende.png";
 import pauloVictorLoureiro from "../../assets/imgs/palestrantes/paulo-victor-loureiro-4.jpg";
 import drAndreCabral from "../../assets/imgs/palestrantes/dr-andre-cabral-4.jpg";
@@ -15,12 +15,12 @@ import templeGrandin from "../../assets/imgs/palestrantes/temple-grandin-5.jpg";
 import drThiagoGusmao from "../../assets/imgs/palestrantes/dr-thiago-gusmao-5.jpg";
 import cassia from "../../assets/imgs/palestrantes/cassia-5.jpg";
 import romuloPorto from "../../assets/imgs/palestrantes/romulo-porto-6.jpg";
-import lucianaXavier from "../../assets/imgs/palestrantes/luciana-xavier-6.jpg";
+// import lucianaXavier from "../../assets/imgs/palestrantes/luciana-xavier-6.jpg";
 import giseleAlbuquerque from "../../assets/imgs/palestrantes/gisele-albuquerque-6.jpg";
 import drMarceloMasruha from "../../assets/imgs/palestrantes/dr-marcelo-masruha-6.jpg";
 import lucelmoLacerda from "../../assets/imgs/palestrantes/lucelmo-lacerda-7.jpg";
 import draJuracy from "../../assets/imgs/palestrantes/dra-juracy-7.jpg";
-import draDeborahKerches from "../../assets/imgs/palestrantes/dra-deborah-kerches-7.jpg";
+// import draDeborahKerches from "../../assets/imgs/palestrantes/dra-deborah-kerches-7.jpg";
 import drCarlosGadia from "../../assets/imgs/palestrantes/dr-carlos-gadia-8.jpg";
 import leticiaMello from "../../assets/imgs/palestrantes/leticia-mello-8.jpg";
 import graziellaGadia from "../../assets/imgs/palestrantes/graziella-gadia-8.jpg";
@@ -39,7 +39,7 @@ export const arrayPalestrantes = [
   },
   {
     name: "Alisson Moutri",
-    img: alissonMoutri,
+    img: "https://igm.ucsd.edu/sites/default/files/images/Faculty/muotri-alysson.jpg",
   },
   {
     name: "Lucelmo Lacerda",
@@ -66,10 +66,10 @@ export const arrayPalestrantes = [
     img: fabioCoelho,
   },
 
-  {
-    name: "dra. Carolina Quedas",
-    img: draCarolinaQuedas,
-  },
+  // {
+  //   name: "dra. Carolina Quedas",
+  //   img: draCarolinaQuedas,
+  // },
   {
     name: "dr. Thiago Castro",
     img: drThiagoCastro,
@@ -96,7 +96,7 @@ export const arrayPalestrantes = [
   },
   {
     name: "Bethania Mends",
-    img: bethaniaMends,
+    img: "https://scontent.ffor14-1.fna.fbcdn.net/v/t39.30808-6/355993507_6575104129199107_2161185429500016811_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=OPIFerxiTmoQ7kNvgHOdyCE&_nc_oc=Adja3_u0u742EyJyWFn9LyxzQClJv5f9kj5IdX01kLgFxG5s1pkK-XcH1kahKPvCiww&_nc_zt=23&_nc_ht=scontent.ffor14-1.fna&_nc_gid=ANrlORL936kav7P019GB3KN&oh=00_AYBePhrZvMRH4FDuOY5xuKaCZASvsMD3P1W0cI5lwbMX2g&oe=67C4E440",
   },
   {
     name: "dra. Vanessa Fioreze",
@@ -139,10 +139,10 @@ export const arrayPalestrantes = [
     name: "Romulo Porto",
     img: romuloPorto,
   },
-  {
-    name: "Luciana Xavier",
-    img: lucianaXavier,
-  },
+  // {
+  //   name: "Luciana Xavier",
+  //   img: lucianaXavier,
+  // },
   {
     name: "Gisele Albuquerque",
     img: giseleAlbuquerque,
@@ -151,10 +151,10 @@ export const arrayPalestrantes = [
     name: "dra. Juracy",
     img: draJuracy,
   },
-  {
-    name: "dra. Deborah Kerches",
-    img: draDeborahKerches,
-  },
+  // {
+  //   name: "dra. Deborah Kerches",
+  //   img: draDeborahKerches,
+  // },
   {
     name: "Kadu Lins",
     img: kaduLins,

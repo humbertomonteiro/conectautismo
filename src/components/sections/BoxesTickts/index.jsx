@@ -2,32 +2,27 @@ import styles from "./boxesTickts.module.css";
 
 import Title from "../../shared/Title";
 import ButtonPretty from "../../shared/ButtonPretty";
-import { IoRocketOutline } from "react-icons/io5";
-import { MdDoneOutline } from "react-icons/md";
+
+import TimeLineLotes from "../TimeLineLotes";
 
 export default function BoxesTickts() {
   return (
     <section id="tickts" className={styles.container}>
       <Title text={"INGRESSO CONECT AUTISMO 2025"} />
-      <ul>
-        <li>
-          Pré-venda - Esgotada <MdDoneOutline />
-        </li>
-        <li>
-          Primeiro lote - Esgotado <MdDoneOutline />
-        </li>
-        <li>
-          Segundo lote - Voando <IoRocketOutline />
-        </li>
-      </ul>
+      <TimeLineLotes />
       <ButtonPretty
-        link={"https://pay.hotmart.com/A96222789P?off=dsj40qa5"}
+        // link={
+        //   "https://pay.hotmart.com/A96222789P?off=cui8duv5&bid=1742215373582"
+        // }
+        link={
+          "https://wa.me/558592742323?text=Olá! Quero entrar na lista de espera do evento Conect Autismo."
+        }
         target="_blank"
-        text={"garantir agora"}
+        text={"Entrar na lista de espera"}
       />
       <div className={styles.boxes}>
         <div className={styles.box} data-aos="zoom-in">
-          <h2>INGRESSO COMPLETO CONECT 2025 - (2º Lote)</h2>
+          <h2>INGRESSO COMPLETO CONECT 2025 - (Ingressos esgotados)</h2>
           <h3>2 dias de congresso + PRÉ-Festa.</h3>
 
           <ul>
@@ -60,18 +55,28 @@ export default function BoxesTickts() {
           </ul>
           <div className={styles.shop}>
             <ButtonPretty
-              link={"https://pay.hotmart.com/A96222789P?off=dsj40qa5"}
+              // link={
+              //   "https://pay.hotmart.com/A96222789P?off=cui8duv5&bid=1742215373582"
+              // }
+              link={
+                "https://wa.me/558592742323?text=Olá! Quero entrar na lista de espera do evento Conect Autismo."
+              }
               target="_blank"
-              text={"Garantir Com festa"}
+              text={"Entrar na lista de espera"}
             />
 
-            <strong>R$ 1148,00</strong>
+            <strong>R$ 1248,00</strong>
             <ButtonPretty
-              link={"https://pay.hotmart.com/A96222789P?off=t35c4yn3"}
+              // link={
+              //   "https://pay.hotmart.com/A96222789P?off=j7epqdn7&bid=1742216074507"
+              // }
+              link={
+                "https://wa.me/558592742323?text=Olá! Quero entrar na lista de espera do evento Conect Autismo."
+              }
               target="_blank"
-              text={"Garantir Sem festa"}
+              text={"Entrar na lista de espera"}
             />
-            <strong>R$ 998,00</strong>
+            <strong>R$ 1048,00</strong>
             <a className={styles.link} href="#meia-entrada">
               Conferir condições de meia-entrada
             </a>

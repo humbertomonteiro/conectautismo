@@ -12,8 +12,11 @@ export default function Social() {
       <div className={styles.boxImg} data-aos="zoom-in">
         <img loading="lazy" src={social} alt="social" />
         <ButtonPretty
-          data-color="blue"
-          link={"https://pay.hotmart.com/A96222789P?off=dw8zuz6z"}
+          // data-color="blue"
+          // link={"https://pay.hotmart.com/A96222789P?off=dw8zuz6z"}
+          link={
+            "https://wa.me/558592742323?text=Olá! Quero entrar na lista de espera do evento Conect Autismo."
+          }
           target="_blank"
           text={"Quero ajudar o mundo"}
         />

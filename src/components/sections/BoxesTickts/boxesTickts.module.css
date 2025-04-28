@@ -8,22 +8,58 @@
   margin: 0 auto;
 }
 
-.container > ul {
-  padding: 1rem 2rem;
+.boxInfo {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+  flex-wrap: wrap;
   margin-bottom: 1.5rem;
-  background: var(--bg-gradient);
-  border: var(--color-border);
-  border-radius: 1rem;
-  font-size: 1.2rem;
 }
 
-.container > ul li {
+.boxInfo li {
+  flex: 1 1 33%;
+  background: var(--bg-gradient);
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.2rem;
+  border-radius: 1rem;
+  border: var(--color-border);
+}
+
+.boxInfo li h3 {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 0.75rem;
+}
+
+.boxInfo li strong {
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.boxInfo li .tag,
+.boxInfo li .tag2 {
+  padding: 0.5rem 1rem;
+  background-color: var(--color-2);
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 
-.container > ul li svg {
-  margin-left: 0.5rem;
+.boxInfo li .tag2 {
+  background-color: var(--color-3);
+  margin-bottom: 0.5rem;
+}
+
+.boxInfo li span {
+  color: var(--color-text-gray);
 }
 
 .boxes {
@@ -55,10 +91,12 @@
 .box p {
   margin-bottom: 0.5rem;
   margin-top: 1rem;
+  max-width: 700px;
 }
 
 .box ul {
   padding-left: 1.5rem;
+  max-width: 700px;
 }
 
 .box ul li {

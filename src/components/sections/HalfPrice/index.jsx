@@ -62,24 +62,30 @@ export default function HalfiPrice() {
 
         <div className={styles.button}>
           <ButtonPretty
-            text={"garanta meia com festa"}
+            text={"entrar na lista de espera"}
+            // link={
+            //   "https://pay.hotmart.com/A96222789P?off=cui8duv5&bid=1742215373582&offDiscount=MEIAENTRADA"
+            // }
             link={
-              "https://pay.hotmart.com/A96222789P?checkoutMode=6&off=dsj40qa5&offDiscount=MEIAENTRADA"
+              "https://wa.me/558592742323?text=Olá! Quero entrar na lista de espera do evento Conect Autismo."
             }
             target="_blank"
           />
-          <strong>R$ 574,00</strong>
+          <strong>R$ 624,00</strong>
         </div>
 
         <div className={styles.button}>
           <ButtonPretty
-            text={"garanta meia sem festa"}
+            text={"entrar na lista de espera"}
+            // link={
+            //   "https://pay.hotmart.com/A96222789P?off=j7epqdn7&bid=1742216074507&offDiscount=MEIAENTRADA"
+            // }
             link={
-              "https://pay.hotmart.com/A96222789P?checkoutMode=6&off=t35c4yn3&offDiscount=MEIAENTRADA"
+              "https://wa.me/558592742323?text=Olá! Quero entrar na lista de espera do evento Conect Autismo."
             }
             target="_blank"
           />
-          <strong>R$ 499,00</strong>
+          <strong>R$ 524,00</strong>
         </div>
       </div>
     </section>

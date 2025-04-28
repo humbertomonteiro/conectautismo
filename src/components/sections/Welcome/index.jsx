@@ -16,7 +16,8 @@ export default function Welcome() {
             Prepare-se para a 2ª edição do maior Congresso de TEA Norte e
             Nordeste. 23 & 24 de agosto de 2025.
           </p>
-          <ButtonPretty link={"#tickts"} text={"ingressos limitados"} />
+          <h2>INGRESSOS ESGOTADOS</h2>
+          <ButtonPretty link={"#tickts"} text={"Entrar na lista de espera"} />
         </div>
       </div>
     </section>

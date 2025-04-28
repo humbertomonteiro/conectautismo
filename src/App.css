@@ -10,6 +10,7 @@
 
   --color-border: 1px solid #339ccccb;
   --bg-gradient: linear-gradient(15deg, #004e72ec 0%, #072c3dbd 90%);
+  --bg-gradient-pretty: linear-gradient(to right, #fc6076, #ff9a44, #e75516);
 }
 
 * {

@@ -3,13 +3,14 @@ import styles from "./carouselGallery.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
 
-export default function CarouselGallery({ array }) {
+export default function CarouselGallery({ array, dataStyle }) {
   const slides = useMemo(
     () =>
       array.map((item, index) => (
         <SwiperSlide key={index}>
-          <div className={styles.carousel}>
+          <div className={styles.carousel} data-style={dataStyle}>
             <img loading="lazy" src={item.img} alt={item.name} />
+            {/* <p>{item.name}</p> */}
           </div>
         </SwiperSlide>
       )),

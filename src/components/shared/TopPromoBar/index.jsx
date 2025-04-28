@@ -7,12 +7,12 @@ export default function TopPromoBar() {
     <div className={styles.container}>
       {/* <span>Contagem regressiva</span> */}
       {/* <Contagem dateEvent={"07 nov 2024"} /> */}
-      <p>DISPONIVEL POR TEMPO LIMITADO</p>
+      <p>INGRESSOS ESGOTADOS</p>
       <a
         href="#tickts"
         // target="_blank"
       >
-        GARANTIR AGORA
+        LISTA DE ESPERA
       </a>
       {/* <ButtonPretty text={"Garanta sua vaga"} link={"#formEvent"} /> */}
     </div>

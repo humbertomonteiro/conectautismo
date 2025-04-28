@@ -8,3 +8,39 @@
 .carousel img {
   border-radius: 1rem;
 }
+
+[data-style="speakers"] {
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  border: var(--color-border);
+}
+
+[data-style="speakers"] img {
+  aspect-ratio: 16/12;
+  width: 127%;
+  object-fit: cover;
+  object-position: center calc(50% + 6px);
+}
+
+/* [data-style="speakers"] p {
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+@media (max-width: 450) {
+  [data-style="speakers"] {
+    width: 150px;
+    height: 150px;
+  }
+
+  [data-style="speakers"] p {
+    height: 50%;
+  }
+}
