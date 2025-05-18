@@ -11,7 +11,8 @@ const SchoolConect = () => {
         <div className={styles.text}>
           <h3>Conectando escolas, construindo uma sociedade mais inclusiva</h3>
           <p>
-            Bem-vindos ao projeto <mark>"Conect autismo nas escolas"!</mark>
+            Bem-vindos ao projeto <mark>"Conect autismo nas escolas"!</mark>{" "}
+            <br />
             Nossa missão é levar conhecimento e conscientização sobre o autismo
             às escolas, promovendo inclusão, aceitação e suporte aos
             profissionais de educação. Juntos, construamos uma sociedade mais
@@ -27,7 +28,8 @@ const SchoolConect = () => {
         </div>
         <div className={styles.img}>
           <img
-            src={school}
+            // src={school}
+            src="https://img.freepik.com/fotos-gratis/colegas-de-escola-abracados_23-2148763994.jpg?ga=GA1.1.2095538369.1681160396&semt=ais_hybrid&w=740"
             alt="Imagem da logo Conect autismo no evento 2024."
           />
         </div>

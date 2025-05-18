@@ -25,7 +25,31 @@ export default function BoxesTickts() {
           <h2>INGRESSO COMPLETO CONECT 2025 - (Ingressos esgotados)</h2>
           <h3>2 dias de congresso + PRÉ-Festa.</h3>
 
+          <strong>BENEFÍCIOS CONECT AUTISMO:</strong>
           <ul>
+            <li>Palestrantes Renomados Nacionais e internacionais.</li>
+            <li>Certificado qualificado.</li>
+            <li>Um Grande Palco.</li>
+            <li>Delicioso coffee break.</li>
+            <li>Degustação CAFÉ SANTA CLARA.</li>
+            <li>Kit congressista exclusivo.</li>
+            <li>Evento com Cenografia Projetada.</li>
+            <li>Ambiente Acolhedor e Climatizado.</li>
+            <li>
+              Espaços instagramaveis para fotos, com fotógrafos profissionais
+              registrando os melhores momentos.
+            </li>
+            <li>Expositores nacionais e internacionais.</li>
+            <li>
+              Palestranstes com conteúdos respaldados por pesquisas e estudos
+              científicos classificados como nível 1A ou 1B.
+            </li>
+            <li>Conteúdo Online Gravado 24 meses.</li>
+            <li>Sessão de autógrafo com grandes nomes.</li>
+            <li>Sala de Descompressão (Espaço sensorial)</li>
+            <li>Todos os espaços com acessibilidade.</li>
+          </ul>
+          {/* <ul>
             <li>Congresso presencial 23 e 24 de Agosto de 2025:</li>
             <li>⁠Um Grande palco.</li>
             <li>Delicioso coffee break.</li>
@@ -52,7 +76,7 @@ export default function BoxesTickts() {
               ⁠Sessão de autografos com grandes palestrantes. Nacionais e
               internacionais.
             </li>
-          </ul>
+          </ul> */}
           <div className={styles.shop}>
             <ButtonPretty
               // link={
@@ -66,6 +90,7 @@ export default function BoxesTickts() {
             />
 
             <strong>R$ 1248,00</strong>
+            <span>Com festa</span>
             <ButtonPretty
               // link={
               //   "https://pay.hotmart.com/A96222789P?off=j7epqdn7&bid=1742216074507"
@@ -77,6 +102,7 @@ export default function BoxesTickts() {
               text={"Entrar na lista de espera"}
             />
             <strong>R$ 1148,00</strong>
+            <span>Sem festa</span>
             <a className={styles.link} href="#meia-entrada">
               Conferir condições de meia-entrada
             </a>
@@ -111,7 +137,8 @@ export default function BoxesTickts() {
               text={"quero muito ir"}
             />
             <strong>R$ 225,00</strong>
-            <span>LOTE PRE VENDA JÁ COM VALOR DE MEIA ENTRADA.</span>
+            {/* <span>LOTE PRE VENDA JÁ COM VALOR DE MEIA ENTRADA.</span> */}
+            <span>MEIA ENTRADA.</span>
           </div>
         </div>
 

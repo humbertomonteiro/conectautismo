@@ -26,7 +26,6 @@ export default function Home() {
       <Welcome />
       <Video2024 />
       <Palestrantes />
-      <PatrocinadorEExpositor />
       <Oportunidades />
       <BoxesTickts />
       <HalfiPrice />
@@ -35,8 +34,9 @@ export default function Home() {
       <Social />
       <Patrocinador title="PATROCINADORES" array={arrayPatrocinadores} />
       <Patrocinador title="APOIO" array={arrayApoio} />
+      <PatrocinadorEExpositor />
       <CommonQuestions />
-      <CheckList />
+      {/* <CheckList /> */}
       <RedesSociais />
       <Politica />
       <Footer />

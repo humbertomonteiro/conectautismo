@@ -7,7 +7,7 @@ import { Pagination, Autoplay } from "swiper/modules";
 export default function Local() {
   return (
     <div className={styles.container}>
-      <Title text={"LOCAL CONFIRMADO"} />
+      <Title text={"LOCAL"} />
       <div className={styles.boxes} data-aos="zoom-in">
         <div className={styles.boxCarosel}>
           <Swiper
@@ -55,22 +55,28 @@ export default function Local() {
           <div className={styles.list}>
             <h3>Gran Mareiro Hotel</h3>
             <ul>
-              <li>Local mais glamuroso da cidade</li>
-              <li>Com 1 grande palco na Expo</li>
-              <li>⁠Stands na área secundária</li>
-              <li>Coffe break</li>
-              <li>⁠Opção de almoço buffer no local</li>
+              <li>HOTEL ⭐️⭐️⭐️⭐️⭐️</li>
+              <li>EXPO EVENTOS</li>
+              <li>Opção de dois restaurantes com buffet no local.</li>
+              <li>Fácil acesso</li>
+              <li>⁠localização privilegiada vista Mar</li>
               <li>Comodidade para hospedagem</li>
-              <li>⁠Fácil acesso</li>
-              <li>⁠Estacionamento seguro e amplo</li>
+              <li>Estacionamento seguro e amplo.</li>
+              {/* <li>Com 1 grande palco na Expo</li> */}
+              {/* <li>⁠Stands na área secundária</li> */}
+              {/* <li>Coffe break</li> */}
+              {/* <li>⁠Opção de almoço buffet no local</li> */}
+              {/* <li>Comodidade para hospedagem</li> */}
+              {/* <li>⁠Fácil acesso</li> */}
+              {/* <li>⁠Estacionamento seguro e amplo</li> */}
             </ul>
           </div>
           <div className={styles.map}>
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7962.645344873391!2d-38.453857000000006!3d-3.7396969999999996!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c7464d784ca471%3A0x2401a6bfcd1dc08d!2sGran%20Mareiro%20Hotel!5e0!3m2!1spt-BR!2sbr!4v1720821138262!5m2!1spt-BR!2sbr"
-              allowFullScreen=""
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.322673362176!2d-38.456431925026145!3d-3.7396967962342194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c7464d784ca471%3A0x2401a6bfcd1dc08d!2sGran%20Mareiro%20Hotel!5e0!3m2!1spt-BR!2sbr!4v1747591004087!5m2!1spt-BR!2sbr"
+              allowfullscreen=""
               loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
+              referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
 

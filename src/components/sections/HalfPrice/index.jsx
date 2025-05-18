@@ -18,11 +18,13 @@ export default function HalfiPrice() {
           />
         </div>
         <div className={styles.content}>
-          <h3 id="meia-entrada">Veja se você se encaixa na meia entrada:</h3>
+          {/* <h3 id="meia-entrada">Veja se você se encaixa na meia entrada:</h3> */}
+          <h3 id="meia-entrada">Meia entrada:</h3>
           <ul>
             <li>
               ✔︎ Pessoas com Deficiência (PcD), incluindo autistas: Apresentar
-              documento comprovativo da condição.
+              documento comprovativo da condição CIPTEA ou LAUDO válido e
+              documento com foto.
             </li>
 
             <li>
@@ -31,7 +33,8 @@ export default function HalfiPrice() {
 
             <li>
               ✔︎ Estudantes (de qualquer curso): Carteira de Identificação
-              Estudantil (CIE), Comprovante de Matrícula ou Mensalidade.
+              Estudantil (CIE), Comprovante de Matrícula, Mensalidade ou
+              declaração da instituição.
             </li>
 
             <li>
@@ -41,21 +44,21 @@ export default function HalfiPrice() {
 
             <li>
               ✔︎ Pais de autistas: Documento que comprove a condição de
-              responsável legal.
+              responsável legal e CIPTEA ou LAUDO do filho.
             </li>
           </ul>
 
-          <span>
+          {/* <span>
             🔖 Para obter o benefício da meia entrada, utilize o CUPOM:
             MEIAENTRADA (tudo em maiúsculo, sem espaços) no momento da compra.
             Este cupom não é acumulativo com outros descontos ou promoções.
-          </span>
+          </span> */}
 
           <span>
             Lembre-se: os documentos comprobatórios devem ser apresentados na
             entrada do evento. A meia entrada é um direito que promove a
             inclusão e o acesso, e sua colaboração na apresentação dos
-            documentos é necessário. Caso contrario. Teremos a opção de upgrade
+            documentos é necessário. Caso contrario, teremos a opção de upgrade
             no dia do credenciamento.
           </span>
         </div>
@@ -71,10 +74,10 @@ export default function HalfiPrice() {
             }
             target="_blank"
           />
-          <strong>R$ 624,00</strong>
+          {/* <strong>R$ 624,00</strong> */}
         </div>
 
-        <div className={styles.button}>
+        {/* <div className={styles.button}>
           <ButtonPretty
             text={"entrar na lista de espera"}
             // link={
@@ -86,7 +89,7 @@ export default function HalfiPrice() {
             target="_blank"
           />
           <strong>R$ 524,00</strong>
-        </div>
+        </div> */}
       </div>
     </section>
   );
