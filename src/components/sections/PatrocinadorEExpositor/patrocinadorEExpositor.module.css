@@ -49,7 +49,7 @@
 
 @media (max-width: 720px) {
   .buttons {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
 
   .container {

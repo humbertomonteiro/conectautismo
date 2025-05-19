@@ -39,6 +39,9 @@
 
 .img {
   flex: 1;
+  max-height: 400px;
+  overflow: hidden;
+  border-radius: 1rem;
 }
 
 .img img {

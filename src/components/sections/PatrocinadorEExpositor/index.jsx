@@ -2,7 +2,7 @@ import styles from "./patrocinadorEExpositor.module.css";
 
 import ButtonPretty from "../../shared/ButtonPretty";
 
-import { FaArrowDown } from "react-icons/fa";
+import { FaArrowUp } from "react-icons/fa";
 
 export default function PatrocinadorEExpositor() {
   return (
@@ -20,7 +20,7 @@ export default function PatrocinadorEExpositor() {
               data-color="blue"
               link="#patrocinador"
               text="Todos os patrocinadores"
-              icon={<FaArrowDown />}
+              icon={<FaArrowUp />}
             />
 
             <ButtonPretty
