@@ -1,0 +1,356 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: var(--bg-gradient);
+  color: var(--color-text);
+  font-family: "Arial", sans-serif;
+}
+
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+  }
+}
+
+.mobileHeader {
+  padding: 1rem;
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .mobileHeader {
+    display: none;
+  }
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+  width: 2rem;
+  height: 2rem;
+  justify-content: center;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.hamburgerLine {
+  width: 100%;
+  height: 0.125rem;
+  background: var(--color-text);
+  border-radius: 0.25rem;
+  transition: background 0.2s;
+}
+
+.hamburger:hover .hamburgerLine {
+  background: var(--color-2);
+}
+
+.sidebar {
+  width: 100%;
+  background: var(--color-1);
+  border-right: var(--color-border);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 10;
+}
+
+.sidebarOpen {
+  transform: translateX(0);
+}
+
+.sidebarClosed {
+  transform: translateX(-100%);
+}
+
+.sidebarContent img {
+  width: 70%;
+}
+
+@media (min-width: 768px) {
+  .sidebar {
+    width: 280px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateX(0);
+    height: 100vh;
+  }
+
+  .sidebarContent img {
+    width: 100%;
+  }
+
+  .sidebarContent ul {
+    overflow-y: scroll;
+  }
+
+  .main {
+    margin-left: 280px;
+  }
+}
+
+.sidebarContent {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.sidebarTitle {
+  font-size: 1.25rem;
+  font-weight: bold;
+  background-color: var(--color-text);
+  text-align: center;
+  border-radius: 0.5rem;
+  color: var(--color-1);
+  padding: 0.5rem 0.25rem;
+  margin: 0.75rem 0 1.5rem 0;
+  /* text-align: center; */
+}
+
+.sidebarContent ul {
+  flex: 1;
+  overflow-y: auto;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  /* Personalizar a barra de rolagem */
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-3) var(--color-1);
+}
+
+.sidebarContent ul::-webkit-scrollbar {
+  width: 6px;
+}
+
+.sidebarContent ul::-webkit-scrollbar-track {
+  background: var(--color-1);
+}
+
+.sidebarContent ul::-webkit-scrollbar-thumb {
+  background: var(--color-3);
+  border-radius: 3px;
+}
+
+.sidebarItem {
+  padding: 0.75rem;
+  margin-bottom: 0.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  color: var(--color-text-gray);
+  list-style: none;
+}
+
+.sidebarItem:hover,
+.sidebarItem.active {
+  background: var(--color-3);
+  color: var(--color-text);
+}
+
+/* .sidebarItemWithSubItems {
+
+} */
+
+.sidebarItemWithSubItems:hover {
+  background-color: var(--color-1);
+}
+
+.subMenu {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 0 1.5rem;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.subMenuOpen {
+  max-height: 500px;
+}
+
+.subMenuItem {
+  margin: 0.25rem 0;
+  padding: 0.5rem;
+  border-bottom: 1px solid var(--color-text);
+  /* background-color: var(--color-1); */
+  transition: ease-in-out 0.3s;
+}
+
+.subMenuItem:hover,
+.subMenuItem.active {
+  background-color: var(--color-3);
+  color: var(--color-text);
+}
+
+.subMenuLink {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  color: var(--color-text-gray);
+  text-decoration: none;
+  border-radius: 0.5rem;
+  transition: color 0.2s ease-in-out;
+}
+
+.subMenuLink:hover {
+  color: var(--color-2);
+}
+
+.subMenuLink.active {
+  color: var(--color-3);
+}
+
+.main {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--color-text);
+  color: var(--color-text-black);
+}
+
+/* @media (min-width: 768px) {
+  .main {
+    padding: 3rem;
+  }
+} */
+
+.contentSection {
+  /* max-width: 48rem; */
+  /* width: 1000px; */
+  /* width: 90%; */
+  /* margin: 0 auto; */
+  /* background: rgba(255, 255, 255, 0.05); */
+  /* border: var(--color-border); */
+  /* border-radius: 0.5rem; */
+}
+
+.headerMainSponsor {
+  position: relative;
+  width: 100%;
+}
+
+.headerImg {
+  height: 60vh;
+  overflow: hidden;
+}
+
+.headerImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: bottom 1px;
+}
+
+/* .headerImg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50vh;
+  background-color: rgba(0, 0, 0, 0.247); Preto com 50% de opacidade
+} */
+
+/* buscas */
+.searchContainer {
+  width: 900px;
+  max-width: 100%;
+
+  display: flex;
+  gap: 0.5rem;
+  /* max-width: 48rem; */
+  margin: 0 auto;
+  padding: 1.5rem;
+  padding-bottom: 0;
+  /* position: absolute; */
+  top: 0;
+  /* background: rgba(0, 0, 0, 0.5); */
+}
+
+.searchInput {
+  /* flex: 1; */
+  width: 100%;
+  padding: 0.75rem;
+  border: var(--color-border);
+  border-radius: 0.5rem;
+  /* background: var(--color-1); */
+
+  font-size: 1rem;
+  outline: none;
+  /* color: var(--color-text); */
+  transition: border-color 0.2s;
+}
+
+.searchInput:focus {
+  border-color: var(--color-3);
+}
+
+.searchResults {
+  padding: 1.5rem;
+}
+
+.resultItem {
+  margin-bottom: 1rem;
+}
+
+.resultTitle {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: var(--color-2);
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.resultTitle:hover {
+  color: var(--color-3);
+}
+
+.resultText {
+  font-size: 1rem;
+  color: var(--color-text-gray);
+  margin-left: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.highlight {
+  background: var(--color-4);
+  color: var(--color-1);
+  padding: 0.1rem 0.2rem;
+  border-radius: 0.15rem;
+}
+
+.noResults {
+  padding: 1.5rem;
+  text-align: center;
+  color: var(--color-text-gray);
+}
+
+.searchButton {
+  padding: 0.75rem;
+  /* background: var(--color-3); */
+  border: var(--color-border);
+  /* border-radius: 0.25rem; */
+  border-radius: 0.5rem;
+  cursor: pointer;
+  background-color: transparent;
+  /* background-color: var(--color-1); */
+  transition: background 0.2s;
+}
+
+.searchButton:hover {
+  background: var(--color-3);
+}
+
+.searchIcon {
+  width: 1.25rem;
+  height: 1.25rem;
+  stroke: var(--color-1);
+}

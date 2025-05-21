@@ -17,29 +17,33 @@ import Footer from "../../components/template/Footer";
 
 import { arrayPatrocinadores } from "../../data/patrocinadores";
 import { arrayApoio } from "../../data/apoio";
-import CheckList from "../../components/sections/CheckList";
+// import CheckList from "../../components/sections/CheckList";
 import HalfiPrice from "../../components/sections/HalfPrice";
+import TopPromoBar from "../../components/shared/TopPromoBar";
 
 export default function Home() {
   return (
-    <div className={styles.container} data-aos="fade-down">
-      <Welcome />
-      <Video2024 />
-      <Palestrantes />
-      <Oportunidades />
-      <BoxesTickts />
-      <HalfiPrice />
-      <SchoolConect />
-      <Local />
-      <Social />
-      <Patrocinador title="PATROCINADORES" array={arrayPatrocinadores} />
-      <Patrocinador title="APOIO" array={arrayApoio} />
-      <PatrocinadorEExpositor />
-      <CommonQuestions />
-      {/* <CheckList /> */}
-      <RedesSociais />
-      <Politica />
-      <Footer />
-    </div>
+    <>
+      <TopPromoBar />
+      <div className={styles.container} data-aos="fade-down">
+        <Welcome />
+        <Video2024 />
+        <Palestrantes />
+        <Oportunidades />
+        <BoxesTickts />
+        <HalfiPrice />
+        <SchoolConect />
+        <Local />
+        <Social />
+        <Patrocinador title="PATROCINADORES" array={arrayPatrocinadores} />
+        <Patrocinador title="APOIO" array={arrayApoio} />
+        <PatrocinadorEExpositor />
+        <CommonQuestions />
+        {/* <CheckList /> */}
+        <RedesSociais />
+        <Politica />
+        <Footer />
+      </div>
+    </>
   );
 }

@@ -11,8 +11,6 @@ import "swiper/css/effect-cards";
 import { useEffect } from "react";
 import { BrowserRouter } from "react-router-dom";
 
-import TopPromoBar from "./components/shared/TopPromoBar";
-
 import RouterApp from "./routes/routes";
 
 function App() {
@@ -21,7 +19,6 @@ function App() {
   }, []);
   return (
     <main className="main">
-      <TopPromoBar />
       <BrowserRouter>
         <RouterApp />
       </BrowserRouter>
