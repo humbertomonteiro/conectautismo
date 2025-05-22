@@ -1,90 +1,117 @@
-import styles from "./sponsor.module.css";
 import { useState } from "react";
+import styles from "./sponsor.module.css";
+import NavigationCards from "./NavigationCards";
 
-const HomeSponsor = () => {
-  const [about, setAbout] = useState(false);
-  const [contacts, setContacts] = useState(false);
+const HomeSponsor = ({ sections, setActiveSection, activeSection }) => {
+  const [openSections, setOpenSections] = useState({
+    about: false,
+    contacts: false,
+  });
+
+  const toggleSection = (section) => {
+    setOpenSections((prev) => ({
+      ...prev,
+      [section]: !prev[section],
+    }));
+  };
 
   return (
     <div className={styles.content}>
       <h1 className={styles.sectionTitle}>Manual do Patrocinador</h1>
-      <article className={styles.foreground}>
-        Apresentamos aqui todas as informações necessárias para o andamento do
-        evento. Leia com calma e atenção!
-      </article>
 
-      <ul className={styles.list}>
-        <li className={styles.item}>
-          <h2
-            onClick={() => setAbout(!about)}
-            aria-expanded={about}
-            aria-controls="about-section"
-            className={styles.expandableTitle}
-          >
-            Sobre o Evento
-          </h2>
-          <ul
-            id="about-section"
-            className={`${styles.subList} ${
-              about ? styles.subListOpen : styles.subListClosed
-            }`}
-          >
-            <li>22 de Agosto de 2025 - Pré-festa</li>
-            <li>23 e 24 de Agosto de 2025 - Congresso</li>
-            <li>Gran Mareiro Hotel - Expo Eventos</li>
-            <li>Rua Osvaldo Araujo, 100 - Praia do Futuro - Fortaleza/CE</li>
-          </ul>
-        </li>
-
-        <li className={styles.item}>
-          <h2
-            onClick={() => setContacts(!contacts)}
-            aria-expanded={contacts}
-            aria-controls="contacts-section"
-            className={styles.expandableTitle}
-          >
-            Contatos
-          </h2>
-          <ul
-            id="contacts-section"
-            className={`${styles.subList} ${
-              contacts ? styles.subListOpen : styles.subListClosed
-            }`}
-          >
-            <li>
-              <h3>Comercial</h3>
-              <p>(85) 99274-2323</p>
-              <a href="mailto:comercial@congressoconect.com.br">
-                comercial@congressoconect.com.br
-              </a>
+      {/* Seção Sobre o Evento */}
+      <div className={styles.expandableSection}>
+        <h2
+          className={styles.expandableTitle}
+          onClick={() => toggleSection("about")}
+          role="button"
+          tabIndex={0}
+          aria-expanded={openSections.about}
+          aria-controls="about-section"
+          onKeyDown={(e) => {
+            if (e.key === "Enter" || e.key === " ") {
+              toggleSection("about");
+            }
+          }}
+        >
+          Sobre o Evento
+          {/* <span>{openSections.about ? "−" : "+"}</span> */}
+        </h2>
+        <div
+          id="about-section"
+          className={`${styles.expandableContent} ${
+            openSections.about ? styles.open : ""
+          }`}
+        >
+          <ul className={styles.list}>
+            <li className={styles.listItem}>
+              22 de Agosto de 2025 - Pré-festa
             </li>
-            <li>
-              <h3>Produtor</h3>
-              <i>Rosemberg Pereira</i>
-              <p>(85) 999918712</p>
-              <a href="mailto:produtormeianoite2@gmail.com">
-                produtormeianoite2@gmail.com
-              </a>
+            <li className={styles.listItem}>
+              23 e 24 de Agosto de 2025 - Congresso
             </li>
-            <li>
-              <h3>Agência Oficial - Cenomagia</h3>
-              <p>(85) 98870-0990</p>
-              <i>Tony Gabriel</i>
-              <p>(85) 99604-5859</p>
-              <a href="mailto:comercialcenomagia@gmail.com">
-                comercialcenomagia@gmail.com
-              </a>
+            <li className={styles.listItem}>
+              Gran Mareiro Hotel - Expo Eventos
             </li>
-            <li>
-              <h3>Montadora Oficial - Cenomagia</h3>
-              <p>(85) 98870-0990</p>
-              <a href="mailto:comercialcenomagia@gmail.com">
-                comercialcenomagia@gmail.com
-              </a>
+            <li className={styles.listItem}>
+              Rua Osvaldo Araujo, 100 - Praia do Futuro - Fortaleza/CE
             </li>
           </ul>
-        </li>
-      </ul>
+        </div>
+      </div>
+
+      {/* Seção Contatos */}
+      <div className={styles.expandableSection}>
+        <h2
+          className={styles.expandableTitle}
+          onClick={() => toggleSection("contacts")}
+          role="button"
+          tabIndex={0}
+          aria-expanded={openSections.contacts}
+          aria-controls="contacts-section"
+          onKeyDown={(e) => {
+            if (e.key === "Enter" || e.key === " ") {
+              toggleSection("contacts");
+            }
+          }}
+        >
+          Contatos
+          {/* <span>{openSections.contacts ? "−" : "+"}</span> */}
+        </h2>
+        <div
+          id="contacts-section"
+          className={`${styles.expandableContent} ${
+            openSections.contacts ? styles.open : ""
+          }`}
+        >
+          <ul className={styles.list}>
+            <li className={styles.listItem}>Comercial: (85) 99274-2323</li>
+            <li className={styles.listItem}>
+              comercial@congressoconect.com.br
+            </li>
+            <li className={styles.listItem}>
+              Produtor: Rosemberg Pereira, (85) 999918712
+            </li>
+            <li className={styles.listItem}>produtormeianoite2@gmail.com</li>
+            <li className={styles.listItem}>
+              Agência Oficial - Cenomagia: (85) 98870-0990
+            </li>
+            <li className={styles.listItem}>Tony Gabriel: (85) 99604-5859</li>
+            <li className={styles.listItem}>comercialcenomagia@gmail.com</li>
+            <li className={styles.listItem}>
+              Montadora Oficial - Cenomagia: (85) 98870-0990
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      {/* Cards de Navegação */}
+      <h2 className={styles.sectionTitle}>Acesse Outras Seções</h2>
+      <NavigationCards
+        sections={sections}
+        setActiveSection={setActiveSection}
+        activeSection={activeSection}
+      />
     </div>
   );
 };

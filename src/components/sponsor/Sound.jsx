@@ -14,11 +14,19 @@ const Sound = () => (
         às seguintes penalidades pela ordem:
       </li>
     </ul>
-    <ol>
-      <li>Aviso de advertência através da Coordenação de Evento;</li>
-      <li>Segunda advertência com corte de energia por 15 minutos;</li>
-      <li>Corte de energia do stand com religação somente após 1 hora;</li>
-      <li>Corte de energia do stand com religação somente no dia seguinte;</li>
+    <ol className={styles.list}>
+      <li className={styles.listItemOrder}>
+        Aviso de advertência através da Coordenação de Evento;
+      </li>
+      <li className={styles.listItemOrder}>
+        Segunda advertência com corte de energia por 15 minutos;
+      </li>
+      <li className={styles.listItemOrder}>
+        Corte de energia do stand com religação somente após 1 hora;
+      </li>
+      <li className={styles.listItemOrder}>
+        Corte de energia do stand com religação somente no dia seguinte;
+      </li>
     </ol>
   </div>
 );

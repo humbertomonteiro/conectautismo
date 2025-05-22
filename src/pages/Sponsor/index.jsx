@@ -25,7 +25,7 @@ const sectionsData = [
   {
     id: "homeSponsor",
     name: "Início",
-    component: <HomeSponsor />,
+    component: HomeSponsor,
     content: ["Sobre o evento", "Local", "Contatos"],
   },
   {
@@ -252,6 +252,9 @@ const Sponsor = () => {
     <div className={styles.container}>
       {/* Mobile Hamburger Menu */}
       <div className={styles.mobileHeader}>
+        <a href="/patrocinador">
+          <img src={logo} alt="Logo Conect" />
+        </a>
         <button
           className={styles.hamburger}
           onClick={toggleMenu}
@@ -270,8 +273,10 @@ const Sponsor = () => {
         }`}
       >
         <div className={styles.sidebarContent}>
-          <img src={logo} alt="Logo Conect" />
-          <h1 className={styles.sidebarTitle}>Manual do patrocinador</h1>
+          <img onClick={toggleMenu} src={logo} alt="Logo Conect" />
+          <h1 onClick={toggleMenu} className={styles.sidebarTitle}>
+            Manual do patrocinador
+          </h1>
           <ul>
             {sectionsData.map((section) =>
               section.subItems ? (
@@ -447,9 +452,38 @@ const Sponsor = () => {
                 const subItem = section.subItems.find(
                   (sub) => sub.id === activeSection
                 );
-                return subItem ? subItem.component : sectionsData[0].component;
+                return subItem ? (
+                  subItem.component
+                ) : (
+                  <HomeSponsor
+                    sections={sectionsData.filter(
+                      (s) => s.id !== "homeSponsor"
+                    )}
+                    setActiveSection={setActiveSection}
+                    activeSection={activeSection}
+                  />
+                );
               }
-              return section ? section.component : sectionsData[0].component;
+              if (section?.id === "homeSponsor") {
+                return (
+                  <HomeSponsor
+                    sections={sectionsData.filter(
+                      (s) => s.id !== "homeSponsor"
+                    )}
+                    setActiveSection={setActiveSection}
+                    activeSection={activeSection}
+                  />
+                );
+              }
+              return section ? (
+                section.component
+              ) : (
+                <HomeSponsor
+                  sections={sectionsData.filter((s) => s.id !== "homeSponsor")}
+                  setActiveSection={setActiveSection}
+                  activeSection={activeSection}
+                />
+              );
             })()
           )}
         </div>

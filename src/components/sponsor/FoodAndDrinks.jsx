@@ -21,15 +21,15 @@ const FoodAndDrinks = () => (
         Ressaltamos ainda que não será será permitido o descarte de sobras de
         alimentos e bebidas nas lixeiras gerais das áreas sociais da feira.
       </li>
-      <li>
+      <li className={styles.listItem}>
         O descarte deverá ser feito nos locais e reservatórios indicados.
         Lembre-se que há regras de descarte nas lixeiras sustentáveis.
       </li>
-      <li>
+      <li className={styles.listItem}>
         A utilização dos sanitários não está liberada para consumo ou descarte
         de itens de alimentos.
       </li>
-      <li>
+      <li className={styles.listItem}>
         É PROIBIDO servir bebidas alcoólicas durante todo o período do evento.
         Passível do stand ser interditado em caso de descumprimento dessa regra.
       </li>
