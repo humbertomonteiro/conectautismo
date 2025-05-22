@@ -23,6 +23,7 @@
 
 .mobileHeader img {
   width: 150px;
+  cursor: pointer;
 }
 
 @media (min-width: 768px) {
@@ -78,6 +79,7 @@
 
 .sidebarContent img {
   width: 70%;
+  cursor: pointer;
 }
 
 @media (min-width: 768px) {
@@ -286,7 +288,7 @@
   /* flex: 1; */
   width: 100%;
   padding: 0.75rem;
-  border: 1px solid var(--color-1);
+  border: 1px solid #e0e0e0;
   border-radius: 0.5rem;
   /* background: var(--color-1); */
 
@@ -343,7 +345,7 @@
 .searchButton {
   padding: 0.75rem;
   /* background: var(--color-3); */
-  border: 1px solid var(--color-1);
+  border: 1px solid #e0e0e0;
   /* border-radius: 0.25rem; */
   border-radius: 0.5rem;
   cursor: pointer;

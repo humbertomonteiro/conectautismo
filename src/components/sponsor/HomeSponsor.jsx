@@ -19,6 +19,11 @@ const HomeSponsor = ({ sections, setActiveSection, activeSection }) => {
     <div className={styles.content}>
       <h1 className={styles.sectionTitle}>Manual do Patrocinador</h1>
 
+      <h2 className={styles.foreground}>
+        Apresentamos aqui todas as informações necessárias para o andamento do
+        evento, leia com calma e atenção!{" "}
+      </h2>
+
       {/* Seção Sobre o Evento */}
       <div className={styles.expandableSection}>
         <h2

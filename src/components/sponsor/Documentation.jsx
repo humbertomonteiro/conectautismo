@@ -1,6 +1,6 @@
 import styles from "./sponsor.module.css";
 
-const Documentation = () => (
+const Documentation = ({ setActiveSection }) => (
   <div className={styles.content}>
     <h1 className={styles.sectionTitle}>Documentação Obrigatória</h1>
     <ul className={styles.list}>
@@ -24,9 +24,20 @@ const Documentation = () => (
       Sem a apresentação das documentações acima, não será permitido o início do
       processo de montagem.
     </p>
-    <a href="">
+    <button
+      className={styles.linkButton}
+      onClick={() => setActiveSection("schedule")}
+      role="link"
+      aria-label="Navegar para o cronograma"
+      onKeyDown={(e) => {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          setActiveSection("schedule");
+        }
+      }}
+    >
       Confira os prazos de envio da documentação na página do expositor.
-    </a>
+    </button>
   </div>
 );
 

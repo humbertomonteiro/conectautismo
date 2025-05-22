@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import styles from "./sponsor.module.css";
 import Schedule from "../../components/sponsor/Schedule";
 import Documentation from "../../components/sponsor/Documentation";
@@ -126,7 +126,9 @@ const sectionsData = [
   {
     id: "documentation",
     name: "Documentação Obrigatória",
-    component: <Documentation />,
+    component: ({ setActiveSection }) => (
+      <Documentation setActiveSection={setActiveSection} />
+    ),
     content: ["Documentação Obrigatória"],
   },
   {
@@ -159,6 +161,10 @@ const Sponsor = () => {
   const [activeSection, setActiveSection] = useState("homeSponsor");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [openSubMenus, setOpenSubMenus] = useState({});
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [activeSection]);
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
@@ -252,9 +258,11 @@ const Sponsor = () => {
     <div className={styles.container}>
       {/* Mobile Hamburger Menu */}
       <div className={styles.mobileHeader}>
-        <a href="/patrocinador">
-          <img src={logo} alt="Logo Conect" />
-        </a>
+        <img
+          onClick={() => setActiveSection("HomeSponsor")}
+          src={logo}
+          alt="Logo Conect"
+        />
         <button
           className={styles.hamburger}
           onClick={toggleMenu}
@@ -476,7 +484,11 @@ const Sponsor = () => {
                 );
               }
               return section ? (
-                section.component
+                typeof section.component === "function" ? (
+                  <section.component setActiveSection={setActiveSection} />
+                ) : (
+                  section.component
+                )
               ) : (
                 <HomeSponsor
                   sections={sectionsData.filter((s) => s.id !== "homeSponsor")}
