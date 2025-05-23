@@ -18,7 +18,6 @@ import Cleaning from "../../components/sponsor/Cleaning";
 import Security from "../../components/sponsor/Security";
 import FoodAndDrinks from "../../components/sponsor/FoodAndDrinks";
 import Sound from "../../components/sponsor/Sound";
-import imgEvent from "../../assets/imgs/school-conect/img-event-logo.jpg";
 import GeneralPlan from "../../components/sponsor/GeneralPlan";
 
 // Centralized data for search
@@ -168,27 +167,108 @@ const Sponsor = () => {
   const [activeSection, setActiveSection] = useState("homeSponsor");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [openSubMenus, setOpenSubMenus] = useState({});
+  const [searchTerm, setSearchTerm] = useState("");
+  const [searchResults, setSearchResults] = useState([]);
+  const [history, setHistory] = useState([]);
 
+  // Criar lista plana de seções e subitens com componentes
+  const flatSections = sectionsData.reduce((acc, section) => {
+    // Incluir seção apenas se tiver um componente
+    if (section.component) {
+      acc.push({ id: section.id, name: section.name });
+    }
+    // Incluir subitens, se existirem
+    if (section.subItems) {
+      section.subItems.forEach((subItem) => {
+        acc.push({ id: subItem.id, name: subItem.name });
+      });
+    }
+    return acc;
+  }, []);
+
+  // Garantir que activeSection inicial seja válido
+  useEffect(() => {
+    if (!flatSections.some((s) => s.id === activeSection)) {
+      setActiveSection(flatSections[0].id);
+    }
+  }, []);
+
+  // Scroll to top on section change
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [activeSection]);
+
+  // Atualizar histórico e mudar seção
+  const handleSetActiveSection = (newSectionId) => {
+    if (newSectionId !== activeSection) {
+      setHistory((prev) => [activeSection, ...prev].slice(0, 10));
+      setActiveSection(newSectionId);
+      setSearchTerm("");
+      setSearchResults([]);
+      setIsMenuOpen(false);
+    }
+  };
+
+  // Navegar para seção anterior na lista plana
+  const goToPreviousSection = () => {
+    const currentIndex = flatSections.findIndex((s) => s.id === activeSection);
+    const prevIndex =
+      currentIndex <= 0 ? flatSections.length - 1 : currentIndex - 1;
+    handleSetActiveSection(flatSections[prevIndex].id);
+  };
+
+  // Navegar para seção próxima na lista plana
+  const goToNextSection = () => {
+    const currentIndex = flatSections.findIndex((s) => s.id === activeSection);
+    const nextIndex =
+      currentIndex >= flatSections.length - 1 || currentIndex === -1
+        ? 0
+        : currentIndex + 1;
+    handleSetActiveSection(flatSections[nextIndex].id);
+  };
+
+  // Voltar para a última seção visitada
+  const goBack = () => {
+    if (history.length > 0) {
+      const [lastSection, ...rest] = history;
+      setHistory(rest);
+      setActiveSection(lastSection);
+      setSearchTerm("");
+      setSearchResults([]);
+      setIsMenuOpen(false);
+    }
+  };
+
+  // Obter nome da seção anterior/próxima para exibir nas setas
+  const getNavigationNames = () => {
+    const currentIndex = flatSections.findIndex((s) => s.id === activeSection);
+    const prevIndex =
+      currentIndex <= 0 ? flatSections.length - 1 : currentIndex - 1;
+    const nextIndex =
+      currentIndex >= flatSections.length - 1 || currentIndex === -1
+        ? 0
+        : currentIndex + 1;
+    return {
+      prevName: flatSections[prevIndex].name,
+      nextName: flatSections[nextIndex].name,
+    };
+  };
+
+  const { prevName, nextName } = getNavigationNames();
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   const toggleSubMenu = (sectionId) => {
     setOpenSubMenus((prev) => {
       const newState = {};
-      // Fechar todos os submenus
       Object.keys(prev).forEach((key) => {
         newState[key] = false;
       });
-      // Abrir apenas o submenu clicado
       newState[sectionId] = !prev[sectionId];
       return newState;
     });
   };
 
-  // Handle search when button is clicked
   const handleSearch = () => {
     if (searchTerm.trim() === "") {
       setSearchResults([]);
@@ -244,29 +324,24 @@ const Sponsor = () => {
     setSearchResults(results);
   };
 
-  // Handle Enter key press for accessibility
   const handleKeyPress = (e) => {
     if (e.key === "Enter") {
       handleSearch();
     }
   };
 
-  // Highlight search term in text
   const highlightText = (text) => {
     if (!searchTerm) return text;
     const regex = new RegExp(`(${searchTerm})`, "gi");
     return text.replace(regex, `<span class="${styles.highlight}">$1</span>`);
   };
 
-  const [searchTerm, setSearchTerm] = useState("");
-  const [searchResults, setSearchResults] = useState([]);
-
   return (
     <div className={styles.container}>
       {/* Mobile Hamburger Menu */}
       <div className={styles.mobileHeader}>
         <img
-          onClick={() => setActiveSection("HomeSponsor")}
+          onClick={() => handleSetActiveSection("homeSponsor")}
           src={logo}
           alt="Logo Conect"
         />
@@ -325,12 +400,7 @@ const Sponsor = () => {
                         className={`${styles.subMenuItem} ${
                           activeSection === subItem.id ? styles.active : ""
                         }`}
-                        onClick={() => {
-                          setActiveSection(subItem.id);
-                          setIsMenuOpen(false);
-                          setSearchTerm("");
-                          setSearchResults([]);
-                        }}
+                        onClick={() => handleSetActiveSection(subItem.id)}
                       >
                         {subItem.name}
                       </li>
@@ -343,12 +413,7 @@ const Sponsor = () => {
                   className={`${styles.sidebarItem} ${
                     activeSection === section.id ? styles.active : ""
                   }`}
-                  onClick={() => {
-                    setActiveSection(section.id);
-                    setIsMenuOpen(false);
-                    setSearchTerm("");
-                    setSearchResults([]);
-                  }}
+                  onClick={() => handleSetActiveSection(section.id)}
                 >
                   {section.name}
                 </li>
@@ -360,12 +425,32 @@ const Sponsor = () => {
 
       {/* Main Content */}
       <main className={styles.main}>
-        {/* Search Bar */}
+        {/* Header with Back Button and Search Bar */}
         <div className={styles.headerMainSponsor}>
-          {/* <div className={styles.headerImg}>
-            <img src={imgEvent} alt="Imagem do evento" />
-          </div> */}
-
+          {history.length > 0 && (
+            <button
+              className={styles.backButton}
+              onClick={goBack}
+              aria-label="Voltar para a seção anterior"
+              onKeyDown={(e) => {
+                if (e.key === "Enter" || e.key === " ") {
+                  e.preventDefault();
+                  goBack();
+                }
+              }}
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                className={styles.backIcon}
+              >
+                <polyline points="15 18 9 12 15 6" />
+              </svg>
+              Voltar
+            </button>
+          )}
           <div className={styles.searchContainer}>
             <input
               type="text"
@@ -393,6 +478,57 @@ const Sponsor = () => {
             </button>
           </div>
         </div>
+
+        {/* Navigation Arrows */}
+        {searchResults.length === 0 && (
+          <div className={styles.navigation}>
+            <button
+              className={styles.navArrowLeft}
+              onClick={goToPreviousSection}
+              aria-label={`Navegar para ${prevName}`}
+              onKeyDown={(e) => {
+                if (e.key === "Enter" || e.key === " ") {
+                  e.preventDefault();
+                  goToPreviousSection();
+                }
+              }}
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                className={styles.arrowIcon}
+              >
+                <polyline points="15 18 9 12 15 6" />
+              </svg>
+              <span>{prevName}</span>
+            </button>
+            <button
+              className={styles.navArrowRight}
+              onClick={goToNextSection}
+              aria-label={`Navegar para ${nextName}`}
+              onKeyDown={(e) => {
+                if (e.key === "Enter" || e.key === " ") {
+                  e.preventDefault();
+                  goToNextSection();
+                }
+              }}
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                className={styles.arrowIcon}
+              >
+                <polyline points="9 18 15 12 9 6" />
+              </svg>
+              <span>{nextName}</span>
+            </button>
+          </div>
+        )}
+
         {/* Search Results or Section Content */}
         <div className={styles.contentSection}>
           {searchResults.length > 0 ? (
@@ -402,11 +538,7 @@ const Sponsor = () => {
                 <div key={result.id} className={styles.resultItem}>
                   <h3
                     className={styles.resultTitle}
-                    onClick={() => {
-                      setActiveSection(result.id);
-                      setSearchTerm("");
-                      setSearchResults([]);
-                    }}
+                    onClick={() => handleSetActiveSection(result.id)}
                   >
                     {result.name}
                   </h3>
@@ -415,11 +547,7 @@ const Sponsor = () => {
                         <div key={subResult.id}>
                           <h4
                             className={styles.resultTitle}
-                            onClick={() => {
-                              setActiveSection(subResult.id);
-                              setSearchTerm("");
-                              setSearchResults([]);
-                            }}
+                            onClick={() => handleSetActiveSection(subResult.id)}
                           >
                             {subResult.name}
                           </h4>
@@ -474,7 +602,7 @@ const Sponsor = () => {
                     sections={sectionsData.filter(
                       (s) => s.id !== "homeSponsor"
                     )}
-                    setActiveSection={setActiveSection}
+                    setActiveSection={handleSetActiveSection}
                     activeSection={activeSection}
                   />
                 );
@@ -485,21 +613,23 @@ const Sponsor = () => {
                     sections={sectionsData.filter(
                       (s) => s.id !== "homeSponsor"
                     )}
-                    setActiveSection={setActiveSection}
+                    setActiveSection={handleSetActiveSection}
                     activeSection={activeSection}
                   />
                 );
               }
               return section ? (
                 typeof section.component === "function" ? (
-                  <section.component setActiveSection={setActiveSection} />
+                  <section.component
+                    setActiveSection={handleSetActiveSection}
+                  />
                 ) : (
                   section.component
                 )
               ) : (
                 <HomeSponsor
                   sections={sectionsData.filter((s) => s.id !== "homeSponsor")}
-                  setActiveSection={setActiveSection}
+                  setActiveSection={handleSetActiveSection}
                   activeSection={activeSection}
                 />
               );

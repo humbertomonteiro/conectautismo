@@ -20,8 +20,8 @@ const HomeSponsor = ({ sections, setActiveSection, activeSection }) => {
       <h1 className={styles.sectionTitle}>Manual do Patrocinador</h1>
 
       <h2 className={styles.foreground}>
-        Apresentamos aqui todas as informações necessárias para o andamento do
-        evento, leia com calma e atenção!{" "}
+        Olá expositor e patrocinador. Seja bem vindo ao maior congresso Norte e
+        Nordeste de autismo. Parabéns por apoiar e ser peça chave nessa causa.
       </h2>
 
       {/* Seção Sobre o Evento */}
