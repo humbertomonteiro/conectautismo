@@ -19,6 +19,7 @@ import Security from "../../components/sponsor/Security";
 import FoodAndDrinks from "../../components/sponsor/FoodAndDrinks";
 import Sound from "../../components/sponsor/Sound";
 import imgEvent from "../../assets/imgs/school-conect/img-event-logo.jpg";
+import GeneralPlan from "../../components/sponsor/GeneralPlan";
 
 // Centralized data for search
 const sectionsData = [
@@ -154,6 +155,12 @@ const sectionsData = [
     name: "Embargo da Construção",
     component: <ConstructionEmbargo />,
     content: ["Embargo da Construção"],
+  },
+  {
+    id: "generalPlan",
+    name: "Plano geral",
+    component: <GeneralPlan />,
+    content: ["Planta geral", "stands", "demonstranção de stands", "plantas"],
   },
 ];
 
