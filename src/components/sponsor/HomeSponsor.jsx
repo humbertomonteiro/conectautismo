@@ -2,6 +2,8 @@ import { useState } from "react";
 import styles from "./sponsor.module.css";
 import NavigationCards from "./NavigationCards";
 
+import { FaArrowRight } from "react-icons/fa";
+
 const HomeSponsor = ({ sections, setActiveSection, activeSection }) => {
   const [openSections, setOpenSections] = useState({
     about: false,
@@ -20,9 +22,38 @@ const HomeSponsor = ({ sections, setActiveSection, activeSection }) => {
       <h1 className={styles.sectionTitle}>Manual do Patrocinador</h1>
 
       <h2 className={styles.foreground}>
-        Olá expositor e patrocinador. Seja bem vindo ao maior congresso Norte e
-        Nordeste de autismo. Parabéns por apoiar e ser peça chave nessa causa.
+        Prezado expositor e patrocinador, Bem vindo ao maior congresso Norte e
+        Nordeste do Neurodesenvolvimento. A vossa empresa é peça fundamental
+        nesta causa. Este espaço está reservado para si, pedimos que leia
+        atentamente todas as informações.
       </h2>
+
+      <div className={styles.term}>
+        <h2>TERMO DE RESPONSABILIDADE (OBRIGATÓRIO)</h2>
+        <p>
+          O termo de responsabilidade deverá ser preenchido e assinado pelo
+          expositor e patrocinadores (não expositor).
+        </p>
+        <p>
+          Deverá ser enviado via e-mail até o dia 30/07/2025. Email :{" "}
+          <a
+            className={styles.linkButton}
+            href="mailto:comercial@congressoconect.com.br"
+            target="_blank"
+          >
+            comercial@congressoconect.com.br
+          </a>
+        </p>
+        <div className={styles.downloadButtonContainer}>
+          <a
+            className={styles.downloadButton}
+            href="https://docs.google.com/document/d/1Rpz9pxMUrV-hMDT-hg9_W-Q_SobPhsGW/mobilebasic"
+            target="_blank"
+          >
+            Termo de responsabilidade <FaArrowRight />
+          </a>
+        </div>
+      </div>
 
       {/* Seção Sobre o Evento */}
       <div className={styles.expandableSection}>
