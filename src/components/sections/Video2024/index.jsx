@@ -17,49 +17,67 @@ export default function Video2024() {
     <>
       <Title text="Como foi Conect 2024?" />
       <section id="about" className={styles.container}>
-        <div className={styles.content}>
-          <iframe
-            src="https://www.youtube.com/embed/vhyD2sDpzvo?si=2w4AhEj7EClq6uep"
-            title="YouTube video player"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerolicy="strict-origin-when-cross-origin"
-            allowFullScreen
-          ></iframe>
-        </div>
-
-        <div className={styles.content}>
-          <div className={styles.swiper}>
-            <Swiper
-              effect={"cards"}
-              grabCursor={true}
-              modules={[EffectCards]}
-              className={styles.swiperSlide}
-            >
-              {arrayImgsEvent.map((img, index) => (
-                <SwiperSlide key={index}>
-                  <img loading="lazy" src={img.img} alt={`imagem ${index}`} />
-                </SwiperSlide>
-              ))}
-            </Swiper>
+        {/* <Title
+          text="Como foi Conect 2024?"
+          costumerProp={{ color: "#000", martinTop: "-8rem" }}
+        /> */}
+        {/* <h2>Como foi Conect 2024? </h2> */}
+        {/* <div className={styles.containerContent}> */}
+        <div className={styles.midias}>
+          <div className={styles.content}>
+            <div className={styles.swiper}>
+              <Swiper
+                effect={"cards"}
+                grabCursor={true}
+                modules={[EffectCards]}
+                className={styles.swiperSlide}
+              >
+                {arrayImgsEvent.map((img, index) => (
+                  <SwiperSlide key={index}>
+                    <img loading="lazy" src={img.img} alt={`imagem ${index}`} />
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+            </div>
           </div>
-        </div>
-
-        <div className={styles.content}>
-          <Testimonials />
-          <div className={styles.buttons}>
-            <ButtonPretty
-              link={"#tickts"}
-              // target="_blank"
-              text={"me conectar também"}
-            />
-            <ButtonPretty
-              data-color="blue"
-              link={"https://conectautismo.pixieset.com"}
-              text={"Fotos Conect 2024"}
-              icon={<FaArrowRight />}
-            />
+          <div className={styles.content}>
+            <iframe
+              src="https://www.youtube.com/embed/vhyD2sDpzvo?si=2w4AhEj7EClq6uep"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            ></iframe>
           </div>
+          <ButtonPretty
+            data-color="blue"
+            link={"https://conectautismo.pixieset.com"}
+            text={"Fotos Conect 2024"}
+            icon={<FaArrowRight />}
+          />
+          <ButtonPretty
+            link={"#tickts"}
+            // target="_blank"
+            text={"me conectar também"}
+          />
         </div>
+        {/* <div className={styles.content}>
+            <Testimonials />
+            <div className={styles.buttons}>
+              <ButtonPretty
+                link={"#tickts"}
+                // target="_blank"
+                text={"me conectar também"}
+              />
+              <ButtonPretty
+                data-color="blue"
+                link={"https://conectautismo.pixieset.com"}
+                text={"Fotos Conect 2024"}
+                icon={<FaArrowRight />}
+              />
+            </div>
+          </div> */}
+        {/* </div> */}
       </section>
     </>
   );

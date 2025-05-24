@@ -11,7 +11,7 @@ export default function Welcome() {
           <div className={styles.logo}>
             <img loading="lazy" src={logo} alt="Logo Conect Autismo" />
           </div>
-          <h1>Segunda edição Conect Autismo</h1>
+          <h1>Segunda edição </h1>
           <p>
             Maior Congresso de TEA Norte e Nordeste. 23 & 24 de agosto de 2025.
           </p>

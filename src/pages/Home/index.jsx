@@ -20,6 +20,7 @@ import { arrayApoio } from "../../data/apoio";
 // import CheckList from "../../components/sections/CheckList";
 import HalfiPrice from "../../components/sections/HalfPrice";
 import TopPromoBar from "../../components/shared/TopPromoBar";
+import Testimonials from "../../components/sections/Testionials";
 
 export default function Home() {
   return (
@@ -28,6 +29,7 @@ export default function Home() {
       <div className={styles.container} data-aos="fade-down">
         <Welcome />
         <Video2024 />
+        <Testimonials />
         <Palestrantes />
         <Oportunidades />
         <BoxesTickts />
