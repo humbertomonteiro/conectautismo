@@ -8,8 +8,8 @@ export default function TopPromoBar() {
       {/* <span>Contagem regressiva</span> */}
       {/* <Contagem dateEvent={"07 nov 2024"} /> */}
       {/* <p>INGRESSOS ESGOTADOS</p> */}
-      <a data-color="blue" href="/patrocinador">
-        MANUAL DO PATROCINADOR
+      <a data-color="blue" href="/expositor">
+        MANUAL DO EXPOSITOR
       </a>
       <a
         href="#tickts"

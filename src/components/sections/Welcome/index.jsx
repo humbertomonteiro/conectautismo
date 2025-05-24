@@ -21,8 +21,8 @@ export default function Welcome() {
           <div className={styles.buttons}>
             <ButtonPretty
               data-color="blue"
-              link="/patrocinador"
-              text={"Manual do patrocinador"}
+              link="/expositor"
+              text={"Manual do expositor"}
               icon={<FaBook />}
             />
             <ButtonPretty link={"#tickts"} text={"Entrar na lista de espera"} />

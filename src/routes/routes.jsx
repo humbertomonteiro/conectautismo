@@ -10,7 +10,7 @@ export default function RouterApp() {
       <Route path="/" element={<Home />} />
       <Route path="/confirmation" element={<Confirmation />} />
       <Route path="/admin" element={<Admin />} />
-      <Route path="/patrocinador" element={<Sponsor />} />
+      <Route path="/expositor" element={<Sponsor />} />
     </Routes>
   );
 }

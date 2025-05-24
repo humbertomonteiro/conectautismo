@@ -19,7 +19,7 @@ const HomeSponsor = ({ sections, setActiveSection, activeSection }) => {
 
   return (
     <div className={styles.content}>
-      <h1 className={styles.sectionTitle}>Manual do Patrocinador</h1>
+      <h1 className={styles.sectionTitle}>Manual do Epoxitor</h1>
 
       <h2 className={styles.foreground}>
         Prezado expositor e patrocinador, Bem vindo ao maior congresso Norte e

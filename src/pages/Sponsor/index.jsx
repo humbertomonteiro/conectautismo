@@ -157,7 +157,7 @@ const sectionsData = [
   },
   {
     id: "generalPlan",
-    name: "Plano geral",
+    name: "Planta geral",
     component: <GeneralPlan />,
     content: ["Planta geral", "stands", "demonstranção de stands", "plantas"],
   },
@@ -365,7 +365,7 @@ const Sponsor = () => {
         <div className={styles.sidebarContent}>
           <img onClick={toggleMenu} src={logo} alt="Logo Conect" />
           <h1 onClick={toggleMenu} className={styles.sidebarTitle}>
-            Manual do patrocinador
+            Manual do expositor
           </h1>
           <ul>
             {sectionsData.map((section) =>
