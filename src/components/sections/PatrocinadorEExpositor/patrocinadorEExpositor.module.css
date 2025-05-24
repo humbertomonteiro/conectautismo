@@ -22,6 +22,7 @@
   justify-content: center;
   align-items: center;
   padding-bottom: 2rem;
+  width: 100%;
 }
 
 .containerContent h2 {
@@ -36,7 +37,8 @@
 
 .content p {
   width: 500px;
-  max-width: 90%;
+  width: 100%;
+  padding: 0 1rem;
   text-align: center;
   line-height: 150%;
   margin-bottom: 2rem;
@@ -68,6 +70,10 @@
   .container {
     flex-direction: column;
     /* margin-top: 4rem; */
+  }
+
+  .containerContent {
+    width: 100%;
   }
 
   .containerContent h2 {
