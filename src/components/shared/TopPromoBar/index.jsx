@@ -7,7 +7,10 @@ export default function TopPromoBar() {
     <div className={styles.container}>
       {/* <span>Contagem regressiva</span> */}
       {/* <Contagem dateEvent={"07 nov 2024"} /> */}
-      <p>INGRESSOS ESGOTADOS</p>
+      {/* <p>INGRESSOS ESGOTADOS</p> */}
+      <a data-color="blue" href="/patrocinador">
+        MANUAL DO PATROCINADOR
+      </a>
       <a
         href="#tickts"
         // target="_blank"

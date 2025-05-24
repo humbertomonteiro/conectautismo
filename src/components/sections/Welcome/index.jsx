@@ -3,6 +3,8 @@ import styles from "./welcome.module.css";
 import logo from "../../../assets/imgs/logo/logo-png.png";
 import ButtonPretty from "../../shared/ButtonPretty";
 
+import { FaBook } from "react-icons/fa";
+
 export default function Welcome() {
   return (
     <section>
@@ -16,7 +18,15 @@ export default function Welcome() {
             Maior Congresso de TEA Norte e Nordeste. 23 & 24 de agosto de 2025.
           </p>
           <h2>INGRESSOS ESGOTADOS</h2>
-          <ButtonPretty link={"#tickts"} text={"Entrar na lista de espera"} />
+          <div className={styles.buttons}>
+            <ButtonPretty
+              data-color="blue"
+              link="/patrocinador"
+              text={"Manual do patrocinador"}
+              icon={<FaBook />}
+            />
+            <ButtonPretty link={"#tickts"} text={"Entrar na lista de espera"} />
+          </div>
         </div>
       </div>
     </section>

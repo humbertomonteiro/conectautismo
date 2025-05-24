@@ -31,15 +31,15 @@ export default function Home() {
         <Video2024 />
         <Testimonials />
         <Palestrantes />
+        <PatrocinadorEExpositor />
         <Oportunidades />
         <BoxesTickts />
         <HalfiPrice />
-        <SchoolConect />
         <Local />
         <Social />
         <Patrocinador title="PATROCINADORES" array={arrayPatrocinadores} />
         <Patrocinador title="APOIO" array={arrayApoio} />
-        <PatrocinadorEExpositor />
+        <SchoolConect />
         <CommonQuestions />
         {/* <CheckList /> */}
         <RedesSociais />

@@ -155,14 +155,14 @@ export const arrayPalestrantes = [
   //   name: "dra. Deborah Kerches",
   //   img: draDeborahKerches,
   // },
-  {
-    name: "Kadu Lins",
-    img: kaduLins,
-  },
-  {
-    name: "Letica Mello",
-    img: leticiaMello,
-  },
+  // {
+  //   name: "Kadu Lins",
+  //   img: kaduLins,
+  // },
+  // {
+  //   name: "Letica Mello",
+  //   img: leticiaMello,
+  // },
   {
     name: "dr. Andre Pessoa",
     img: drAndrePessoa,
