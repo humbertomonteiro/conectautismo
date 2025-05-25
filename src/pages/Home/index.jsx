@@ -30,7 +30,7 @@ export default function Home() {
         <Welcome />
         <Video2024 />
         <Testimonials />
-        <Palestrantes />
+        {/* <Palestrantes /> */}
         <PatrocinadorEExpositor />
         <Oportunidades />
         <BoxesTickts />
