@@ -15,7 +15,7 @@ export default function TopPromoBar() {
         href="#tickts"
         // target="_blank"
       >
-        VER INGRESSOS
+        GARANTIR INGRESSO
       </a>
       {/* <ButtonPretty text={"Garanta sua vaga"} link={"#formEvent"} /> */}
     </div>
