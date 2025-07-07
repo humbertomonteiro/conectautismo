@@ -30,10 +30,10 @@ export default function Welcome() {
             <ButtonPretty
               data-color="blue"
               link="/expositor"
-              text={"Manual do expositor"}
+              text={"Manual do Expositor"}
               icon={<FaBook />}
             />
-            <ButtonPretty link={"#tickts"} text={"LOTE EXTRA"} />
+            <ButtonPretty link={"#tickts"} text={"Lote Extra"} />
           </div>
         </div>
       </div>

@@ -45,13 +45,13 @@ export default function Video2024() {
           <ButtonPretty
             data-color="blue"
             link={"https://conectautismo.pixieset.com"}
-            text={"Fotos Conect 2024"}
+            text={"FOTOS CONECT 2024"}
             icon={<FaArrowRight />}
           />
           <ButtonPretty
             link={"#tickts"}
             // target="_blank"
-            text={"me conectar também"}
+            text={"ME CONECTAR TAMBÉM"}
           />
         </div>
       </section>

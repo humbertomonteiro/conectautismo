@@ -36,7 +36,7 @@ export default function PatrocinadorEExpositor() {
             <ButtonPretty
               data-color="blue"
               link="#patrocinador"
-              text="Todos os patrocinadores"
+              text="TODOS OS PATROCINADORES"
               icon={<FaArrowUp />}
             />
 

@@ -18,7 +18,7 @@ export default function Social() {
             "https://wa.me/558592742323?text=Olá! Quero entrar na lista de espera do evento Conect Autismo."
           }
           target="_blank"
-          text={"Quero ajudar o mundo"}
+          text={"QUERO AJUDAR O MUNDO"}
         />
       </div>
     </section>

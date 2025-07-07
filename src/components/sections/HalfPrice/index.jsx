@@ -66,7 +66,7 @@ export default function HalfiPrice() {
         <div className={styles.buttons}>
           <div className={styles.button}>
             <ButtonPretty
-              text={"lote extra com festa"}
+              text={"LOTE EXTRA COM FESTA"}
               link={
                 "https://pay.hotmart.com/A96222789P?off=1kjo08ig&offDiscount=EXTRAMEIA"
               }
@@ -79,7 +79,7 @@ export default function HalfiPrice() {
           </div>
           <div className={styles.button}>
             <ButtonPretty
-              text={"lote extra sem festa"}
+              text={"LOTE EXTRA SEM FESTA"}
               link={
                 "https://pay.hotmart.com/A96222789P?off=cpagfpj6&offDiscount=EXTRAMEIA"
               }

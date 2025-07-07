@@ -3,6 +3,7 @@ import styles from "./local.module.css";
 import Title from "../../shared/Title";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
+import ButtonPretty from "../../shared/ButtonPretty";
 
 export default function Local() {
   return (
@@ -62,14 +63,17 @@ export default function Local() {
               <li>⁠localização privilegiada vista Mar</li>
               <li>Comodidade para hospedagem</li>
               <li>Estacionamento seguro e amplo.</li>
-              {/* <li>Com 1 grande palco na Expo</li> */}
-              {/* <li>⁠Stands na área secundária</li> */}
-              {/* <li>Coffe break</li> */}
-              {/* <li>⁠Opção de almoço buffet no local</li> */}
-              {/* <li>Comodidade para hospedagem</li> */}
-              {/* <li>⁠Fácil acesso</li> */}
-              {/* <li>⁠Estacionamento seguro e amplo</li> */}
             </ul>
+            <div className={styles.button}>
+              <ButtonPretty
+                // link={
+                //   "https://wa.me/558592742323?text=Olá! Quero entrar na lista de espera do evento Conect Autismo."
+                // }
+                link="https://pay.hotmart.com/A96222789P?off=1kjo08ig"
+                target="_blank"
+                text={"Comprar Ingresso"}
+              />
+            </div>
           </div>
           <div className={styles.map}>
             <iframe

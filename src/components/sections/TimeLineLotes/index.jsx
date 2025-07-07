@@ -1,6 +1,6 @@
 import styles from "./timeLineLotes.module.css";
 
-// import { IoRocketOutline } from "react-icons/io5";
+import { IoRocketOutline } from "react-icons/io5";
 import { IoClose } from "react-icons/io5";
 
 const TimeLineLotes = () => {
@@ -9,6 +9,11 @@ const TimeLineLotes = () => {
     { name: "1º Lote", status: "Esgotado", icon: <IoClose /> },
     { name: "2º Lote", status: "Esgotado", icon: <IoClose /> },
     { name: "3º Lote", status: "Esgotado", icon: <IoClose /> },
+    {
+      name: "Lote Extra",
+      status: "Últimos 100 ingressos",
+      icon: <IoRocketOutline />,
+    },
     // { name: "3º Lote", status: "Esgotado", icon: <IoRocketOutline /> }, Icone de foguete para informar lote acabando
   ];
 
@@ -24,7 +29,7 @@ const TimeLineLotes = () => {
               target="_blank"
               key={index}
               className={styles.timelineItem}
-              data-current={lote.status === "Últimas 100 vagas"}
+              data-current={lote.status !== "Esgotado"}
             >
               <div>
                 <span>{lote.name}</span>
