@@ -9,17 +9,18 @@ export default function BoxesTickts() {
   return (
     <section id="tickts" className={styles.container}>
       <Title text={"INGRESSO CONECT AUTISMO 2025"} />
-      <TimeLineLotes />
-      <ButtonPretty
+      {/* <TimeLineLotes /> */}
+      {/* <ButtonPretty
         // link={
         //   "https://pay.hotmart.com/A96222789P?off=cui8duv5&bid=1742215373582"
         // }
-        link={
-          "https://wa.me/558592742323?text=Olá! Quero entrar na lista de espera do evento Conect Autismo."
-        }
+        // link={
+        //   "https://wa.me/558592742323?text=Olá! Quero entrar na lista de espera do evento Conect Autismo."
+        // }
+        link="https://pay.hotmart.com/A96222789P?off=1kjo08ig"
         target="_blank"
-        text={"Entrar na lista de espera"}
-      />
+        text={"LOTE EXTRA"}
+      /> */}
       <div className={styles.boxes}>
         <div className={styles.box} data-aos="zoom-in">
           <h2>INGRESSO COMPLETO CONECT 2025 - (Ingressos esgotados)</h2>
@@ -49,60 +50,32 @@ export default function BoxesTickts() {
             <li>Sala de Descompressão (Espaço sensorial)</li>
             <li>Todos os espaços com acessibilidade.</li>
           </ul>
-          {/* <ul>
-            <li>Congresso presencial 23 e 24 de Agosto de 2025:</li>
-            <li>⁠Um Grande palco.</li>
-            <li>Delicioso coffee break.</li>
-            <li>Credenciamento antecipado dois dias antes do evento</li>
-            <li>
-              Expositores com o que há de mais inovador no mercado (ou com
-              novidades exclusivas)
-            </li>
-            <li>kit congressista exclusivo</li>
-            <li>
-              Palestranstes com conteúdos respaldados por pesquisas e estudos
-              científicos classificados como nível 1A ou 1B.
-            </li>
-            <li>Conteúdo gravado disponível por 24 messes.</li>
-            <li>
-              Enriqueça seu portfólio profissional com um certificado
-              reconhecido, comprovando as horas cursadas.
-            </li>
-            <li>
-              Espaços instagramaveis para fotos, com fotógrafos profissionais
-              para registrar os melhores momentos.
-            </li>
-            <li>
-              ⁠Sessão de autografos com grandes palestrantes. Nacionais e
-              internacionais.
-            </li>
-          </ul> */}
-          <div className={styles.shop}>
-            <ButtonPretty
-              // link={
-              //   "https://pay.hotmart.com/A96222789P?off=cui8duv5&bid=1742215373582"
-              // }
-              link={
-                "https://wa.me/558592742323?text=Olá! Quero entrar na lista de espera do evento Conect Autismo."
-              }
-              target="_blank"
-              text={"Entrar na lista de espera"}
-            />
 
-            <strong>R$ 1248,00</strong>
-            <span>Com festa</span>
-            <ButtonPretty
-              // link={
-              //   "https://pay.hotmart.com/A96222789P?off=j7epqdn7&bid=1742216074507"
-              // }
-              link={
-                "https://wa.me/558592742323?text=Olá! Quero entrar na lista de espera do evento Conect Autismo."
-              }
-              target="_blank"
-              text={"Entrar na lista de espera"}
-            />
-            <strong>R$ 1148,00</strong>
-            <span>Sem festa</span>
+          <div className={styles.shop}>
+            <div className={styles.button}>
+              <ButtonPretty
+                // link={
+                //   "https://wa.me/558592742323?text=Olá! Quero entrar na lista de espera do evento Conect Autismo."
+                // }
+                link="https://pay.hotmart.com/A96222789P?off=1kjo08ig"
+                target="_blank"
+                text={"Lote Extra com festa"}
+              />
+              <strong>R$ 1248,00</strong>
+              <span>Com festa</span>
+            </div>
+            <div className={styles.button}>
+              <ButtonPretty
+                // link={
+                //   "https://wa.me/558592742323?text=Olá! Quero entrar na lista de espera do evento Conect Autismo."
+                // }
+                link="https://pay.hotmart.com/A96222789P?off=cpagfpj6"
+                target="_blank"
+                text={"Lote extra sem festa"}
+              />
+              <strong>R$ 1148,00</strong>
+              <span>Sem festa</span>
+            </div>
             <a className={styles.link} href="#meia-entrada">
               Conferir condições de meia-entrada
             </a>
@@ -131,14 +104,16 @@ export default function BoxesTickts() {
             <li>Garanta a festa para seus acompanhantes.</li>
           </ul>
           <div className={styles.shop}>
-            <ButtonPretty
-              link={"https://pay.hotmart.com/A96222789P?off=aqn2jvpg"}
-              target="_blank"
-              text={"quero muito ir"}
-            />
-            <strong>R$ 225,00</strong>
-            {/* <span>LOTE PRE VENDA JÁ COM VALOR DE MEIA ENTRADA.</span> */}
-            <span>MEIA ENTRADA.</span>
+            <div className={styles.button}>
+              <ButtonPretty
+                link={"https://pay.hotmart.com/A96222789P?off=aqn2jvpg"}
+                target="_blank"
+                text={"quero muito ir"}
+              />
+              <strong>R$ 225,00</strong>
+              {/* <span>LOTE PRE VENDA JÁ COM VALOR DE MEIA ENTRADA.</span> */}
+              <span>MEIA ENTRADA.</span>
+            </div>
           </div>
         </div>
 
@@ -156,24 +131,28 @@ export default function BoxesTickts() {
             <li>Desconto por tempo limitado.</li>
           </ul>
           <div className={styles.shop}>
-            <ButtonPretty
-              link={
-                "https://pay.hotmart.com/A96222789P?off=fwurs0rj&bid=1732896360049"
-              }
-              target="_blank"
-              text="Grupo com festa"
-            />
-            <strong>
-              R$ 878,40 <span>cada</span>
-            </strong>
-            <ButtonPretty
-              link={"https://pay.hotmart.com/A96222789P?off=gndkzfaq"}
-              target="_blank"
-              text="Grupo sem festa"
-            />
-            <strong>
-              R$ 750,40 <span>cada</span>
-            </strong>
+            <div className={styles.button}>
+              <ButtonPretty
+                link={
+                  "https://pay.hotmart.com/A96222789P?off=fwurs0rj&bid=1732896360049"
+                }
+                target="_blank"
+                text="Grupo com festa"
+              />
+              <strong>
+                R$ 878,40 <span>cada</span>
+              </strong>
+            </div>
+            <div className={styles.button}>
+              <ButtonPretty
+                link={"https://pay.hotmart.com/A96222789P?off=gndkzfaq"}
+                target="_blank"
+                text="Grupo sem festa"
+              />
+              <strong>
+                R$ 750,40 <span>cada</span>
+              </strong>
+            </div>
           </div>
         </div>
       </div>

@@ -10,19 +10,12 @@ import { FaArrowRight } from "react-icons/fa";
 
 import Title from "../../shared/Title";
 import ButtonPretty from "../../shared/ButtonPretty";
-import Testimonials from "../Testionials";
 
 export default function Video2024() {
   return (
     <>
       <Title text="Como foi Conect 2024?" />
-      <section id="about" className={styles.container}>
-        {/* <Title
-          text="Como foi Conect 2024?"
-          costumerProp={{ color: "#000", martinTop: "-8rem" }}
-        /> */}
-        {/* <h2>Como foi Conect 2024? </h2> */}
-        {/* <div className={styles.containerContent}> */}
+      <section id="about" className={styles.container} data-aos="zoom-in">
         <div className={styles.midias}>
           <div className={styles.content}>
             <div className={styles.swiper}>
@@ -61,23 +54,6 @@ export default function Video2024() {
             text={"me conectar também"}
           />
         </div>
-        {/* <div className={styles.content}>
-            <Testimonials />
-            <div className={styles.buttons}>
-              <ButtonPretty
-                link={"#tickts"}
-                // target="_blank"
-                text={"me conectar também"}
-              />
-              <ButtonPretty
-                data-color="blue"
-                link={"https://conectautismo.pixieset.com"}
-                text={"Fotos Conect 2024"}
-                icon={<FaArrowRight />}
-              />
-            </div>
-          </div> */}
-        {/* </div> */}
       </section>
     </>
   );

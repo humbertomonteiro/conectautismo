@@ -5,10 +5,15 @@
   align-items: center;
   /* margin-top: 8rem; */
   background: var(--bg-gradient);
-  border-top: var(--color-border);
-  border-bottom: var(--color-border);
   padding: 1rem;
   gap: 1.5rem;
+  width: 1400px;
+  max-width: 90%;
+  border-radius: 1rem;
+  padding: 2rem 1.5rem;
+  margin: 0 auto;
+  border: var(--color-border);
+  margin-top: 8rem;
 }
 
 .containerContent {
@@ -60,6 +65,12 @@
   width: 100%;
   border-radius: 1rem;
   max-width: 100%;
+}
+
+@media (max-width: 780px) {
+  .container {
+    margin-top: 4rem;
+  }
 }
 
 @media (max-width: 1050px) {

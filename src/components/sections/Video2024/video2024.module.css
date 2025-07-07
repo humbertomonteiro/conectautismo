@@ -1,18 +1,14 @@
 .container {
-  padding: 0 1.5rem;
   display: flex;
   flex-direction: column;
   width: 1400px;
-  max-width: 100%;
+  max-width: 90%;
   gap: 1rem;
-  /* background-color: #151d30d5;
-  background-image: linear-gradient(to top, #0097d873, #ff00003b),
-    url("https://img.freepik.com/vetores-gratis/fundo-liso-estilo-papel_23-2148983314.jpg?ga=GA1.1.2095538369.1681160396&semt=ais_hybrid&w=740");
-
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: #062c4e;  */
+  background: var(--bg-gradient);
+  border: var(--color-border);
+  border-radius: 1rem;
+  padding: 2rem 1.5rem;
+  margin: 0 auto;
 }
 
 .midias {

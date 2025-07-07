@@ -9,6 +9,7 @@
   background-color: #062c4ed7;
   z-index: 7;
   padding: 0.5rem 0;
+  border-bottom: 1px solid #083761;
 }
 
 .container span {
@@ -29,23 +30,21 @@
   border: none;
   background-size: 300% 100%;
   border-radius: 50px;
-  moz-transition: all 0.4s ease-in-out;
   -o-transition: all 0.4s ease-in-out;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
   background-image: linear-gradient(
     to right,
-    #fc6076,
+    #ff4d00,
     #ff9a44,
-    #ef9d43,
-    #e75516
+    #fc540d,
+    #ff8820
   );
   box-shadow: 0 4px 15px 0 rgba(252, 104, 110, 0.75);
 }
 
 .container a:hover {
   background-position: 100% 0;
-  moz-transition: all 0.4s ease-in-out;
   -o-transition: all 0.4s ease-in-out;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;

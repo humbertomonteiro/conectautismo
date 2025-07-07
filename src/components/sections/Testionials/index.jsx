@@ -9,7 +9,7 @@ import {
 } from "swiper/modules";
 
 import { testimonials } from "../../../data/testimonials";
-import logo from "../../../assets/imgs/logo/logo.jpg";
+import logo from "../../../assets/imgs/logo/logo.png";
 import Title from "../../shared/Title";
 
 import { FaStar } from "react-icons/fa";
@@ -82,7 +82,7 @@ export default function Testimonials() {
   return (
     <section className={styles.container}>
       <Title text="reviews" />
-      <div className={styles.reviews}>
+      <div className={styles.reviews} data-aos="zoom-in">
         <Swiper
           // effect={"coverflow"}
           // grabCursor={true}

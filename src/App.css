@@ -9,7 +9,7 @@
   --color-3: #339ccc;
   --color-4: #dfa99e;
 
-  --color-border: 1px solid #339ccccb;
+  --color-border: 1px solid #083761;
   --bg-gradient: linear-gradient(15deg, #004e72ec 0%, #072c3dbd 90%);
   --bg-gradient-pretty: linear-gradient(to right, #fc6076, #ff9a44, #e75516);
 }
@@ -35,7 +35,7 @@ img {
 }
 
 .area {
-  background-image: linear-gradient(to top, #02213a, #086488a6),
+  background-image: linear-gradient(135deg, #021b30e1, #032d4ee1, #086488e1),
     url("./assets/imgs/background/bg.jpg");
   background-size: cover;
   background-position: center;
