@@ -21,79 +21,86 @@ import img11 from "../../../assets/imgs/stands/img-11.jpeg";
 import img12 from "../../../assets/imgs/stands/img-12.jpeg";
 // import img13 from "../../../assets/imgs/stands/img-13.jpeg";
 
+import allSponsors from "../../../assets/imgs/patrocinadores/all-sponsors.jpeg";
+import Title from "../../shared/Title";
+
 export default function PatrocinadorEExpositor() {
   return (
-    <div className={styles.container} data-aos="fade-up">
-      <div className={styles.containerContent}>
-        <h2>Patrocinador & Expositor</h2>
-        <div className={styles.content}>
+    <div className={styles.container}>
+      <Title text="Patrocinador & Expositor" />
+      <div className={styles.boxes} data-aos="fade-up">
+        <div className={styles.carosel}>
+          <h3>Faça parte você também</h3>
           <p>
-            Garantindo visibilidade e posicionamento. Ideal para quem quer se
+            Garantindo visibilidade e posicionamento, ideal para quem quer se
             posicionar e mostrar sua marca. Focado em trazer sua relevância ao
             mercado.
           </p>
-          <div className={styles.buttons}>
+          <Swiper
+            pagination={true}
+            modules={[Pagination, Autoplay]}
+            autoplay={true}
+            className={styles.swiper}
+          >
+            <SwiperSlide>
+              <img src={img1} alt="Stand 1" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={img2} alt="Stand 2" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={img3} alt="Stand 3" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={img4} alt="Stand 4" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={img5} alt="Stand 5" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={img6} alt="Stand 6" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={img7} alt="Stand 7" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={img8} alt="Stand 8" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={img9} alt="Stand 9" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={img10} alt="Stand 10" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={img11} alt="Stand 11" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={img12} alt="Stand 12" />
+            </SwiperSlide>
+            {/* <SwiperSlide>
+            <img src={img13} alt="Stand 13" />
+          </SwiperSlide> */}
+          </Swiper>
+          {/*<div className={styles.buttons}>
             <ButtonPretty
               data-color="blue"
               link="#patrocinador"
               text="TODOS OS PATROCINADORES"
               icon={<FaArrowUp />}
-            />
+            /> */}
 
+          <div className={styles.buttons}>
             <ButtonPretty
+              data-color="blue"
               link="https://api.whatsapp.com/send/?phone=558592742323&text&type=phone_number&app_absent=0"
               text="ADQUIRA SEU ESPAÇO AQUI"
             />
           </div>
         </div>
-      </div>
-      <div className={styles.slides}>
-        <Swiper
-          pagination={true}
-          modules={[Pagination, Autoplay]}
-          autoplay={true}
-          className={styles.swiper}
-        >
-          <SwiperSlide>
-            <img src={img1} alt="Stand 1" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={img2} alt="Stand 2" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={img3} alt="Stand 3" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={img4} alt="Stand 4" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={img5} alt="Stand 5" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={img6} alt="Stand 6" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={img7} alt="Stand 7" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={img8} alt="Stand 8" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={img9} alt="Stand 9" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={img10} alt="Stand 10" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={img11} alt="Stand 11" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={img12} alt="Stand 12" />
-          </SwiperSlide>
-          {/* <SwiperSlide>
-            <img src={img13} alt="Stand 13" />
-          </SwiperSlide> */}
-        </Swiper>
+        <div className={styles.img}>
+          <img src={allSponsors} alt="Todos os patrocinadores." />
+        </div>
       </div>
     </div>
   );

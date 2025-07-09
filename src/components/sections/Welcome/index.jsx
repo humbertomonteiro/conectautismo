@@ -3,6 +3,7 @@ import styles from "./welcome.module.css";
 // import logo from "../../../assets/imgs/logo/logo-desktop.png";
 import logoMobile from "../../../assets/imgs/logo/logo-mobile.png";
 import ButtonPretty from "../../shared/ButtonPretty";
+import manualCongressista from "../../../assets/pdfs/manual-congressista.pdf";
 
 import { FaBook } from "react-icons/fa";
 
@@ -27,6 +28,13 @@ export default function Welcome() {
             data-aos="zoom-in"
             data-aos-delay="300"
           >
+            <ButtonPretty
+              data-color="blue"
+              link={manualCongressista}
+              text={"Manual do Congressista"}
+              icon={<FaBook />}
+              target="_blank"
+            />
             <ButtonPretty
               data-color="blue"
               link="/expositor"

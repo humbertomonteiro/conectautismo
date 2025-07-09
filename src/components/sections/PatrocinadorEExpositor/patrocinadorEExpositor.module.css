@@ -1,98 +1,70 @@
 .container {
   display: flex;
-  /* flex-direction: column; */
-  justify-content: center;
-  align-items: center;
-  /* margin-top: 8rem; */
-  background: var(--bg-gradient);
-  padding: 1rem;
-  gap: 1.5rem;
-  width: 1400px;
-  max-width: 90%;
-  border-radius: 1rem;
-  padding: 2rem 1.5rem;
-  margin: 0 auto;
-  border: var(--color-border);
-  margin-top: 8rem;
-}
-
-.containerContent {
-  /* width: 100%; */
-  width: 50%;
-}
-
-.content {
-  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-bottom: 2rem;
-  width: 100%;
 }
 
-.containerContent h2 {
-  width: 100%;
+.boxes {
   display: flex;
+  width: 1400px;
+  max-width: 90%;
   justify-content: center;
-  align-items: center;
-  margin: 1.5rem 0;
-  font-size: 2.2rem;
+  gap: 1.5rem;
+  background: var(--bg-gradient);
+  border: var(--color-border);
+  border-radius: 1rem;
+  padding: 1.5rem;
+}
+
+.carosel {
+  width: 50%;
+}
+
+.carosel h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
   text-align: center;
 }
 
-.content p {
-  width: 500px;
-  width: 100%;
-  padding: 0 1rem;
+.carosel p {
+  margin-bottom: 1rem;
   text-align: center;
-  line-height: 150%;
-  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+.swiper {
+  width: 100%;
+  border-radius: 1.5rem;
 }
 
 .buttons {
   display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  margin-top: 1rem;
 }
 
-.slides {
+.img {
   width: 50%;
 }
 
-.swiper img {
+.img img {
   width: 100%;
-  border-radius: 1rem;
-  max-width: 100%;
+  border-radius: 1.5rem;
 }
 
 @media (max-width: 780px) {
-  .container {
-    margin-top: 4rem;
-  }
-}
-
-@media (max-width: 1050px) {
-  .buttons {
+  .boxes {
     flex-direction: column;
   }
 
-  .container {
-    flex-direction: column;
-    /* margin-top: 4rem; */
-  }
-
-  .containerContent {
+  .carosel,
+  .img {
     width: 100%;
   }
 
-  .containerContent h2 {
-    font-size: 1.7rem;
+  .carosel h3 {
+    font-size: 1.4rem;
   }
-}
-
-.slides {
-  width: 600px;
-  max-width: 100%;
 }

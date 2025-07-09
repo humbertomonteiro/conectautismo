@@ -16,7 +16,7 @@ export default function BoxesTickts() {
         // }
         link="https://pay.hotmart.com/A96222789P?off=1kjo08ig"
         target="_blank"
-        text={"Lote Extra"}
+        text={"GARANTIR AGORA"}
       />
       <div className={styles.boxes}>
         <div className={styles.box} data-aos="zoom-in">
