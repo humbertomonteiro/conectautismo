@@ -1,4 +1,4 @@
-import styles from "./oportunidade.module.css";
+import styles from "./benefits.module.css";
 
 // import ampliacao from "../../../assets/imgs/oportunidades/ampliacao.png";
 // import acesso from "../../../assets/imgs/oportunidades/acesso-recursos.png";
@@ -69,12 +69,12 @@ const benefits = [
   },
 ];
 
-export default function oportunidades() {
+export default function Benefits() {
   return (
     <div className={styles.container}>
       <div className={styles.backgroundOverlay}></div>
       <Title text={"Oportunidades no Conect Autismo"} color="black" />
-      <h3 className={styles.subtitle} data-aos="zoom-in">
+      <h3 className={styles.subtitle}>
         O Congresso Conect é o maior espaço de crescimento, aprendizado e
         conexões sobre o Transtorno do Neurodesenvolvimento no Norte-Nordeste.
       </h3>

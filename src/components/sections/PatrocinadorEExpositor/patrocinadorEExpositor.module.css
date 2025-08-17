@@ -1,70 +1,198 @@
+.section {
+  position: relative;
+  padding: 4rem 0;
+  overflow: hidden;
+  color: var(--color-text-black);
+  z-index: 2;
+}
+
+.backgroundOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to top,
+    var(--bg-transparent-white),
+    var(--bg-transparent-white)
+  );
+  /* url("../../../assets/imgs/stands/img-2.jpeg"); */
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+  opacity: 0.9;
+  z-index: -1;
+
+  /* Efeito parallax */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid var(--primary-color);
+}
+
 .container {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.contentWrapper {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  gap: 2rem;
 }
 
-.boxes {
-  display: flex;
-  width: 1400px;
-  max-width: 90%;
-  justify-content: center;
-  gap: 1.5rem;
-  background: var(--bg-gradient);
-  border: var(--color-border);
-  border-radius: 1rem;
-  padding: 1.5rem;
-}
-
-.carosel {
-  width: 50%;
-}
-
-.carosel h3 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
+/* Header Section */
+.sponsorsHeader {
+  font-size: 1.8rem;
+  color: var(--color-primary, #1a365d);
+  margin-bottom: 0.5rem;
+  font-weight: 600;
   text-align: center;
 }
 
-.carosel p {
-  margin-bottom: 1rem;
-  text-align: center;
+.subtitle {
+  color: var(--color-text-black);
+  font-size: 1rem;
   line-height: 1.5;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
 }
 
+/* Swiper Styles */
 .swiper {
   width: 100%;
-  border-radius: 1.5rem;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  margin: 1rem 0;
 }
 
-.buttons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 1rem;
+.slideContent {
+  position: relative;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+  border-radius: 12px;
 }
 
-.img {
-  width: 50%;
-}
-
-.img img {
+.standImage {
   width: 100%;
-  border-radius: 1.5rem;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
 }
 
-@media (max-width: 780px) {
-  .boxes {
-    flex-direction: column;
-  }
-
-  .carosel,
-  .img {
-    width: 100%;
-  }
-
-  .carosel h3 {
-    font-size: 1.4rem;
-  }
+.standImage:hover {
+  transform: scale(1.05);
 }
+
+.slideOverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+  color: white;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Sponsors Section */
+.sponsorsSection {
+  margin-top: 2rem;
+}
+
+.sponsorsGrid {
+  position: relative;
+  background: var(--bg-transparent-white, rgba(255, 255, 255, 0.9));
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
+}
+
+.sponsorsImage {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.badge {
+  position: absolute;
+  top: -12px;
+  right: 20px;
+  background: var(--color-accent, #c78317);
+  color: var(--color-primary, #1a365d);
+  padding: 6px 15px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 0.8rem;
+  box-shadow: 0 3px 10px rgba(199, 131, 23, 0.3);
+}
+
+/* Buttons */
+.ctaButtons {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  align-items: center;
+}
+
+/* Swiper Navigation Customization */
+.swiper-button-next,
+.swiper-button-prev {
+  color: var(--color-accent, #c78317) !important;
+  background: rgba(255, 255, 255, 0.8);
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 50%;
+  backdrop-filter: blur(2px);
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 1.2rem !important;
+}
+
+.swiper-pagination-bullet {
+  background: var(--color-text-light, #4a5568) !important;
+  opacity: 0.5 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--color-accent, #c78317) !important;
+  opacity: 1 !important;
+}
+
+/* Desktop Layout */
+/* @media (min-width: 1024px) {
+  .contentWrapper {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 3rem;
+  }
+
+  .carouselSection {
+    flex: 1.5;
+  }
+
+  .sponsorsSection {
+    flex: 1;
+    margin-top: 0;
+  }
+
+  .sponsorsHeader {
+    font-size: 2rem;
+  }
+} */

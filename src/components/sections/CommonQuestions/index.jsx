@@ -17,9 +17,10 @@ export default function CommunQuestions() {
   const [q7, setQ7] = useState(false);
 
   return (
-    <>
-      <Title text="perguntas frequentes" />
-      <section className={styles.container} data-aos="zoom-in">
+    <section className={styles.section}>
+      <Title text="perguntas frequentes" color="black" />
+      <div className={styles.backgroundOverlay}></div>
+      <section className={styles.container}>
         <div className={styles.ballonWhatsapp}>
           <FaWhatsapp />
           <h3>Prefere falar conosco?</h3>
@@ -35,16 +36,20 @@ export default function CommunQuestions() {
         <ul className={styles.questions}>
           <li className={styles.question}>
             <button onClick={() => setQ1(!q1)}>
-              Para quem é o CONECT AUTISMO 2025?{" "}
+              Para quem é o Congresso Conect 2026?{" "}
               {q1 ? <IoIosArrowUp /> : <IoIosArrowDown />}
             </button>
             {q1 && (
               <div className={styles.text}>
                 <p>
-                  Para todos que sonham em mergulhar no mundo TEA. Para pais
-                  atípicos, familiares, médicos, educadores, psicólogos,
-                  terapeutas, profissionais da saúde e todos que desejam
-                  enriquecer no âmbito profissional.
+                  O Congresso Conect 2026 é destinado a todos que desejam se
+                  aprofundar no universo das pesquisas e estudos sobre o
+                  neurodesenvolvimento. Um espaço de troca e aprendizado que
+                  reúne pais atípicos, familiares, médicos, educadores,
+                  psicólogos, terapeutas e profissionais da saúde, além de todos
+                  que buscam enriquecer conhecimentos, ampliar perspectivas e
+                  fortalecer sua atuação tanto no campo pessoal quanto
+                  profissional.
                 </p>
               </div>
             )}
@@ -68,27 +73,26 @@ export default function CommunQuestions() {
           </li>
           <li className={styles.question}>
             <button onClick={() => setQ3(!q3)}>
-              Quais são os benefícios de participar do Congresso?{" "}
+              Benefícios do Congresso Conect 2026?{" "}
               {q3 ? <IoIosArrowUp /> : <IoIosArrowDown />}
             </button>
             {q3 && (
               <div className={styles.text}>
                 <ul>
-                  <li>1 Grande palco.</li>
-                  <li>Grandes palestrantes inusitados.</li>
-                  <li>Dois dias de muita imersão</li>
-                  <li>Mais tempo de ricas palestras.</li>
-                  <li>Acesso a palestrantes renomados e inusitados.</li>
-                  <li>Certificado de 30 horas.</li>
-                  <li>Acesso ao conteúdo gravado por 24 meses.</li>
                   <li>
-                    Networking com uma comunidade global de profissionais da
-                    saúde.
+                    O Congresso Conect 2026 reúne em um só lugar pesquisas
+                    inéditas, especialistas de referência e conteúdos exclusivos
+                    sobre neurodesenvolvimento. É a oportunidade de atualizar
+                    seus conhecimentos, fortalecer sua atuação profissional,
+                    trocar experiências valiosas e ampliar conexões com
+                    famílias, instituições e profissionais de diversas áreas.
                   </li>
-                  <li>Expositores com as últimas inovações em saúde.</li>
                   <li>
-                    Impacto social com parte dos rendimentos apoiando
-                    iniciativas sociais.
+                    Tudo isso em um cenário de grandeza: o Centro de Eventos do
+                    Ceará, o segundo maior centro de eventos do Brasil, que
+                    oferece infraestrutura moderna, conforto e a experiência
+                    ideal para receber um dos maiores encontros sobre
+                    neurodesenvolvimento do país.
                   </li>
                 </ul>
               </div>
@@ -96,15 +100,20 @@ export default function CommunQuestions() {
           </li>
           <li className={styles.question}>
             <button onClick={() => setQ4(!q4)}>
-              Como entrar em contato com a equipe do Congresso Conect Austismo?{" "}
+              Como entrar em contato com a equipe, do Congresso Conect?{" "}
               {q4 ? <IoIosArrowUp /> : <IoIosArrowDown />}
             </button>
             {q4 && (
               <div className={styles.text}>
                 <p>
-                  Você pode entrar em contato com a equipe através do e-mail
-                  disponibilizado na página de vendas conectautismobr@gmail.com
-                  ou via Instagram @conect.austismo
+                  Você pode entrar em contato com a equipe através do e-mail:{" "}
+                  <a
+                    href="mailto:comercial@congressoconect.com.br"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Comercial@congressoconect.com.br
+                  </a>
                 </p>
               </div>
             )}
@@ -158,6 +167,6 @@ export default function CommunQuestions() {
           </li>
         </ul>
       </section>
-    </>
+    </section>
   );
 }

@@ -2,11 +2,13 @@ import styles from "./redesSociais.module.css";
 import { IoLogoInstagram } from "react-icons/io";
 import { FaWhatsapp } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
+import Title from "../Title";
 
 export default function RedesSociais() {
   return (
     <div className={styles.container}>
-      <div className={styles.boxes} data-aos="fade-down">
+      <Title text="Redes sociais" />
+      <div className={styles.boxes} data-aos="zoom-in">
         <div className={styles.box}>
           <a href="https://www.instagram.com/conect.autismo/" target="_blank">
             <IoLogoInstagram />

@@ -1,6 +1,6 @@
 .button {
-  width: 300px;
-  max-width: 100%;
+  /* width: 300px; */
+  width: 100%;
   padding: 1rem;
   font-size: 1rem;
   font-weight: 600;
@@ -24,7 +24,7 @@
     #f12711,
     #f5af19
   );
-  box-shadow: 0 4px 15px 0 rgba(252, 104, 110, 0.75);
+  box-shadow: 0 4px 15px 0 rgba(252, 104, 109, 0.336);
 }
 
 [data-color="blue"] {
@@ -35,7 +35,7 @@
     #667db6,
     #0082c8
   );
-  box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+  box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.11);
 }
 
 .button:hover {

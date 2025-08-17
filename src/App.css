@@ -2,22 +2,23 @@
 
 :root {
   /* Cores atualizadas */
-  --color-text: #2d3748;
-  --color-text-light: #4a5568;
-  --color-text-white: #ffffff;
+  --color-text-black: #020202;
+  --color-text-light: #e2e2e2;
+  --color-text-white: #eeeeee;
 
-  --color-primary: #1a365d;
-  --color-secondary: #e2e8f0;
+  --color-primary: #001236;
+  --color-secondary: #cedeff;
+  --color-tertiary: #e6eeff;
   --color-accent: #f6ad55;
   --color-accent-light: #fbd38d;
 
   /* Efeitos de transparência */
-  --bg-transparent-white: rgba(255, 255, 255, 0.85);
-  --bg-transparent-blue: rgba(26, 54, 93, 0.85);
+  --bg-transparent-white: #f3f7ffe1;
+  --bg-transparent-blue: #001236e1;
 
   /* Bordas */
-  --border-radius: 8px;
-  --border-light: 1px solid #e2e8f0;
+  --border-white: 1px solid #6b7881;
+  --border-black: 1px solid #a1a1a1;
 
   /* Sombras */
   --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.12);
@@ -26,6 +27,29 @@
   /* Fontes */
   --font-heading: "Comfortaa", cursive;
   --font-body: "Open Sans", sans-serif;
+
+  --color-text: #fff;
+  --color-text-gray: #9c9c9c;
+  --color-text-black: #494949;
+  --color-1: #0a0f1d;
+  --color-2: #c78317;
+  --color-3: #12378d;
+  --color-4: #dfa99e;
+
+  --color-border: 1px solid #004a8b;
+  --bg-gradient: linear-gradient(
+    135deg,
+    rgba(10, 15, 29, 0.801),
+    rgba(16, 24, 48, 0.801),
+    rgba(21, 43, 102, 0.678)
+  );
+  --bg-gradient-pretty: linear-gradient(
+    to right,
+    #f12711,
+    #f5af19,
+    #f12711,
+    #f5af19
+  );
 }
 
 * {
@@ -36,7 +60,8 @@
 }
 
 .main {
-  color: var(--color-text);
+  color: var(--color-text-white);
+  /* background-color: var(--color-primary); */
 }
 
 a {
@@ -49,13 +74,13 @@ img {
 }
 
 .area {
-  background-image: linear-gradient(130deg, #0b121c, #0f2861e1, #0b121c),
+  /* background-image: linear-gradient(130deg, #0b121c, #0f2861e1, #0b121c),
     url("./assets/imgs/background/bg.jpg");
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
-  background-color: #062c4e;
+  background-repeat: no-repeat;*/
   position: fixed;
+  background-color: #072c4d;
   top: 0;
   bottom: 0;
   right: 0;

@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 8rem 0 1rem;
+  margin-bottom: 1rem;
 }
 
 .title h2 {
@@ -12,11 +12,15 @@
   max-width: 80%;
 }
 
-@media (max-width: 780px) {
+[data-color] h2 {
+  color: var(--color-primary);
+}
+
+/* @media (max-width: 780px) {
   .title {
     margin: 4rem 0 2rem;
   }
-}
+} */
 
 @media (max-width: 450px) {
   .title h2 {

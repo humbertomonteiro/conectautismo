@@ -1,14 +1,14 @@
 .container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
-  background-color: #062c4ed7;
+  background-color: var(--bg-transparent-blue);
   z-index: 7;
-  padding: 0.5rem 0;
+  padding: 0.5rem 2rem;
   border-bottom: 1px solid #083761;
 }
 
@@ -62,6 +62,9 @@
 }
 
 @media (max-width: 450px) {
+  .container {
+    padding: 0.5rem;
+  }
   .container a {
     font-size: 0.8rem;
   }

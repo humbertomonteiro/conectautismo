@@ -1,126 +1,79 @@
 import styles from "./testimonials.module.css";
-import React, { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import {
-  EffectCoverflow,
-  Pagination,
-  Autoplay,
-  Navigation,
-} from "swiper/modules";
-
+import { Pagination, Navigation, Autoplay } from "swiper/modules";
 import { testimonials } from "../../../data/testimonials";
-import logo from "../../../assets/imgs/logo/logo.png";
 import Title from "../../shared/Title";
-
 import { FaStar } from "react-icons/fa";
-import { BiSolidQuoteRight } from "react-icons/bi";
+import { BiSolidQuoteAltLeft, BiSolidQuoteAltRight } from "react-icons/bi";
 
 export default function Testimonials() {
-  const [sizeScreen, setSizeScreen] = useState({
-    width: window.innerWidth,
-    height: window.innerHeight,
-  });
-  const [slidesPerView, setSlidesPerView] = useState(3);
-
-  useEffect(() => {
-    // Função para atualizar o tamanho da tela
-    const atualizarTamanhoTela = () => {
-      setSizeScreen({
-        width: window.innerWidth,
-        height: window.innerHeight,
-      });
-
-      // Altera o número com base no tamanho da tela
-      if (window.innerWidth < 768) {
-        setSlidesPerView(1); // Para telas menores que 768px
-      } else {
-        setSlidesPerView(3); // Para telas maiores
-      }
-    };
-
-    // Chama a função ao carregar o componente
-    atualizarTamanhoTela();
-
-    // Adiciona um listener para mudanças no tamanho da janela
-    window.addEventListener("resize", atualizarTamanhoTela);
-
-    // Limpeza: remove o listener quando o componente é desmontado
-    return () => {
-      window.removeEventListener("resize", atualizarTamanhoTela);
-    };
-  }, []);
-
-  const slides = testimonials.map((testimony) => (
-    <SwiperSlide key={testimony.name}>
-      <div className={styles.review}>
-        <div className={styles.content}>
-          <div className={styles.quote}>
-            <BiSolidQuoteRight />
-          </div>
-          <div className={styles.user}>
-            <img
-              src={
-                testimony.img === "" || !testimony.img ? logo : testimony.img
-              }
-              alt={testimony.name}
-            />
-          </div>
-          <strong>{testimony.name}</strong>
-          <div className={styles.stars}>
-            <FaStar />
-            <FaStar />
-            <FaStar />
-            <FaStar />
-            <FaStar />
-          </div>
-          <p>{testimony.comment}</p>
-        </div>
-      </div>
-    </SwiperSlide>
-  ));
-
   return (
-    <section className={styles.container}>
-      <Title text="reviews" />
-      <div className={styles.reviews} data-aos="zoom-in">
+    <section className={styles.section}>
+      <div className={styles.backgroundOverlay}></div>
+      <Title text="Depoimentos" color="black" />
+
+      <div className={styles.container}>
         <Swiper
-          // effect={"coverflow"}
-          // grabCursor={true}
-          // centeredSlides={true}
-          // navigation={false}
-          // autoplay={{
-          //   delay: 5000,
-          //   disableOnInteraction: false,
-          // }}
-          // coverflowEffect={{
-          //   rotate: 50,
-          //   stretch: 0,
-          //   depth: 100,
-          //   modifier: 1,
-          //   slideShadows: true,
-          // }}
-          // breakpoints={{
-          //   "@0.00": {
-          //     slidesPerView: 1,
-          //     spaceBetween: 10,
-          //   },
-          //   "@0.75": {
-          //     slidesPerView: 1,
-          //   },
-          // }}
-          // pagination={{
-          //   clickable: true,
-          // }}
-          // modules={[EffectCoverflow, Pagination, Autoplay, Navigation]}
-          slidesPerView={slidesPerView}
-          centeredSlides={true}
-          spaceBetween={30}
-          pagination={true}
+          modules={[Pagination, Navigation, Autoplay]}
+          className={styles.swiper}
+          autoplay={{
+            delay: 5000,
+            disableOnInteraction: false,
+          }}
+          pagination={{
+            clickable: true,
+            dynamicBullets: true,
+          }}
           navigation={true}
-          modules={[Pagination, Navigation]}
-          className={styles.mySwiper}
+          breakpoints={{
+            320: {
+              slidesPerView: 1,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 30,
+            },
+            1024: {
+              slidesPerView: 3,
+              spaceBetween: 40,
+            },
+          }}
         >
-          {slides}
+          {testimonials.map((testimony, index) => (
+            <SwiperSlide key={index}>
+              <div className={styles.card}>
+                {/* <div className={styles.quoteOpen}>
+                  <BiSolidQuoteAltLeft />
+                </div> */}
+
+                <div className={styles.content}>
+                  <div className={styles.avatar}>
+                    <img
+                      src={testimony.img || "/default-avatar.png"}
+                      alt={testimony.name}
+                      onError={(e) => {
+                        e.target.src = "/default-avatar.png";
+                      }}
+                    />
+                  </div>
+
+                  <div className={styles.rating}>
+                    {[...Array(5)].map((_, i) => (
+                      <FaStar key={i} className={styles.starFilled} />
+                    ))}
+                  </div>
+
+                  <h3 className={styles.name}>{testimony.name}</h3>
+                  <p className={styles.comment}>{testimony.comment}</p>
+                </div>
+
+                {/* <div className={styles.quoteClose}>
+                  <BiSolidQuoteAltRight />
+                </div> */}
+              </div>
+            </SwiperSlide>
+          ))}
         </Swiper>
       </div>
     </section>
