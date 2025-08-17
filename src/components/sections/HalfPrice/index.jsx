@@ -1,23 +1,22 @@
 import styles from "./halfPrice.module.css";
 import Title from "../../shared/Title";
 import ButtonPretty from "../../shared/ButtonPretty";
-import img from "../../../assets/imgs/meia-entrada/img.jpg";
 
 const ticketOptions = [
   {
     id: "with-party",
-    text: "ESGOTADO",
-    link: null,
-    price: "R$ 748,80",
-    disabled: true,
-  },
-  {
-    id: "without-party",
-    text: "LOTE EXTRA SEM FESTA",
-    link: "https://pay.hotmart.com/A96222789P?off=cpagfpj6&offDiscount=EXTRAMEIA",
-    price: "R$ 688,80",
+    text: "PRÉ-VENDA",
+    link: "https://pay.hotmart.com/D101401576U?off=rfa406il",
+    price: "R$ 489,0",
     disabled: false,
   },
+  // {
+  //   id: "without-party",
+  //   text: "LOTE EXTRA SEM FESTA",
+  //   link: "https://pay.hotmart.com/A96222789P?off=cpagfpj6&offDiscount=EXTRAMEIA",
+  //   price: "R$ 688,80",
+  //   disabled: false,
+  // },
 ];
 
 export default function HalfiPrice() {

@@ -28,7 +28,7 @@ export default function About() {
 
       <div className={styles.container}>
         {/* Conteúdo textual à esquerda */}
-        <div className={styles.contentText}>
+        <div className={styles.contentText} data-aos="zoom-in">
           <p className={styles.description}>{eventData.description}</p>
 
           <ul className={styles.highlights}>

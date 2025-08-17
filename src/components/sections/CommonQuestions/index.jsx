@@ -21,7 +21,7 @@ export default function CommunQuestions() {
       <Title text="perguntas frequentes" color="black" />
       <div className={styles.backgroundOverlay}></div>
       <section className={styles.container}>
-        <div className={styles.ballonWhatsapp}>
+        <div className={styles.ballonWhatsapp} data-aos="zoom-in">
           <FaWhatsapp />
           <h3>Prefere falar conosco?</h3>
           <p>Fale com nosso time de suporte pelo Whatsapp</p>
@@ -33,7 +33,7 @@ export default function CommunQuestions() {
             }
           />
         </div>
-        <ul className={styles.questions}>
+        <ul className={styles.questions} data-aos="zoom-in">
           <li className={styles.question}>
             <button onClick={() => setQ1(!q1)}>
               Para quem é o Congresso Conect 2026?{" "}

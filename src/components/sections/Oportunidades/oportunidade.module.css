@@ -40,9 +40,9 @@
 
 .subtitle {
   text-align: center;
-  margin-bottom: 1.5rem;
   padding: 0 1rem;
   max-width: 800px;
+  margin-bottom: 1rem;
 }
 
 .boxes {
@@ -63,7 +63,7 @@
   margin: 0 auto;
   text-align: center;
   line-height: 150%;
-  background: var(--color-tertiary);
+  background: var(--bg-transparent-blue);
   border-radius: 1rem;
   border: var(--border-black);
 }
@@ -79,12 +79,13 @@
   text-align: center;
   margin-bottom: 1rem;
   line-height: 120%;
-  color: var(--color-text-black);
+  color: var(--color-text-white);
 }
 
 .box p {
   font-size: 0.9rem;
   overflow-y: scroll;
+  color: var(--bg-transparent-white);
 }
 
 .borderLeft {

@@ -6,7 +6,7 @@ const tickets = [
   {
     id: "complete",
     title: "INGRESSO COMPLETO CONECT 2025",
-    subtitle: "2 dias de congresso + PRÉ-Festa (Ingressos esgotados)",
+    subtitle: "3 dias de congresso + PRÉ-Festa (Ingressos esgotados)",
     benefits: [
       "Palestrantes Renomados Nacionais e internacionais",
       "Certificado qualificado",
@@ -26,19 +26,19 @@ const tickets = [
     ],
     options: [
       {
-        link: null,
-        text: "ESGOTADO",
-        price: "R$ 1248,00",
-        label: "Com festa",
-        disabled: true,
-      },
-      {
-        link: "https://pay.hotmart.com/A96222789P?off=cpagfpj6",
-        text: "LOTE EXTRA SEM FESTA",
-        price: "R$ 1148,00",
-        label: "Sem festa",
+        link: "https://pay.hotmart.com/D101401576U?off=1zhb4drs",
+        text: "PRÉ-VENDA",
+        price: "R$ 978,00",
+        label: null,
         disabled: false,
       },
+      // {
+      //   link: "https://pay.hotmart.com/D101401576U?off=1zhb4drs",
+      //   text: "PRÉ-VENDA",
+      //   price: "R$ 1148,00",
+      //   label: "Sem festa",
+      //   disabled: false,
+      // },
     ],
     meiaEntradaLink: "#meia-entrada",
   },
@@ -62,10 +62,10 @@ const tickets = [
     options: [
       {
         link: null,
-        text: "ESGOTADO",
+        text: "PRÉ-VENDA",
         price: "R$ 225,00",
-        label: "MEIA ENTRADA",
-        disabled: true,
+        label: null,
+        disabled: false,
       },
     ],
   },
@@ -82,19 +82,19 @@ const tickets = [
     ],
     options: [
       {
-        link: null,
-        text: "ESGOTADO",
-        price: "R$ 878,40 cada",
+        link: "https://pay.hotmart.com/D101401576U?off=1zhb4drs?coupon=GRUPO",
+        text: "PRÉ-VENDA",
+        price: "R$ 782,40 cada",
         label: "",
-        disabled: true,
+        disabled: false,
       },
-      {
-        link: null,
-        text: "ESGOTADO",
-        price: "R$ 750,40 cada",
-        label: "",
-        disabled: true,
-      },
+      // {
+      //   link: null,
+      //   text: "ESGOTADO",
+      //   price: "R$ 750,40 cada",
+      //   label: "",
+      //   disabled: true,
+      // },
     ],
   },
 ];

@@ -74,10 +74,10 @@ export default function oportunidades() {
     <div className={styles.container}>
       <div className={styles.backgroundOverlay}></div>
       <Title text={"Oportunidades no Conect Autismo"} color="black" />
-      <h3 className={styles.subtitle} data-aos="zoom-in">
+      <p className={styles.subtitle} data-aos="zoom-in">
         O Congresso Conect é o maior espaço de crescimento, aprendizado e
         conexões sobre o Transtorno do Neurodesenvolvimento no Norte-Nordeste.
-      </h3>
+      </p>
 
       <div className={styles.boxes} data-aos="zoom-in" data-delay="200">
         <Swiper
