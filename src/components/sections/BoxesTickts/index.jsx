@@ -11,10 +11,11 @@ export default function BoxesTickts() {
       <Title text={"INGRESSO CONECT AUTISMO 2025"} />
       <TimeLineLotes />
       <ButtonPretty
+        link="https://pay.hotmart.com/A96222789P?off=cpagfpj6"
         // link={
         //   "https://wa.me/558592742323?text=Olá! Quero entrar na lista de espera do evento Conect Autismo."
         // }
-        link="https://pay.hotmart.com/A96222789P?off=1kjo08ig"
+        // link="https://pay.hotmart.com/A96222789P?off=1kjo08ig"
         target="_blank"
         text={"GARANTIR AGORA"}
       />
@@ -54,9 +55,11 @@ export default function BoxesTickts() {
                 // link={
                 //   "https://wa.me/558592742323?text=Olá! Quero entrar na lista de espera do evento Conect Autismo."
                 // }
-                link="https://pay.hotmart.com/A96222789P?off=1kjo08ig"
-                target="_blank"
-                text={"LOTE EXTRA COM FESTA"}
+                // link="https://pay.hotmart.com/A96222789P?off=1kjo08ig"
+                // target="_blank"
+                data-button="disabled"
+                // text={"LOTE EXTRA COM FESTA"}
+                text="ESGOTADO"
               />
               <strong>R$ 1248,00</strong>
               <span>Com festa</span>
@@ -103,9 +106,11 @@ export default function BoxesTickts() {
           <div className={styles.shop}>
             <div className={styles.button}>
               <ButtonPretty
-                link={"https://pay.hotmart.com/A96222789P?off=aqn2jvpg"}
-                target="_blank"
-                text={"QUERO MUITO IR"}
+                // link={"https://pay.hotmart.com/A96222789P?off=aqn2jvpg"}
+                // target="_blank"
+                data-button="disabled"
+                text={"ESGOTADO"}
+                // text={"QUERO MUITO IR"}
               />
               <strong>R$ 225,00</strong>
               {/* <span>LOTE PRE VENDA JÁ COM VALOR DE MEIA ENTRADA.</span> */}
@@ -130,11 +135,13 @@ export default function BoxesTickts() {
           <div className={styles.shop}>
             <div className={styles.button}>
               <ButtonPretty
-                link={
-                  "https://pay.hotmart.com/A96222789P?off=fwurs0rj&bid=1732896360049"
-                }
-                target="_blank"
-                text="GRUPO COM FESTA"
+                // link={
+                //   "https://pay.hotmart.com/A96222789P?off=fwurs0rj&bid=1732896360049"
+                // }
+                // target="_blank"
+                data-button="disabled"
+                // text="GRUPO COM FESTA"
+                text="ESGOTADO"
               />
               <strong>
                 R$ 878,40 <span>cada</span>
@@ -142,9 +149,10 @@ export default function BoxesTickts() {
             </div>
             <div className={styles.button}>
               <ButtonPretty
-                link={"https://pay.hotmart.com/A96222789P?off=gndkzfaq"}
-                target="_blank"
-                text="GRUPO SEM FESTA"
+                // link={"https://pay.hotmart.com/A96222789P?off=gndkzfaq"}
+                // target="_blank"
+                text="ESGOTADO"
+                data-button="disabled"
               />
               <strong>
                 R$ 750,40 <span>cada</span>

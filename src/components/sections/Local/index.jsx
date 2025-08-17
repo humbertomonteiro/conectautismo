@@ -69,7 +69,8 @@ export default function Local() {
                 // link={
                 //   "https://wa.me/558592742323?text=Olá! Quero entrar na lista de espera do evento Conect Autismo."
                 // }
-                link="https://pay.hotmart.com/A96222789P?off=1kjo08ig"
+                // link="https://pay.hotmart.com/A96222789P?off=1kjo08ig"
+                link="https://pay.hotmart.com/A96222789P?off=cpagfpj6"
                 target="_blank"
                 text={"Comprar Ingresso"}
               />

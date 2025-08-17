@@ -66,14 +66,16 @@ export default function HalfiPrice() {
         <div className={styles.buttons}>
           <div className={styles.button}>
             <ButtonPretty
-              text={"LOTE EXTRA COM FESTA"}
-              link={
-                "https://pay.hotmart.com/A96222789P?off=1kjo08ig&offDiscount=EXTRAMEIA"
-              }
+              // text={"LOTE EXTRA COM FESTA"}
+              // link={
+              //   "https://pay.hotmart.com/A96222789P?off=1kjo08ig&offDiscount=EXTRAMEIA"
+              // }
               // link={
               //   "https://wa.me/558592742323?text=Olá! Quero entrar na lista de espera do evento Conect Autismo."
               // }
-              target="_blank"
+              // target="_blank"
+              text="ESGOTADO"
+              data-button="disabled"
             />
             <strong>R$ 748,80</strong>
           </div>

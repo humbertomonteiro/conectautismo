@@ -11,7 +11,7 @@ const TimeLineLotes = () => {
     { name: "3º Lote", status: "Esgotado", icon: <IoClose /> },
     {
       name: "Lote Extra",
-      status: "Últimos 100 ingressos",
+      status: "Últimos 50 ingressos",
       icon: <IoRocketOutline />,
     },
     // { name: "3º Lote", status: "Esgotado", icon: <IoRocketOutline /> }, Icone de foguete para informar lote acabando
@@ -19,13 +19,14 @@ const TimeLineLotes = () => {
 
   return (
     <div className={styles.timeline} data-aos="zoom-in">
-      <h2>INGRESSOS ESGOTADOS - Entre na lista de espera!</h2>
+      <h2>ÚLTIMOS INGRESSOS</h2>
       {/* <h2>GARANTA JÁ SUA VAGA</h2> */}
       <div className={styles.boxes}>
         {lotes.map((lote, index) => (
           <>
             <a
-              href="https://pay.hotmart.com/A96222789P?off=cui8duv5&bid=1742215373582"
+              // href="https://pay.hotmart.com/A96222789P?off=cui8duv5&bid=1742215373582"
+              href="https://pay.hotmart.com/A96222789P?off=cpagfpj6"
               target="_blank"
               key={index}
               className={styles.timelineItem}

@@ -49,11 +49,7 @@
 
 .list {
   width: 40%;
-  background: linear-gradient(
-    101deg,
-    rgba(10, 15, 29, 0.801) 13%,
-    rgba(51, 156, 204, 0.678) 69%
-  );
+  background: var(--bg-gradient);
   padding: 1rem;
 }
 

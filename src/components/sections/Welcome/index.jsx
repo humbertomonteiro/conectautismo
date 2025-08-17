@@ -16,13 +16,12 @@ export default function Welcome() {
             <img loading="lazy" src={logoMobile} alt="Logo Conect Autismo" />
           </div>
           <div className={styles.text} data-aos="zoom-in" data-aos-dalay="300">
-            <h1>SEGUNDA EDIÇÃO</h1>
-            <p>
-              Maior Congresso de TEA Norte e Nordeste. 23 & 24 de agosto de
-              2025.
-            </p>
+            <h1>TERCEIRA EDIÇÃO</h1>
+            <p>Maior congresso de neurodesenvolvimento do Norte e Nordeste</p>
           </div>
-          <h2>Últimos 100 ingressos</h2>
+          {/* <h2>Últimos 50 ingressos</h2> */}
+          <div className={styles.textHighlight}>21,22 e 23 de agosto 2026</div>
+          <div className={styles.textHighlight}>Centro de eventos do Ceará</div>
           <div
             className={styles.buttons}
             data-aos="zoom-in"
