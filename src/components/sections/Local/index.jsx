@@ -1,11 +1,6 @@
 import styles from "./local.module.css";
 import Title from "../../shared/Title";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Autoplay } from "swiper/modules";
 import ButtonPretty from "../../shared/ButtonPretty";
-
-import centro1 from "../../../assets/imgs/location/ampla.jpg";
-import centro2 from "../../../assets/imgs/location/frente.jpg";
 
 export default function Local() {
   return (

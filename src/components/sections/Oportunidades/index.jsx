@@ -73,7 +73,10 @@ export default function oportunidades() {
   return (
     <div className={styles.container}>
       <div className={styles.backgroundOverlay}></div>
-      <Title text={"Oportunidades no Conect Autismo"} color="black" />
+      <Title text={"Inédito: Dia inteiro de prática"} color="black" />
+      <p className={styles.subtitle} data-aos="zoom-in">
+        O primeiro congresso com um dia inteiro de prática.
+      </p>
       <p className={styles.subtitle} data-aos="zoom-in">
         O Congresso Conect é o maior espaço de crescimento, aprendizado e
         conexões sobre o Transtorno do Neurodesenvolvimento no Norte-Nordeste.
