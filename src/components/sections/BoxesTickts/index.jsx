@@ -2,6 +2,7 @@ import styles from "./boxesTickts.module.css";
 import Title from "../../shared/Title";
 import ButtonPretty from "../../shared/ButtonPretty";
 import Contagem from "../../shared/Contagem";
+import { hasCountdownEnded } from "../../../Utils/DateEnded";
 
 const tickets = [
   {
@@ -70,6 +71,9 @@ const tickets = [
 ];
 
 export default function BoxesTickts() {
+  const dateEvent = "2025-08-22";
+  const isPreSaleStarted = hasCountdownEnded(dateEvent);
+
   return (
     <section id="tickts" className={styles.section}>
       <div className={styles.backgroundOverlay}></div>
@@ -93,30 +97,42 @@ export default function BoxesTickts() {
                   <li key={index}>{benefit}</li>
                 ))}
               </ul>
-              <div className={styles.shop}>
-                {ticket.options.map((option, index) => (
-                  <div key={index} className={styles.button}>
-                    <ButtonPretty
-                      link={option.link}
-                      target="_blank"
-                      text={option.text}
-                      data-button={option.disabled ? "disabled" : undefined}
-                      aria-disabled={option.disabled}
-                    />
-                    <strong>{option.price}</strong>
-                    {option.label && <span>{option.label}</span>}
-                  </div>
-                ))}
-                {ticket.meiaEntradaLink && (
-                  <a
-                    className={styles.link}
-                    href={ticket.meiaEntradaLink}
-                    aria-label="Conferir condições de meia-entrada"
-                  >
-                    Conferir condições de meia-entrada
-                  </a>
-                )}
-              </div>
+              {isPreSaleStarted ? (
+                <div className={styles.shop}>
+                  {ticket.options.map((option, index) => (
+                    <div key={index} className={styles.button}>
+                      <ButtonPretty
+                        link={option.link}
+                        target="_blank"
+                        text={option.text}
+                        data-button={option.disabled ? "disabled" : undefined}
+                        aria-disabled={option.disabled}
+                      />
+
+                      <strong>{option.price}</strong>
+                      {option.label && <span>{option.label}</span>}
+                    </div>
+                  ))}
+                  {ticket.meiaEntradaLink && (
+                    <a
+                      className={styles.link}
+                      href={ticket.meiaEntradaLink}
+                      aria-label="Conferir condições de meia-entrada"
+                    >
+                      Conferir condições de meia-entrada
+                    </a>
+                  )}
+                </div>
+              ) : (
+                <div className={styles.placeholder}>
+                  <h3>Pré-venda ainda não começou!</h3>
+                  <p>
+                    Os ingressos estarão disponíveis a partir de 22 de agosto de
+                    2025. Fique atento!
+                  </p>
+                  <Contagem dateEvent={"22/08/2025"} />
+                </div>
+              )}
             </div>
           ))}
         </div>
