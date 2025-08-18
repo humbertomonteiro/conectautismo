@@ -2,6 +2,8 @@ import styles from "./local.module.css";
 import Title from "../../shared/Title";
 import ButtonPretty from "../../shared/ButtonPretty";
 
+import centroDeEventos from "../../../assets/imgs/local/centro-de-eventos.png";
+
 export default function Local() {
   return (
     <div className={styles.container}>
@@ -59,7 +61,7 @@ export default function Local() {
             
           </Swiper> */}
           <img
-            src="https://centrodeeventos.ce.gov.br/wp-content/uploads/2025/05/CENTRO-DE-EVENTOS-DO-CEARA-BANNER-1-1.png"
+            src={centroDeEventos}
             alt="entro de Eventos Ceará"
             className={styles.img}
             onError={(e) => (e.target.src = "/fallback-image.jpg")}

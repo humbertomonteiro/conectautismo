@@ -129,7 +129,8 @@
   line-height: 1.6;
   font-size: 0.95rem;
   max-height: 100px;
-  overflow-y: scroll;
+  overflow-y: auto;
+  max-width: 800px;
 }
 
 /* Customização dos controles do Swiper */

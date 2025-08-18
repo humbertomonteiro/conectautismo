@@ -35,3 +35,9 @@
 .item span {
   font-size: 0.7rem;
 }
+
+@media (max-width: 500px) {
+  .item h3 {
+    font-size: 2.2rem;
+  }
+}
