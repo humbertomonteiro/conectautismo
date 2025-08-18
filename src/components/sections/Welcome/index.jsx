@@ -91,7 +91,7 @@ export default function Welcome() {
             data-aos="zoom-in"
             data-aos-delay="300"
           >
-            <ButtonPretty link={"#tickts"} text={"Compre com o menor preço"} />
+            <ButtonPretty link={"#tickts"} text={"Garanta sua vaga agora"} />
           </div>
         </div>
         <div className={styles.image}>
