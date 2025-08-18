@@ -12,7 +12,7 @@ import styles from "./oportunidade.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay, Navigation } from "swiper/modules";
 
-import Title from "../../shared/Title";
+// import Title from "../../shared/Title";
 
 import {
   FaEye,
@@ -73,8 +73,9 @@ export default function oportunidades() {
   return (
     <div className={styles.container}>
       <div className={styles.backgroundOverlay}></div>
-      <Title text={"Inédito: Dia inteiro de prática"} color="black" />
-      <p className={styles.subtitle} data-aos="zoom-in">
+      {/* <Title text={"Inédito: Dia inteiro de prática"} color="black" /> */}
+      <h2 className={styles.title}>INÉDITO</h2>
+      <p className={styles.subtitleMain} data-aos="zoom-in">
         O primeiro congresso com um dia inteiro de prática.
       </p>
       <p className={styles.subtitle} data-aos="zoom-in">

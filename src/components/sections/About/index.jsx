@@ -8,9 +8,9 @@ import { arrayImgsEvent } from "../../../data/evento2024";
 
 // Dados mockados - substitua pelos seus
 const eventData = {
-  title: "Sobre o Conect Autismo",
+  title: "Sobre o Conect",
   description:
-    "O Conect Autismo é o maior congresso de neurodesenvolvimento do Norte e Nordeste, reunindo especialistas, familiares e pessoas com TEA para compartilhar conhecimento, experiências e promover a inclusão.",
+    "O Conect Autismo é o maior congresso de neurodesenvolvimento do Norte e Nordeste, para compartilhar conhecimento, experiências e promover a inclusão.",
   highlights: [
     "3 dias de imersão em conhecimento científico",
     "Mais de 30 palestrantes especializados",

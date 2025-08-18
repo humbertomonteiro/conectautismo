@@ -38,6 +38,23 @@
   border: 1px solid var(--primary-color);
 }
 
+.title {
+  font-size: 2rem;
+  color: var(--color-primary);
+}
+
+.subtitleMain {
+  text-align: center;
+  padding: 0.5rem 1.5rem;
+  max-width: 800px;
+  margin: 0 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  border-radius: 1rem;
+  background-color: var(--bg-transparent-blue);
+  color: var(--color-text-white);
+}
+
 .subtitle {
   text-align: center;
   padding: 0 1rem;

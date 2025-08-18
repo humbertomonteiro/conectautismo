@@ -22,12 +22,12 @@ export default function Home() {
       <div className={styles.container}>
         <Welcome />
         <Oportunidades />
-        <About />
-        <Testimonials />
+        {/* <About /> */}
         <RedesSociais />
-        <PatrocinadorEExpositor />
+        <Testimonials />
         <BoxesTickts />
-        <HalfiPrice />
+        <PatrocinadorEExpositor />
+        {/* <HalfiPrice /> */}
         <Local />
         <CommonQuestions />
         <Politica />
