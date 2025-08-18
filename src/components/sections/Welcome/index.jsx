@@ -59,10 +59,6 @@ export default function Welcome() {
               Maior congresso de <strong>neurodesenvolvimento</strong> do Norte
               e Nordeste
             </p>
-            <p className={styles.subtitle}>
-              Maior congresso de <strong>neurodesenvolvimento</strong> do Norte
-              e Nordeste
-            </p>
             <div className={styles.highlight}>
               <span className={styles.highlightMobile}>
                 21, 22 e 23 de agosto 2026
