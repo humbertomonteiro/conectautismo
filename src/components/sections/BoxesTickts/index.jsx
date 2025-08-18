@@ -1,6 +1,7 @@
 import styles from "./boxesTickts.module.css";
 import Title from "../../shared/Title";
 import ButtonPretty from "../../shared/ButtonPretty";
+import Contagem from "../../shared/Contagem";
 
 const tickets = [
   {
@@ -29,14 +30,14 @@ const tickets = [
       {
         link: "https://pay.hotmart.com/D101401576U?off=1zhb4drs",
         text: "INGRESSO PRÉ-VENDA",
-        price: "R$ 978,00",
+        price: "10 x R$ 97,80",
         label: null,
         disabled: false,
       },
       {
         link: "https://pay.hotmart.com/D101401576U?off=rfa406il",
-        text: "INGRESSO PRÉ-VENDA",
-        price: "R$ 489,00",
+        text: "PRÉ-VENDA MEIA-ENTRADA",
+        price: "10 x R$ 48,90",
         label: "",
         disabled: false,
       },
@@ -85,7 +86,7 @@ const tickets = [
       {
         link: "https://pay.hotmart.com/D101401576U?off=1zhb4drs?coupon=GRUPO",
         text: "INGRESSO PRÉ-VENDA",
-        price: "R$ 782,40 cada",
+        price: "10 x R$ 78,24 cada",
         label: "",
         disabled: false,
       },
@@ -112,6 +113,11 @@ export default function BoxesTickts() {
           text="GARANTIR AGORA"
           className={styles.mainCta}
         /> */}
+        <div className={styles.header}>
+          <h3>PRÉ-VENDA LIMITADA</h3>
+          <p>Termina em:</p>
+          <Contagem dateEvent={"17/09/2025"} />
+        </div>
         <div className={styles.boxes}>
           {tickets.map((ticket) => (
             <div key={ticket.id} className={styles.box} data-aos="zoom-in">

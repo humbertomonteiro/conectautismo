@@ -3,13 +3,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: fit-content;
 }
 
 .timer {
   display: flex;
   justify-content: center;
-  /* width: 1200px;
-  max-width: 90%; */
 }
 
 .timer > span {
@@ -26,23 +25,13 @@
 }
 
 .item h3 {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
+  background-color: var(--bg-transparent-blue);
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.5rem;
+  color: var(--color-text-white);
 }
 
 .item span {
   font-size: 0.7rem;
-}
-
-@media (max-width: 450px) {
-  .item h3 {
-    font-size: 1rem;
-  }
-  .timer > span {
-    margin-top: 0;
-    padding: 0 0.2rem;
-  }
-
-  .item span {
-    font-size: 0.6rem;
-  }
 }

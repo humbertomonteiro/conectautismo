@@ -1,6 +1,6 @@
 .section {
   position: relative;
-  padding: 4rem 0;
+  /* padding: 4rem 0; */
   overflow: hidden;
   z-index: 2;
   color: var(--color-text-black);
@@ -12,11 +12,11 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
+  /* background: linear-gradient(
     to top,
     var(--bg-transparent-white),
     var(--bg-transparent-white)
-  );
+  ); */
   /* url("https://images.pexels.com/photos/1250452/pexels-photo-1250452.jpeg?_gl=1*1wgabch*_ga*MTIyMzIwNTk5NS4xNzUyOTE4MDc4*_ga_8JE65Q40S6*czE3NTU0NDY2MjQkbzgkZzEkdDE3NTU0NDcxMjMkajQwJGwwJGgw"); */
   background-size: contain;
   background-position: right;
@@ -36,26 +36,26 @@
   position: relative;
   z-index: 1;
   width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 2rem;
+  /* max-width: 1200px; */
+  /* margin: 0 auto; */
+  /* padding: 0 2rem; */
 }
 
 .swiper {
   /* padding: 2rem 0; */
   overflow: visible;
+  background-color: var(--color-tertiary);
 }
 
 .card {
   background: var(--color-tertiary);
-  border-radius: 20px;
+  height: 100%;
   padding: 2rem;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
   display: flex;
   flex-direction: column;
   position: relative;
-  border: var(--border-black);
 }
 
 /* .card:hover {
@@ -90,8 +90,8 @@
 }
 
 .avatar {
-  width: 80px;
-  height: 80px;
+  width: 130px;
+  height: 130px;
   border-radius: 50%;
   overflow: hidden;
   border: 3px solid var(--color-accent);

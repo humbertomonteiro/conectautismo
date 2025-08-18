@@ -23,12 +23,12 @@ export default function Home() {
         <Welcome />
         <Oportunidades />
         {/* <About /> */}
-        <RedesSociais />
-        <Testimonials />
         <BoxesTickts />
         <PatrocinadorEExpositor />
         {/* <HalfiPrice /> */}
         <Local />
+        <Testimonials />
+        <RedesSociais />
         <CommonQuestions />
         <Politica />
         <Footer />
