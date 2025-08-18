@@ -62,12 +62,33 @@ export default function CommunQuestions() {
             {q2 && (
               <div className={styles.text}>
                 <p>
-                  Para obter meia-entrada, é necessário apresentar a Carteira de
-                  Identificação Estudantil (CIE) ou documento equivalente.
-                  Também são elegíveis pessoas com deficiência e seus
-                  acompanhantes, famílias atípicas, idosos, jovens de baixa
-                  renda e educadores, mediante documentação comprobatória
+                  Para ter direito à meia-entrada, é necessário apresentar a
+                  Carteira de Identificação Estudantil (CIE), emitida conforme a
+                  Lei Federal nº 12.933/2013, ou documento equivalente válido
+                  como declaração da instituição assinada e carimbada do mês
+                  vigente do evento ( AGOSTO).
                 </p>
+                <p>Também são elegíveis:</p>
+                <ul>
+                  <li>
+                    • Pessoas com deficiência e um acompanhante (Lei nº
+                    12.933/2013 + Estatuto da Pessoa com Deficiência – Lei nº
+                    13.146/2015);
+                  </li>
+                  <li>
+                    Idosos (com 60 anos ou mais), conforme o Estatuto do Idoso –
+                    Lei nº 10.741/2003;
+                  </li>
+                  <li>
+                    Professores e profissionais da educação da rede pública,
+                    conforme legislações estaduais e municipais declaração
+                    constando cargo ocupado DOCENTE do mês vigente (AGOSTO);
+                  </li>
+                  <li>
+                    Pais atípicos, mediante apresentação de documentação
+                    comprobatória Laudo e registro de nascimento do filho(a)
+                  </li>
+                </ul>
               </div>
             )}
           </li>
