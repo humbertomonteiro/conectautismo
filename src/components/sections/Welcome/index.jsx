@@ -1,7 +1,8 @@
 import styles from "./welcome.module.css";
 import logoMobile from "../../../assets/imgs/logo/logo-mobile.png";
 import ButtonPretty from "../../shared/ButtonPretty";
-import bg from "../../../assets/imgs/background/bg.jpg";
+// import bg from "../../../assets/imgs/background/bg.jpg";
+import bg from "../../../assets/imgs/background/bg-mobile.jpeg";
 import Contagem from "../../shared/Contagem";
 
 export default function Welcome() {
