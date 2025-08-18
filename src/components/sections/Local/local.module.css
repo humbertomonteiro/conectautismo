@@ -207,4 +207,8 @@
   .map {
     height: 200px;
   }
+
+  .boxLocal h3 {
+    font-size: 1.2rem;
+  }
 }

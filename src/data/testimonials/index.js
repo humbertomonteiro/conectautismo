@@ -107,18 +107,18 @@ E à todos os envolvidos, que fizeram deste evento um lembrete poderoso de que, 
     comment: `Foi sensacional!!! uma experiência inesquecível ter especialista, doutores, de renome no mesmo evento,!!! Maravilhoso`,
     img: heleuza,
   },
-  {
-    name: "Liduinasilva",
-    numberStar: 5,
-    comment: `Obrigada Conect por dias inesqueciveis e por trazerem proficionais tão incríveis para nossa cidade.
-        Ansiosa para 2025.`,
-    img: "",
-  },
-  {
-    name: "Socorrodacosta",
-    numberStar: 5,
-    comment: `Sou mãe atipica e vivenciei a maior e melhor experiência da minha vida. Obrigada Conect autismo 
-        por fazer tanta diferença na vida dos nossos pequenos.`,
-    img: "",
-  },
+  // {
+  //   name: "Liduinasilva",
+  //   numberStar: 5,
+  //   comment: `Obrigada Conect por dias inesqueciveis e por trazerem proficionais tão incríveis para nossa cidade.
+  //       Ansiosa para 2025.`,
+  //   img: "",
+  // },
+  // {
+  //   name: "Socorrodacosta",
+  //   numberStar: 5,
+  //   comment: `Sou mãe atipica e vivenciei a maior e melhor experiência da minha vida. Obrigada Conect autismo
+  //       por fazer tanta diferença na vida dos nossos pequenos.`,
+  //   img: "",
+  // },
 ];

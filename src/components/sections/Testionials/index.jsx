@@ -2,14 +2,14 @@ import styles from "./testimonials.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation, Autoplay } from "swiper/modules";
 import { testimonials } from "../../../data/testimonials";
-import Title from "../../shared/Title";
 import { FaStar } from "react-icons/fa";
+
+import { BiSolidQuoteLeft } from "react-icons/bi";
 
 export default function Testimonials() {
   return (
     <section className={styles.section}>
       <div className={styles.backgroundOverlay}></div>
-      {/* <Title text="Depoimentos" color="black" /> */}
 
       <div className={styles.container}>
         <Swiper
@@ -29,18 +29,14 @@ export default function Testimonials() {
               slidesPerView: 1,
               spaceBetween: 20,
             },
-            // 768: {
-            //   slidesPerView: 2,
-            //   spaceBetween: 30,
-            // },
           }}
         >
           {testimonials.map((testimony, index) => (
             <SwiperSlide key={index}>
               <div className={styles.card}>
-                {/* <div className={styles.quoteOpen}>
-                  <BiSolidQuoteAltLeft />
-                </div> */}
+                <div className={styles.quoteOpen}>
+                  <BiSolidQuoteLeft />
+                </div>
 
                 <div className={styles.content}>
                   <div className={styles.avatar}>

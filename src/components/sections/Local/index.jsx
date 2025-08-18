@@ -43,23 +43,6 @@ export default function Local() {
           </div>
         </div>
         <div className={styles.boxCarousel}>
-          {/* <Swiper
-            modules={[Pagination, Autoplay]}
-            autoplay={{ delay: 2000, disableOnInteraction: false }}
-            pagination={{ clickable: true }}
-            slidesPerView={1}
-            spaceBetween={10}
-            className={styles.carousel}
-          >
-            <SwiperSlide>
-              <img
-                src="https://centrodeeventos.ce.gov.br/wp-content/uploads/2025/05/CENTRO-DE-EVENTOS-DO-CEARA-BANNER-1-1.png"
-                alt="entro de Eventos Ceará"
-                onError={(e) => (e.target.src = "/fallback-image.jpg")}
-              />
-            </SwiperSlide>
-            
-          </Swiper> */}
           <img
             src={centroDeEventos}
             alt="entro de Eventos Ceará"

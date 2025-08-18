@@ -6,7 +6,7 @@ import Contagem from "../../shared/Contagem";
 const tickets = [
   {
     id: "complete",
-    title: "INGRESSO COMPLETO CONECT 2025",
+    title: "INGRESSO COMPLETO CONECT 2026",
     subtitle: "3 dias de congresso ",
     benefits: [
       "Realizado no segundo maior centro de eventos do Brasil, com estrutura ampla, moderna, climatizada e 100% acessível.",
@@ -29,48 +29,22 @@ const tickets = [
     options: [
       {
         link: "https://pay.hotmart.com/D101401576U?off=1zhb4drs",
-        text: "INGRESSO PRÉ-VENDA",
-        price: "10 x R$ 97,80",
+        text: "PRÉ-VENDA INTEIRA",
+        price: "12 x R$ 101,15",
         label: null,
         disabled: false,
       },
       {
         link: "https://pay.hotmart.com/D101401576U?off=rfa406il",
         text: "PRÉ-VENDA MEIA-ENTRADA",
-        price: "10 x R$ 48,90",
+        price: "12 x R$ 50,57",
         label: "",
         disabled: false,
       },
     ],
-    meiaEntradaLink: "#meia-entrada",
+    // meiaEntradaLink: "#meia-entrada",
   },
-  // {
-  //   id: "party",
-  //   title: "Festa Pré Conect Autismo",
-  //   subtitle: "22/08/2025 em Fortaleza",
-  //   description:
-  //     "Devido ao grande sucesso e desejo de todos, a pedidos teremos novamente nossa querida festa. Momento de muita conexão e interação entre palestrantes e congressistas.",
-  //   benefits: [
-  //     "Open Bar Premium",
-  //     "Finguer Foods Buffet",
-  //     "Local Aconchegante",
-  //     "Bate-Papo",
-  //     "Show AO VIVO",
-  //     "Banda & DJ",
-  //     "Local acessível",
-  //     "Som e Iluminação acolhedora",
-  //     "Garanta a festa para seus acompanhantes",
-  //   ],
-  //   options: [
-  //     {
-  //       link: null,
-  //       text: "PRÉ-VENDA",
-  //       price: "R$ 225,00",
-  //       label: null,
-  //       disabled: false,
-  //     },
-  //   ],
-  // },
+
   {
     id: "group",
     title: "GRUPO 20% DE DESCONTO",
@@ -86,17 +60,11 @@ const tickets = [
       {
         link: "https://pay.hotmart.com/D101401576U?off=1zhb4drs?coupon=GRUPO",
         text: "INGRESSO PRÉ-VENDA",
-        price: "10 x R$ 78,24 cada",
+        // price: "12 x R$ 101,15 cada",
+        price: "EM BREVE",
         label: "",
-        disabled: false,
+        disabled: true,
       },
-      // {
-      //   link: null,
-      //   text: "ESGOTADO",
-      //   price: "R$ 750,40 cada",
-      //   label: "",
-      //   disabled: true,
-      // },
     ],
   },
 ];
@@ -106,17 +74,12 @@ export default function BoxesTickts() {
     <section id="tickts" className={styles.section}>
       <div className={styles.backgroundOverlay}></div>
       <div className={styles.container}>
-        <Title text="INGRESSO CONECT AUTISMO 2025" />
-        {/* <ButtonPretty
-          link="https://pay.hotmart.com/A96222789P?off=cpagfpj6"
-          target="_blank"
-          text="GARANTIR AGORA"
-          className={styles.mainCta}
-        /> */}
+        <Title text="INGRESSO CONECT AUTISMO 2026" />
+
         <div className={styles.header}>
           <h3>PRÉ-VENDA LIMITADA</h3>
           <p>Termina em:</p>
-          <Contagem dateEvent={"17/09/2025"} />
+          <Contagem dateEvent={"24/08/2025"} />
         </div>
         <div className={styles.boxes}>
           {tickets.map((ticket) => (
