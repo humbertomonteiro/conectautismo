@@ -82,6 +82,11 @@ export default function PatrocinadorEExpositor() {
                 link="https://api.whatsapp.com/send/?phone=558592742323&text&type=phone_number&app_absent=0"
                 text="QUERO SER EXPOSITOR 2026"
               />
+              <ButtonPretty
+                data-color="blue"
+                link="/expositor"
+                text="MANUAL DO EXPOSITOR"
+              />
             </div>
           </div>
           {/* <div className={styles.sponsorsSection}>

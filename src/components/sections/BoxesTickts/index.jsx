@@ -90,7 +90,7 @@ export default function BoxesTickts() {
             <div key={ticket.id} className={styles.box} data-aos="zoom-in">
               <h2>{ticket.title}</h2>
               {ticket.subtitle && <h3>{ticket.subtitle}</h3>}
-              {ticket.description && <p>{ticket.description}</p>}
+              {ticket.description && <p>{ticket.description}</p>}{" "}
               <strong>Benefícios:</strong>
               <ul>
                 {ticket.benefits.map((benefit, index) => (

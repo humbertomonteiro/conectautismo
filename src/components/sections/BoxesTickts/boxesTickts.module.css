@@ -91,7 +91,7 @@
   margin-bottom: 0.5rem;
 }
 
-.box h3 {
+.box > h3 {
   font-size: 0.9rem;
   color: var(--color-secondary);
   text-align: center;
@@ -178,11 +178,12 @@
   text-align: center;
   padding: 1rem;
   background: var(--bg-transparent-blue);
+  border: var(--border-white);
   border-radius: 8px;
-  max-width: 600px;
+  max-width: 100%;
 }
 
-.placeholder h3 {
+.placeholder > h3 {
   font-size: 1.5rem;
 }
 
@@ -200,12 +201,16 @@
     font-size: 1.5rem;
   }
 
-  .box h3 {
+  .box > h3 {
     font-size: 1rem;
   }
 
   .shop strong {
     font-size: 1.5rem;
+  }
+
+  .placeholder h3 {
+    font-size: 1.2rem;
   }
 }
 
@@ -218,7 +223,7 @@
     font-size: 1.3rem;
   }
 
-  .box h3 {
+  .box > h3 {
     font-size: 0.9rem;
   }
 
