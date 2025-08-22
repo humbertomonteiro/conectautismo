@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import styles from "./speakersPos.module.css";
-import mayraQrCode from "../../../assets/imgs/speakers/mayra-qr-code.png";
+import mayra from "../../../assets/imgs/speakers/mayra.jpg";
 import ButtonPretty from "../../shared/ButtonPretty";
 
 import { GiCheckMark } from "react-icons/gi";
+import Title from "../../shared/Title";
 
 const SpeakersPos = () => {
   const [activeTab, setActiveTab] = useState("pos");
@@ -12,7 +13,8 @@ const SpeakersPos = () => {
     <section className={styles.section}>
       <div className={styles.container}>
         <div className={styles.header}>
-          <h2 className={styles.title}>Mayra - Confirmada no Conect 2026</h2>
+          <Title text="Parceria 2026" color="black" />
+          {/* <h2 className={styles.title}>Mayra - Confirmada no Conect 2026</h2> */}
           <p className={styles.subtitle}>
             Inédito: um dia todo de prática. Quem sabe faz ao vivo!
           </p>
@@ -36,12 +38,13 @@ const SpeakersPos = () => {
                   Pós-Graduação
                 </button>
                 <button
+                  disabled
                   className={`${styles.tab} ${
                     activeTab === "evento" ? styles.activeTab : ""
                   }`}
-                  onClick={() => setActiveTab("evento")}
+                  //   onClick={() => setActiveTab("evento")}
                 >
-                  Opções de Ingresso
+                  Opções de Ingresso (Em breve)
                 </button>
               </div>
 
@@ -72,6 +75,7 @@ const SpeakersPos = () => {
                     text="Visitar site da Mayra"
                     link="https://institutosingular.org/pos-turma4-conect/"
                     data-color="blue"
+                    target="_blank"
                   />
                 </div>
               )}
@@ -86,14 +90,14 @@ const SpeakersPos = () => {
                       <h4>Pacote 3 Dias</h4>
                       <p>Acesso completo a todos os dias do evento</p>
                       <span className={styles.price}>R$ 297,00</span>
-                      <ButtonPretty text="Comprar esse" />
+                      <ButtonPretty text="Comprar Agora" />
                     </div>
 
                     <div className={styles.ticketCard}>
                       <h4>Pacote 2 Dias</h4>
                       <p>Para quem já tem 1 dia através da pós-graduação.</p>
                       <span className={styles.price}>R$ 199,00</span>
-                      <ButtonPretty text="Comprar esse" />
+                      <ButtonPretty text="Comprar Agora" />
                     </div>
                   </div>
                 </div>
@@ -102,7 +106,7 @@ const SpeakersPos = () => {
           </div>
 
           <div className={styles.mediaColumn}>
-            <div className={styles.videoContainer}>
+            {/* <div className={styles.videoContainer}>
               <h3>Convite Especial</h3>
               <div className={styles.videoWrapper}>
                 <video controls poster="/caminho/para/video-poster.jpg">
@@ -113,18 +117,19 @@ const SpeakersPos = () => {
               <p>
                 Assista ao convite especial da Mayra para sua pós-graduação.
               </p>
-            </div>
-
-            {/* <div className={styles.qrCodeContainer}>
-              <h3>Escaneie para saber mais</h3>
-              <div className={styles.qrCode}>
-                <img src={mayraQrCode} alt="QR Code para a pós-graduação" />
-              </div>
-              <p>
-                Use sua câmera para escanear o código e acessar informações
-                sobre a pós-graduação
-              </p>
             </div> */}
+            <div className={styles.speakerImage}>
+              <img src={mayra} alt="Mayra - Palestrante Confirmada" />
+              <div className={styles.imgOverlay}>
+                <div className={styles.imgContent}>
+                  <h4>Mayra Gaiato</h4>
+                  <p>Referência nacional em Autismo e ABA</p>
+                </div>
+              </div>
+              <div className={styles.badge}>
+                Confirmada <GiCheckMark />
+              </div>
+            </div>
           </div>
         </div>
       </div>

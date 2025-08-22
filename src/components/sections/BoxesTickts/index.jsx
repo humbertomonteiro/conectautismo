@@ -70,17 +70,17 @@ const tickets = [
     options: [
       {
         link: "https://pay.hotmart.com/D101401576U?off=1zhb4drs",
-        text: "PRÉ-VENDA INTEIRA",
-        price: "12 x R$ 101,15",
+        text: "INTEIRA DOIS DIAS",
+        price: "EM BREVE",
         label: null,
-        disabled: false,
+        disabled: true,
       },
       {
         link: "https://pay.hotmart.com/D101401576U?off=rfa406il",
-        text: "PRÉ-VENDA MEIA-ENTRADA",
-        price: "12 x R$ 50,57",
+        text: "MEIA DOIS DIAS",
+        price: "EM BREVE",
         label: "",
-        disabled: false,
+        disabled: true,
       },
     ],
     // meiaEntradaLink: "#meia-entrada",

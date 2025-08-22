@@ -164,7 +164,7 @@
   }
 
   .subtitle {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     text-align: center;
   }
 
@@ -176,7 +176,7 @@
 
   .highlightMobile {
     background-color: var(--bg-transparent-white);
-    padding: 0.3rem 1.5rem;
+    padding: 0.5rem 1.5rem;
     border-radius: 20px;
     font-size: 0.9rem;
   }
@@ -221,7 +221,7 @@
 
 @media (max-width: 500px) {
   .subtitle {
-    font-size: 1.15rem;
+    font-size: 1.4rem;
   }
 
   .highlight {
