@@ -22,7 +22,7 @@ const SpeakersPos = () => {
 
         <div className={styles.content}>
           <div className={styles.infoColumn}>
-            <div className={styles.speakerCard}>
+            <div className={styles.speakerCard} data-aos="zoom-in">
               {/* <div className={styles.speakerImage}>
                 <img src={mayra} alt="Mayra - Palestrante Confirmada" />
                 <div className={styles.badge}>Confirmada</div>
@@ -105,7 +105,7 @@ const SpeakersPos = () => {
             </div>
           </div>
 
-          <div className={styles.mediaColumn}>
+          <div className={styles.mediaColumn} data-aos="zoom-in">
             {/* <div className={styles.videoContainer}>
               <h3>Convite Especial</h3>
               <div className={styles.videoWrapper}>

@@ -26,8 +26,9 @@
   font-size: 1.3rem;
   color: var(--color-text-black-1);
   margin-bottom: 0.5rem;
-  font-weight: 600;
+  font-weight: 400;
   text-align: center;
+  font-style: italic;
 }
 
 .subtitle {
