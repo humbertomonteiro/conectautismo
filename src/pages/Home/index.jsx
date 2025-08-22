@@ -12,6 +12,8 @@ import Footer from "../../components/template/Footer";
 
 import TopPromoBar from "../../components/shared/TopPromoBar";
 import Testimonials from "../../components/sections/Testionials";
+import SpeakersPos from "../../components/sections/SpeakersPos";
+import Certificate from "../../components/sections/Certificate";
 
 export default function Home() {
   return (
@@ -21,6 +23,8 @@ export default function Home() {
         <Welcome />
         <Oportunidades />
         <BoxesTickts />
+        <SpeakersPos />
+        <Certificate />
         <PatrocinadorEExpositor />
         <Local />
         <Testimonials />

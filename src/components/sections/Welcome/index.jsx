@@ -34,8 +34,8 @@ export default function Welcome() {
             data-aos="zoom-in"
             data-aos-delay="300"
           >
-            <span>Pré-venda começa em:</span>
-            <Contagem dateEvent={"22/08/2025"} />
+            <span>Pré-venda termina em:</span>
+            <Contagem dateEvent={"24/08/2025"} />
           </div>
           <div
             className={styles.buttons}

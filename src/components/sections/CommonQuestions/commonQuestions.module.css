@@ -2,26 +2,7 @@
   padding: 4rem 0;
   position: relative;
   z-index: 2;
-}
-
-.backgroundOverlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(
-    to top,
-    var(--bg-transparent-white),
-    var(--bg-transparent-white)
-  );
-  opacity: 0.9;
-  z-index: -1;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border: 1px solid var(--primary-color, #1a365d);
+  background: var(--bg-white);
 }
 
 .container {
@@ -43,7 +24,8 @@
   color: var(--color-text-black);
   padding: 1.5rem;
   border-radius: 1rem;
-  border: var(--border-black);
+  box-shadow: var(--shadow);
+  background-color: #fff;
 }
 
 .ballonWhatsapp > svg {
@@ -68,8 +50,9 @@
   list-style: none;
   display: flex;
   flex-direction: column;
-  border: var(--border-black);
+  box-shadow: var(--shadow);
   border-radius: 1rem;
+  background-color: #fff;
 }
 
 .questions li {

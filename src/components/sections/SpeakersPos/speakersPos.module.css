@@ -1,0 +1,278 @@
+.section {
+  padding: 5rem 1rem;
+  background: var(--bg-white);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  color: var(--color-text-black-1);
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  color: var(--color-text-black-2);
+  font-style: italic;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.infoColumn {
+  flex: 1;
+  min-width: 300px;
+}
+
+.mediaColumn {
+  flex: 1;
+  min-width: 300px;
+}
+
+.speakerCard {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.speakerImage {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+}
+
+.speakerImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: #4caf50;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+
+.tabs {
+  display: flex;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.tab {
+  flex: 1;
+  padding: 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  color: #718096;
+  transition: all 0.3s ease;
+}
+
+.tab:hover {
+  background: #f7fafc;
+  color: #2d3748;
+}
+
+.activeTab {
+  color: #4299e1;
+  border-bottom: 3px solid #4299e1;
+}
+
+.tabContent {
+  padding: 1.5rem;
+}
+
+.tabContent h3 {
+  font-size: 1.5rem;
+  color: #2d3748;
+  margin-bottom: 1rem;
+}
+
+.tabContent p {
+  color: #4a5568;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.benefitsList {
+  margin-bottom: 1.5rem;
+}
+
+.benefitsList li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+  color: #4a5568;
+}
+
+.benefitsList i {
+  color: #48bb78;
+  margin-right: 0.75rem;
+}
+
+.ctaBox {
+  background: #ebf8ff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.offer {
+  color: #2b6cb0;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.ctaButton {
+  background: #4299e1;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  width: 100%;
+}
+
+.ctaButton:hover {
+  background: #3182ce;
+}
+
+.ticketOptions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.ticketCard {
+  flex: 1;
+  min-width: 200px;
+  background: #f7fafc;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  text-align: center;
+}
+
+.ticketCard h4 {
+  color: var(--color-text-black-1);
+  margin-bottom: 0.5rem;
+}
+
+.ticketCard p {
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+}
+
+.price {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2d3748;
+  margin: 1rem 0;
+}
+
+.ticketButton {
+  background: #48bb78;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  width: 100%;
+}
+
+.ticketButton:hover {
+  background: #38a169;
+}
+
+.videoContainer,
+.qrCodeContainer {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.videoContainer h3,
+.qrCodeContainer h3 {
+  font-size: 1.25rem;
+  color: var(--color-text-black-2);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+  height: 0;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.videoWrapper video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.videoContainer p {
+  color: var(--color-text-black-2);
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+/* .qrCode {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.qrCode img {
+  max-width: 200px;
+  height: auto;
+} */
+
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .ticketOptions {
+    flex-direction: column;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+}

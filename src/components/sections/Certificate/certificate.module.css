@@ -1,0 +1,165 @@
+.container {
+  position: relative;
+  padding: 4rem 0;
+  overflow: hidden;
+  color: var(--text-white);
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.backgroundOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, var(--bg-transparent-blue), #001e3dc5),
+    url("https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.9;
+  z-index: -1;
+  background-attachment: fixed;
+}
+
+.boxes {
+  max-width: 1000px;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.boxInfo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  text-align: center;
+  align-items: center;
+}
+
+/* .boxInfo h3 {
+  font-size: 2.2rem;
+} */
+
+.subtitle {
+  font-size: 1.4rem;
+  font-style: italic;
+  opacity: 0.9;
+}
+
+.highlight {
+  padding: 2rem;
+  background-color: var(--bg-transparent-blue);
+  list-style: none;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  border: var(--border-black);
+  width: 100%;
+  max-width: 700px;
+}
+
+.highlight li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-align: left;
+}
+
+.highlight li span {
+  padding: 0.3rem 1rem;
+  background-color: var(--bg-transparent-white);
+  color: var(--color-primary);
+  border-radius: 1rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  width: fit-content;
+  text-align: center;
+  font-weight: 400;
+}
+
+.textContent p {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.text {
+  font-size: 1.2rem;
+  max-width: 700px;
+  line-height: 1.6;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  width: 600px;
+  max-width: 100%;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+  .boxes {
+    width: 95%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 3rem 0;
+  }
+
+  .boxInfo h3 {
+    font-size: 1.8rem;
+  }
+
+  .subtitle {
+    font-size: 1.2rem;
+  }
+
+  .highlight {
+    padding: 1.5rem;
+    gap: 1.2rem;
+  }
+
+  .highlight li {
+    gap: 0.8rem;
+  }
+
+  .text {
+    font-size: 1.1rem;
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .boxInfo h3 {
+    font-size: 1.6rem;
+  }
+
+  .subtitle {
+    font-size: 1.1rem;
+  }
+
+  .highlight {
+    padding: 1rem;
+  }
+
+  .highlight li span {
+    font-size: 0.65rem;
+    padding: 0.3rem 0.5rem;
+  }
+
+  .highlight li p {
+    font-size: 0.85rem;
+  }
+
+  .text {
+    font-size: 1rem;
+  }
+}

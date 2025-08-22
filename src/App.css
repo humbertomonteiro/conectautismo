@@ -2,7 +2,8 @@
 
 :root {
   /* Cores atualizadas */
-  --color-text-black: #020202;
+  --color-text-black-1: #020202;
+  --color-text-black-2: #1a202c;
   --color-text-light: #e2e2e2;
   --color-text-white: #eeeeee;
 
@@ -13,6 +14,7 @@
   --color-accent-light: #fbd38d;
 
   /* Efeitos de transparência */
+  --bg-white: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
   --bg-transparent-white: #f3f7ffe1;
   --bg-transparent-blue: #001236e1;
 
@@ -23,6 +25,8 @@
   /* Sombras */
   --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.12);
   --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
 
   /* Fontes */
   --font-heading: "Comfortaa", cursive;
