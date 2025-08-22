@@ -12,6 +12,7 @@ import {
   FaBrain,
   FaHandsHelping,
 } from "react-icons/fa";
+import Title from "../../shared/Title";
 
 const benefits = [
   {
@@ -62,7 +63,7 @@ export default function oportunidades() {
   return (
     <div className={styles.container}>
       <div className={styles.backgroundOverlay}></div>
-      <h2 className={styles.title}>INÉDITO</h2>
+      <Title text="Inédito" color="black" />
       <p className={styles.subtitleMain} data-aos="zoom-in">
         O primeiro congresso com um dia inteiro de prática.
       </p>
