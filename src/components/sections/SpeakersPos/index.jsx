@@ -51,10 +51,13 @@ const SpeakersPos = () => {
 
               {activeTab === "pos" && (
                 <div className={styles.tabContent}>
-                  <h3>Invista no seu futuro</h3>
+                  <h3>“Quem sabe faz ao vivo”</h3>
                   <p>
-                    um dia inteiro de prática com Mayra gaiato! “Quem sabe faz
-                    ao vivo”
+                    Um dia inteiro de prática com Mayra Gaiato no congresso
+                    conect 2026
+                  </p>
+                  <p className={styles.highlight}>
+                    Garanta agora sua pós e seu conect 2026
                   </p>
 
                   <ul className={styles.benefitsList}>

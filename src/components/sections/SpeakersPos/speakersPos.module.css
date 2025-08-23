@@ -146,6 +146,14 @@
   line-height: 1.6;
 }
 
+.tabContent .highlight {
+  color: var(--color-primary);
+  background-color: var(--color-secondary);
+  padding: 0.2rem 0.5rem;
+  border-radius: 1rem;
+  font-size: 0.9rem;
+}
+
 .benefitsList {
   margin-bottom: 1.5rem;
 }
