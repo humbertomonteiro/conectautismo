@@ -125,7 +125,13 @@ export default function BoxesTickts() {
         <div className={styles.header}>
           <h3>PRÉ-VENDA LIMITADA</h3>
           <p>Termina em:</p>
-          <Contagem dateEvent={"24/08/2025"} />
+          <Contagem dateEvent={"25/08/2025"} />
+        </div>
+        <div className={styles.headerButton}>
+          <ButtonPretty
+            text="Garantir meu ingresso"
+            link="https://pay.hotmart.com/D101401576U?off=1zhb4drs"
+          />
         </div>
         <div className={styles.boxes}>
           {tickets.map((ticket) => (
