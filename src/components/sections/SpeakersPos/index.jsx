@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import styles from "./speakersPos.module.css";
-import mayra from "../../../assets/imgs/speakers/mayra.jpg";
 import ButtonPretty from "../../shared/ButtonPretty";
+// import mayra from "../../../assets/imgs/speakers/mayra.jpg";
+import banner from "../../../assets/imgs/speakers/banner.jpeg";
+import bannerMobile from "../../../assets/imgs/speakers/banner-mobile.jpeg";
 
 import { GiCheckMark } from "react-icons/gi";
 import Title from "../../shared/Title";
@@ -15,9 +17,9 @@ const SpeakersPos = () => {
         <div className={styles.header}>
           <Title text="Inédito" color="black" />
           {/* <h2 className={styles.title}>Mayra - Confirmada no Conect 2026</h2> */}
-          <p className={styles.subtitle}>
+          {/* <p className={styles.subtitle}>
             Um dia inteiro de prática com Mayra Gaiato no Congresso Conect 2026
-          </p>
+          </p> */}
         </div>
 
         <div className={styles.content}>
@@ -119,16 +121,25 @@ const SpeakersPos = () => {
               </p>
             </div> */}
             <div className={styles.speakerImage}>
-              <img src={mayra} alt="Mayra - Palestrante Confirmada" />
-              <div className={styles.imgOverlay}>
+              <img
+                className={styles.desktop}
+                src={banner}
+                alt="Mayra - Palestrante Confirmada"
+              />
+              <img
+                className={styles.mobile}
+                src={bannerMobile}
+                alt="Mayra - Palestrante Confirmada"
+              />
+              {/* <div className={styles.imgOverlay}>
                 <div className={styles.imgContent}>
                   <h4>Mayra Gaiato</h4>
                   <p>Referência nacional em Autismo e ABA</p>
                 </div>
-              </div>
-              <div className={styles.badge}>
+              </div> */}
+              {/* <div className={styles.badge}>
                 Confirmada <GiCheckMark />
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
