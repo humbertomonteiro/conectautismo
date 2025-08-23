@@ -63,10 +63,11 @@ export default function oportunidades() {
   return (
     <div className={styles.container}>
       <div className={styles.backgroundOverlay}></div>
-      <Title text="Inédito" color="black" />
+      <Title text="Oportunidades" color="black" />
+      {/* <Title text="Inédito" color="black" />
       <p className={styles.subtitleMain} data-aos="zoom-in">
         O primeiro congresso com um dia inteiro de prática.
-      </p>
+      </p> */}
       <p className={styles.subtitle} data-aos="zoom-in">
         O Congresso Conect é o maior espaço de crescimento, aprendizado e
         conexões sobre transtornos do neurodesenvolvimento do Norte e Nordeste.

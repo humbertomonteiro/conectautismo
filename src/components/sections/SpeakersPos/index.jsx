@@ -13,10 +13,10 @@ const SpeakersPos = () => {
     <section className={styles.section}>
       <div className={styles.container}>
         <div className={styles.header}>
-          <Title text="Parceria 2026" color="black" />
+          <Title text="Inédito" color="black" />
           {/* <h2 className={styles.title}>Mayra - Confirmada no Conect 2026</h2> */}
           <p className={styles.subtitle}>
-            Inédito: um dia todo de prática. Quem sabe faz ao vivo!
+            Um dia inteiro de prática com Mayra Gaiato no Congresso Conect 2026
           </p>
         </div>
 
