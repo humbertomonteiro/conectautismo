@@ -62,7 +62,7 @@ const SpeakersPos = () => {
 
                   <ul className={styles.benefitsList}>
                     <li>
-                      <GiCheckMark /> Acesso a conteúdo exclusivo
+                      <GiCheckMark /> Pós em ABA e Estratégias Naturalistas
                     </li>
                     <li>
                       <GiCheckMark /> Certificação reconhecida
@@ -70,9 +70,9 @@ const SpeakersPos = () => {
                     <li>
                       <GiCheckMark /> 1 dia de acesso ao Conect 2026
                     </li>
-                    <li>
+                    {/* <li>
                       <GiCheckMark /> Networking com profissionais
-                    </li>
+                    </li> */}
                   </ul>
 
                   <ButtonPretty
