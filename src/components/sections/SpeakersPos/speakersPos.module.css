@@ -64,9 +64,9 @@
   box-shadow: var(--shadow);
 }
 
-.speakerImage .mobile {
+/* .speakerImage .mobile {
   display: none;
-}
+} */
 
 .imgOverlay {
   position: absolute;
@@ -89,13 +89,14 @@
 
 .imgContent p {
   font-size: 0.9rem;
+  margin-bottom: 0.3rem;
 }
 
 .badge {
   position: absolute;
   top: 1rem;
   right: 1rem;
-  background: #4caf50;
+  background: var(--color-primary);
   color: white;
   padding: 0.5rem 1rem;
   border-radius: 1rem;

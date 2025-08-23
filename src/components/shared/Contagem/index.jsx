@@ -51,7 +51,7 @@ export default function Contagem({ dateEvent }) {
   return (
     <div className={styles.container}>
       {/* <Title text={"CONTAGEM REGRESSIVA CONECT AUTISMO"} /> */}
-      <div className={styles.timer} data-aos="fade-down">
+      <div className={styles.timer} data-aos="zoom-in">
         <div className={styles.item}>
           <h3>{formatTime(finalDays)}</h3>
           <span>Dias</span>
