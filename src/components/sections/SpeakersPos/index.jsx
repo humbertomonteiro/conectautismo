@@ -9,7 +9,7 @@ import { GiCheckMark } from "react-icons/gi";
 import Title from "../../shared/Title";
 
 const SpeakersPos = () => {
-  const [activeTab, setActiveTab] = useState("pos");
+  const [activeTab, setActiveTab] = useState("evento");
 
   return (
     <section className={styles.section}>
@@ -33,19 +33,19 @@ const SpeakersPos = () => {
               <div className={styles.tabs}>
                 <button
                   className={`${styles.tab} ${
-                    activeTab === "pos" ? styles.activeTab : ""
-                  }`}
-                  onClick={() => setActiveTab("pos")}
-                >
-                  Pós-Graduação
-                </button>
-                <button
-                  className={`${styles.tab} ${
                     activeTab === "evento" ? styles.activeTab : ""
                   }`}
                   onClick={() => setActiveTab("evento")}
                 >
                   Opções de Ingresso
+                </button>
+                <button
+                  className={`${styles.tab} ${
+                    activeTab === "pos" ? styles.activeTab : ""
+                  }`}
+                  onClick={() => setActiveTab("pos")}
+                >
+                  Pós-Graduação
                 </button>
               </div>
 

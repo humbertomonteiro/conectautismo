@@ -21,8 +21,8 @@ export default function Home() {
       <TopPromoBar />
       <div className={styles.container}>
         <Welcome />
-        <BoxesTickts />
         <SpeakersPos />
+        <BoxesTickts />
         <Oportunidades />
         <Certificate />
         <PatrocinadorEExpositor />
