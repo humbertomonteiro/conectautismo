@@ -227,12 +227,17 @@
   margin-bottom: 1rem;
 }
 
+.ticketCard .buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
 .price {
   display: block;
   font-size: 1.5rem;
   font-weight: 700;
   color: #2d3748;
-  margin: 1rem 0;
 }
 
 .ticketButton {
@@ -293,7 +298,7 @@
 
 @media (max-width: 768px) {
   .content {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
 
   .ticketOptions {

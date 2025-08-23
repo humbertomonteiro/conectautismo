@@ -23,6 +23,24 @@ const SpeakersPos = () => {
         </div>
 
         <div className={styles.content}>
+          <div className={styles.mediaColumn} data-aos="zoom-in">
+            <div className={styles.speakerImage} id="tickets2">
+              <img
+                className={styles.mobile}
+                src={mayra}
+                alt="Mayra - Palestrante Confirmada"
+              />
+              <div className={styles.imgOverlay}>
+                <div className={styles.imgContent}>
+                  <h3>Mayra Gaiato</h3>
+                  <p>Referência nacional em Autismo e ABA.</p>
+                </div>
+              </div>
+              <div className={styles.badge}>
+                Confirmada <GiCheckMark />
+              </div>
+            </div>
+          </div>
           <div className={styles.infoColumn}>
             <div className={styles.speakerCard} data-aos="zoom-in">
               {/* <div className={styles.speakerImage}>
@@ -93,19 +111,50 @@ const SpeakersPos = () => {
                     <div className={styles.ticketCard}>
                       <h4>Pacote 3 Dias</h4>
                       <p>Acesso completo a todos os dias do evento</p>
-                      <span className={styles.price}>12 x R$ 101,15</span>
-                      <ButtonPretty
-                        text="Comprar Agora"
-                        link="https://pay.hotmart.com/D101401576U?off=1zhb4drs"
-                        target="_blank"
-                      />
+                      <div className={styles.buttons}>
+                        <div className="">
+                          <span className={styles.price}>12 x R$ 101,15</span>
+                          <ButtonPretty
+                            text="Comprar Inteira"
+                            link="https://pay.hotmart.com/D101401576U?off=1zhb4drs"
+                            target="_blank"
+                          />
+                        </div>
+                        <div className="">
+                          <span className={styles.price}>12 x R$ 50,57</span>
+                          <ButtonPretty
+                            text="Comprar Meia"
+                            link="https://pay.hotmart.com/D101401576U?off=rfa406il"
+                            target="_blank"
+                          />
+                        </div>
+                      </div>
                     </div>
 
                     <div className={styles.ticketCard}>
                       <h4>Pacote 2 Dias</h4>
-                      <p>Para quem já tem 1 dia através da pós-graduação.</p>
-                      <span className={styles.price}>12 x R$ 80,00</span>
-                      <ButtonPretty text="Comprar Agora" target="_blank" />
+                      <p>
+                        Para quem já tem 1 dia através da pós-graduação Mayra
+                        Gaiato.
+                      </p>
+                      <div className={styles.buttons}>
+                        <div className="">
+                          <span className={styles.price}>EM BREVE</span>
+                          <ButtonPretty
+                            text="Comprar Inteira"
+                            target="_blank"
+                            data-button="disabled"
+                          />
+                        </div>
+                        <div className="">
+                          <span className={styles.price}>EM BREVE</span>
+                          <ButtonPretty
+                            text="Comprar Meia"
+                            target="_blank"
+                            data-button="disabled"
+                          />
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -113,30 +162,8 @@ const SpeakersPos = () => {
             </div>
           </div>
 
-          <div className={styles.mediaColumn} data-aos="zoom-in">
-            {/* <div className={styles.videoContainer}>
-              <h3>Convite Especial</h3>
-              <div className={styles.videoWrapper}>
-                <video controls poster="/caminho/para/video-poster.jpg">
-                  <source src={mayraQrCode} type="video/mp4" />
-                  Seu navegador não suporta o elemento de vídeo.
-                </video>
-              </div>
-              <p>
-                Assista ao convite especial da Mayra para sua pós-graduação.
-              </p>
-            </div> */}
+          {/* <div className={styles.mediaColumn} data-aos="zoom-in">
             <div className={styles.speakerImage}>
-              {/* <img
-                className={styles.desktop}
-                src={banner}
-                alt="Mayra - Palestrante Confirmada"
-              />
-              <img
-                className={styles.mobile}
-                src={bannerMobile}
-                alt="Mayra - Palestrante Confirmada"
-              /> */}
               <img
                 className={styles.mobile}
                 src={mayra}
@@ -144,11 +171,7 @@ const SpeakersPos = () => {
               />
               <div className={styles.imgOverlay}>
                 <div className={styles.imgContent}>
-                  {/* <p>
-                    Um dia inteiro de prática com Mayra Gaiato no congresso
-                    conect 2026
-                  </p>
-                  <p>Garanta agora sua pós e seu conect 2026</p> */}
+  
                   <h3>Mayra Gaiato</h3>
                   <p>Referência nacional em Autismo e ABA.</p>
                 </div>
@@ -157,7 +180,7 @@ const SpeakersPos = () => {
                 Confirmada <GiCheckMark />
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

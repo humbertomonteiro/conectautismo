@@ -5,7 +5,7 @@ export default function TopPromoBar() {
     <div className={styles.container}>
       <span>Contagem regressiva para pré-venda</span>
 
-      <a href="#tickts">Aproveitar agora</a>
+      <a href="#tickets2">Aproveitar agora</a>
     </div>
   );
 }
