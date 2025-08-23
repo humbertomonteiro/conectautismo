@@ -40,13 +40,12 @@ const SpeakersPos = () => {
                   Pós-Graduação
                 </button>
                 <button
-                  disabled
                   className={`${styles.tab} ${
                     activeTab === "evento" ? styles.activeTab : ""
                   }`}
-                  //   onClick={() => setActiveTab("evento")}
+                  onClick={() => setActiveTab("evento")}
                 >
-                  Opções de Ingresso (Em breve)
+                  Opções de Ingresso
                 </button>
               </div>
 
@@ -54,8 +53,8 @@ const SpeakersPos = () => {
                 <div className={styles.tabContent}>
                   <h3>Invista no seu futuro</h3>
                   <p>
-                    Faça a pós-graduação com a Mayra e ganhe um dia de acesso ao
-                    Conect 2026!
+                    um dia inteiro de prática com Mayra gaiato! “Quem sabe faz
+                    ao vivo”
                   </p>
 
                   <ul className={styles.benefitsList}>
@@ -91,15 +90,19 @@ const SpeakersPos = () => {
                     <div className={styles.ticketCard}>
                       <h4>Pacote 3 Dias</h4>
                       <p>Acesso completo a todos os dias do evento</p>
-                      <span className={styles.price}>R$ 297,00</span>
-                      <ButtonPretty text="Comprar Agora" />
+                      <span className={styles.price}>12 x R$ 101,15</span>
+                      <ButtonPretty
+                        text="Comprar Agora"
+                        link="https://pay.hotmart.com/D101401576U?off=1zhb4drs"
+                        target="_blank"
+                      />
                     </div>
 
                     <div className={styles.ticketCard}>
                       <h4>Pacote 2 Dias</h4>
                       <p>Para quem já tem 1 dia através da pós-graduação.</p>
-                      <span className={styles.price}>R$ 199,00</span>
-                      <ButtonPretty text="Comprar Agora" />
+                      <span className={styles.price}>12 x R$ 80,00</span>
+                      <ButtonPretty text="Comprar Agora" target="_blank" />
                     </div>
                   </div>
                 </div>
