@@ -29,7 +29,8 @@ const PosMayra = () => {
               <div className={styles.imgOverlay}>
                 <div className={styles.imgContent}>
                   <h3>Mayra Gaiato</h3>
-                  <p>Referência nacional em Autismo e ABA.</p>
+                  <p>Um dia inteiro de prática com Mayra Gaiato Conect 2026.</p>
+                  {/* <p>Referência nacional em Autismo e ABA.</p> */}
                 </div>
               </div>
               <div className={styles.badge}>

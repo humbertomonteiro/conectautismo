@@ -24,10 +24,10 @@ export default function Home() {
       <div className={styles.container}>
         <Welcome />
         <SpeakersPos />
+        <PosMayra />
         <BoxesTickts />
         <Oportunidades />
         <Certificate />
-        <PosMayra />
         <PatrocinadorEExpositor />
         <Local />
         <Testimonials />

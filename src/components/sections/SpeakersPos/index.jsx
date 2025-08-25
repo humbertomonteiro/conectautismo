@@ -37,17 +37,17 @@ const SpeakersPos = () => {
               </div>
             </div>
           </div> */}
-          <div className={styles.videoContainer}>
+          <div className={styles.videoContainer} data-aos="zoom-in">
             <div className={styles.videoWrapper} id="tickets2">
               <iframe
-                src="https://www.youtube.com/embed/fXp2XUOUYhs?si=qAtFLUPE5e--OluC"
-                title="Pós-graduação Mayra Gaiato"
+                src="https://www.youtube.com/embed/oJoGFDOJjHc?si=AxUmmENJ7haBQZQz"
+                title="YouTube video player"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerPolicy="strict-origin-when-cross-origin"
-                allowFullScreen
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
               ></iframe>
             </div>
-            <h3>CONFIRMADA </h3>
+            <h3></h3>
             <p>Um dia inteiro de Mayra gaiato confirmado Conect 2026!</p>
           </div>
           <div className={styles.infoColumn}>
