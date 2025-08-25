@@ -3,7 +3,7 @@ import logoMobile from "../../../assets/imgs/logo/logo-mobile.png";
 import ButtonPretty from "../../shared/ButtonPretty";
 // import bg from "../../../assets/imgs/background/bg.jpg";
 import bg from "../../../assets/imgs/background/bg-mobile.jpeg";
-import Contagem from "../../shared/Contagem";
+// import Contagem from "../../shared/Contagem";
 
 export default function Welcome() {
   return (
@@ -29,14 +29,14 @@ export default function Welcome() {
               </span>
             </div>
           </div>
-          <div
+          {/* <div
             className={styles.countdown}
             data-aos="zoom-in"
             data-aos-delay="300"
           >
             <span>Pré-venda termina em:</span>
             <Contagem dateEvent={"28/08/2025"} />
-          </div>
+          </div> */}
           <div className={styles.buttons} data-aos-delay="300">
             <ButtonPretty link={"#tickets2"} text={"Garanta sua vaga agora"} />
           </div>

@@ -120,11 +120,11 @@ export default function BoxesTickts() {
       <div className={styles.container}>
         <Title text="INGRESSO CONECT AUTISMO 2026" />
 
-        <div className={styles.header}>
+        {/* <div className={styles.header}>
           <h3>PRÉ-VENDA LIMITADA</h3>
           <p>Termina em:</p>
           <Contagem dateEvent={"28/08/2025"} />
-        </div>
+        </div> */}
         <div className={styles.headerButton}>
           <ButtonPretty
             text="Garantir meu ingresso"
