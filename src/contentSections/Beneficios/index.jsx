@@ -72,10 +72,10 @@ export default function Beneficios() {
           relaxamento e bem-estar.
         </li>
 
-        <li>
+        {/* <li>
           Coffee Break Gourmet: Delícias para desfrutar e recarregar as energias
           durante o evento.
-        </li>
+        </li> */}
 
         <li>
           Antes de adquirir nosso ingresso, leia nossa política e informe-se

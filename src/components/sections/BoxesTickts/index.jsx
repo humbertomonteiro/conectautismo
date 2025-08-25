@@ -21,7 +21,6 @@ const tickets = [
       "Espaços instagramáveis e interativos, com cenários temáticos e fotógrafos profissionais captando seus melhores momentos.",
       "Expositores nacionais e internacionais apresentando novidades, tecnologias e soluções exclusivas.",
       "Espaço Zen para relaxamento e bem-estar.",
-      "Área Food diversificada com opções regionais e internacionais.",
       "Localização estratégica: a apenas 3 minutos do Shopping Iguatemi, com diversas opções de hospedagem próximas.",
       "Área dedicada a trabalhos científicos, fomentando a produção acadêmica e a inovação.",
       "Certificado digital disponível de forma prática e rápida após o evento.",
@@ -61,7 +60,6 @@ const tickets = [
       "Espaços instagramáveis e interativos, com cenários temáticos e fotógrafos profissionais captando seus melhores momentos.",
       "Expositores nacionais e internacionais apresentando novidades, tecnologias e soluções exclusivas.",
       "Espaço Zen para relaxamento e bem-estar.",
-      "Área Food diversificada com opções regionais e internacionais.",
       "Localização estratégica: a apenas 3 minutos do Shopping Iguatemi, com diversas opções de hospedagem próximas.",
       "Área dedicada a trabalhos científicos, fomentando a produção acadêmica e a inovação.",
       "Certificado digital disponível de forma prática e rápida após o evento.",
@@ -125,7 +123,7 @@ export default function BoxesTickts() {
         <div className={styles.header}>
           <h3>PRÉ-VENDA LIMITADA</h3>
           <p>Termina em:</p>
-          <Contagem dateEvent={"25/08/2025"} />
+          <Contagem dateEvent={"28/08/2025"} />
         </div>
         <div className={styles.headerButton}>
           <ButtonPretty

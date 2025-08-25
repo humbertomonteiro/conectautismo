@@ -35,7 +35,7 @@ export default function Welcome() {
             data-aos-delay="300"
           >
             <span>Pré-venda termina em:</span>
-            <Contagem dateEvent={"25/08/2025"} />
+            <Contagem dateEvent={"28/08/2025"} />
           </div>
           <div className={styles.buttons} data-aos-delay="300">
             <ButtonPretty link={"#tickets2"} text={"Garanta sua vaga agora"} />
