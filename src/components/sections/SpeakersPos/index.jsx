@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from "./speakersPos.module.css";
 import ButtonPretty from "../../shared/ButtonPretty";
-import mayra from "../../../assets/imgs/speakers/mayra.jpg";
+// import mayra from "../../../assets/imgs/speakers/mayra.jpg";
 // import banner from "../../../assets/imgs/speakers/banner.jpeg";
 // import bannerMobile from "../../../assets/imgs/speakers/banner-mobile.jpeg";
 
@@ -23,7 +23,7 @@ const SpeakersPos = () => {
         </div>
 
         <div className={styles.content}>
-          <div className={styles.mediaColumn} data-aos="zoom-in">
+          {/* <div className={styles.mediaColumn} data-aos="zoom-in">
             <div className={styles.speakerImage} id="tickets2">
               <img
                 className={styles.mobile}
@@ -40,14 +40,25 @@ const SpeakersPos = () => {
                 Confirmada <GiCheckMark />
               </div>
             </div>
+          </div> */}
+          <div className={styles.videoContainer}>
+            <div className={styles.videoWrapper} id="tickets2">
+              <iframe
+                src="https://www.youtube.com/embed/fXp2XUOUYhs?si=qAtFLUPE5e--OluC"
+                title="Pós-graduação Mayra Gaiato"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              ></iframe>
+            </div>
+            <h3>Pós-graduação Mayra Gaiato</h3>
+            <p>
+              Não perca essa oportunidade! Adquira a pós-graduação e ganhe um
+              dia inteiro de prática no conect autismo 2026!
+            </p>
           </div>
           <div className={styles.infoColumn}>
             <div className={styles.speakerCard} data-aos="zoom-in">
-              {/* <div className={styles.speakerImage}>
-                <img src={mayra} alt="Mayra - Palestrante Confirmada" />
-                <div className={styles.badge}>Confirmada</div>
-              </div> */}
-
               <div className={styles.tabs}>
                 <button
                   className={`${styles.tab} ${
@@ -88,9 +99,6 @@ const SpeakersPos = () => {
                     <li>
                       <GiCheckMark /> 1 dia de acesso ao Conect 2026
                     </li>
-                    {/* <li>
-                      <GiCheckMark /> Networking com profissionais
-                    </li> */}
                   </ul>
 
                   <ButtonPretty
@@ -161,26 +169,6 @@ const SpeakersPos = () => {
               )}
             </div>
           </div>
-
-          {/* <div className={styles.mediaColumn} data-aos="zoom-in">
-            <div className={styles.speakerImage}>
-              <img
-                className={styles.mobile}
-                src={mayra}
-                alt="Mayra - Palestrante Confirmada"
-              />
-              <div className={styles.imgOverlay}>
-                <div className={styles.imgContent}>
-  
-                  <h3>Mayra Gaiato</h3>
-                  <p>Referência nacional em Autismo e ABA.</p>
-                </div>
-              </div>
-              <div className={styles.badge}>
-                Confirmada <GiCheckMark />
-              </div>
-            </div>
-          </div> */}
         </div>
       </div>
     </section>
