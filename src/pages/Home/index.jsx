@@ -15,6 +15,8 @@ import Testimonials from "../../components/sections/Testionials";
 import SpeakersPos from "../../components/sections/SpeakersPos";
 import Certificate from "../../components/sections/Certificate";
 
+import PosMayra from "../../components/sections/PosMayra";
+
 export default function Home() {
   return (
     <>
@@ -25,6 +27,7 @@ export default function Home() {
         <BoxesTickts />
         <Oportunidades />
         <Certificate />
+        <PosMayra />
         <PatrocinadorEExpositor />
         <Local />
         <Testimonials />

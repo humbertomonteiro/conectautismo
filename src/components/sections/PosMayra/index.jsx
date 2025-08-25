@@ -1,25 +1,25 @@
 import React, { useState } from "react";
 import styles from "./speakersPos.module.css";
 import ButtonPretty from "../../shared/ButtonPretty";
-// import mayra from "../../../assets/imgs/speakers/mayra.jpg";
+import mayra from "../../../assets/imgs/speakers/mayra.jpg";
 // import banner from "../../../assets/imgs/speakers/banner.jpeg";
 // import bannerMobile from "../../../assets/imgs/speakers/banner-mobile.jpeg";
 
 import { GiCheckMark } from "react-icons/gi";
 import Title from "../../shared/Title";
 
-const SpeakersPos = () => {
-  const [activeTab, setActiveTab] = useState("evento");
+const PosMayra = () => {
+  const [activeTab, setActiveTab] = useState("pos");
 
   return (
     <section className={styles.section}>
       <div className={styles.container}>
         <div className={styles.header}>
-          <Title text="Inédito" color="black" />
+          <Title text="Mayra Gaiato" />
         </div>
 
         <div className={styles.content}>
-          {/* <div className={styles.mediaColumn} data-aos="zoom-in">
+          <div className={styles.mediaColumn} data-aos="zoom-in">
             <div className={styles.speakerImage} id="tickets2">
               <img
                 className={styles.mobile}
@@ -36,20 +36,8 @@ const SpeakersPos = () => {
                 Confirmada <GiCheckMark />
               </div>
             </div>
-          </div> */}
-          <div className={styles.videoContainer}>
-            <div className={styles.videoWrapper} id="tickets2">
-              <iframe
-                src="https://www.youtube.com/embed/fXp2XUOUYhs?si=qAtFLUPE5e--OluC"
-                title="Pós-graduação Mayra Gaiato"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerPolicy="strict-origin-when-cross-origin"
-                allowFullScreen
-              ></iframe>
-            </div>
-            <h3>CONFIRMADA </h3>
-            <p>Um dia inteiro de Mayra gaiato confirmado Conect 2026!</p>
           </div>
+
           <div className={styles.infoColumn}>
             <div className={styles.speakerCard} data-aos="zoom-in">
               {/* <div className={styles.tabs}>
@@ -168,4 +156,4 @@ const SpeakersPos = () => {
   );
 };
 
-export default SpeakersPos;
+export default PosMayra;

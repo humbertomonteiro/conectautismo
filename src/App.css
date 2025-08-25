@@ -16,7 +16,7 @@
   /* Efeitos de transparência */
   --bg-white: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
   --bg-transparent-white: #f3f7ffe1;
-  --bg-transparent-blue: #001236e1;
+  --bg-transparent-blue: #001236c7;
 
   /* Bordas */
   --border-white: 1px solid #6b7881;
