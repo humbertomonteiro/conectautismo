@@ -48,7 +48,9 @@ const SpeakersPos = () => {
               ></iframe>
             </div>
             <h3></h3>
-            <p>Um dia inteiro de Mayra gaiato confirmado Conect 2026!</p>
+            <p>
+              Um dia inteiro de Prática com Mayra Gaiato confirmado Conect 2026!
+            </p>
           </div>
           <div className={styles.infoColumn}>
             <div className={styles.speakerCard} data-aos="zoom-in">
@@ -114,18 +116,18 @@ const SpeakersPos = () => {
                       <p>Acesso completo a todos os dias do evento</p>
                       <div className={styles.buttons}>
                         <div className="">
-                          <span className={styles.price}>12 x R$ 101,15</span>
-                          <ButtonPretty
-                            text="Comprar Inteira"
-                            link="https://pay.hotmart.com/D101401576U?off=1zhb4drs"
-                            target="_blank"
-                          />
-                        </div>
-                        <div className="">
                           <span className={styles.price}>12 x R$ 50,57</span>
                           <ButtonPretty
                             text="Comprar Meia"
                             link="https://pay.hotmart.com/D101401576U?off=rfa406il"
+                            target="_blank"
+                          />
+                        </div>
+                        <div className="">
+                          <span className={styles.price}>12 x R$ 101,15</span>
+                          <ButtonPretty
+                            text="Comprar Inteira"
+                            link="https://pay.hotmart.com/D101401576U?off=1zhb4drs"
                             target="_blank"
                           />
                         </div>
@@ -142,7 +144,7 @@ const SpeakersPos = () => {
                         <div className="">
                           <span className={styles.price}>EM BREVE</span>
                           <ButtonPretty
-                            text="Comprar Inteira"
+                            text="Comprar Meia"
                             target="_blank"
                             data-button="disabled"
                           />
@@ -150,7 +152,7 @@ const SpeakersPos = () => {
                         <div className="">
                           <span className={styles.price}>EM BREVE</span>
                           <ButtonPretty
-                            text="Comprar Meia"
+                            text="Comprar Inteira"
                             target="_blank"
                             data-button="disabled"
                           />

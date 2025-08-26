@@ -27,18 +27,19 @@ const tickets = [
       "Espaço de experiências práticas, com demonstrações de métodos terapêuticos e educacionais inovadores.",
     ],
     options: [
-      {
-        link: "https://pay.hotmart.com/D101401576U?off=1zhb4drs",
-        text: "PRÉ-VENDA INTEIRA",
-        price: "12 x R$ 101,15",
-        label: null,
-        disabled: false,
-      },
+      ,
       {
         link: "https://pay.hotmart.com/D101401576U?off=rfa406il",
         text: "PRÉ-VENDA MEIA-ENTRADA",
         price: "12 x R$ 50,57",
         label: "",
+        disabled: false,
+      },
+      {
+        link: "https://pay.hotmart.com/D101401576U?off=1zhb4drs",
+        text: "PRÉ-VENDA INTEIRA",
+        price: "12 x R$ 101,15",
+        label: null,
         disabled: false,
       },
     ],
@@ -67,19 +68,19 @@ const tickets = [
     ],
     options: [
       {
-        link: "https://pay.hotmart.com/D101401576U?off=1zhb4drs",
-        text: "INTEIRA DOIS DIAS",
-        // price: "12 x R$ 80.00",
-        price: "EM BREVE",
-        label: null,
-        disabled: true,
-      },
-      {
         link: "https://pay.hotmart.com/D101401576U?off=rfa406il",
         text: "MEIA DOIS DIAS",
         // price: "12 x R$ 40,00",
         price: "EM BREVE",
         label: "",
+        disabled: true,
+      },
+      {
+        link: "https://pay.hotmart.com/D101401576U?off=1zhb4drs",
+        text: "INTEIRA DOIS DIAS",
+        // price: "12 x R$ 80.00",
+        price: "EM BREVE",
+        label: null,
         disabled: true,
       },
     ],
@@ -147,6 +148,7 @@ export default function BoxesTickts() {
                 <div className={styles.shop}>
                   {ticket.options.map((option, index) => (
                     <div key={index} className={styles.button}>
+                      <strong>{option.price}</strong>
                       <ButtonPretty
                         link={option.link}
                         target="_blank"
@@ -155,7 +157,6 @@ export default function BoxesTickts() {
                         aria-disabled={option.disabled}
                       />
 
-                      <strong>{option.price}</strong>
                       {option.label && <span>{option.label}</span>}
                     </div>
                   ))}
