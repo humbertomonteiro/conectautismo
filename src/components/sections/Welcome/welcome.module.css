@@ -89,7 +89,16 @@
   max-width: 600px;
   width: 100%;
   gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
+
+/* .link {
+  text-align: center;
+  text-decoration: none;
+  color: var(--color-text-light);
+} */
 
 /* .mainButton {
     grid-column: span 2;

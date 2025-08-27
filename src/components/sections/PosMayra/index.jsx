@@ -68,7 +68,7 @@ const PosMayra = () => {
                     conect 2026
                   </p>
                   <p className={styles.highlight}>
-                    Garanta agora sua pós e seu conect 2026
+                    Garanta agora sua Pós + Congresso Conect
                   </p>
 
                   <ul className={styles.benefitsList}>
@@ -84,7 +84,7 @@ const PosMayra = () => {
                   </ul>
 
                   <ButtonPretty
-                    text="Garanta agora sua pós"
+                    text="MATRICULE-se agora"
                     link="https://institutosingular.org/pos-turma4-conect/"
                     data-color="blue"
                     target="_blank"

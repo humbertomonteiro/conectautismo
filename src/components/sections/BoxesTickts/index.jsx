@@ -10,6 +10,7 @@ const tickets = [
     title: "INGRESSO COMPLETO CONECT 2026",
     subtitle: "3 dias de congresso ",
     benefits: [
+      "Inédito um dia inteiro de prática com Mayra Gaiato; quem sabe faz ao vivo",
       "Realizado no segundo maior centro de eventos do Brasil, com estrutura ampla, moderna, climatizada e 100% acessível.",
       "Palestrantes nacionais e internacionais de referência, trazendo conteúdos respaldados por pesquisas científicas de nível 1A e 1B.",
       "Certificado qualificado para valorização acadêmica e curricular.",
@@ -50,6 +51,7 @@ const tickets = [
     title: "INGRESSO COMPLETO CONECT 2026",
     subtitle: "2 dias de congresso ",
     benefits: [
+      "Inédito um dia inteiro de prática com Mayra Gaiato; quem sabe faz ao vivo",
       "Realizado no segundo maior centro de eventos do Brasil, com estrutura ampla, moderna, climatizada e 100% acessível.",
       "Palestrantes nacionais e internacionais de referência, trazendo conteúdos respaldados por pesquisas científicas de nível 1A e 1B.",
       "Certificado qualificado para valorização acadêmica e curricular.",
