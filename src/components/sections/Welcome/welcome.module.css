@@ -44,7 +44,7 @@
 
 .text {
   color: var(--color-text-light);
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   display: flex;
   flex-direction: column;
 }
@@ -52,7 +52,7 @@
 .subtitle {
   font-size: 1.7rem;
   font-weight: 600;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   text-align: center;
 }
 

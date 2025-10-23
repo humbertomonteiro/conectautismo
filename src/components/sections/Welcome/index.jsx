@@ -3,7 +3,8 @@ import logoMobile from "../../../assets/imgs/logo/logo-mobile.png";
 import ButtonPretty from "../../shared/ButtonPretty";
 // import bg from "../../../assets/imgs/background/bg.jpg";
 import bg from "../../../assets/imgs/background/bg-mobile.jpeg";
-// import Contagem from "../../shared/Contagem";
+import { FaWhatsapp } from "react-icons/fa";
+import { IoIosImages } from "react-icons/io";
 
 export default function Welcome() {
   return (
@@ -40,10 +41,18 @@ export default function Welcome() {
           <div className={styles.buttons} data-aos-delay="300">
             <ButtonPretty link={"#tickets2"} text={"Garanta sua vaga agora"} />
             <ButtonPretty
-              link={"ttps://congressoconect.pixieset.com"}
+              link={"https://congressoconect.pixieset.com"}
               text={"Fotos Conect 2025"}
               data-color="line"
               target="_blank"
+              icon={<IoIosImages />}
+            />
+            <ButtonPretty
+              link={"https://chat.whatsapp.com/J4YPyyOhufFIdp4x3rZSeQ?mode=wwt"}
+              text={"Grupo Congresso Conect"}
+              data-color="line"
+              target="_blank"
+              icon={<FaWhatsapp />}
             />
           </div>
         </div>
