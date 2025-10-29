@@ -14,6 +14,8 @@ import { BrowserRouter } from "react-router-dom";
 
 import RouterApp from "./routes/routes";
 
+import { LinkProvider } from "./contexts/LinkContexts";
+
 function App() {
   useEffect(() => {
     Aos.init({ duration: 800 });
@@ -21,7 +23,9 @@ function App() {
   return (
     <main className="main">
       <BrowserRouter>
-        <RouterApp />
+        <LinkProvider>
+          <RouterApp />
+        </LinkProvider>
       </BrowserRouter>
       <div className="area">
         <ul className="circles">

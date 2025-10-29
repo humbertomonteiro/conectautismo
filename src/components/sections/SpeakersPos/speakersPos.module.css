@@ -235,7 +235,7 @@
 
 .price {
   display: block;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 700;
   color: #2d3748;
 }
@@ -293,6 +293,32 @@
 .videoContainer p {
   color: var(--color-text-black-2);
   font-size: 0.9rem;
+}
+
+.buttons .highlightInfo {
+  font-size: 0.8rem;
+  margin-bottom: 0;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  background-color: var(--color-secondary);
+}
+
+.buttons .info {
+  font-size: 0.75rem;
+  margin: 0;
+}
+
+.buttons .alert {
+  margin-bottom: 0;
+  padding: 0.5rem 0.5rem;
+  background-color: var(--color-primary);
+  margin-top: 0.2rem;
+  color: #fff;
+  border-radius: 1.5rem;
+}
+
+.buttons .textLower {
+  font-size: 1rem;
 }
 
 @media (max-width: 768px) {

@@ -4,7 +4,10 @@ import ButtonPretty from "../../shared/ButtonPretty";
 
 import centroDeEventos from "../../../assets/imgs/local/centro-de-eventos.png";
 
+import useLink from "../../../contexts/LinkContexts";
+
 export default function Local() {
+  const { ticketAll } = useLink();
   return (
     <div className={styles.container}>
       <Title text="LOCAL" />
@@ -36,7 +39,7 @@ export default function Local() {
           </div>
           <div className={styles.button}>
             <ButtonPretty
-              link="https://pay.hotmart.com/A96222789P?off=cpagfpj6"
+              link={ticketAll.link}
               target="_blank"
               text="Comprar Ingresso"
             />

@@ -7,9 +7,11 @@ import ButtonPretty from "../../shared/ButtonPretty";
 
 import { GiCheckMark } from "react-icons/gi";
 import Title from "../../shared/Title";
+import useLink from "../../../contexts/LinkContexts";
 
 const SpeakersPos = () => {
-  const [activeTab, setActiveTab] = useState("evento");
+  const [activeTab] = useState("evento");
+  const { ticketAll, ticketHalf, ticketGroup } = useLink();
 
   return (
     <section className={styles.section}>
@@ -116,20 +118,37 @@ const SpeakersPos = () => {
                       <p>Acesso completo a todos os dias do evento</p>
                       <div className={styles.buttons}>
                         <div className="">
-                          <span className={styles.price}>12 x R$ 50,57</span>
+                          <span className={styles.price}>
+                            {ticketHalf.price}
+                          </span>
                           <ButtonPretty
                             text="Comprar Meia"
-                            link="https://pay.hotmart.com/D101401576U?off=rfa406il"
+                            link={ticketHalf.link}
+                            target="_blank"
+                          />
+                        </div>
+
+                        <div className="">
+                          <span className={styles.price}>
+                            {ticketAll.price}
+                          </span>
+                          <ButtonPretty
+                            text="Comprar Inteira"
+                            link={ticketAll.link}
                             target="_blank"
                           />
                         </div>
                         <div className="">
-                          <span className={styles.price}>12 x R$ 101,15</span>
+                          <span className={styles.price}>
+                            {ticketGroup.price}
+                            <span className={styles.textLower}>cada</span>
+                          </span>
                           <ButtonPretty
-                            text="Comprar Inteira"
-                            link="https://pay.hotmart.com/D101401576U?off=1zhb4drs"
+                            text="Comprar Grupo"
+                            link={ticketGroup.link}
                             target="_blank"
                           />
+                          <p className={styles.info}>Mínimo 4 ingressos</p>
                         </div>
                       </div>
                     </div>

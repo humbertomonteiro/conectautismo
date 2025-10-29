@@ -3,119 +3,122 @@ import Title from "../../shared/Title";
 import ButtonPretty from "../../shared/ButtonPretty";
 import Contagem from "../../shared/Contagem";
 import { hasCountdownEnded } from "../../../Utils/DateEnded";
-
-const tickets = [
-  {
-    id: "complete",
-    title: "INGRESSO COMPLETO CONECT 2026",
-    subtitle: "3 dias de congresso ",
-    benefits: [
-      "Inédito um dia inteiro de prática com Mayra Gaiato; quem sabe faz ao vivo",
-      "Realizado no segundo maior centro de eventos do Brasil, com estrutura ampla, moderna, climatizada e 100% acessível.",
-      "Palestrantes nacionais e internacionais de referência, trazendo conteúdos respaldados por pesquisas científicas de nível 1A e 1B.",
-      "Certificado qualificado para valorização acadêmica e curricular.",
-      "Kit congressista exclusivo com materiais especiais do evento.",
-      "Conteúdo online gravado por 24 meses, garantindo acesso prolongado a todas as palestras.",
-      "Credenciamento antecipado sem filas, com QR Code de acesso rápido.",
-      "Sessões de autógrafos com grandes nomes da área.",
-      "Ambiente imersivo e cenografia projetada, trazendo experiências sensoriais que tornam o evento inesquecível.",
-      "Espaços instagramáveis e interativos, com cenários temáticos e fotógrafos profissionais captando seus melhores momentos.",
-      "Expositores nacionais e internacionais apresentando novidades, tecnologias e soluções exclusivas.",
-      "Espaço Zen para relaxamento e bem-estar.",
-      "Localização estratégica: a apenas 3 minutos do Shopping Iguatemi, com diversas opções de hospedagem próximas.",
-      "Área dedicada a trabalhos científicos, fomentando a produção acadêmica e a inovação.",
-      "Certificado digital disponível de forma prática e rápida após o evento.",
-      "Espaço de experiências práticas, com demonstrações de métodos terapêuticos e educacionais inovadores.",
-    ],
-    options: [
-      ,
-      {
-        link: "https://pay.hotmart.com/D101401576U?off=rfa406il",
-        text: "PRÉ-VENDA MEIA-ENTRADA",
-        price: "12 x R$ 50,57",
-        label: "",
-        disabled: false,
-      },
-      {
-        link: "https://pay.hotmart.com/D101401576U?off=1zhb4drs",
-        text: "PRÉ-VENDA INTEIRA",
-        price: "12 x R$ 101,15",
-        label: null,
-        disabled: false,
-      },
-    ],
-    // meiaEntradaLink: "#meia-entrada",
-  },
-  {
-    id: "complete",
-    title: "INGRESSO COMPLETO CONECT 2026",
-    subtitle: "2 dias de congresso ",
-    benefits: [
-      "Inédito um dia inteiro de prática com Mayra Gaiato; quem sabe faz ao vivo",
-      "Realizado no segundo maior centro de eventos do Brasil, com estrutura ampla, moderna, climatizada e 100% acessível.",
-      "Palestrantes nacionais e internacionais de referência, trazendo conteúdos respaldados por pesquisas científicas de nível 1A e 1B.",
-      "Certificado qualificado para valorização acadêmica e curricular.",
-      "Kit congressista exclusivo com materiais especiais do evento.",
-      "Conteúdo online gravado por 24 meses, garantindo acesso prolongado a todas as palestras.",
-      "Credenciamento antecipado sem filas, com QR Code de acesso rápido.",
-      "Sessões de autógrafos com grandes nomes da área.",
-      "Ambiente imersivo e cenografia projetada, trazendo experiências sensoriais que tornam o evento inesquecível.",
-      "Espaços instagramáveis e interativos, com cenários temáticos e fotógrafos profissionais captando seus melhores momentos.",
-      "Expositores nacionais e internacionais apresentando novidades, tecnologias e soluções exclusivas.",
-      "Espaço Zen para relaxamento e bem-estar.",
-      "Localização estratégica: a apenas 3 minutos do Shopping Iguatemi, com diversas opções de hospedagem próximas.",
-      "Área dedicada a trabalhos científicos, fomentando a produção acadêmica e a inovação.",
-      "Certificado digital disponível de forma prática e rápida após o evento.",
-      "Espaço de experiências práticas, com demonstrações de métodos terapêuticos e educacionais inovadores.",
-    ],
-    options: [
-      {
-        link: "https://pay.hotmart.com/D101401576U?off=rfa406il",
-        text: "MEIA DOIS DIAS",
-        // price: "12 x R$ 40,00",
-        price: "EM BREVE",
-        label: "",
-        disabled: true,
-      },
-      {
-        link: "https://pay.hotmart.com/D101401576U?off=1zhb4drs",
-        text: "INTEIRA DOIS DIAS",
-        // price: "12 x R$ 80.00",
-        price: "EM BREVE",
-        label: null,
-        disabled: true,
-      },
-    ],
-    // meiaEntradaLink: "#meia-entrada",
-  },
-
-  {
-    id: "group",
-    title: "GRUPO 20% DE DESCONTO",
-    subtitle: "3 dias de congresso ",
-    description: "",
-    benefits: [
-      "Mínimo 5 ingressos",
-      "⁠Desconto exclusivo de 20%.",
-      "Ideal para clínicas, empresas, órgãos públicos e grupo de amigos em busca de grandes conhecimentos.",
-      "Desconto por tempo limitado.",
-    ],
-    options: [
-      {
-        link: "https://pay.hotmart.com/D101401576U?off=1zhb4drs?coupon=GRUPO",
-        text: "INGRESSO PRÉ-VENDA",
-        // price: "12 x R$ 101,15 cada",
-        price: "EM BREVE",
-        label: "",
-        disabled: true,
-      },
-    ],
-  },
-];
+import useLink from "../../../contexts/LinkContexts";
 
 export default function BoxesTickts() {
   const dateEvent = "2025-08-22";
   const isPreSaleStarted = hasCountdownEnded(dateEvent);
+  const { ticketAll, ticketHalf, ticketGroup } = useLink();
+
+  const tickets = [
+    {
+      id: "complete",
+      title: "INGRESSO COMPLETO CONECT 2026",
+      subtitle: "3 dias de congresso ",
+      benefits: [
+        "Inédito um dia inteiro de prática com Mayra Gaiato; quem sabe faz ao vivo",
+        "Realizado no segundo maior centro de eventos do Brasil, com estrutura ampla, moderna, climatizada e 100% acessível.",
+        "Palestrantes nacionais e internacionais de referência, trazendo conteúdos respaldados por pesquisas científicas de nível 1A e 1B.",
+        "Certificado qualificado para valorização acadêmica e curricular.",
+        "Kit congressista exclusivo com materiais especiais do evento.",
+        "Conteúdo online gravado por 24 meses, garantindo acesso prolongado a todas as palestras.",
+        "Credenciamento antecipado sem filas, com QR Code de acesso rápido.",
+        "Sessões de autógrafos com grandes nomes da área.",
+        "Ambiente imersivo e cenografia projetada, trazendo experiências sensoriais que tornam o evento inesquecível.",
+        "Espaços instagramáveis e interativos, com cenários temáticos e fotógrafos profissionais captando seus melhores momentos.",
+        "Expositores nacionais e internacionais apresentando novidades, tecnologias e soluções exclusivas.",
+        "Espaço Zen para relaxamento e bem-estar.",
+        "Localização estratégica: a apenas 3 minutos do Shopping Iguatemi, com diversas opções de hospedagem próximas.",
+        "Área dedicada a trabalhos científicos, fomentando a produção acadêmica e a inovação.",
+        "Certificado digital disponível de forma prática e rápida após o evento.",
+        "Espaço de experiências práticas, com demonstrações de métodos terapêuticos e educacionais inovadores.",
+      ],
+      options: [
+        ,
+        {
+          link: ticketHalf.link,
+          text: "PRÉ-VENDA MEIA-ENTRADA",
+          price: ticketHalf.price,
+          label: "",
+          disabled: false,
+        },
+        {
+          link: ticketAll.link,
+          text: "PRÉ-VENDA INTEIRA",
+          price: ticketAll.price,
+          label: null,
+          disabled: false,
+        },
+      ],
+      // meiaEntradaLink: "#meia-entrada",
+    },
+    {
+      id: "complete",
+      title: "INGRESSO COMPLETO CONECT 2026",
+      subtitle: "2 dias de congresso ",
+      benefits: [
+        "Inédito um dia inteiro de prática com Mayra Gaiato; quem sabe faz ao vivo",
+        "Realizado no segundo maior centro de eventos do Brasil, com estrutura ampla, moderna, climatizada e 100% acessível.",
+        "Palestrantes nacionais e internacionais de referência, trazendo conteúdos respaldados por pesquisas científicas de nível 1A e 1B.",
+        "Certificado qualificado para valorização acadêmica e curricular.",
+        "Kit congressista exclusivo com materiais especiais do evento.",
+        "Conteúdo online gravado por 24 meses, garantindo acesso prolongado a todas as palestras.",
+        "Credenciamento antecipado sem filas, com QR Code de acesso rápido.",
+        "Sessões de autógrafos com grandes nomes da área.",
+        "Ambiente imersivo e cenografia projetada, trazendo experiências sensoriais que tornam o evento inesquecível.",
+        "Espaços instagramáveis e interativos, com cenários temáticos e fotógrafos profissionais captando seus melhores momentos.",
+        "Expositores nacionais e internacionais apresentando novidades, tecnologias e soluções exclusivas.",
+        "Espaço Zen para relaxamento e bem-estar.",
+        "Localização estratégica: a apenas 3 minutos do Shopping Iguatemi, com diversas opções de hospedagem próximas.",
+        "Área dedicada a trabalhos científicos, fomentando a produção acadêmica e a inovação.",
+        "Certificado digital disponível de forma prática e rápida após o evento.",
+        "Espaço de experiências práticas, com demonstrações de métodos terapêuticos e educacionais inovadores.",
+      ],
+      options: [
+        {
+          link: "https://pay.hotmart.com/D101401576U?off=rfa406il",
+          text: "MEIA DOIS DIAS",
+          // price: "12 x R$ 40,00",
+          price: "EM BREVE",
+          label: "",
+          disabled: true,
+        },
+        {
+          link: "https://pay.hotmart.com/D101401576U?off=1zhb4drs",
+          text: "INTEIRA DOIS DIAS",
+          // price: "12 x R$ 80.00",
+          price: "EM BREVE",
+          label: null,
+          disabled: true,
+        },
+      ],
+      // meiaEntradaLink: "#meia-entrada",
+    },
+
+    {
+      id: "group",
+      title: "GRUPO 20% DE DESCONTO",
+      subtitle: "3 dias de congresso ",
+      description: "",
+      benefits: [
+        "Mínimo 4 ingressos",
+        "⁠Desconto exclusivo de 20%.",
+        "Ideal para clínicas, empresas, órgãos públicos e grupo de amigos em busca de grandes conhecimentos.",
+        "Desconto por tempo limitado.",
+      ],
+      options: [
+        {
+          link: ticketGroup.link,
+          // text: "INGRESSO PRÉ-VENDA",
+          text: "PRIMEIRO LOTE",
+          price: `${ticketGroup.price} cada`,
+          // price: "EM BREVE",
+          label: "",
+          // disabled: true,
+        },
+      ],
+    },
+  ];
 
   return (
     <section id="tickts" className={styles.section}>
@@ -131,7 +134,8 @@ export default function BoxesTickts() {
         <div className={styles.headerButton}>
           <ButtonPretty
             text="Garantir meu ingresso"
-            link="https://pay.hotmart.com/D101401576U?off=1zhb4drs"
+            link={ticketAll.link}
+            target="_blank"
           />
         </div>
         <div className={styles.boxes}>
