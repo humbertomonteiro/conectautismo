@@ -114,7 +114,7 @@ const SpeakersPos = () => {
 
                   <div className={styles.ticketOptions}>
                     <div className={styles.ticketCard}>
-                      <h4>Pacote 3 Dias</h4>
+                      <h4>Ingresso Individual</h4>
                       <p>Acesso completo a todos os dias do evento</p>
                       <div className={styles.buttons}>
                         <div className="">
@@ -122,7 +122,7 @@ const SpeakersPos = () => {
                             {ticketHalf.price}
                           </span>
                           <ButtonPretty
-                            text="Comprar Meia"
+                            text="Garantir Meia"
                             link={ticketHalf.link}
                             target="_blank"
                           />
@@ -133,18 +133,40 @@ const SpeakersPos = () => {
                             {ticketAll.price}
                           </span>
                           <ButtonPretty
-                            text="Comprar Inteira"
+                            text="Garantir Inteira"
                             link={ticketAll.link}
                             target="_blank"
                           />
                         </div>
+                        {/* <div className="">
+                          <span className={styles.price}>
+                            {ticketGroup.price}
+                            <span className={styles.textLower}>cada</span>
+                          </span>
+                          <ButtonPretty
+                            text="Garantir Grupo"
+                            link={ticketGroup.link}
+                            target="_blank"
+                          />
+                          <p className={styles.info}>Mínimo 4 ingressos</p>
+                        </div> */}
+                      </div>
+                    </div>
+
+                    <div className={styles.ticketCard}>
+                      <h4>Ingresso Grupo</h4>
+                      <p>
+                        Com no mínimo 4 ingressos ganhe um desconto e aproveite
+                        o evento em grupo.
+                      </p>
+                      <div className={styles.buttons}>
                         <div className="">
                           <span className={styles.price}>
                             {ticketGroup.price}
                             <span className={styles.textLower}>cada</span>
                           </span>
                           <ButtonPretty
-                            text="Comprar Grupo"
+                            text="Garantir Grupo"
                             link={ticketGroup.link}
                             target="_blank"
                           />
@@ -152,8 +174,7 @@ const SpeakersPos = () => {
                         </div>
                       </div>
                     </div>
-
-                    <div className={styles.ticketCard}>
+                    {/* <div className={styles.ticketCard}>
                       <h4>Pacote 2 Dias</h4>
                       <p>
                         Para quem já tem 1 dia através da pós-graduação Mayra
@@ -177,7 +198,7 @@ const SpeakersPos = () => {
                           />
                         </div>
                       </div>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               )}
