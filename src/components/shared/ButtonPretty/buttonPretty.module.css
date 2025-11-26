@@ -41,9 +41,9 @@
   background-image: linear-gradient(
     to right,
     #1900f8,
-    var(--color-primary),
+    #002774,
     #1900f8,
-    var(--color-primary)
+    #002b80
   );
   box-shadow: 0 4px 15px 0 rgba(3, 19, 167, 0.308);
 }

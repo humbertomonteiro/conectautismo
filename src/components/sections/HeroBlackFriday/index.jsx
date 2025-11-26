@@ -2,7 +2,7 @@ import styles from "./heroBlackFriday.module.css";
 import logoMobile from "../../../assets/imgs/logo/logo-mobile.png";
 import ButtonPretty from "../../shared/ButtonPretty";
 // import bg from "../../../assets/imgs/background/bg.jpg";
-import bg from "../../../assets/imgs/background/bg-mobile.jpeg";
+// import bg from "../../../assets/imgs/background/bg-mobile.jpeg";
 // import { FaWhatsapp } from "react-icons/fa";
 // import { IoIosImages } from "react-icons/io";
 import Contagem from "../../shared/Contagem";
@@ -25,6 +25,14 @@ export default function HeroBlackFriday() {
               Maior Congresso sobre transtorno do{" "}
               <strong>Neurodesenvolvimento</strong> Norte e Nordeste.
             </p>
+            <div
+              className={styles.countdown}
+              data-aos="zoom-in"
+              data-aos-delay="300"
+            >
+              <span>Black termina em:</span>
+              <Contagem dateEvent={"27/11/2025"} />
+            </div>
             <div className={styles.highlight}>
               <span className={styles.highlightMobile}>
                 21, 22 e 23 de agosto 2026
@@ -35,14 +43,7 @@ export default function HeroBlackFriday() {
               </span>
             </div>
           </div>
-          <div
-            className={styles.countdown}
-            data-aos="zoom-in"
-            data-aos-delay="300"
-          >
-            <span>Black termina em:</span>
-            <Contagem dateEvent={"27/11/2025"} />
-          </div>
+
           <div className={styles.buttons} data-aos-delay="300">
             <ButtonPretty
               link={"#tickets2"}
@@ -52,10 +53,13 @@ export default function HeroBlackFriday() {
           </div>
         </div>
       </div>
-      <div className={styles.lineRight}>
+      <div className={styles.line1}>
         <CarouselScrollInfinit />
       </div>
-      <div className={styles.lineLeft}>
+      <div className={styles.line2}>
+        <CarouselScrollInfinit />
+      </div>
+      <div className={styles.line3}>
         <CarouselScrollInfinit />
       </div>
     </section>

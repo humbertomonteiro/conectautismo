@@ -12,7 +12,10 @@
 
 .section {
   background-color: #000000ce;
-  background: linear-gradient(to bottom, #001c55e7, #000030e0, #000000f3);
+  background: linear-gradient(to bottom, #001c55e7, #000030e0, #000000f3),
+    url("../../../assets/imgs/background/bg-mobile.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
   /* background-color: var(--color-primary); */
   position: relative;
   height: 100vh;
@@ -60,9 +63,8 @@
 
 .text {
   color: var(--color-text-light);
-  margin-bottom: 1rem;
   display: flex;
-  width: 850px;
+  width: 800px;
   max-width: 100%;
   flex-direction: column;
   font-family: "Archivo Black", sans-serif;
@@ -75,10 +77,10 @@
   text-align: center;
 }
 
-.subtitle strong {
-  /* color: var(--color-accent); */
-  /* color: #0010f1; */
-}
+/* .subtitle strong { */
+/* color: var(--color-accent); */
+/* color: #0010f1; */
+/* } */
 
 .highlight {
   background-color: var(--bg-transparent-white);
@@ -88,7 +90,7 @@
   padding: 0.5rem 1.5rem;
   width: fit-content;
   align-self: center;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .countdown {
@@ -115,24 +117,28 @@
   justify-content: center;
 }
 
-.lineRight,
-.lineLeft {
+.line1,
+.line2,
+.line3 {
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
   position: absolute;
 }
 
-.lineRight {
-  top: 0;
-  right: -1700px;
-  left: 680px;
-  transform: rotate(-35deg);
+.line1 {
+  top: -180px;
+  transform: rotate(65deg);
 }
 
-.lineLeft {
-  top: 0;
-  left: -500px;
-  transform: rotate(-35deg);
+.line2 {
+  top: 0px;
+  transform: rotate(10deg);
+}
+
+.line3 {
+  bottom: 0;
+  left: -900px;
+  transform: rotate(300deg);
 }
 
 @media (max-width: 1000px) {
@@ -212,19 +218,11 @@
     background-size: cover;
     border: 1px solid var(--primary-color);
   }
-
-  .lineLeft {
-    display: none;
-  }
-
-  .lineRight {
-    display: none;
-  }
 }
 
 @media (max-width: 500px) {
   .logo {
-    width: 250px;
+    width: 320px;
   }
   .highlightFont {
     font-size: 1.8rem;
@@ -242,11 +240,26 @@
 
   .highlightMobile {
     background-color: var(--bg-transparent-white);
-    padding: 0.2rem 0.7rem;
+    padding: 0.3rem 0.5rem;
     border-radius: 20px;
   }
 
   .divider {
     display: none;
+  }
+
+  .line1 {
+    display: none;
+  }
+
+  .line2 {
+    top: -70px;
+    transform: rotate(15deg);
+    left: -950px;
+  }
+
+  .line3 {
+    left: -500px;
+    transform: rotate(320deg);
   }
 }
