@@ -1,6 +1,7 @@
 import styles from "./home.module.css";
 
 import Welcome from "../../components/sections/Welcome";
+import HeroBlackFriday from "../../components/sections/HeroBlackFriday";
 import Local from "../../components/sections/Local";
 import PatrocinadorEExpositor from "../../components/sections/PatrocinadorEExpositor";
 import Oportunidades from "../../components/sections/Oportunidades";
@@ -22,7 +23,8 @@ export default function Home() {
     <>
       <TopPromoBar />
       <div className={styles.container}>
-        <Welcome />
+        {/* <Welcome /> */}
+        <HeroBlackFriday />
         <SpeakersPos />
         <PosMayra />
         <BoxesTickts />
