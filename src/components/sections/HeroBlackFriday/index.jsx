@@ -11,6 +11,10 @@ import CarouselScrollInfinit from "../../shared/CarouselScrollInfinity";
 export default function HeroBlackFriday() {
   return (
     <section className={styles.section}>
+      <div className={styles.textDesktop}>
+        <span>ATÉ</span> 40%{" "}
+        <div className={styles.textDesktopLittle}>DE DESCONTO</div>
+      </div>
       <div className={styles.backgroundOverlay}></div>
       <div className={styles.container}>
         <div className={styles.content}>
