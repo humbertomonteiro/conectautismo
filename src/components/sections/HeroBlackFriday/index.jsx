@@ -35,7 +35,7 @@ export default function HeroBlackFriday() {
               data-aos-delay="300"
             >
               <span>Black termina em:</span>
-              <Contagem dateEvent={"27/11/2025"} />
+              <Contagem dateEvent={"30/11/2025"} />
             </div>
             <div className={styles.highlight}>
               <span className={styles.highlightMobile}>

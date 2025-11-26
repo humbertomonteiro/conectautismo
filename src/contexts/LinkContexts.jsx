@@ -15,6 +15,26 @@ export function LinkProvider({ children }) {
     link: "https://pay.hotmart.com/D101401576U?off=ny9zl0te",
     price: "12 x R$ 82,57",
   });
+  const [ticketBlack10, setTicketBlack10] = useState({
+    link: "https://pay.hotmart.com/D101401576U?off=zx4epga5",
+    price: "12 x R$ 92,89",
+  });
+  const [ticketBlack15, setTicketBlack15] = useState({
+    link: "https://pay.hotmart.com/D101401576U?off=11fiu5r4",
+    price: "12 x R$ 175,46",
+  });
+  const [ticketBlack25, setTicketBlack25] = useState({
+    link: "https://pay.hotmart.com/D101401576U?off=66gkftgt",
+    price: "12 x R$ 232,23",
+  });
+  const [ticketBlack30, setTicketBlack30] = useState({
+    link: "https://pay.hotmart.com/D101401576U?off=b5diwahh",
+    price: "12 x R$ 289,00",
+  });
+  const [ticketBlack40, setTicketBlack40] = useState({
+    link: "https://pay.hotmart.com/D101401576U?off=rorp1x93",
+    price: "12 x R$ 258,05",
+  });
   return (
     <LinkContext.Provider
       value={{
@@ -24,6 +44,11 @@ export function LinkProvider({ children }) {
         setTicketHalf,
         ticketGroup,
         setTicketGroup,
+        ticketBlack10,
+        ticketBlack15,
+        ticketBlack25,
+        ticketBlack30,
+        ticketBlack40,
       }}
     >
       {children}

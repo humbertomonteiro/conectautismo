@@ -28,8 +28,8 @@ export default function Home() {
         <HeroBlackFriday />
         {/* <SpeakersPos /> */}
         <TicketsMinimalistBlackFriday />
-        <PosMayra />
-        <BoxesTickts />
+        {/* <PosMayra /> */}
+        {/* <BoxesTickts /> */}
         <Oportunidades />
         <Certificate />
         <PatrocinadorEExpositor />

@@ -11,10 +11,16 @@ import useLink from "../../../contexts/LinkContexts";
 
 const TicketsMinimalistBlackFriday = () => {
   const [activeTab] = useState("evento");
-  const { ticketAll, ticketHalf, ticketGroup } = useLink();
+  const {
+    ticketBlack10,
+    ticketBlack15,
+    ticketBlack25,
+    ticketBlack30,
+    ticketBlack40,
+  } = useLink();
 
   return (
-    <section className={styles.section}>
+    <section className={styles.section} id="tickets2">
       <div className={styles.globalLines}>
         <div className={styles.gLine1}></div>
         <div className={styles.gLine2}></div>
@@ -26,81 +32,8 @@ const TicketsMinimalistBlackFriday = () => {
         </div>
 
         <div className={styles.content}>
-          {/* <div className={styles.mediaColumn} data-aos="zoom-in">
-            <div className={styles.speakerImage} id="tickets2">
-              <img
-                className={styles.mobile}
-                src={mayra}
-                alt="Mayra - Palestrante Confirmada"
-              />
-              <div className={styles.imgOverlay}>
-                <div className={styles.imgContent}>
-                  <h3>Mayra Gaiato</h3>
-                  <p>Referência nacional em Autismo e ABA.</p>
-                </div>
-              </div>
-              <div className={styles.badge}>
-                Confirmada <GiCheckMark />
-              </div>
-            </div>
-          </div> */}
-          <div
-            className={styles.discountsSection}
-            id="tickets2"
-            data-aos="zoom-in"
-          >
-            <div className={styles.discountsContent}>
-              <div className={styles.discountsTitle}>
-                <span>DESCONTOS</span>
-                <strong>PROGRESSIVOS</strong>
-              </div>
-
-              <ul className={styles.discountsList}>
-                <li>
-                  <strong>10%</strong> em 1 ingresso
-                </li>
-                <li>
-                  <strong>15%</strong> em 2 ingressos
-                </li>
-                <li>
-                  <strong>25%</strong> em 3 ingressos
-                </li>
-                <li>
-                  <strong>30%</strong> em 4 ingressos
-                </li>
-                <li>
-                  <strong>40%</strong> em 5 ou mais
-                </li>
-              </ul>
-            </div>
-            {/* <div className={styles.discountsLines}>
-              <div className={styles.dLine1}></div>
-              <div className={styles.dLine2}></div>
-              <div className={styles.dLine3}></div>
-            </div> */}
-          </div>
-
           <div className={styles.infoColumn}>
             <div className={styles.speakerCard} data-aos="zoom-in">
-              {/* <div className={styles.tabs}>
-                <button
-                  className={`${styles.tab} ${
-                    activeTab === "evento" ? styles.activeTab : ""
-                  }`}
-                  onClick={() => setActiveTab("evento")}
-                >
-                  Opções de Ingresso
-                </button>
-                <button
-                  className={`${styles.tab} ${
-                    activeTab === "pos" ? styles.activeTab : ""
-                  }`}
-                  onClick={() => setActiveTab("pos")}
-                >
-                  Pós-Graduação
-                </button>
-              </div> */}
-
               {activeTab === "pos" && (
                 <div className={styles.tabContent}>
                   <h3>“Quem sabe faz ao vivo”</h3>
@@ -140,91 +73,91 @@ const TicketsMinimalistBlackFriday = () => {
 
                   <div className={styles.ticketOptions}>
                     <div className={styles.ticketCard}>
-                      <h4>Ingresso Individual</h4>
-                      <p>Acesso completo a todos os dias do evento</p>
+                      <h4>Ingresso BLACK FRIDAY</h4>
+                      <p>
+                        Compre 1 ingresso com 10% OFF ou 2 ingressos com 15% OFF{" "}
+                      </p>
                       <div className={styles.buttons}>
                         <div className="">
                           <span className={styles.price}>
-                            {ticketHalf.price}
+                            {ticketBlack10.price}
                           </span>
                           <ButtonPretty
-                            text="Garantir Meia"
-                            link={ticketHalf.link}
+                            text="Garantir 10% OFF"
+                            link={ticketBlack10.link}
                             target="_blank"
                           />
+                          <p className={styles.info}>
+                            R$ 1114,68 cada ingresso
+                          </p>
                         </div>
 
                         <div className="">
                           <span className={styles.price}>
-                            {ticketAll.price}
+                            {ticketBlack15.price}
+                          </span>
+                          <ButtonPretty
+                            text="Garantir 15% OFF"
+                            link={ticketBlack15.link}
+                            target="_blank"
+                          />
+                          <p className={styles.info}>
+                            R$ 1052,76 cada ingresso
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className={styles.ticketCard}>
+                      <h4>Ingresso BLACK FRIDAY</h4>
+                      <p>
+                        Compre 3 ingressos com 25% OFF ou 4 ingressos com 30%
+                        OFF
+                      </p>
+                      <div className={styles.buttons}>
+                        <div className="">
+                          <span className={styles.price}>
+                            {ticketBlack25.price}
+                          </span>
+                          <ButtonPretty
+                            text="Garantir Meia"
+                            link={ticketBlack25.link}
+                            target="_blank"
+                          />
+                          <p className={styles.info}>R$ 928,92 cada ingresso</p>
+                        </div>
+
+                        <div className="">
+                          <span className={styles.price}>
+                            {ticketBlack30.price}
                           </span>
                           <ButtonPretty
                             text="Garantir Inteira"
-                            link={ticketAll.link}
+                            link={ticketBlack30.link}
                             target="_blank"
                           />
+                          <p className={styles.info}>R$ 867,00 cada ingresso</p>
                         </div>
-                        {/* <div className="">
-                          <span className={styles.price}>
-                            {ticketGroup.price}
-                            <span className={styles.textLower}>cada</span>
-                          </span>
-                          <ButtonPretty
-                            text="Garantir Grupo"
-                            link={ticketGroup.link}
-                            target="_blank"
-                          />
-                          <p className={styles.info}>Mínimo 4 ingressos</p>
-                        </div> */}
                       </div>
                     </div>
 
                     <div className={styles.ticketCard}>
-                      <h4>Ingresso Grupo</h4>
-                      <p>
-                        Com no mínimo 4 ingressos ganhe um desconto e aproveite
-                        o evento em grupo.
-                      </p>
+                      <h4>Ingresso BLACK FRIDAY</h4>
+                      <p>Compre 5 ou mais ingressos com 40% OFF</p>
                       <div className={styles.buttons}>
                         <div className="">
                           <span className={styles.price}>
-                            {ticketGroup.price}
-                            <span className={styles.textLower}>cada</span>
+                            {ticketBlack40.price}
+                            {/* <span className={styles.textLower}>cada</span> */}
                           </span>
                           <ButtonPretty
                             text="Garantir Grupo"
-                            link={ticketGroup.link}
+                            link={ticketBlack40.link}
                             target="_blank"
                           />
-                          <p className={styles.info}>Mínimo 4 ingressos</p>
+                          <p className={styles.info}>R$ 619,32 cada ingresso</p>
                         </div>
                       </div>
                     </div>
-                    {/* <div className={styles.ticketCard}>
-                      <h4>Pacote 2 Dias</h4>
-                      <p>
-                        Para quem já tem 1 dia através da pós-graduação Mayra
-                        Gaiato.
-                      </p>
-                      <div className={styles.buttons}>
-                        <div className="">
-                          <span className={styles.price}>EM BREVE</span>
-                          <ButtonPretty
-                            text="Comprar Meia"
-                            target="_blank"
-                            data-button="disabled"
-                          />
-                        </div>
-                        <div className="">
-                          <span className={styles.price}>EM BREVE</span>
-                          <ButtonPretty
-                            text="Comprar Inteira"
-                            target="_blank"
-                            data-button="disabled"
-                          />
-                        </div>
-                      </div>
-                    </div> */}
                   </div>
                 </div>
               )}
