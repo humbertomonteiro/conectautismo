@@ -346,6 +346,10 @@
   .title {
     font-size: 2rem;
   }
+
+  .tabContent {
+    text-align: center;
+  }
 }
 
 /* ========================= */
