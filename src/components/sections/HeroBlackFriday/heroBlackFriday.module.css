@@ -218,6 +218,30 @@
     background-size: cover;
     border: 1px solid var(--primary-color);
   }
+
+  .line1 {
+    top: auto;
+    bottom: 0;
+    left: -120px;
+    right: 0;
+    transform: rotate(35deg);
+  }
+
+  .line2 {
+    top: 0;
+    right: -20px;
+    left: 0;
+    bottom: auto;
+    transform: rotate(15deg);
+  }
+
+  .line3 {
+    top: auto;
+    right: -100px;
+    left: 0;
+    bottom: 0;
+    transform: rotate(-40deg);
+  }
 }
 
 @media (max-width: 500px) {
@@ -246,20 +270,5 @@
 
   .divider {
     display: none;
-  }
-
-  .line1 {
-    display: none;
-  }
-
-  .line2 {
-    top: -70px;
-    transform: rotate(15deg);
-    left: -950px;
-  }
-
-  .line3 {
-    left: -500px;
-    transform: rotate(320deg);
   }
 }
