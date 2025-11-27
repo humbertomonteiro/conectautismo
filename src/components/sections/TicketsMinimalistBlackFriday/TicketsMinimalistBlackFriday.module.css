@@ -131,7 +131,7 @@
 }
 
 .tabContent {
-  padding: 0 1.5rem;
+  padding: 0 1rem;
   text-align: center;
 }
 
@@ -214,7 +214,7 @@
   background-image: var(--bg-transparent-blue);
   padding: 1.5rem;
   border-radius: 16px;
-  border: 1px solid #ffffff22;
+  border: 1px solid #ffffffee;
   text-align: center;
 }
 
@@ -422,7 +422,7 @@
   position: absolute;
   width: 200%;
   height: 2px;
-  background-color: #ffffff33;
+  background-color: #ffffffee;
 }
 
 .dLine1 {
@@ -474,7 +474,7 @@
   position: absolute;
   width: 220%;
   height: 2px;
-  background-color: #ffffff22;
+  background-color: #7ebaff5d;
   opacity: 0.35;
 }
 
