@@ -86,6 +86,7 @@ const TicketsMinimalistBlackFriday = () => {
                             text="Garantir 10% OFF"
                             link={ticketBlack10.link}
                             target="_blank"
+                            data-color="yellow"
                           />
                           <p className={styles.info}>
                             R$ 1114,68 cada ingresso
@@ -100,6 +101,7 @@ const TicketsMinimalistBlackFriday = () => {
                             text="Garantir 15% OFF"
                             link={ticketBlack15.link}
                             target="_blank"
+                            data-color="yellow"
                           />
                           <p className={styles.info}>
                             R$ 1052,76 cada ingresso
@@ -119,9 +121,10 @@ const TicketsMinimalistBlackFriday = () => {
                             {ticketBlack25.price}
                           </span>
                           <ButtonPretty
-                            text="Garantir Meia"
+                            text="Garantir 25% OFF"
                             link={ticketBlack25.link}
                             target="_blank"
+                            data-color="yellow"
                           />
                           <p className={styles.info}>R$ 928,92 cada ingresso</p>
                         </div>
@@ -131,9 +134,10 @@ const TicketsMinimalistBlackFriday = () => {
                             {ticketBlack30.price}
                           </span>
                           <ButtonPretty
-                            text="Garantir Inteira"
+                            text="Garantir 30% OFF"
                             link={ticketBlack30.link}
                             target="_blank"
+                            data-color="yellow"
                           />
                           <p className={styles.info}>R$ 867,00 cada ingresso</p>
                         </div>
@@ -150,9 +154,10 @@ const TicketsMinimalistBlackFriday = () => {
                             {/* <span className={styles.textLower}>cada</span> */}
                           </span>
                           <ButtonPretty
-                            text="Garantir Grupo"
+                            text="Garantir 40% OFF"
                             link={ticketBlack40.link}
                             target="_blank"
+                            data-color="yellow"
                           />
                           <p className={styles.info}>R$ 619,32 cada ingresso</p>
                         </div>
