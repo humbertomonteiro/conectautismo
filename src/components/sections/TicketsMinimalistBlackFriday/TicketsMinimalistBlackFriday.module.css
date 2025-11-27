@@ -247,6 +247,11 @@
   font-size: 1.2rem;
   font-weight: 700;
   color: #d3e3ff;
+  margin-bottom: 0.5rem;
+}
+
+.quantityTickets {
+  font-weight: 100;
 }
 
 .ticketButton {

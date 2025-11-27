@@ -83,7 +83,10 @@ const TicketsMinimalistBlackFriday = () => {
                     <div className={styles.buttons}>
                       <div className="">
                         <span className={styles.price}>
-                          1 Ingresso por {ticketBlack10.price}
+                          <div className={styles.quantityTickets}>
+                            1 Ingresso por
+                          </div>{" "}
+                          {ticketBlack10.price}
                         </span>
                         <ButtonPretty
                           text="Garantir 10% OFF"
@@ -96,7 +99,10 @@ const TicketsMinimalistBlackFriday = () => {
 
                       <div className="">
                         <span className={styles.price}>
-                          2 Ingressos por {ticketBlack15.price}
+                          <div className={styles.quantityTickets}>
+                            2 Ingressos por
+                          </div>{" "}
+                          {ticketBlack15.price}
                         </span>
                         <ButtonPretty
                           text="Garantir 15% OFF"
@@ -109,7 +115,10 @@ const TicketsMinimalistBlackFriday = () => {
 
                       <div className="">
                         <span className={styles.price}>
-                          3 Ingressos por {ticketBlack25.price}
+                          <div className={styles.quantityTickets}>
+                            3 Ingressos por
+                          </div>{" "}
+                          {ticketBlack25.price}
                         </span>
                         <ButtonPretty
                           text="Garantir 25% OFF"
@@ -122,7 +131,10 @@ const TicketsMinimalistBlackFriday = () => {
 
                       <div className="">
                         <span className={styles.price}>
-                          4 Ingressos por {ticketBlack30.price}
+                          <div className={styles.quantityTickets}>
+                            4 Ingressos por
+                          </div>{" "}
+                          {ticketBlack30.price}
                         </span>
                         <ButtonPretty
                           text="Garantir 30% OFF"
@@ -135,7 +147,10 @@ const TicketsMinimalistBlackFriday = () => {
 
                       <div className="">
                         <span className={styles.price}>
-                          5 Ingressos por {ticketBlack40.price}
+                          <div className={styles.quantityTickets}>
+                            5 Ingressos por
+                          </div>{" "}
+                          {ticketBlack40.price}
                           {/* <span className={styles.textLower}>cada</span> */}
                         </span>
                         <ButtonPretty
