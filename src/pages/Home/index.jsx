@@ -16,8 +16,9 @@ import Testimonials from "../../components/sections/Testionials";
 // import SpeakersPos from "../../components/sections/SpeakersPos";
 import Certificate from "../../components/sections/Certificate";
 
-import PosMayra from "../../components/sections/PosMayra";
+// import PosMayra from "../../components/sections/PosMayra";
 import TicketsMinimalistBlackFriday from "../../components/sections/TicketsMinimalistBlackFriday";
+import ScrollToTop from "../../components/shared/ScrollToTop";
 
 export default function Home() {
   return (
@@ -39,6 +40,7 @@ export default function Home() {
         <CommonQuestions />
         <Politica />
         <Footer />
+        <ScrollToTop />
       </div>
     </>
   );
