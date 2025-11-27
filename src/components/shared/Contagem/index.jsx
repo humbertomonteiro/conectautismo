@@ -11,7 +11,13 @@ export default function Contagem({ dateEvent }) {
     // Parse da data no formato DD/MM/YYYY
     const [day, month, year] = dateEvent.split("/");
     const dateFinal = new Date(
-      `${year}-${month}-${day}T00:00:00-03:00`
+      Number(year),
+      Number(month) - 1,
+      Number(day),
+      0,
+      0,
+      0,
+      0
     ).getTime();
 
     const updateTimer = () => {
