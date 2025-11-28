@@ -17,6 +17,7 @@ const TicketsMinimalistBlackFriday = () => {
     ticketBlack25,
     ticketBlack30,
     ticketBlack40,
+    ticketHalf,
   } = useLink();
 
   return (
@@ -94,7 +95,7 @@ const TicketsMinimalistBlackFriday = () => {
                           target="_blank"
                           data-color="yellow"
                         />
-                        <p className={styles.info}>R$ 1114,68 o ingresso</p>
+                        <p className={styles.info}>Ou R$ 898,20 à vista</p>
                       </div>
 
                       <div className="">
@@ -110,7 +111,8 @@ const TicketsMinimalistBlackFriday = () => {
                           target="_blank"
                           data-color="yellow"
                         />
-                        <p className={styles.info}>R$ 1052,76 cada ingresso</p>
+                        {/* <p className={styles.info}>R$ 1052,76 cada ingresso</p> */}
+                        <p className={styles.info}>Ou R$ 1.696,60 à vista</p>
                       </div>
 
                       <div className="">
@@ -126,7 +128,8 @@ const TicketsMinimalistBlackFriday = () => {
                           target="_blank"
                           data-color="yellow"
                         />
-                        <p className={styles.info}>R$ 928,92 cada ingresso</p>
+                        {/* <p className={styles.info}>R$ 928,92 cada ingresso</p> */}
+                        <p className={styles.info}>Ou R$ 2.245,50 à vista</p>
                       </div>
 
                       <div className="">
@@ -142,7 +145,8 @@ const TicketsMinimalistBlackFriday = () => {
                           target="_blank"
                           data-color="yellow"
                         />
-                        <p className={styles.info}>R$ 867,00 cada ingresso</p>
+                        {/* <p className={styles.info}>R$ 867,00 cada ingresso</p> */}
+                        <p className={styles.info}>Ou R$ 2.794,40 à vista</p>
                       </div>
 
                       <div className="">
@@ -159,7 +163,24 @@ const TicketsMinimalistBlackFriday = () => {
                           target="_blank"
                           data-color="yellow"
                         />
-                        <p className={styles.info}>R$ 619,32 cada ingresso</p>
+                        {/* <p className={styles.info}>R$ 619,32 cada ingresso</p> */}
+                        <p className={styles.info}>Ou R$ 2.495,00 à vista</p>
+                      </div>
+                      <div className="">
+                        <span className={styles.price}>
+                          <div className={styles.quantityTickets}>
+                            Ingressos Meia por
+                          </div>{" "}
+                          {ticketHalf.price}
+                        </span>
+                        <ButtonPretty
+                          text="Comprar Meia"
+                          link={ticketHalf.link}
+                          target="_blank"
+                          data-color="yellow"
+                        />
+                        {/* <p className={styles.info}>R$ 743,13 o ingresso</p> */}
+                        <p className={styles.info}>Ou R$ 598,80 à vista</p>
                       </div>
                     </div>
                   </div>

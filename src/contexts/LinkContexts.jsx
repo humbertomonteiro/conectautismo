@@ -8,7 +8,8 @@ export function LinkProvider({ children }) {
     price: "12 x R$ 103,22",
   });
   const [ticketHalf, setTicketHalf] = useState({
-    link: "https://pay.hotmart.com/D101401576U?off=45mef41r",
+    // link: "https://pay.hotmart.com/D101401576U?off=45mef41r",
+    link: "https://pay.hotmart.com/D101401576U?off=45mef41r&_gl=1*1w8wynw*_ga*MTk4MzI0NzcyOC4xNzYzOTAwNjU1*_ga_1PCEYDM0JC*czE3NjM5Nzg3NzMkbzMkZzAkdDE3NjM5Nzg3NzMkajYwJGwwJGgw",
     price: "12 x R$ 61,93",
   });
   const [ticketGroup, setTicketGroup] = useState({
