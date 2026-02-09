@@ -129,9 +129,9 @@ export default function BoxesTickts() {
   ];
 
   return (
-    <section id="tickets" className={styles.section}>
+    <section className={styles.section}>
       <div className={styles.backgroundOverlay}></div>
-      <div className={styles.container}>
+      <div className={styles.container} id="tickets">
         <Title text="INGRESSO CONECT AUTISMO 2026" />
 
         <div className={styles.headerButton}>
