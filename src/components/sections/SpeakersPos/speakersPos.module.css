@@ -40,6 +40,7 @@
 .mediaColumn {
   flex: 1;
   min-width: 300px;
+  align-items: center;
 }
 
 .speakerCard {
@@ -211,7 +212,7 @@
   flex: 1;
   min-width: 200px;
   background: #f7fafc;
-  padding: 1.5rem;
+  padding: 1rem;
   border-radius: 8px;
   border: 1px solid #e2e8f0;
   text-align: center;
@@ -238,6 +239,15 @@
   font-size: 1.2rem;
   font-weight: 700;
   color: #2d3748;
+}
+
+.highlightColor {
+  color: var(--color-text-white);
+  background-color: var(--color-primary);
+  padding: 0.1rem 0.75rem;
+  border-radius: 1rem;
+  text-align: center;
+  display: inline-block;
 }
 
 .ticketButton {
@@ -345,4 +355,11 @@
   .title {
     font-size: 2rem;
   }
+}
+
+.linkSaberMais {
+  display: block;
+  color: var(--color-primary);
+  margin-top: 1rem;
+  font-size: 0.85rem;
 }

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styles from "./speakersPos.module.css";
 import ButtonPretty from "../../shared/ButtonPretty";
+import groupSpeakers from "../../../assets/imgs/speakers/grupo.png";
 // import mayra from "../../../assets/imgs/speakers/mayra.jpg";
 // import banner from "../../../assets/imgs/speakers/banner.jpeg";
 // import bannerMobile from "../../../assets/imgs/speakers/banner-mobile.jpeg";
@@ -11,24 +12,24 @@ import useLink from "../../../contexts/LinkContexts";
 
 const SpeakersPos = () => {
   const [activeTab] = useState("evento");
-  const { ticketAll, ticketHalf, ticketGroup } = useLink();
+  const { ticketAll, ticketHalf, ticketGroup4, ticketGroup5 } = useLink();
 
   return (
-    <section className={styles.section}>
+    <section className={styles.section} id="tickets2">
       <div className={styles.container}>
         <div className={styles.header}>
-          <Title text="Inédito" color="black" />
+          <Title text="Garanta Seu Ingresso" color="black" />
         </div>
 
         <div className={styles.content}>
-          {/* <div className={styles.mediaColumn} data-aos="zoom-in">
-            <div className={styles.speakerImage} id="tickets2">
+          <div className={styles.mediaColumn} data-aos="zoom-in">
+            <div className="">
               <img
                 className={styles.mobile}
-                src={mayra}
-                alt="Mayra - Palestrante Confirmada"
+                src={groupSpeakers}
+                alt="Palestrantes Confirmados"
               />
-              <div className={styles.imgOverlay}>
+              {/* <div className={styles.imgOverlay}>
                 <div className={styles.imgContent}>
                   <h3>Mayra Gaiato</h3>
                   <p>Referência nacional em Autismo e ABA.</p>
@@ -36,24 +37,10 @@ const SpeakersPos = () => {
               </div>
               <div className={styles.badge}>
                 Confirmada <GiCheckMark />
-              </div>
+              </div> */}
             </div>
-          </div> */}
-          <div className={styles.videoContainer} data-aos="zoom-in">
-            <div className={styles.videoWrapper} id="tickets2">
-              <iframe
-                src="https://www.youtube.com/embed/oJoGFDOJjHc?si=AxUmmENJ7haBQZQz"
-                title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen
-              ></iframe>
-            </div>
-            <h3></h3>
-            <p>
-              Um dia inteiro de Prática com Mayra Gaiato confirmado Conect 2026!
-            </p>
           </div>
+
           <div className={styles.infoColumn}>
             <div className={styles.speakerCard} data-aos="zoom-in">
               {/* <div className={styles.tabs}>
@@ -156,21 +143,38 @@ const SpeakersPos = () => {
                     <div className={styles.ticketCard}>
                       <h4>Ingresso Grupo</h4>
                       <p>
-                        Com no mínimo 4 ingressos ganhe um desconto e aproveite
-                        o evento em grupo.
+                        {/* Venha em grupo e compre 4 ingressos ganhe 20% OFF ou
+                        compre 5 ingressos ganhe 30% de Desconto. Aproveite o
+                        evento em grupo. */}
+
+                        <p className={styles.info}>
+                          Venha em grupo e ganhe 20% OFF Ou 30% OFF
+                        </p>
                       </p>
                       <div className={styles.buttons}>
                         <div className="">
                           <span className={styles.price}>
-                            {ticketGroup.price}
+                            {ticketGroup4.price}
                             <span className={styles.textLower}>cada</span>
                           </span>
                           <ButtonPretty
-                            text="Garantir Grupo"
-                            link={ticketGroup.link}
+                            text="Grupo 4 Ingressos"
+                            link={ticketGroup4.link}
                             target="_blank"
                           />
-                          <p className={styles.info}>Mínimo 4 ingressos</p>
+                          <p className={styles.info}>20% OFF</p>
+                        </div>
+                        <div className="">
+                          <span className={styles.price}>
+                            {ticketGroup5.price}
+                            <span className={styles.textLower}>cada</span>
+                          </span>
+                          <ButtonPretty
+                            text="Grupo 5 Ingressos"
+                            link={ticketGroup5.link}
+                            target="_blank"
+                          />
+                          <p className={styles.info}>30% OFF</p>
                         </div>
                       </div>
                     </div>
@@ -200,6 +204,9 @@ const SpeakersPos = () => {
                       </div>
                     </div> */}
                   </div>
+                  <a className={styles.linkSaberMais} href="#tickets">
+                    Saiba mais
+                  </a>
                 </div>
               )}
             </div>

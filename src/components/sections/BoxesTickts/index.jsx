@@ -8,7 +8,7 @@ import useLink from "../../../contexts/LinkContexts";
 export default function BoxesTickts() {
   const dateEvent = "2025-08-22";
   const isPreSaleStarted = hasCountdownEnded(dateEvent);
-  const { ticketAll, ticketHalf, ticketGroup } = useLink();
+  const { ticketAll, ticketHalf, ticketGroup4, ticketGroup5 } = useLink();
 
   const tickets = [
     {
@@ -100,17 +100,26 @@ export default function BoxesTickts() {
       subtitle: "3 dias de congresso ",
       description: "",
       benefits: [
-        "Mínimo 4 ingressos",
-        "⁠Desconto exclusivo de 20%.",
+        "Mínimo 4 ingressos ⁠Desconto exclusivo de 20%.",
+        "Mínimo 5 ingressos ⁠Desconto exclusivo de 30%.",
         "Ideal para clínicas, empresas, órgãos públicos e grupo de amigos em busca de grandes conhecimentos.",
         "Desconto por tempo limitado.",
       ],
       options: [
         {
-          link: ticketGroup.link,
+          link: ticketGroup4.link,
           // text: "INGRESSO PRÉ-VENDA",
-          text: "SEGUNDO LOTE GRUPO",
-          price: `${ticketGroup.price} cada`,
+          text: "4 INGRESSOS 20% OFF",
+          price: `${ticketGroup4.price} cada`,
+          // price: "EM BREVE",
+          label: "",
+          // disabled: true,
+        },
+        {
+          link: ticketGroup5.link,
+          // text: "INGRESSO PRÉ-VENDA",
+          text: "5 INGRESSOS 30% OFF",
+          price: `${ticketGroup5.price} cada`,
           // price: "EM BREVE",
           label: "",
           // disabled: true,
@@ -120,7 +129,7 @@ export default function BoxesTickts() {
   ];
 
   return (
-    <section id="tickts" className={styles.section}>
+    <section id="tickets" className={styles.section}>
       <div className={styles.backgroundOverlay}></div>
       <div className={styles.container}>
         <Title text="INGRESSO CONECT AUTISMO 2026" />

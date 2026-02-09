@@ -19,24 +19,20 @@ const PosMayra = () => {
         </div>
 
         <div className={styles.content}>
-          <div className={styles.mediaColumn} data-aos="zoom-in">
-            <div className={styles.speakerImage} id="tickets2">
-              <img
-                className={styles.mobile}
-                src={mayra}
-                alt="Mayra - Palestrante Confirmada"
-              />
-              <div className={styles.imgOverlay}>
-                <div className={styles.imgContent}>
-                  <h3>Mayra Gaiato</h3>
-                  <p>Um dia inteiro de prática com Mayra Gaiato Conect 2026.</p>
-                  {/* <p>Referência nacional em Autismo e ABA.</p> */}
-                </div>
-              </div>
-              <div className={styles.badge}>
-                Confirmada <GiCheckMark />
-              </div>
+          <div className={styles.videoContainer} data-aos="zoom-in">
+            <div className={styles.videoWrapper} id="tickets2">
+              <iframe
+                src="https://www.youtube.com/embed/oJoGFDOJjHc?si=AxUmmENJ7haBQZQz"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
             </div>
+            <h3></h3>
+            <p>
+              Um dia inteiro de Prática com Mayra Gaiato confirmado Conect 2026!
+            </p>
           </div>
 
           <div className={styles.infoColumn}>
