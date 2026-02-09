@@ -80,7 +80,7 @@ const PosMayra = () => {
                   </ul>
 
                   <ButtonPretty
-                    text="MATRICULE-SE AGORA"
+                    text="Pós Mayra Gaiato"
                     link="https://institutosingular.org/pos-turma4-conect/"
                     data-color="blue"
                     target="_blank"

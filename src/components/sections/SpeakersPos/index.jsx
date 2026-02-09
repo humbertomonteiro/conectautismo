@@ -29,11 +29,22 @@ const SpeakersPos = () => {
                 src={groupSpeakers}
                 alt="Palestrantes Confirmados"
               />
+              <div className={styles.imgContent}>
+                <h3>CONECT AUTISMO 2026 </h3>
+                <ul>
+                  <li>- 3 dias de muito conhecimento.</li>
+                  <li>
+                    -⁠21 de agosto: INEDITO, Dia inteire de pratica Com Mayra
+                    Gaiato. “Quem sabe faz ao vivo.”
+                  </li>
+                  <li>
+                    - ⁠22 de agosto: Segundo dia de Congresso Conect - ⁠23 de
+                    agosto: Terceiro dia de Congresso Conect
+                  </li>
+                </ul>
+              </div>
               {/* <div className={styles.imgOverlay}>
-                <div className={styles.imgContent}>
-                  <h3>Mayra Gaiato</h3>
-                  <p>Referência nacional em Autismo e ABA.</p>
-                </div>
+               
               </div>
               <div className={styles.badge}>
                 Confirmada <GiCheckMark />

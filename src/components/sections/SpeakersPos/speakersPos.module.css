@@ -81,13 +81,31 @@
 
 .imgContent {
   position: absolute;
-  bottom: 0;
+  bottom: -50px;
   left: 0;
   width: 100%;
   padding: 1rem;
-  color: #c2c2c2;
+  color: var(--color-text-black-1);
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(255, 255, 255, 0.048),
+    rgba(255, 255, 255, 0.267),
+    var(--bg-white)
+  );
 }
 
+.imgContent h3 {
+  margin-bottom: 0.5rem;
+}
+
+.imgContent ul {
+  list-style: none;
+  font-size: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
 .imgContent p {
   font-size: 0.9rem;
   margin-bottom: 0.3rem;
@@ -354,6 +372,11 @@
 
   .title {
     font-size: 2rem;
+  }
+
+  .mediaColumn {
+    padding-bottom: 3.5rem;
+    margin-bottom: 2rem;
   }
 }
 
