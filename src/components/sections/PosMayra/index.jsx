@@ -1,15 +1,17 @@
 import React, { useState } from "react";
 import styles from "./speakersPos.module.css";
 import ButtonPretty from "../../shared/ButtonPretty";
-import mayra from "../../../assets/imgs/speakers/mayra.jpg";
+// import mayra from "../../../assets/imgs/speakers/mayra.jpg";
 // import banner from "../../../assets/imgs/speakers/banner.jpeg";
 // import bannerMobile from "../../../assets/imgs/speakers/banner-mobile.jpeg";
+import useLink from "../../../contexts/LinkContexts";
 
 import { GiCheckMark } from "react-icons/gi";
 import Title from "../../shared/Title";
 
 const PosMayra = () => {
   const [activeTab, setActiveTab] = useState("pos");
+  const { ticketHalf } = useLink();
 
   return (
     <section className={styles.section}>
@@ -79,12 +81,19 @@ const PosMayra = () => {
                     </li>
                   </ul>
 
-                  <ButtonPretty
-                    text="Pós Mayra Gaiato"
-                    link="https://institutosingular.org/pos-turma4-conect/"
-                    data-color="blue"
-                    target="_blank"
-                  />
+                  <div className={styles.buttons}>
+                    <div>
+                      <ButtonPretty
+                        text="Pós Mayra Gaiato"
+                        link="https://institutosingular.org/pos-turma4-conect/"
+                        data-color="blue"
+                        target="_blank"
+                      />
+                    </div>
+                    <div>
+                      <ButtonPretty text="Garantir Conect" link="/#tickets2" />
+                    </div>
+                  </div>
                 </div>
               )}
 
