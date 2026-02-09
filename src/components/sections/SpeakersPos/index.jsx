@@ -32,15 +32,13 @@ const SpeakersPos = () => {
               <div className={styles.imgContent}>
                 <h3>CONECT AUTISMO 2026 </h3>
                 <ul>
-                  <li>- 3 dias de muito conhecimento.</li>
+                  <li> ⁠3 dias de muito conhecimento pratico e teórico.</li>
                   <li>
-                    -⁠21 de agosto: INEDITO, Dia inteire de pratica Com Mayra
-                    Gaiato. “Quem sabe faz ao vivo.”
+                    ⁠⁠⁠21 de agosto: INÉDITO, Dia inteiro de pratica clinica com
+                    Mayra Gaiato. “Quem sabe faz ao vivo.”
                   </li>
-                  <li>
-                    - ⁠22 de agosto: Segundo dia de Congresso Conect - ⁠23 de
-                    agosto: Terceiro dia de Congresso Conect
-                  </li>
+                  <li>⁠⁠22 de agosto: Segundo dia de Congresso Conect.</li>
+                  <li>⁠⁠23 de agosto: Terceiro dia de Congresso Conect.</li>
                 </ul>
               </div>
               {/* <div className={styles.imgOverlay}>

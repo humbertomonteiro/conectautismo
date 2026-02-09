@@ -100,11 +100,11 @@
 }
 
 .imgContent ul {
-  list-style: none;
   font-size: 0.8rem;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  margin-left: 0.5rem;
 }
 .imgContent p {
   font-size: 0.9rem;
