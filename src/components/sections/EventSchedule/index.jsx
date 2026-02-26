@@ -45,7 +45,6 @@ const EventSchedule = ({ id }) => {
       <div className={styles.backgroundOverlay}></div>
       <div className={styles.header}>
         <h2 className={styles.title}>CRONOGRAMA</h2>
-        <div className={styles.divider}></div>
         <p className={styles.subtitle}>
           Confira a programação completa do Conect Autismo 2026
         </p>
@@ -63,7 +62,7 @@ const EventSchedule = ({ id }) => {
                 {item.time}
               </div>
 
-              <div className={styles.itemMain}>
+              <div className={styles.itemMain} data-aos="zoom-in">
                 <div className={styles.itemHeader}>
                   <span className={styles.day}>{item.day}</span>
                   {item.isSeparateTicket && (
@@ -80,9 +79,7 @@ const EventSchedule = ({ id }) => {
                   {item.isSeparateTicket && (
                     <div className={styles.ticketAction}>
                       <ButtonPretty disable={true} text="Em Breve" />
-                      <a href="#venda-festa" className={styles.buyButton}>
-                        Garantir ingresso da festa →
-                      </a>
+
                       <span className={styles.soon}>Vendas em breve</span>
                     </div>
                   )}
@@ -107,13 +104,13 @@ const EventSchedule = ({ id }) => {
       </div>
 
       {/* Aviso discreto no final */}
-      <div className={styles.footerNote}>
+      {/* <div className={styles.footerNote}>
         <FaExclamationTriangle className={styles.footerIcon} />
         <p>
           <strong>Importante:</strong> A White Party de sexta à noite possui
           ingresso separado e não está inclusa no ingresso do Conect Autismo.
         </p>
-      </div>
+      </div> */}
     </section>
   );
 };
