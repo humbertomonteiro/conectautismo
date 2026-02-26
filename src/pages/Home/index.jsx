@@ -11,6 +11,8 @@ import RedesSociais from "../../components/shared/RedesSociais";
 import Politica from "../../components/sections/Politica";
 import Footer from "../../components/template/Footer";
 
+import EventSchedule from "../../components/sections/EventSchedule";
+
 import TopPromoBar from "../../components/shared/TopPromoBar";
 import Testimonials from "../../components/sections/Testionials";
 import SpeakersPos from "../../components/sections/SpeakersPos";
@@ -30,6 +32,7 @@ export default function Home() {
         <SpeakersPos />
         {/* <TicketsMinimalistBlackFriday /> */}
         <PosMayra />
+        <EventSchedule />
         <BoxesTickts />
         <Oportunidades />
         <Certificate />
