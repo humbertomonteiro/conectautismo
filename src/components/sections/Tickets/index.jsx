@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styles from "./speakersPos.module.css";
+import styles from "./Tickets.module.css";
 import ButtonPretty from "../../shared/ButtonPretty";
 import groupSpeakers from "../../../assets/imgs/speakers/grupo.png";
 // import mayra from "../../../assets/imgs/speakers/mayra.jpg";
@@ -10,7 +10,7 @@ import { GiCheckMark } from "react-icons/gi";
 import Title from "../../shared/Title";
 import useLink from "../../../contexts/LinkContexts";
 
-const SpeakersPos = () => {
+const Tickets = () => {
   const [activeTab] = useState("evento");
   const { ticketAll, ticketHalf, ticketGroup4, ticketGroup5 } = useLink();
 
@@ -30,7 +30,7 @@ const SpeakersPos = () => {
                 alt="Palestrantes Confirmados"
               />
               <div className={styles.imgContent}>
-                <h3>CONECT AUTISMO 2026 </h3>
+                {/* <h3>CONECT AUTISMO 2026 </h3>
                 <ul>
                   <li> ⁠3 dias de muito conhecimento pratico e teórico.</li>
                   <li>
@@ -39,7 +39,12 @@ const SpeakersPos = () => {
                   </li>
                   <li>⁠⁠22 de agosto: Segundo dia de Congresso Conect.</li>
                   <li>⁠⁠23 de agosto: Terceiro dia de Congresso Conect.</li>
-                </ul>
+                </ul> */}
+                <ButtonPretty
+                  text="Veja Nosso Cronograma"
+                  data-color="blue"
+                  link="#schedule"
+                />
               </div>
               {/* <div className={styles.imgOverlay}>
                
@@ -226,4 +231,4 @@ const SpeakersPos = () => {
   );
 };
 
-export default SpeakersPos;
+export default Tickets;

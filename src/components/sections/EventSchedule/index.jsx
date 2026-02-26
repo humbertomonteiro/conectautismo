@@ -41,7 +41,7 @@ const EventSchedule = ({ id }) => {
   ];
 
   return (
-    <section id={id || "cronograma"} className={styles.container}>
+    <section id={id || "schedule"} className={styles.container}>
       <div className={styles.backgroundOverlay}></div>
       <div className={styles.header}>
         <h2 className={styles.title}>CRONOGRAMA</h2>

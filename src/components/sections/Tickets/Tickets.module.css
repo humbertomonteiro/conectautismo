@@ -81,10 +81,10 @@
 
 .imgContent {
   position: absolute;
-  bottom: -50px;
+  bottom: 10px;
   left: 0;
   width: 100%;
-  padding: 1rem;
+  /* padding: 1rem; */
   color: var(--color-text-black-1);
   background: linear-gradient(
     to bottom,
@@ -290,7 +290,8 @@
   height: fit-content;
   border-radius: 12px;
   padding: 1.5rem;
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+  box-shadow:
+    0 10px 15px -3px rgba(0, 0, 0, 0.1),
     0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 

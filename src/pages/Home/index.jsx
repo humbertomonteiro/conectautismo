@@ -15,7 +15,7 @@ import EventSchedule from "../../components/sections/EventSchedule";
 
 import TopPromoBar from "../../components/shared/TopPromoBar";
 import Testimonials from "../../components/sections/Testionials";
-import SpeakersPos from "../../components/sections/SpeakersPos";
+import Tickets from "../../components/sections/Tickets";
 import Certificate from "../../components/sections/Certificate";
 
 import PosMayra from "../../components/sections/PosMayra";
@@ -29,7 +29,7 @@ export default function Home() {
       <div className={styles.container}>
         <Welcome />
         {/* <HeroBlackFriday /> */}
-        <SpeakersPos />
+        <Tickets />
         {/* <TicketsMinimalistBlackFriday /> */}
         <PosMayra />
         <EventSchedule />
