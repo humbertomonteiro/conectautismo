@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styles from "./TicketsMinimalistBlackFriday.module.css";
+import styles from "./TicketsMinimalistSale.module.css";
 import ButtonPretty from "../../shared/ButtonPretty";
 // import mayra from "../../../assets/imgs/speakers/mayra.jpg";
 // import banner from "../../../assets/imgs/speakers/banner.jpeg";
@@ -9,7 +9,7 @@ import { GiCheckMark } from "react-icons/gi";
 import Title from "../../shared/Title";
 import useLink from "../../../contexts/LinkContexts";
 
-const TicketsMinimalistBlackFriday = () => {
+const TicketsMinimalistSale = ({ saleName, links }) => {
   const [activeTab] = useState("evento");
   const {
     ticketBlack10,
@@ -29,7 +29,7 @@ const TicketsMinimalistBlackFriday = () => {
       </div>
       <div className={styles.container}>
         <div className={styles.header}>
-          <Title text="BLACK FRIDAY CONECT" />
+          <Title text={`${saleName} CONECT`} />
         </div>
 
         <div className={styles.content}>
@@ -73,14 +73,8 @@ const TicketsMinimalistBlackFriday = () => {
 
                 <div className={styles.ticketOptions}>
                   <div className={styles.ticketCard}>
-                    <h4>INGRESSO BLACK FRIDAY - DESCONTO PROGRESSIVO</h4>
-                    {/* <ul className={styles.listDiscount}>
-                      <li>1 Ingresso 10% OFF</li>
-                      <li>2 Ingressos 15% OFF</li>
-                      <li>3 Ingressos 25% OFF</li>
-                      <li>4 Ingressos 30% OFF</li>
-                      <li>5 Ingressos ou mais 40% OFF</li>
-                    </ul> */}
+                    <h4>DESCONTO PROGRESSIVO</h4>
+
                     <div className={styles.buttons}>
                       <div className="">
                         <span className={styles.price}>
@@ -128,7 +122,6 @@ const TicketsMinimalistBlackFriday = () => {
                           target="_blank"
                           data-color="yellow"
                         />
-                        {/* <p className={styles.info}>R$ 928,92 cada ingresso</p> */}
                         <p className={styles.info}>Ou R$ 2.245,50 à vista</p>
                       </div>
 
@@ -145,7 +138,6 @@ const TicketsMinimalistBlackFriday = () => {
                           target="_blank"
                           data-color="yellow"
                         />
-                        {/* <p className={styles.info}>R$ 867,00 cada ingresso</p> */}
                         <p className={styles.info}>Ou R$ 2.794,40 à vista</p>
                       </div>
 
@@ -155,7 +147,6 @@ const TicketsMinimalistBlackFriday = () => {
                             5 Ingressos por
                           </div>{" "}
                           {ticketBlack40.price}
-                          {/* <span className={styles.textLower}>cada</span> */}
                         </span>
                         <ButtonPretty
                           text="Garantir 40% OFF"
@@ -163,7 +154,6 @@ const TicketsMinimalistBlackFriday = () => {
                           target="_blank"
                           data-color="yellow"
                         />
-                        {/* <p className={styles.info}>R$ 619,32 cada ingresso</p> */}
                         <p className={styles.info}>Ou R$ 2.495,00 à vista</p>
                       </div>
                       <div className="">
@@ -179,7 +169,6 @@ const TicketsMinimalistBlackFriday = () => {
                           target="_blank"
                           data-color="yellow"
                         />
-                        {/* <p className={styles.info}>R$ 743,13 o ingresso</p> */}
                         <p className={styles.info}>Ou R$ 598,80 à vista</p>
                       </div>
                     </div>
@@ -194,4 +183,4 @@ const TicketsMinimalistBlackFriday = () => {
   );
 };
 
-export default TicketsMinimalistBlackFriday;
+export default TicketsMinimalistSale;

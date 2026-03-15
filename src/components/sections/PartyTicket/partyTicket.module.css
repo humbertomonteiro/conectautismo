@@ -1,0 +1,617 @@
+/* ================================================
+   PARTY TICKET — Componente de Ingresso para Festa
+   Paleta: Azul Escuro + Dourado + Branco
+   ================================================ */
+
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600;700&display=swap");
+
+/* ---- Seção ---- */
+.section {
+  position: relative;
+  padding: 5rem 1rem 6rem;
+  background: linear-gradient(160deg, #000820 0%, #001037 50%, #000c28 100%);
+  overflow: hidden;
+  z-index: 1;
+}
+
+/* ---- Partículas ---- */
+.particles {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.particle {
+  position: absolute;
+  width: calc(3px + var(--i) * 0.4px);
+  height: calc(3px + var(--i) * 0.4px);
+  border-radius: 50%;
+  background: radial-gradient(circle, #c9a227, #f5d67a);
+  opacity: 0;
+  top: calc(var(--i) * 5.5%);
+  left: calc(var(--i) * 5.8%);
+  animation: floatParticle calc(4s + var(--i) * 0.3s) ease-in-out infinite
+    alternate;
+  animation-delay: calc(var(--i) * 0.2s);
+}
+
+@keyframes floatParticle {
+  0% {
+    opacity: 0.1;
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 0.15;
+    transform: translateY(-18px) scale(1.3);
+  }
+}
+
+/* ---- Linhas de fundo ---- */
+.bgLines {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.bgLine {
+  position: absolute;
+  width: 240%;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    #c9a22730,
+    #c9a22755,
+    #c9a22730,
+    transparent
+  );
+  top: var(--t);
+  left: -40%;
+  transform: rotate(var(--r));
+}
+
+/* ---- Container ---- */
+.container {
+  position: relative;
+  z-index: 2;
+  max-width: 860px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+/* ---- Header ---- */
+.header {
+  text-align: center;
+  color: #fff;
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.header.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.eyebrow {
+  display: inline-block;
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #c9a227;
+  margin-bottom: 0.75rem;
+}
+
+.title {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: clamp(3rem, 8vw, 5.5rem);
+  line-height: 1;
+  letter-spacing: 0.04em;
+  color: #fff;
+  margin: 0 0 0.75rem;
+}
+
+.titleAccent {
+  color: #c9a227;
+  -webkit-text-stroke: 1px #c9a22780;
+}
+
+.subtitle {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1rem;
+  color: #8fadd8;
+  max-width: 480px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* ---- Ticket Wrapper ---- */
+.ticketWrapper {
+  position: relative;
+  opacity: 0;
+  transform: translateY(32px) scale(0.97);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+  width: 100%;
+  max-width: 760px;
+}
+
+.ticketWrapper.revealed {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.ticketShadow {
+  position: absolute;
+  bottom: -18px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 85%;
+  height: 30px;
+  background: radial-gradient(
+    ellipse,
+    rgba(201, 162, 39, 0.3) 0%,
+    transparent 70%
+  );
+  filter: blur(12px);
+}
+
+/* ---- Ticket ---- */
+.ticket {
+  display: flex;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(201, 162, 39, 0.25),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  position: relative;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.ticket:hover {
+  transform: translateY(-4px) rotate(0.3deg);
+  box-shadow: 0 40px 100px rgba(0, 0, 0, 0.7),
+    0 0 0 1px rgba(201, 162, 39, 0.45), 0 0 40px rgba(201, 162, 39, 0.12);
+}
+
+/* ---- Metade Esquerda ---- */
+.ticketLeft {
+  flex: 1;
+  background: linear-gradient(135deg, #001645 0%, #002070 50%, #001240 100%);
+  padding: 2.5rem 2.5rem 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Decorações internas */
+.ticketDecor {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.decorCircle1 {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 1px solid rgba(201, 162, 39, 0.12);
+  top: -80px;
+  right: -80px;
+}
+
+.decorCircle2 {
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(201, 162, 39, 0.08),
+    transparent 70%
+  );
+  top: -40px;
+  right: -30px;
+}
+
+.decorStar {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-size: 5rem;
+  color: rgba(201, 162, 39, 0.07);
+  line-height: 1;
+  font-family: sans-serif;
+}
+
+/* Badge */
+.eventBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(201, 162, 39, 0.15);
+  border: 1px solid rgba(201, 162, 39, 0.35);
+  border-radius: 50px;
+  padding: 0.3rem 0.8rem;
+  margin-bottom: 1.25rem;
+}
+
+.eventBadge span {
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #c9a227;
+}
+
+.badgeYear {
+  background: #c9a227 !important;
+  color: #001037 !important;
+  border-radius: 50px;
+  padding: 0.05rem 0.45rem !important;
+}
+
+/* Nome do evento */
+.eventName {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: clamp(2.8rem, 6vw, 4.5rem);
+  line-height: 0.9;
+  color: #fff;
+  margin: 0 0 1.5rem;
+  letter-spacing: 0.03em;
+}
+
+.eventName span {
+  color: #c9a227;
+}
+
+/* Meta */
+.eventMeta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  margin-bottom: 1.5rem;
+}
+
+.metaItem {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.875rem;
+  color: #a8c5e8;
+}
+
+.metaIcon {
+  font-size: 1rem;
+}
+
+/* Perks */
+.perksRow {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.perk {
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #c9a227;
+  background: rgba(201, 162, 39, 0.1);
+  border: 1px solid rgba(201, 162, 39, 0.25);
+  border-radius: 50px;
+  padding: 0.2rem 0.7rem;
+}
+
+.perkDot {
+  color: rgba(201, 162, 39, 0.4);
+  font-size: 1.2rem;
+}
+
+/* ---- Perfuração ---- */
+.perforation {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 0;
+  background: linear-gradient(135deg, #001645 0%, #002070 50%, #001240 100%);
+  position: relative;
+  width: 24px;
+}
+
+.perforation::before,
+.perforation::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #000820;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.perforation::before {
+  top: -10px;
+}
+.perforation::after {
+  bottom: -10px;
+}
+
+.dot {
+  display: block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.12);
+  flex-shrink: 0;
+}
+
+/* ---- Metade Direita (Stub) ---- */
+.ticketRight {
+  width: 160px;
+  flex-shrink: 0;
+  background: linear-gradient(160deg, #0a1a3a, #001240);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 1rem;
+  border-left: 1px dashed rgba(201, 162, 39, 0.2);
+}
+
+.stubLabel {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.25em;
+  color: rgba(201, 162, 39, 0.45);
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+  align-self: flex-end;
+}
+
+.qrPlaceholder {
+  background: rgba(201, 162, 39, 0.08);
+  border: 1px solid rgba(201, 162, 39, 0.2);
+  border-radius: 10px;
+  padding: 0.6rem;
+}
+
+.qrInner {
+  color: rgba(201, 162, 39, 0.7);
+}
+
+.stubInfo {
+  text-align: center;
+}
+
+.stubEventName {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+  color: #c9a227;
+  margin: 0 0 0.2rem;
+}
+
+.stubSeat {
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.7rem;
+  color: #6a8ab8;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.stubBarcode {
+  display: flex;
+  gap: 2px;
+  align-items: flex-end;
+  padding: 0.4rem;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 6px;
+}
+
+.bar {
+  display: block;
+  width: 3px;
+  border-radius: 1px;
+  background: rgba(201, 162, 39, 0.6);
+}
+
+/* ---- CTA Area ---- */
+.ctaArea {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease 0.2s, transform 0.6s ease 0.2s;
+  width: 300px;
+}
+
+.ctaArea.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.priceHint {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.85rem;
+  color: #8fadd8;
+  letter-spacing: 0.05em;
+}
+
+.priceArrow {
+  animation: bounce 1.4s ease infinite;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(4px);
+  }
+}
+
+.priceLabel {
+  font-weight: 500;
+}
+
+/* Botão CTA */
+.ctaButton {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2.8rem;
+  border-radius: 50px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #001037;
+  text-decoration: none;
+  background: linear-gradient(135deg, #f5d67a, #c9a227, #e8c040, #c9a227);
+  background-size: 300% 100%;
+  transition: background-position 0.5s ease, transform 0.3s ease,
+    box-shadow 0.3s ease;
+  box-shadow: 0 4px 20px rgba(201, 162, 39, 0.4),
+    0 0 0 1px rgba(201, 162, 39, 0.3);
+  overflow: hidden;
+}
+
+.ctaButton:hover {
+  background-position: 100% 0;
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 8px 35px rgba(201, 162, 39, 0.55),
+    0 0 0 2px rgba(201, 162, 39, 0.4);
+}
+
+.ctaButtonGlow {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    ellipse at 50% 0%,
+    rgba(255, 255, 255, 0.3),
+    transparent 60%
+  );
+  pointer-events: none;
+}
+
+.ctaButtonText {
+  position: relative;
+  z-index: 1;
+  letter-spacing: 0.02em;
+}
+
+.ctaNote {
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.75rem;
+  color: rgba(143, 173, 216, 0.6);
+  letter-spacing: 0.04em;
+}
+
+/* ---- Reveal animation ---- */
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.65s ease, transform 0.65s ease;
+}
+
+[data-reveal].revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ---- Responsivo ---- */
+@media (max-width: 640px) {
+  .section {
+    padding: 4rem 1rem;
+  }
+
+  .ticket {
+    flex-direction: column;
+    border-radius: 16px;
+  }
+
+  .ticketLeft {
+    padding: 2rem 1.5rem 1.5rem;
+  }
+
+  .perforation {
+    flex-direction: row;
+    width: 100%;
+    height: 24px;
+    border-top: 1px dashed rgba(201, 162, 39, 0.2);
+    border-left: none;
+  }
+
+  .perforation::before {
+    top: -10px;
+    left: -10px;
+    bottom: auto;
+    right: auto;
+  }
+  .perforation::after {
+    top: -10px;
+    right: -10px;
+    bottom: auto;
+    left: auto;
+  }
+
+  .stubLabel {
+    writing-mode: horizontal-tb;
+    transform: none;
+    align-self: auto;
+  }
+
+  .ticketRight {
+    width: 100%;
+    flex-direction: row;
+    padding: 1.2rem 1.5rem;
+    border-left: none;
+    border-top: 1px dashed rgba(201, 162, 39, 0.2);
+    gap: 1rem;
+    justify-content: space-between;
+  }
+
+  .stubInfo {
+    text-align: left;
+  }
+
+  .ctaButton {
+    padding: 0.9rem 2rem;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 360px;
+  }
+}
+
+@media (max-width: 480px) {
+  .stubBarcode {
+    display: none;
+  }
+  .ticketRight {
+    justify-content: center;
+    gap: 1.5rem;
+  }
+}

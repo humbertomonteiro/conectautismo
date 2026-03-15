@@ -1,51 +1,51 @@
 import styles from "./caroselScrollInfinit.module.css";
 
-const CarouselScrollInfinit = ({ listSlides }) => {
+const CarouselScrollInfinit = ({ dataSlideDouble }) => {
   return (
     <section>
       <div className={styles.carousel}>
         <div className={styles.group}>
           <div className={styles.black}>
-            <strong>BLACK</strong>
-            <span>CONECT</span>
+            <strong>{dataSlideDouble.first}</strong>
+            <span>{dataSlideDouble.second}</span>
           </div>
           <div className={styles.black}>
-            <strong>BLACK</strong>
-            <span>CONECT</span>
+            <strong>{dataSlideDouble.first}</strong>
+            <span>{dataSlideDouble.second}</span>
           </div>
           <div className={styles.black}>
-            <strong>BLACK</strong>
-            <span>CONECT</span>
+            <strong>{dataSlideDouble.first}</strong>
+            <span>{dataSlideDouble.second}</span>
           </div>
           <div className={styles.black}>
-            <strong>BLACK</strong>
-            <span>CONECT</span>
+            <strong>{dataSlideDouble.first}</strong>
+            <span>{dataSlideDouble.second}</span>
           </div>
           <div className={styles.black}>
-            <strong>BLACK</strong>
-            <span>CONECT</span>
+            <strong>{dataSlideDouble.first}</strong>
+            <span>{dataSlideDouble.second}</span>
           </div>
         </div>
         <div arial-hidden="true" className={styles.group}>
           <div className={styles.black}>
-            <strong>BLACK</strong>
-            <span>CONECT</span>
+            <strong>{dataSlideDouble.first}</strong>
+            <span>{dataSlideDouble.second}</span>
           </div>
           <div className={styles.black}>
-            <strong>BLACK</strong>
-            <span>CONECT</span>
+            <strong>{dataSlideDouble.first}</strong>
+            <span>{dataSlideDouble.second}</span>
           </div>
           <div className={styles.black}>
-            <strong>BLACK</strong>
-            <span>CONECT</span>
+            <strong>{dataSlideDouble.first}</strong>
+            <span>{dataSlideDouble.second}</span>
           </div>
           <div className={styles.black}>
-            <strong>BLACK</strong>
-            <span>CONECT</span>
+            <strong>{dataSlideDouble.first}</strong>
+            <span>{dataSlideDouble.second}</span>
           </div>
           <div className={styles.black}>
-            <strong>BLACK</strong>
-            <span>CONECT</span>
+            <strong>{dataSlideDouble.first}</strong>
+            <span>{dataSlideDouble.second}</span>
           </div>
         </div>
       </div>

@@ -1,39 +1,42 @@
 import styles from "./home.module.css";
 
 import Welcome from "../../components/sections/Welcome";
-// import HeroBlackFriday from "../../components/sections/HeroBlackFriday";
 import Local from "../../components/sections/Local";
 import PatrocinadorEExpositor from "../../components/sections/PatrocinadorEExpositor";
 import Oportunidades from "../../components/sections/Oportunidades";
-import BoxesTickts from "../../components/sections/BoxesTickts";
+// import BoxesTickts from "../../components/sections/BoxesTickts";
 import CommonQuestions from "../../components/sections/CommonQuestions";
 import RedesSociais from "../../components/shared/RedesSociais";
 import Politica from "../../components/sections/Politica";
 import Footer from "../../components/template/Footer";
 
-import EventSchedule from "../../components/sections/EventSchedule";
+import HeroPromo from "../../components/sections/HeroPromo";
+
+// import EventSchedule from "../../components/sections/EventSchedule";
 
 import TopPromoBar from "../../components/shared/TopPromoBar";
 import Testimonials from "../../components/sections/Testionials";
-import Tickets from "../../components/sections/Tickets";
+// import Tickets from "../../components/sections/Tickets";
 import Certificate from "../../components/sections/Certificate";
 
 import PosMayra from "../../components/sections/PosMayra";
-// import TicketsMinimalistBlackFriday from "../../components/sections/TicketsMinimalistBlackFriday";
+import TicketsMinimalistSale from "../../components/sections/TicketsMinimalistSale";
 import ScrollToTop from "../../components/shared/ScrollToTop";
+import PartyTicket from "../../components/sections/PartyTicket";
 
 export default function Home() {
   return (
     <>
       <TopPromoBar />
       <div className={styles.container}>
-        <Welcome />
-        {/* <HeroBlackFriday /> */}
-        <Tickets />
-        {/* <TicketsMinimalistBlackFriday /> */}
+        {/* <Welcome /> */}
+        <HeroPromo />
+        {/* <Tickets /> */}
+        <TicketsMinimalistSale saleName={"SEMANA DO CONSUMIDOR"} />
+        <PartyTicket />
         <PosMayra />
-        <EventSchedule />
-        <BoxesTickts />
+        {/* <EventSchedule /> */}
+        {/* <BoxesTickts /> */}
         <Oportunidades />
         <Certificate />
         <PatrocinadorEExpositor />

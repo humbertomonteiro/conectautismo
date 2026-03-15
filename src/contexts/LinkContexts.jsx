@@ -38,7 +38,7 @@ export function LinkProvider({ children }) {
   });
   const [ticketBlack40, setTicketBlack40] = useState({
     link: "https://pay.hotmart.com/D101401576U?off=rorp1x93",
-    price: "12 x R$ 258,05",
+    price: "12 x R$ 309,65",
   });
   return (
     <LinkContext.Provider
