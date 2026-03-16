@@ -92,7 +92,7 @@ const PartyTicket = () => {
               <div className={styles.eventMeta}>
                 <div className={styles.metaItem}>
                   <span className={styles.metaIcon}>📅</span>
-                  <span>Agosto 2026</span>
+                  <span>21 de Agosto de 2026</span>
                 </div>
                 <div className={styles.metaItem}>
                   <span className={styles.metaIcon}>🎊</span>
@@ -107,7 +107,9 @@ const PartyTicket = () => {
               <div className={styles.perksRow}>
                 <span className={styles.perk}>Open Bar</span>
                 <span className={styles.perkDot}>·</span>
-                <span className={styles.perk}>DJ</span>
+                <span className={styles.perk}>Trocas</span>
+                <span className={styles.perkDot}>·</span>
+                <span className={styles.perk}>Conexões</span>
                 <span className={styles.perkDot}>·</span>
                 <span className={styles.perk}>Networking</span>
               </div>
