@@ -10,17 +10,17 @@ import RedesSociais from "../../components/shared/RedesSociais";
 import Politica from "../../components/sections/Politica";
 import Footer from "../../components/template/Footer";
 
-import HeroPromo from "../../components/sections/HeroPromo";
+// import HeroPromo from "../../components/sections/HeroPromo";
 
-// import EventSchedule from "../../components/sections/EventSchedule";
+import EventSchedule from "../../components/sections/EventSchedule";
 
 import TopPromoBar from "../../components/shared/TopPromoBar";
 import Testimonials from "../../components/sections/Testionials";
-// import Tickets from "../../components/sections/Tickets";
+import Tickets from "../../components/sections/Tickets";
 import Certificate from "../../components/sections/Certificate";
 
 import PosMayra from "../../components/sections/PosMayra";
-import TicketsMinimalistSale from "../../components/sections/TicketsMinimalistSale";
+// import TicketsMinimalistSale from "../../components/sections/TicketsMinimalistSale";
 import ScrollToTop from "../../components/shared/ScrollToTop";
 import PartyTicket from "../../components/sections/PartyTicket";
 
@@ -29,13 +29,13 @@ export default function Home() {
     <>
       <TopPromoBar />
       <div className={styles.container}>
-        {/* <Welcome /> */}
-        <HeroPromo />
-        {/* <Tickets /> */}
-        <TicketsMinimalistSale saleName={"SEMANA DO CONSUMIDOR"} />
+        <Welcome />
+        {/* <HeroPromo /> */}
+        <Tickets />
+        {/* <TicketsMinimalistSale saleName={"SEMANA DO CONSUMIDOR"} /> */}
         <PartyTicket />
         <PosMayra />
-        {/* <EventSchedule /> */}
+        <EventSchedule />
         {/* <BoxesTickts /> */}
         <Oportunidades />
         <Certificate />

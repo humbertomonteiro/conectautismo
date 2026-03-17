@@ -54,7 +54,9 @@ const EventSchedule = ({ id }) => {
         {scheduleData.map((item, index) => (
           <div
             key={index}
-            className={`${styles.timelineItem} ${styles[item.type]} ${item.isSeparateTicket ? styles.separateTicket : ""}`}
+            className={`${styles.timelineItem} ${styles[item.type]} ${
+              item.isSeparateTicket ? styles.separateTicket : ""
+            }`}
           >
             <div className={styles.timelineContent}>
               <div className={styles.time}>
@@ -78,9 +80,9 @@ const EventSchedule = ({ id }) => {
 
                   {item.isSeparateTicket && (
                     <div className={styles.ticketAction}>
-                      <ButtonPretty disable={true} text="Em Breve" />
+                      <ButtonPretty link="#party-ticket" text="Garantir" />
 
-                      <span className={styles.soon}>Vendas em breve</span>
+                      {/* <span className={styles.soon}>Vendas em breve</span> */}
                     </div>
                   )}
 
