@@ -15,99 +15,15 @@ const Tickets = () => {
   const { ticketAll, ticketHalf, ticketGroup4, ticketGroup5 } = useLink();
 
   return (
-    <section className={styles.section} id="tickets2">
+    <section className={styles.section}>
       <div className={styles.container}>
         <div className={styles.header}>
           <Title text="Garanta Seu Ingresso" color="black" />
         </div>
 
         <div className={styles.content}>
-          <div className={styles.mediaColumn} data-aos="zoom-in">
-            <div className="">
-              <img
-                className={styles.mobile}
-                src={groupSpeakers}
-                alt="Palestrantes Confirmados"
-              />
-              <div className={styles.imgContent}>
-                {/* <h3>CONECT AUTISMO 2026 </h3>
-                <ul>
-                  <li> ⁠3 dias de muito conhecimento pratico e teórico.</li>
-                  <li>
-                    ⁠⁠⁠21 de agosto: INÉDITO, Dia inteiro de pratica clinica com
-                    Mayra Gaiato. “Quem sabe faz ao vivo.”
-                  </li>
-                  <li>⁠⁠22 de agosto: Segundo dia de Congresso Conect.</li>
-                  <li>⁠⁠23 de agosto: Terceiro dia de Congresso Conect.</li>
-                </ul> */}
-                <ButtonPretty
-                  text="Veja Nosso Cronograma"
-                  data-color="blue"
-                  link="#schedule"
-                />
-              </div>
-              {/* <div className={styles.imgOverlay}>
-               
-              </div>
-              <div className={styles.badge}>
-                Confirmada <GiCheckMark />
-              </div> */}
-            </div>
-          </div>
-
-          <div className={styles.infoColumn}>
+          <div className={styles.infoColumn} id="tickets2">
             <div className={styles.speakerCard} data-aos="zoom-in">
-              {/* <div className={styles.tabs}>
-                <button
-                  className={`${styles.tab} ${
-                    activeTab === "evento" ? styles.activeTab : ""
-                  }`}
-                  onClick={() => setActiveTab("evento")}
-                >
-                  Opções de Ingresso
-                </button>
-                <button
-                  className={`${styles.tab} ${
-                    activeTab === "pos" ? styles.activeTab : ""
-                  }`}
-                  onClick={() => setActiveTab("pos")}
-                >
-                  Pós-Graduação
-                </button>
-              </div> */}
-
-              {activeTab === "pos" && (
-                <div className={styles.tabContent}>
-                  <h3>“Quem sabe faz ao vivo”</h3>
-                  <p>
-                    Um dia inteiro de prática com Mayra Gaiato no congresso
-                    conect 2026
-                  </p>
-                  <p className={styles.highlight}>
-                    Garanta agora sua pós e seu conect 2026
-                  </p>
-
-                  <ul className={styles.benefitsList}>
-                    <li>
-                      <GiCheckMark /> Pós em ABA e Estratégias Naturalistas
-                    </li>
-                    <li>
-                      <GiCheckMark /> Certificação reconhecida
-                    </li>
-                    <li>
-                      <GiCheckMark /> 1 dia de acesso ao Conect 2026
-                    </li>
-                  </ul>
-
-                  <ButtonPretty
-                    text="Garanta agora sua pós"
-                    link="https://institutosingular.org/pos-turma4-conect/"
-                    data-color="blue"
-                    target="_blank"
-                  />
-                </div>
-              )}
-
               {activeTab === "evento" && (
                 <div className={styles.tabContent}>
                   <h3>Opções de Ingresso</h3>
@@ -223,6 +139,39 @@ const Tickets = () => {
                   </a>
                 </div>
               )}
+            </div>
+          </div>
+
+          <div className={styles.mediaColumn} data-aos="zoom-in">
+            <div className="">
+              <img
+                className={styles.mobile}
+                src={groupSpeakers}
+                alt="Palestrantes Confirmados"
+              />
+              <div className={styles.imgContent}>
+                {/* <h3>CONECT AUTISMO 2026 </h3>
+                <ul>
+                  <li> ⁠3 dias de muito conhecimento pratico e teórico.</li>
+                  <li>
+                    ⁠⁠⁠21 de agosto: INÉDITO, Dia inteiro de pratica clinica com
+                    Mayra Gaiato. “Quem sabe faz ao vivo.”
+                  </li>
+                  <li>⁠⁠22 de agosto: Segundo dia de Congresso Conect.</li>
+                  <li>⁠⁠23 de agosto: Terceiro dia de Congresso Conect.</li>
+                </ul> */}
+                <ButtonPretty
+                  text="Veja Nosso Cronograma"
+                  data-color="blue"
+                  link="#schedule"
+                />
+              </div>
+              {/* <div className={styles.imgOverlay}>
+               
+              </div>
+              <div className={styles.badge}>
+                Confirmada <GiCheckMark />
+              </div> */}
             </div>
           </div>
         </div>
