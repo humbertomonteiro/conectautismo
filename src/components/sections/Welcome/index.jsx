@@ -39,6 +39,11 @@ export default function Welcome() {
           </div> */}
           <div className={styles.buttons} data-aos-delay="300">
             <ButtonPretty link={"#tickets2"} text={"Garanta sua vaga agora"} />
+            <ButtonPretty
+              link={"#party-ticket"}
+              text={"Garanta Festa Conect"}
+              data-color="yellow"
+            />
             {/* <ButtonPretty
               link={"https://congressoconect.pixieset.com"}
               text={"Fotos Conect 2025"}

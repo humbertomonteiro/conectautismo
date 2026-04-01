@@ -55,6 +55,12 @@
   /* height: 427px; */
 }
 
+.speakerImage h3 {
+  font-size: 2rem;
+  color: var(--color-text-black-1);
+  text-align: center;
+}
+
 .speakerImage .desktop,
 .speakerImage .mobile {
   width: 100%;

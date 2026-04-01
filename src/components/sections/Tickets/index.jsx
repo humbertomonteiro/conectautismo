@@ -105,6 +105,7 @@ const Tickets = () => {
 
           <div className={styles.mediaColumn} data-aos="zoom-in">
             <div className={styles.speakerImage}>
+              <h3>Palestrantes 2026</h3>
               <img
                 className={styles.desktop}
                 src={speakersDesktop}
@@ -115,9 +116,9 @@ const Tickets = () => {
                 src={speakers}
                 alt="Palestrantes Confirmados"
               />
-              <div className={styles.buttonSpeakers}>
+              {/* <div className={styles.buttonSpeakers}>
                 <ButtonPretty text="Garantir Festa" link="#party-ticket" />
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
