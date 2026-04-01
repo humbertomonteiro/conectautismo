@@ -22,11 +22,10 @@ export default function Welcome() {
             </p>
             <div className={styles.highlight}>
               <span className={styles.highlightMobile}>
-                21, 22 e 23 de agosto 2026
-              </span>{" "}
+                21, 22 e 23 de agosto 2026 | Centro de eventos do Ceará
+                {/* </span>{" "}
               <span className={styles.divider}>|</span>{" "}
-              <span className={styles.highlightMobile}>
-                Centro de eventos do Ceará
+              <span className={styles.highlightMobile}> */}
               </span>
             </div>
           </div>
@@ -40,13 +39,13 @@ export default function Welcome() {
           </div> */}
           <div className={styles.buttons} data-aos-delay="300">
             <ButtonPretty link={"#tickets2"} text={"Garanta sua vaga agora"} />
-            <ButtonPretty
+            {/* <ButtonPretty
               link={"https://congressoconect.pixieset.com"}
               text={"Fotos Conect 2025"}
               data-color="line"
               target="_blank"
               icon={<IoIosImages />}
-            />
+            /> */}
             <ButtonPretty
               link={"https://chat.whatsapp.com/J4YPyyOhufFIdp4x3rZSeQ?mode=wwt"}
               text={"Grupo Congresso Conect"}

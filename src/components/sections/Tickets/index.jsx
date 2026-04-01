@@ -1,12 +1,14 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import styles from "./Tickets.module.css";
 import ButtonPretty from "../../shared/ButtonPretty";
-import groupSpeakers from "../../../assets/imgs/speakers/grupo.png";
+// import groupSpeakers from "../../../assets/imgs/speakers/grupo.png";
+import speakers from "../../../assets/imgs/speakers/palestrantes.png";
+import speakersDesktop from "../../../assets/imgs/speakers/palestrantes-desktop.png";
 // import mayra from "../../../assets/imgs/speakers/mayra.jpg";
 // import banner from "../../../assets/imgs/speakers/banner.jpeg";
 // import bannerMobile from "../../../assets/imgs/speakers/banner-mobile.jpeg";
 
-import { GiCheckMark } from "react-icons/gi";
+// import { GiCheckMark } from "react-icons/gi";
 import Title from "../../shared/Title";
 import useLink from "../../../contexts/LinkContexts";
 
@@ -55,28 +57,12 @@ const Tickets = () => {
                             target="_blank"
                           />
                         </div>
-                        {/* <div className="">
-                          <span className={styles.price}>
-                            {ticketGroup.price}
-                            <span className={styles.textLower}>cada</span>
-                          </span>
-                          <ButtonPretty
-                            text="Garantir Grupo"
-                            link={ticketGroup.link}
-                            target="_blank"
-                          />
-                          <p className={styles.info}>Mínimo 4 ingressos</p>
-                        </div> */}
                       </div>
                     </div>
 
                     <div className={styles.ticketCard}>
                       <h4>Ingresso Grupo</h4>
                       <p>
-                        {/* Venha em grupo e compre 4 ingressos ganhe 20% OFF ou
-                        compre 5 ingressos ganhe 30% de Desconto. Aproveite o
-                        evento em grupo. */}
-
                         <p className={styles.info}>
                           Venha em grupo e ganhe 20% OFF Ou 30% OFF
                         </p>
@@ -108,70 +94,30 @@ const Tickets = () => {
                         </div>
                       </div>
                     </div>
-                    {/* <div className={styles.ticketCard}>
-                      <h4>Pacote 2 Dias</h4>
-                      <p>
-                        Para quem já tem 1 dia através da pós-graduação Mayra
-                        Gaiato.
-                      </p>
-                      <div className={styles.buttons}>
-                        <div className="">
-                          <span className={styles.price}>EM BREVE</span>
-                          <ButtonPretty
-                            text="Comprar Meia"
-                            target="_blank"
-                            data-button="disabled"
-                          />
-                        </div>
-                        <div className="">
-                          <span className={styles.price}>EM BREVE</span>
-                          <ButtonPretty
-                            text="Comprar Inteira"
-                            target="_blank"
-                            data-button="disabled"
-                          />
-                        </div>
-                      </div>
-                    </div> */}
                   </div>
-                  <a className={styles.linkSaberMais} href="#tickets">
+                  {/* <a className={styles.linkSaberMais} href="#tickets">
                     Saiba mais
-                  </a>
+                  </a> */}
                 </div>
               )}
             </div>
           </div>
 
           <div className={styles.mediaColumn} data-aos="zoom-in">
-            <div className="">
+            <div className={styles.speakerImage}>
               <img
-                className={styles.mobile}
-                src={groupSpeakers}
+                className={styles.desktop}
+                src={speakersDesktop}
                 alt="Palestrantes Confirmados"
               />
-              <div className={styles.imgContent}>
-                {/* <h3>CONECT AUTISMO 2026 </h3>
-                <ul>
-                  <li> ⁠3 dias de muito conhecimento pratico e teórico.</li>
-                  <li>
-                    ⁠⁠⁠21 de agosto: INÉDITO, Dia inteiro de pratica clinica com
-                    Mayra Gaiato. “Quem sabe faz ao vivo.”
-                  </li>
-                  <li>⁠⁠22 de agosto: Segundo dia de Congresso Conect.</li>
-                  <li>⁠⁠23 de agosto: Terceiro dia de Congresso Conect.</li>
-                </ul> */}
-                <ButtonPretty
-                  text="Veja Nosso Cronograma"
-                  data-color="blue"
-                  link="#schedule"
-                />
+              <img
+                className={styles.mobile}
+                src={speakers}
+                alt="Palestrantes Confirmados"
+              />
+              <div className={styles.buttonSpeakers}>
+                <ButtonPretty text="Garantir Festa" link="#party-ticket" />
               </div>
-              {/* <div className={styles.imgOverlay}>
-               
-              </div>
-              <div className={styles.badge}>
-                Confirmada <GiCheckMark />
-              </div> */}
             </div>
           </div>
         </div>
