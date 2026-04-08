@@ -21,6 +21,20 @@ const Tickets = () => {
       <div className={styles.container}>
         <div className={styles.header}>
           <Title text="Garanta Seu Ingresso" color="black" />
+
+          <div className={styles.loteAlert}>
+            <div className={styles.eventBadge}>
+              <span>ATENÇÃO</span>
+              <span className={styles.badgeYear}>ÚLTIMA CHANCE</span>
+            </div>
+            <p className={styles.alertText}>
+              <strong>Virada de lote</strong> acontece no dia{" "}
+              <strong>12 de abril</strong>
+            </p>
+            <span className={styles.alertSub}>
+              Preços aumentam após essa data
+            </span>
+          </div>
         </div>
 
         <div className={styles.content}>

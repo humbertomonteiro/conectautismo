@@ -69,7 +69,7 @@ const EventSchedule = ({ id }) => {
                   <span className={styles.day}>{item.day}</span>
                   {item.isSeparateTicket && (
                     <span className={styles.warningTag}>
-                      <FaExclamationTriangle /> Ingresso separado
+                      <FaExclamationTriangle /> Ingresso a parte
                     </span>
                   )}
                 </div>
