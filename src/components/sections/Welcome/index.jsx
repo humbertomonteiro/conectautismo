@@ -26,7 +26,7 @@ export default function Welcome() {
               </span>
             </div> */}
             <div className={styles.highlightText}>
-              <h3>⚠️ Últimos ingressos lote atual</h3>
+              <h3>⚠️ Últimos ingressos do lote atual</h3>
               <p>Dia 12/04 o lote vira e o valor sobe automaticamente.</p>
             </div>
           </div>

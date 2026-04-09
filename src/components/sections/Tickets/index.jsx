@@ -21,7 +21,7 @@ const Tickets = () => {
       <div className={styles.container}>
         <div className={styles.header}>
           <Title text="Garanta Seu Ingresso" color="black" />
-
+          {/* 
           <div className={styles.loteAlert}>
             <div className={styles.eventBadge}>
               <span>ATENÇÃO</span>
@@ -34,7 +34,7 @@ const Tickets = () => {
             <span className={styles.alertSub}>
               Preços aumentam após essa data
             </span>
-          </div>
+          </div> */}
         </div>
 
         <div className={styles.content}>
