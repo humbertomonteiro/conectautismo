@@ -26,11 +26,8 @@ export default function Welcome() {
               </span>
             </div> */}
             <div className={styles.highlightText}>
-              <h3>ATENÇÃO</h3>
-              <p>
-                Virada de lote dia 12, garanta agora seu ingresso com menor
-                valor.
-              </p>
+              <h3>⚠️ Últimos ingressos lote atual</h3>
+              <p>Dia 12/04 o lote vira e o valor sobe automaticamente.</p>
             </div>
           </div>
           {/* <div
