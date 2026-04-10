@@ -23,6 +23,7 @@ import PosMayra from "../../components/sections/PosMayra";
 // import TicketsMinimalistSale from "../../components/sections/TicketsMinimalistSale";
 import ScrollToTop from "../../components/shared/ScrollToTop";
 import PartyTicket from "../../components/sections/PartyTicket";
+import Supporters from "../../components/sections/Supporters";
 
 export default function Home() {
   return (
@@ -43,6 +44,7 @@ export default function Home() {
         <Local />
         <Testimonials />
         <RedesSociais />
+        <Supporters />
         <CommonQuestions />
         <Politica />
         <Footer />
