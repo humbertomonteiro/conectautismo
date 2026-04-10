@@ -1,18 +1,10 @@
-import React, { useState } from "react";
 import styles from "./speakersPos.module.css";
-import ButtonPretty from "../../shared/ButtonPretty";
-// import mayra from "../../../assets/imgs/speakers/mayra.jpg";
-// import banner from "../../../assets/imgs/speakers/banner.jpeg";
-// import bannerMobile from "../../../assets/imgs/speakers/banner-mobile.jpeg";
-import useLink from "../../../contexts/LinkContexts";
+// import ButtonPretty from "../../shared/ButtonPretty";
 
-import { GiCheckMark } from "react-icons/gi";
+// import { GiCheckMark } from "react-icons/gi";
 import Title from "../../shared/Title";
 
 const PosMayra = () => {
-  const [activeTab, setActiveTab] = useState("pos");
-  const { ticketHalf } = useLink();
-
   return (
     <section className={styles.section}>
       <div className={styles.container}>
@@ -37,28 +29,10 @@ const PosMayra = () => {
             </p>
           </div>
 
-          <div className={styles.infoColumn}>
+          {/* <div className={styles.infoColumn}>
             <div className={styles.speakerCard} data-aos="zoom-in">
-              {/* <div className={styles.tabs}>
-                <button
-                  className={`${styles.tab} ${
-                    activeTab === "evento" ? styles.activeTab : ""
-                  }`}
-                  onClick={() => setActiveTab("evento")}
-                >
-                  Opções de Ingresso
-                </button>
-                <button
-                  className={`${styles.tab} ${
-                    activeTab === "pos" ? styles.activeTab : ""
-                  }`}
-                  onClick={() => setActiveTab("pos")}
-                >
-                  Pós-Graduação
-                </button>
-              </div> */}
+    
 
-              {activeTab === "pos" && (
                 <div className={styles.tabContent}>
                   <h3>“Quem sabe faz ao vivo”</h3>
                   <p>
@@ -95,67 +69,9 @@ const PosMayra = () => {
                     </div>
                   </div>
                 </div>
-              )}
 
-              {activeTab === "evento" && (
-                <div className={styles.tabContent}>
-                  <h3>Opções de Ingresso</h3>
-                  <p>Escolha a melhor forma de participar do Conect 2026:</p>
-
-                  <div className={styles.ticketOptions}>
-                    <div className={styles.ticketCard}>
-                      <h4>Pacote 3 Dias</h4>
-                      <p>Acesso completo a todos os dias do evento</p>
-                      <div className={styles.buttons}>
-                        <div className="">
-                          <span className={styles.price}>12 x R$ 101,15</span>
-                          <ButtonPretty
-                            text="Comprar Inteira"
-                            link="https://pay.hotmart.com/D101401576U?off=1zhb4drs"
-                            target="_blank"
-                          />
-                        </div>
-                        <div className="">
-                          <span className={styles.price}>12 x R$ 50,57</span>
-                          <ButtonPretty
-                            text="Comprar Meia"
-                            link="https://pay.hotmart.com/D101401576U?off=rfa406il"
-                            target="_blank"
-                          />
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className={styles.ticketCard}>
-                      <h4>Pacote 2 Dias</h4>
-                      <p>
-                        Para quem já tem 1 dia através da pós-graduação Mayra
-                        Gaiato.
-                      </p>
-                      <div className={styles.buttons}>
-                        <div className="">
-                          <span className={styles.price}>EM BREVE</span>
-                          <ButtonPretty
-                            text="Comprar Inteira"
-                            target="_blank"
-                            data-button="disabled"
-                          />
-                        </div>
-                        <div className="">
-                          <span className={styles.price}>EM BREVE</span>
-                          <ButtonPretty
-                            text="Comprar Meia"
-                            target="_blank"
-                            data-button="disabled"
-                          />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              )}
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
