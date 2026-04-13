@@ -55,33 +55,6 @@ const Tickets = () => {
 
                   <div className={styles.ticketOptions}>
                     <div className={styles.ticketCard}>
-                      <h4>Inteiro</h4>
-                      <p>Acesso completo a todos os dias do evento</p>
-                      <div className={styles.buttons}>
-                        <div className="">
-                          <span className={styles.price}>
-                            {ticketWithoutParty.price}
-                          </span>
-                          <ButtonPretty
-                            text="Garantir Sem Festa"
-                            link={ticketWithoutParty.link}
-                            target="_blank"
-                          />
-                        </div>
-
-                        <div className="">
-                          <span className={styles.price}>
-                            {ticketWithParty.price}
-                          </span>
-                          <ButtonPretty
-                            text="Garantir Com Festa"
-                            link={ticketWithParty.link}
-                            target="_blank"
-                          />
-                        </div>
-                      </div>
-                    </div>
-                    <div className={styles.ticketCard}>
                       <h4>Meia</h4>
                       <p>Acesso completo a todos os dias do evento</p>
                       <div className={styles.buttons}>
@@ -108,12 +81,40 @@ const Tickets = () => {
                         </div>
                       </div>
                     </div>
+                    <div className={styles.ticketCard}>
+                      <h4>Inteira</h4>
+                      <p>Acesso completo a todos os dias do evento</p>
+                      <div className={styles.buttons}>
+                        <div className="">
+                          <span className={styles.price}>
+                            {ticketWithoutParty.price}
+                          </span>
+                          <ButtonPretty
+                            text="Garantir Sem Festa"
+                            link={ticketWithoutParty.link}
+                            target="_blank"
+                          />
+                        </div>
+
+                        <div className="">
+                          <span className={styles.price}>
+                            {ticketWithParty.price}
+                          </span>
+                          <ButtonPretty
+                            text="Garantir Com Festa"
+                            link={ticketWithParty.link}
+                            target="_blank"
+                          />
+                        </div>
+                      </div>
+                    </div>
 
                     <div className={styles.ticketCard}>
                       <h4>Desconto em Grupo</h4>
                       <p>
                         <p className={styles.info}>
-                          Venha em grupo e ganhe 20% OFF Ou 30% OFF e a Festa
+                          Venha em grupo, garanta 20% OFF Ou 30% OFF e GANHE a
+                          Festa.
                         </p>
                       </p>
                       <div className={styles.buttons}>
