@@ -55,7 +55,7 @@ const Tickets = () => {
 
                   <div className={styles.ticketOptions}>
                     <div className={styles.ticketCard}>
-                      <h4>Ingresso Inteiro</h4>
+                      <h4>Inteiro</h4>
                       <p>Acesso completo a todos os dias do evento</p>
                       <div className={styles.buttons}>
                         <div className="">
@@ -82,7 +82,7 @@ const Tickets = () => {
                       </div>
                     </div>
                     <div className={styles.ticketCard}>
-                      <h4>Ingresso Meia</h4>
+                      <h4>Meia</h4>
                       <p>Acesso completo a todos os dias do evento</p>
                       <div className={styles.buttons}>
                         <div className="">
@@ -110,10 +110,10 @@ const Tickets = () => {
                     </div>
 
                     <div className={styles.ticketCard}>
-                      <h4>Ingresso Grupo Com Festa</h4>
+                      <h4>Desconto em Grupo</h4>
                       <p>
                         <p className={styles.info}>
-                          Venha em grupo e ganhe 20% OFF Ou 30% OFF
+                          Venha em grupo e ganhe 20% OFF Ou 30% OFF e a Festa
                         </p>
                       </p>
                       <div className={styles.buttons}>
@@ -146,7 +146,9 @@ const Tickets = () => {
                     <div className={styles.ticketCard}>
                       <h4>Pré-festa avulsa</h4>
                       <p>
-                        <p className={styles.info}>Venha curtir</p>
+                        <p className={styles.info}>
+                          Garanta o seu e do seu acompanhante
+                        </p>
                       </p>
                       <div className={styles.buttons}>
                         <div className="">
