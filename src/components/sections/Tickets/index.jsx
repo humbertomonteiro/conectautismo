@@ -124,11 +124,11 @@ const Tickets = () => {
                             {/* <span className={styles.textLower}>cada</span> */}
                           </span>
                           <ButtonPretty
-                            text="Grupo 4 Pessoas"
+                            text="4 Pessoas 20% OFF"
                             link={groupTicketWithParty4.link}
                             target="_blank"
                           />
-                          <p className={styles.info}>20% OFF</p>
+                          {/* <p className={styles.info}>20% OFF</p> */}
                         </div>
                         <div className="">
                           <span className={styles.price}>
@@ -136,11 +136,11 @@ const Tickets = () => {
                             {/* <span className={styles.textLower}>cada</span> */}
                           </span>
                           <ButtonPretty
-                            text="Grupo 8 Pessoas"
+                            text="8 Pessoas 30% OFF"
                             link={groupTicketWithParty8.link}
                             target="_blank"
                           />
-                          <p className={styles.info}>30% OFF</p>
+                          {/* <p className={styles.info}>30% OFF</p> */}
                         </div>
                       </div>
                     </div>
