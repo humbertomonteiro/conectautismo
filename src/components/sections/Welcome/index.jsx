@@ -20,15 +20,15 @@ export default function Welcome() {
               Maior Congresso sobre transtorno do{" "}
               <strong>Neurodesenvolvimento</strong> Norte e Nordeste.
             </p>
-            {/* <div className={styles.highlight}>
+            <div className={styles.highlight}>
               <span className={styles.highlightMobile}>
                 21, 22 e 23 de agosto 2026 | Centro de eventos do Ceará
               </span>
-            </div> */}
-            <div className={styles.highlightText}>
+            </div>
+            {/* <div className={styles.highlightText}>
               <h3>⚠️ Últimos ingressos do lote atual</h3>
               <p>Dia 12/04 o lote vira e o valor sobe automaticamente.</p>
-            </div>
+            </div> */}
           </div>
           {/* <div
             className={styles.countdown}
@@ -40,11 +40,11 @@ export default function Welcome() {
           </div> */}
           <div className={styles.buttons} data-aos-delay="300">
             <ButtonPretty link={"#tickets2"} text={"Garanta sua vaga agora"} />
-            <ButtonPretty
+            {/* <ButtonPretty
               link={"#party-ticket"}
               text={"Garanta Festa Conect"}
               data-color="yellow"
-            />
+            /> */}
             {/* <ButtonPretty
               link={"https://congressoconect.pixieset.com"}
               text={"Fotos Conect 2025"}

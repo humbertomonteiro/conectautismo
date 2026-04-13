@@ -14,7 +14,15 @@ import useLink from "../../../contexts/LinkContexts";
 
 const Tickets = () => {
   const [activeTab] = useState("evento");
-  const { ticketAll, ticketHalf, ticketGroup4, ticketGroup5 } = useLink();
+  const {
+    ticketWithParty,
+    ticketWithoutParty,
+    halfTicketWithParty,
+    halfTicketWithoutParty,
+    groupTicketWithParty4,
+    groupTicketWithParty8,
+    partyTicket,
+  } = useLink();
 
   return (
     <section className={styles.section}>
@@ -47,27 +55,54 @@ const Tickets = () => {
 
                   <div className={styles.ticketOptions}>
                     <div className={styles.ticketCard}>
-                      <h4>Ingresso Individual</h4>
+                      <h4>Ingresso Inteiro</h4>
                       <p>Acesso completo a todos os dias do evento</p>
                       <div className={styles.buttons}>
                         <div className="">
                           <span className={styles.price}>
-                            {ticketHalf.price}
+                            {ticketWithoutParty.price}
                           </span>
                           <ButtonPretty
-                            text="Garantir Meia"
-                            link={ticketHalf.link}
+                            text="Garantir Sem Festa"
+                            link={ticketWithoutParty.link}
                             target="_blank"
                           />
                         </div>
 
                         <div className="">
                           <span className={styles.price}>
-                            {ticketAll.price}
+                            {ticketWithParty.price}
                           </span>
                           <ButtonPretty
-                            text="Garantir Inteira"
-                            link={ticketAll.link}
+                            text="Garantir Com Festa"
+                            link={ticketWithParty.link}
+                            target="_blank"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div className={styles.ticketCard}>
+                      <h4>Ingresso Meia</h4>
+                      <p>Acesso completo a todos os dias do evento</p>
+                      <div className={styles.buttons}>
+                        <div className="">
+                          <span className={styles.price}>
+                            {halfTicketWithoutParty.price}
+                          </span>
+                          <ButtonPretty
+                            text="Garantir Sem Festa"
+                            link={halfTicketWithoutParty.link}
+                            target="_blank"
+                          />
+                        </div>
+
+                        <div className="">
+                          <span className={styles.price}>
+                            {halfTicketWithParty.price}
+                          </span>
+                          <ButtonPretty
+                            text="Garantir Com Festa"
+                            link={halfTicketWithParty.link}
                             target="_blank"
                           />
                         </div>
@@ -75,7 +110,7 @@ const Tickets = () => {
                     </div>
 
                     <div className={styles.ticketCard}>
-                      <h4>Ingresso Grupo</h4>
+                      <h4>Ingresso Grupo Com Festa</h4>
                       <p>
                         <p className={styles.info}>
                           Venha em grupo e ganhe 20% OFF Ou 30% OFF
@@ -84,28 +119,60 @@ const Tickets = () => {
                       <div className={styles.buttons}>
                         <div className="">
                           <span className={styles.price}>
-                            {ticketGroup4.price}
-                            <span className={styles.textLower}>cada</span>
+                            {groupTicketWithParty4.price}
+                            {/* <span className={styles.textLower}>cada</span> */}
                           </span>
                           <ButtonPretty
-                            text="Grupo 4 Ingressos"
-                            link={ticketGroup4.link}
+                            text="Grupo 4 Pessoas"
+                            link={groupTicketWithParty4.link}
                             target="_blank"
                           />
                           <p className={styles.info}>20% OFF</p>
                         </div>
                         <div className="">
                           <span className={styles.price}>
-                            {ticketGroup5.price}
-                            <span className={styles.textLower}>cada</span>
+                            {groupTicketWithParty8.price}
+                            {/* <span className={styles.textLower}>cada</span> */}
                           </span>
                           <ButtonPretty
-                            text="Grupo 5 Ingressos"
-                            link={ticketGroup5.link}
+                            text="Grupo 8 Pessoas"
+                            link={groupTicketWithParty8.link}
                             target="_blank"
                           />
                           <p className={styles.info}>30% OFF</p>
                         </div>
+                      </div>
+                    </div>
+                    <div className={styles.ticketCard}>
+                      <h4>Pré-festa avulsa</h4>
+                      <p>
+                        <p className={styles.info}>Venha curtir</p>
+                      </p>
+                      <div className={styles.buttons}>
+                        <div className="">
+                          <span className={styles.price}>
+                            {partyTicket.price}
+                            <span className={styles.textLower}>cada</span>
+                          </span>
+                          <ButtonPretty
+                            text="Garantir Pré-festa"
+                            link={partyTicket.link}
+                            target="_blank"
+                          />
+                          {/* <p className={styles.info}>20% OFF</p> */}
+                        </div>
+                        {/* <div className="">
+                          <span className={styles.price}>
+                            {ticketGroup5.price}
+                            <span className={styles.textLower}>cada</span>
+                          </span>
+                          <ButtonPretty
+                            text="Grupo 8 Pessoas"
+                            link={ticketGroup5.link}
+                            target="_blank"
+                          />
+                          <p className={styles.info}>30% OFF</p>
+                        </div> */}
                       </div>
                     </div>
                   </div>

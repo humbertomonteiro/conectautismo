@@ -20,6 +20,8 @@ export function LinkProvider({ children }) {
     link: "https://pay.hotmart.com/D101401576U?off=b5diwahh",
     price: "12 x R$ 72,25",
   });
+
+  //tickets black friday
   const [ticketBlack10, setTicketBlack10] = useState({
     link: "https://pay.hotmart.com/D101401576U?off=zx4epga5",
     price: "12 x R$ 92,89",
@@ -40,6 +42,36 @@ export function LinkProvider({ children }) {
     link: "https://pay.hotmart.com/D101401576U?off=rorp1x93",
     price: "12 x R$ 309,65",
   });
+
+  //terceiro lote
+  const [ticketWithParty, setTicketWithParty] = useState({
+    link: "https://pay.hotmart.com/D101401576U?off=j1emhj6w",
+    price: "12 x de R$ 116,86",
+  });
+  const [ticketWithoutParty, setTicketWithoutParty] = useState({
+    link: "https://pay.hotmart.com/D101401576U?off=zbkk9spr",
+    price: "12 x de R$ 111,69",
+  });
+  const [halfTicketWithParty, setHalfTicketWithParty] = useState({
+    link: "https://pay.hotmart.com/D101401576U?off=8d613w7r",
+    price: "12 x de R$ 70,32",
+  });
+  const [halfTicketWithoutParty, setHalfTicketWithoutParty] = useState({
+    link: "https://pay.hotmart.com/D101401576U?off=5hbekgcn",
+    price: "12 x de R$ 65,15",
+  });
+  const [groupTicketWithParty4, setGroupTicketWithParty4] = useState({
+    link: "https://pay.hotmart.com/D101401576U?off=u9ywuixz",
+    price: "12 x de R$ 357,40",
+  });
+  const [groupTicketWithParty8, setGroupTicketWithParty8] = useState({
+    link: "https://pay.hotmart.com/D101401576U?off=k7y4szad",
+    price: "12 x de R$ 625,44",
+  });
+  const [partyTicket, setPartyTicket] = useState({
+    link: "https://pay.hotmart.com/D101401576U?off=irh31vpd",
+    price: "10 x de R$ 8,41",
+  });
   return (
     <LinkContext.Provider
       value={{
@@ -56,6 +88,13 @@ export function LinkProvider({ children }) {
         ticketBlack25,
         ticketBlack30,
         ticketBlack40,
+        ticketWithParty,
+        ticketWithoutParty,
+        halfTicketWithParty,
+        halfTicketWithoutParty,
+        groupTicketWithParty4,
+        groupTicketWithParty8,
+        partyTicket,
       }}
     >
       {children}
