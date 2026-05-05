@@ -91,7 +91,7 @@
   margin: 0.5rem auto 1rem auto;
   background: var(--bg-gradient);
   color: var(--color-text-light);
-  box-shadow: 0 2px 26px rgba(255, 254, 248, 0.247);
+  box-shadow: 0 2px 26px rgba(54, 81, 105, 0.247);
   font-size: 0.95rem;
   border-radius: 1rem;
   padding: 0.7rem;

@@ -20,15 +20,15 @@ export default function Welcome() {
               Maior Congresso sobre transtorno do{" "}
               <strong>Neurodesenvolvimento</strong> Norte e Nordeste.
             </p>
-            <div className={styles.highlight}>
+            {/* <div className={styles.highlight}>
               <span className={styles.highlightMobile}>
                 21, 22 e 23 de agosto 2026 | Centro de eventos do Ceará
               </span>
-            </div>
-            {/* <div className={styles.highlightText}>
-              <h3>⚠️ Últimos ingressos do lote atual</h3>
-              <p>Dia 12/04 o lote vira e o valor sobe automaticamente.</p>
             </div> */}
+            <div className={styles.highlightText}>
+              <h3>⚠️ Últimos ingressos do lote atual</h3>
+              <p>Dia 18/05 o lote vira e o valor sobe automaticamente.</p>
+            </div>
           </div>
           {/* <div
             className={styles.countdown}
