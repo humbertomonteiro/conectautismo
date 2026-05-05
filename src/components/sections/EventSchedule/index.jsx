@@ -9,7 +9,7 @@ const EventSchedule = ({ id }) => {
     {
       day: "SEXTA",
       time: "Dia todo",
-      title: "Prática com Mayra Gaiato",
+      title: "Prática",
       description: "Quem sabe faz ao vivo - Dia inteiro de prática clínica",
       type: "practice",
       isSeparateTicket: false,
