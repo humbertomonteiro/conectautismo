@@ -10,7 +10,7 @@ export default function RedesSociais() {
       <Title text="Redes sociais" />
       <div className={styles.boxes} data-aos="zoom-in">
         <div className={styles.box}>
-          <a href="https://www.instagram.com/conect.autismo/" target="_blank">
+          <a href="https://www.instagram.com/congressoconect/" target="_blank">
             <IoLogoInstagram />
           </a>
         </div>

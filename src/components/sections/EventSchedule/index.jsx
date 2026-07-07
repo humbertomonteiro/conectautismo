@@ -9,8 +9,12 @@ const EventSchedule = ({ id }) => {
     {
       day: "SEXTA",
       time: "Dia todo",
-      title: "Prática",
-      description: "Quem sabe faz ao vivo - Dia inteiro de prática clínica",
+      title: "Primeiro dia de Congresso",
+      description: [
+        "Credenciamento",
+        "Introdução de boas vindas",
+        "Muito conhecimento de prática clínica",
+      ],
       type: "practice",
       isSeparateTicket: false,
     },
@@ -76,7 +80,15 @@ const EventSchedule = ({ id }) => {
 
                 <div className={styles.itemText}>
                   <h3 className={styles.itemTitle}>{item.title}</h3>
-                  <p className={styles.description}>{item.description}</p>
+                  {Array.isArray(item.description) ? (
+                    <ul className={styles.descriptionList}>
+                      {item.description.map((line, i) => (
+                        <li key={i}>{line}</li>
+                      ))}
+                    </ul>
+                  ) : (
+                    <p className={styles.description}>{item.description}</p>
+                  )}
 
                   {item.isSeparateTicket && (
                     <div className={styles.ticketAction}>

@@ -1,3 +1,6 @@
+import { useEffect } from "react";
+import { doc, setDoc, increment } from "firebase/firestore";
+import { db } from "../../firebaseConfig";
 import styles from "./home.module.css";
 
 import Welcome from "../../components/sections/Welcome";
@@ -26,6 +29,15 @@ import PartyTicket from "../../components/sections/PartyTicket";
 import Supporters from "../../components/sections/Supporters";
 
 export default function Home() {
+  useEffect(() => {
+    const slug = new URLSearchParams(window.location.search).get("ref");
+    if (!slug) return;
+    sessionStorage.setItem("influencer-ref", slug);
+    if (sessionStorage.getItem(`tracked-view-${slug}`)) return;
+    sessionStorage.setItem(`tracked-view-${slug}`, "1");
+    setDoc(doc(db, "influencer-stats", slug), { pageViews: increment(1) }, { merge: true });
+  }, []);
+
   return (
     <>
       <TopPromoBar />

@@ -27,10 +27,10 @@ export default function Local() {
             <li>
               <span>QUANDO</span> <p>Dias 21, 22 e 23 de agosto de 2026</p>
             </li>
-            <li>
+            {/* <li>
               <span>INÉDITO</span>{" "}
               <p>Primeiro congresso com um dia inteiro de prática.</p>
-            </li>
+            </li> */}
           </ul>
           <div className={styles.text}>
             O Centro de Eventos do Ceará (CEC) é um marco na infraestrutura de
