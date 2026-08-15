@@ -70,7 +70,7 @@ export function LinkProvider({ children }) {
   });
   const [partyTicket, setPartyTicket] = useState({
     link: "https://pay.hotmart.com/D101401576U?off=irh31vpd",
-    price: "10 x de R$ 8,41",
+    price: "10 x de R$ 12,02",
   });
   return (
     <LinkContext.Provider

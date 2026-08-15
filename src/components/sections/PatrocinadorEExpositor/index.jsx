@@ -89,16 +89,6 @@ export default function PatrocinadorEExpositor() {
               />
             </div>
           </div>
-          {/* <div className={styles.sponsorsSection}>
-            <div className={styles.sponsorsGrid}>
-              <img
-                src={allSponsors}
-                alt="Logos de todos os patrocinadores"
-                className={styles.sponsorsImage}
-              />
-              <span className={styles.badge}>Patrocinadores 2025</span>
-            </div>
-          </div> */}
         </div>
       </div>
     </section>

@@ -22,9 +22,9 @@ const Accreditation = () => (
 
     <h3 className={styles.subSectionTitle}>Retirada de Credenciais</h3>
     <ul className={styles.list}>
-      <li className={styles.listItem}>
+      {/* <li className={styles.listItem}>
         Disponível a partir de 21/08/2025, quinta-feira, às 14:00.
-      </li>
+      </li> */}
       <li className={styles.listItem}>
         Cada expositor deve retirar sua credencial individualmente.
       </li>

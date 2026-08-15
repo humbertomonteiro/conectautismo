@@ -26,7 +26,7 @@ const Promotions = () => (
       </li>
       <li className={styles.listItem}>
         Todo material exposto deve ser retirado no primeiro dia de desmontagem
-        (24/08/2025). Materiais não retirados serão destruídos.
+        (24/08/2026). Materiais não retirados serão destruídos.
       </li>
       <li className={styles.listItem}>
         A Comissão Organizadora pode suspender a demonstração de materiais que

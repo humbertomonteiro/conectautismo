@@ -8,7 +8,7 @@ const EventSchedule = ({ id }) => {
   const scheduleData = [
     {
       day: "SEXTA",
-      time: "Dia todo",
+      time: "Início Meio-dia (12h)",
       title: "Primeiro dia de Congresso",
       description: [
         "Credenciamento",

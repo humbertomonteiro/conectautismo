@@ -1,0 +1,268 @@
+.section {
+  background-color: var(--color-primary);
+  position: relative;
+  /* height: 100vh; */
+  min-height: 100vh;
+  margin-top: 49px;
+  z-index: 2;
+}
+
+.container {
+  width: 1400px;
+  max-width: 100%;
+  min-height: 100dvh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.image {
+  width: 120%;
+  z-index: 1;
+  opacity: 1;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.image::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  /* background: linear-gradient(
+    to right,
+    var(--color-primary) 0%,
+    #020005a9 30%,
+    rgba(74, 6, 34, 0.3) 60%,
+    rgba(74, 6, 34, 0) 100%
+  ); */
+  background-position: top;
+  z-index: 2;
+}
+
+.content {
+  width: 50%;
+  padding: 3rem;
+  z-index: 2;
+  position: absolute;
+  bottom: 150px;
+  /* margin-top: -49px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.logo img {
+  width: 70%;
+}
+
+.text {
+  color: var(--color-text-light);
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.subtitle {
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.subtitle strong {
+  color: var(--color-accent);
+}
+
+.highlight {
+  /* background-color: var(--bg-transparent-white); */
+  /* border: var(--border); */
+  color: var(--color-text-light);
+  border-radius: 20px;
+  padding: 0rem 1.5rem;
+  width: fit-content;
+  align-self: center;
+  font-style: italic;
+}
+
+.countdown {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.countdown span {
+  font-size: 0.9rem;
+  text-align: center;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.highlightText {
+  text-align: center;
+  margin: 0.5rem auto 1rem auto;
+  background: var(--bg-gradient);
+  color: var(--color-text-light);
+  box-shadow: 0 2px 26px rgba(54, 81, 105, 0.247);
+  font-size: 0.95rem;
+  border-radius: 1rem;
+  padding: 0.7rem 1.2rem;
+  max-width: 450px;
+}
+
+.spanButtons {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 0.95;
+}
+
+/* .highlightText h3 {
+  margin-bottom: 0.5rem;
+} */
+
+.buttons {
+  max-width: 600px;
+  width: 100%;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* .link {
+  text-align: center;
+  text-decoration: none;
+  color: var(--color-text-light);
+} */
+
+/* .mainButton {
+    grid-column: span 2;
+  } */
+
+@media (max-width: 1000px) {
+  .section {
+    margin-top: 0;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .content {
+    width: 100%;
+    padding: 1.5rem;
+    margin-top: 0;
+    bottom: auto;
+  }
+
+  .logo {
+    margin-bottom: 0.5rem;
+  }
+
+  .logo img {
+    width: 90%;
+  }
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .subtitle {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .highlight {
+    background-color: transparent;
+    text-align: center;
+    padding: 0;
+  }
+
+  .highlightMobile {
+    /* background-color: var(--bg-transparent-white); */
+    font-size: 0.8rem;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .image {
+    display: none;
+  }
+
+  .backgroundOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        to bottom,
+        #0000007e,
+        #001236dc,
+        var(--color-primary)
+      ),
+      url("../../../assets/imgs/background/hero.png");
+    opacity: 0.9;
+    z-index: -1;
+
+    /* Efeito parallax */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    border: 1px solid var(--primary-color);
+  }
+}
+
+@media (max-width: 500px) {
+  .subtitle {
+    font-size: 1.4rem;
+  }
+
+  .highlight {
+    display: flex;
+    /* flex-direction: column; */
+    gap: 0.5rem;
+  }
+
+  .divider {
+    display: none;
+  }
+
+  .backgroundOverlay {
+    background-size: cover;
+  }
+
+  .content {
+    bottom: 50px;
+  }
+}

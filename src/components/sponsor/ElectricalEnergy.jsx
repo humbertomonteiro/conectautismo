@@ -46,7 +46,7 @@ const ElectricalEnergy = () => (
       responsabilidade exclusiva do Expositor e deverão obedecer às normas,
       provendo a entrada da(s) rede(s) com disjuntores e fusíveis adequados
     </p>
-    <p>Será instalado um ponto de energia elétrica na área locada.</p>
+    {/* <p>Será instalado um ponto de energia elétrica na área locada.</p> */}
     <h2>⚠IMPORTANTE ⚠</h2>
     <p>
       Em caso de necessidade de energia no stand durante o período noturno é

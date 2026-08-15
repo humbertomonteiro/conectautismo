@@ -35,7 +35,7 @@ const HomeSponsor = ({ sections, setActiveSection, activeSection }) => {
           expositor e patrocinadores (não expositor).
         </p>
         <p>
-          Deverá ser enviado via e-mail até o dia 30/07/2025. Email :{" "}
+          Deverá ser enviado, via e-mail, até o dia 14/08/2026. Email :{" "}
           <a
             className={styles.linkButton}
             href="mailto:comercial@congressoconect.com.br"
@@ -71,7 +71,6 @@ const HomeSponsor = ({ sections, setActiveSection, activeSection }) => {
           }}
         >
           Sobre o Evento
-          {/* <span>{openSections.about ? "−" : "+"}</span> */}
         </h2>
         <div
           id="about-section"
@@ -81,16 +80,14 @@ const HomeSponsor = ({ sections, setActiveSection, activeSection }) => {
         >
           <ul className={styles.list}>
             <li className={styles.listItem}>
-              22 de Agosto de 2025 - Pré-festa
+              21, 22 e 23 de Agosto de 2026 — Congresso
             </li>
             <li className={styles.listItem}>
-              23 e 24 de Agosto de 2025 - Congresso
+              21 de Agosto de 2026 — Pré-festa
             </li>
+            <li className={styles.listItem}>Centro de Eventos do Ceará</li>
             <li className={styles.listItem}>
-              Gran Mareiro Hotel - Expo Eventos
-            </li>
-            <li className={styles.listItem}>
-              Rua Osvaldo Araujo, 100 - Praia do Futuro - Fortaleza/CE
+              Avenida Washington Soares, 999 — Édson Queiroz, Fortaleza/ Ce
             </li>
           </ul>
         </div>
@@ -125,18 +122,12 @@ const HomeSponsor = ({ sections, setActiveSection, activeSection }) => {
             <li className={styles.listItem}>
               comercial@congressoconect.com.br
             </li>
-            <li className={styles.listItem}>
-              Produtor: Rosemberg Pereira, (85) 999918712
-            </li>
-            <li className={styles.listItem}>produtormeianoite2@gmail.com</li>
+
             <li className={styles.listItem}>
               Agência Oficial - Cenomagia: (85) 98870-0990
             </li>
             <li className={styles.listItem}>Tony Gabriel: (85) 99604-5859</li>
             <li className={styles.listItem}>comercialcenomagia@gmail.com</li>
-            <li className={styles.listItem}>
-              Montadora Oficial - Cenomagia: (85) 98870-0990
-            </li>
           </ul>
         </div>
       </div>

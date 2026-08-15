@@ -70,20 +70,26 @@ const Shipping = () => (
     </p>
     <ul className={styles.list}>
       <li className={styles.listItem}>
-        <strong>Material para Stand:</strong> 22/08/2025, das 14:00 às 18:00.
+        <strong>Material para Stand:</strong> 20 de agosto de 2026, das 8h às
+        17hr.
+        <li>Pavilhão a ser utilizado: MUNDAÚ</li>
       </li>
-      <li className={styles.listItem}>
+      <div className={styles.listItem}>
+        <strong>Material para Bolsa Palestrantes: </strong>até 13 de agosto de
+        2026.
+      </div>
+      {/* <li className={styles.listItem}>
         <strong>Material para Pasta:</strong> 11/08/2025, das 08:00 às 18:00.{" "}
         <br />
         <span>Após esta data, materiais para pastas não serão aceitos.</span>
-      </li>
+      </li> */}
     </ul>
     <p className={styles.sectionText}>
       Identifique os materiais conforme o modelo:
     </p>
     <ul className={styles.list}>
       <li className={styles.listItem}>
-        Conect Autismo 2025 <br />
+        Conect Autismo 2026 <br />
         Nome do Expositor <br />
         Material para [Stand/Pasta] <br />
         Washington Soares, 999, Bairro Edison Queiroz, 60182-508, Fortaleza, CE,

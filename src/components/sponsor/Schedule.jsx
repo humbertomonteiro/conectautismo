@@ -7,17 +7,11 @@ const Schedule = () => (
       <h3>Descarga de Materiais e Montagem</h3>
       <ul className={styles.list}>
         <li className={styles.listItem}>
-          <strong>21 de Agosto de 2025:</strong> 08h – 18h - Montadora Oficial
-          (Marcação e Descarga de Material). Autorizado apenas produção do
-          evento.
-        </li>
-        <li className={styles.listItem}>
-          <strong>22 de Agosto de 2025:</strong> 12h – 18h - Expositores
-          Credenciados (Entrada de material).
-        </li>
-        <li className={styles.listItem}>
-          <strong>Detalhes Finais:</strong> 18h (Não é permitido montagem a
-          partir deste horário).
+          <strong>20 DE AGOSTO DE 2026:</strong>{" "}
+          <div className={styles.listItemHighlight}>08h ÀS 17h</div> -
+          EXPOSITORES CREDENCIADOS (DESCARGA DE MATERIAL E MONTAGEM){" "}
+          <strong>NÃO</strong> é permitido montagem a partir do horário e data
+          estipulado! <br /> <strong>PAVILHÃO A SER UTILIZADO: MUNDAÚ</strong>
         </li>
       </ul>
     </div>
@@ -26,54 +20,82 @@ const Schedule = () => (
       <h3>Desmontagem</h3>
       <ul className={styles.list}>
         <li className={styles.listItem}>
-          <strong>24 de Agosto de 2025:</strong> 18h às 20h (Após congresso,
-          retirada de itens pessoais e materiais de valor).
+          <strong>23 DE AGOSTO DE 2026 :</strong>{" "}
+          <div className={styles.listItemHighlight}>18h30 ÀS 20h</div> – APÓS O
+          CONGRESSO <br />
+          <strong>RETIRADA DE ITENS PESSOAIS E MATERIAIS DE VALOR.</strong>
         </li>
         <li className={styles.listItem}>
-          <strong>25 de Agosto de 2025:</strong> 06h às 18h.
+          <strong>24 DE AGOSTO DE 2026:</strong>{" "}
+          <div className={styles.listItemHighlight}>08h ÀS 17h</div> – PRODUÇÃO
+          E EXPOSITORES CREDENCIADOS (DESMONTAGEM) <br />
+          <strong>NÃO</strong> é permitido desmontagem a partir do horário e
+          data estipulado!
         </li>
       </ul>
     </div>
 
     <div>
-      <h3>Avisos e Infrações</h3>
-      <p>
-        Acompanhe a programação do evento no site: <a href="#">Programação</a>.
-        O horário de chegada da equipe de atendimento do expositor, que ficará
-        alocada no stand, deverá anteceder a abertura do evento, durante os dias
-        de sua realização.
-      </p>
-      <p>
-        O stand deverá estar aberto e pronto para receber os congressistas desde
-        a abertura de cada dia do evento.
-      </p>
-      <p>
-        Fica terminantemente proibido o fechamento e/ou desmontagem do stand
-        antes do horário de encerramento do evento, estando o expositor sujeito
-        às penalidades previstas contratualmente.
-      </p>
+      <h3>
+        Avisos e Infrações – VÁLIDO PARA DESCARREGAMENTO, MONTAGEM, MANUTENÇÃO E
+        DESMONTAGEM.
+      </h3>
+
       <ul className={styles.list}>
         <li className={styles.listItem}>
-          Todos os horários indicados devem ser respeitados, pois não serão
-          aceitos atrasos nos processos de montagem tanto da área da feira
-          quanto das demais áreas do evento.
+          O horário de chegada da equipe de atendimento do Expositor, que ficará
+          alocada em seu stand, deverá anteceder à abertura do evento, durante
+          todos os dias de sua realização.
         </li>
         <li className={styles.listItem}>
-          Organize e oriente suas equipes para cumprir os períodos de montagem e
+          O stand já deverá estar aberto a visitações dos congressistas desde a
+          abertura de cada dia do evento.
+        </li>
+        <li className={styles.listItem}>
+          Todos os horários indicados acima devem ser respeitados, visto que não
+          serão tolerados atrasos no processo de montagem tanto na área da
+          feira, quanto nas demais áreas do evento.
+        </li>
+        <li className={styles.listItem}>
+          Orientem suas equipes para cumprimento dos períodos de montagem e
           desmontagem indicados.
         </li>
         <li className={styles.listItem}>
-          Em caso de atrasos que ultrapassem os horários apresentados, a
-          montadora e os patrocinadores estarão sujeitos a uma multa.{" "}
-          <span>
-            (Os valores serão apurados e apresentados pela organização)
-          </span>
-          <br />
-          <strong>
-            Válido para descarregamento, montagem, manutenção e desmontagem.
-          </strong>
+          Fica terminantemente proibido o fechamento e/ou desmontagem do stand
+          antes do encerramento do evento, estando o Expositor sujeito às
+          penalidades previstas contratualmente
+        </li>
+        <li className={styles.listItem}>
+          Em caso de quaisquer atrasos que ultrapasse os horários aqui
+          estipulados, a montadora e os patrocinadores estarão sujeitos à multa,
+          com valores apurados e apresentados pela organização mediante a
+          situação.
         </li>
       </ul>
+
+      <div className={styles.warningMessage}>
+        <h3>IMPORTANTE:</h3>
+        <ul>
+          <li>
+            A organização NÃO se responsabiliza pelo fornecimento de materiais,
+            mobiliário ou estrutura para os estandes. Cada expositor deverá
+            providenciar todos os itens necessários para a montagem e operação
+            do seu espaço, como mesas, cadeiras, suportes para banners,
+            displays, extensões, entre outros. Caso prefira, o expositor poderá
+            contratar uma empresa especializada para realizar a montagem e a
+            estruturação do estande.
+          </li>
+          <li>
+            A organização NÃO fornecerá ponto elétrico para os estandes dos
+            expositores. Caso haja necessidade de energia elétrica, toda a
+            instalação, solicitação e estrutura necessária deverão ser
+            providenciadas pela empresa montadora contratada pelo expositor, que
+            será integralmente responsável pela execução e adequação da
+            instalação, em conformidade com as normas de segurança e do local do
+            evento.
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 );

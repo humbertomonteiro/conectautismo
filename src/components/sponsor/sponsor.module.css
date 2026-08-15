@@ -111,8 +111,40 @@
   display: block;
 }
 
+.listItem .listItemHighlight {
+  color: var(--color-2);
+  display: inline;
+}
+
 .listItemOrder {
   list-style: decimal;
+}
+
+.warningMessage {
+  border: 3px solid var(--color-2);
+  border-radius: 1rem;
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.warningMessage h3 {
+  background-color: var(--color-2);
+  color: white;
+  width: fit-content;
+  align-self: center;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.warningMessage ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 90%;
+  margin-left: 2rem;
 }
 
 .subSectionTitle {
@@ -403,7 +435,7 @@
   margin-top: 20px;
 }
 
-.downloadButton {
+.downloadButtonContainer .downloadButton {
   display: flex;
   justify-content: center;
   align-items: center;

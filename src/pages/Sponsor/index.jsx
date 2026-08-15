@@ -18,7 +18,7 @@ import Cleaning from "../../components/sponsor/Cleaning";
 import Security from "../../components/sponsor/Security";
 import FoodAndDrinks from "../../components/sponsor/FoodAndDrinks";
 import Sound from "../../components/sponsor/Sound";
-import GeneralPlan from "../../components/sponsor/GeneralPlan";
+// import GeneralPlan from "../../components/sponsor/GeneralPlan";
 
 // Centralized data for search
 const sectionsData = [
@@ -155,12 +155,12 @@ const sectionsData = [
     component: <ConstructionEmbargo />,
     content: ["Embargo da Construção"],
   },
-  {
-    id: "generalPlan",
-    name: "Planta geral",
-    component: <GeneralPlan />,
-    content: ["Planta geral", "stands", "demonstranção de stands", "plantas"],
-  },
+  // {
+  //   id: "generalPlan",
+  //   name: "Planta geral",
+  //   component: <GeneralPlan />,
+  //   content: ["Planta geral", "stands", "demonstranção de stands", "plantas"],
+  // },
 ];
 
 const Sponsor = () => {
