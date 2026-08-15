@@ -3,16 +3,23 @@ import logoMobile from "../../../assets/imgs/logo/logo-mobile.png";
 import ButtonPretty from "../../shared/ButtonPretty";
 // import bg from "../../../assets/imgs/background/bg.jpg";
 import bg from "../../../assets/imgs/background/hero.png";
+import bgMobile from "../../../assets/imgs/background/hero-mobile.png";
 import { FaWhatsapp } from "react-icons/fa";
 import { IoIosImages } from "react-icons/io";
 
 export default function Hero() {
   return (
     <section className={styles.section}>
-      <div className={styles.backgroundOverlay}></div>
+      {/* <div className={styles.backgroundOverlay}></div> */}
       <div className={styles.container}>
         <div className={styles.image}>
           <img src={bg} alt="Imagem de pessoas felizes no conect autismo" />
+        </div>
+        <div className={styles.imageMobile}>
+          <img
+            src={bgMobile}
+            alt="Imagem de pessoas felizes no conect autismo"
+          />
         </div>
         <div className={styles.content}>
           <div className={styles.logo}>
@@ -20,7 +27,7 @@ export default function Hero() {
           </div>
           <div className={styles.text}>
             <p className={styles.subtitle}>
-              A 5ª edição já tem data. E você pode garantir seu lugar antes de
+              A 4ª edição já tem data. E você pode garantir seu lugar antes de
               todo mundo.
             </p>
             {/* <div className={styles.highlight}>

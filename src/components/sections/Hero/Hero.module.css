@@ -51,6 +51,10 @@
   z-index: 2;
 }
 
+.imageMobile {
+  display: none;
+}
+
 .content {
   width: 50%;
   padding: 3rem;
@@ -168,14 +172,13 @@
   .container {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
   }
   .content {
     width: 100%;
     padding: 1.5rem;
     margin-top: 0;
-    bottom: auto;
   }
 
   .logo {
@@ -219,9 +222,19 @@
     display: none;
   }
 
-  .backgroundOverlay {
+  .imageMobile {
+    display: flex;
+    max-height: calc(100dvh + 300px);
+  }
+
+  .imageMobile img {
+    object-fit: cover;
+    object-position: top;
+  }
+
+  /* .backgroundOverlay {
     position: absolute;
-    top: 0;
+    top: 0px;
     left: 0;
     width: 100%;
     height: 100%;
@@ -231,16 +244,15 @@
         #001236dc,
         var(--color-primary)
       ),
-      url("../../../assets/imgs/background/hero.png");
+      url("../../../assets/imgs/background/hero-mobile.png");
     opacity: 0.9;
     z-index: -1;
 
-    /* Efeito parallax */
     background-position: center;
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: cover;
     border: 1px solid var(--primary-color);
-  }
+  } */
 }
 
 @media (max-width: 500px) {
