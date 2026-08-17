@@ -21,6 +21,7 @@
 }
 
 .image {
+  height: calc(100dvh + 250px);
   width: 120%;
   z-index: 1;
   opacity: 1;
@@ -86,7 +87,7 @@
 }
 
 .subtitle {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: 1rem;
   text-align: center;
@@ -224,7 +225,7 @@
 
   .imageMobile {
     display: flex;
-    max-height: calc(100dvh + 300px);
+    max-height: calc(100dvh + 400px);
   }
 
   .imageMobile img {
@@ -274,7 +275,76 @@
     background-size: cover;
   }
 
+  .imageMobile {
+    height: calc(100dvh + 900px);
+  }
+
   .content {
     bottom: 50px;
+  }
+}
+
+.facialCta {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.7rem;
+  background: var(--bg-white);
+  border-radius: 1.2rem;
+  padding: 1.2rem 1.5rem;
+  margin-bottom: 1.5rem;
+  max-width: 450px;
+  width: 100%;
+  box-shadow: var(--shadow-md);
+  animation: pulseGlow 2.2s ease-in-out infinite;
+}
+
+.facialBadge {
+  position: absolute;
+  top: -12px;
+  right: -8px;
+  background: #aa1202;
+  color: var(--color-text-white-1);
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  box-shadow: var(--shadow-sm);
+  letter-spacing: 0.5px;
+  transform: rotate(8deg);
+}
+
+.facialText {
+  color: var(--color-text-black-1);
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.facialText strong {
+  color: #aa1202;
+}
+
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 0 0 0 0 #aa1202;
+  }
+  70% {
+    box-shadow: 0 0 0 14px rgba(246, 173, 85, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(246, 173, 85, 0);
+  }
+}
+
+@media (max-width: 500px) {
+  .facialCta {
+    padding: 1rem 1.2rem;
+    max-width: 100%;
+  }
+
+  .facialText {
+    font-size: 0.9rem;
   }
 }

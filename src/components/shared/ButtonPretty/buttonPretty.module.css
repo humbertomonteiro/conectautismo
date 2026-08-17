@@ -38,7 +38,18 @@
   );
   box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.11);
 }
-[data-color="yellow"] {
+[data-color="red"] {
+  background-image: linear-gradient(
+    to right,
+    #ff1900,
+    #aa1202,
+    #ff1900,
+    #aa1202
+  );
+  box-shadow: 0 4px 15px 0 rgba(3, 19, 167, 0.308);
+}
+
+[data-color="blue-dark"] {
   background-image: linear-gradient(
     to right,
     #1900f8,

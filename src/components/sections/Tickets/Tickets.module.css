@@ -172,7 +172,7 @@
 
 .variantToggle {
   display: flex;
-  background: rgba(0, 0, 0, 0.04);
+  background: var(--color-accent);
   border-radius: 999px;
   padding: 0.3rem;
   margin-bottom: 1.5rem;
@@ -188,7 +188,7 @@
   gap: 0.15rem;
   border: none;
   background: transparent;
-  color: var(--color-text-black-2);
+  color: var(--color-text-black-1);
   font-size: 0.8rem;
   font-weight: 600;
   padding: 0.5rem 0.5rem;
@@ -197,13 +197,9 @@
   transition: background 0.2s ease, color 0.2s ease;
 }
 
-.toggleButton:hover {
-  color: var(--color-text-black-1);
-}
-
 .toggleActive {
-  background: var(--color-primary);
-  color: var(--color-text-white);
+  background: var(--bg-white);
+  /* color: var(--color-text-white); */
 }
 
 .toggleTag {
