@@ -99,6 +99,11 @@
   color: var(--color-text-black);
 }
 
+.questions li h4 {
+  color: var(--color-text-black-1);
+  padding: 0.75rem 0;
+}
+
 @media (max-width: 1090px) {
   .container {
     flex-direction: column;

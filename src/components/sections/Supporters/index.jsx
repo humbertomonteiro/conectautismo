@@ -1,6 +1,6 @@
 import styles from "./supporters.module.css";
 
-import apoiadores from "../../../assets/imgs/apoio/apoio2027.png";
+import apoiadores from "../../../assets/imgs/apoio/apoio2026.jpeg";
 
 export default function Supporters() {
   return (

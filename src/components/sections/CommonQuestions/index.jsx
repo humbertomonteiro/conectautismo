@@ -7,6 +7,8 @@ import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import { FaWhatsapp } from "react-icons/fa";
 import Title from "../../shared/Title";
 
+import declarationConect from "../../../assets/pdfs/conect-declaracao.pdf";
+
 export default function CommunQuestions() {
   const [q1, setQ1] = useState(false);
   const [q2, setQ2] = useState(false);
@@ -15,6 +17,7 @@ export default function CommunQuestions() {
   const [q5, setQ5] = useState(false);
   const [q6, setQ6] = useState(false);
   const [q7, setQ7] = useState(false);
+  const [q8, setQ8] = useState(false);
 
   return (
     <section className={styles.section}>
@@ -183,6 +186,41 @@ export default function CommunQuestions() {
                   durante 24 meses. Permitindo que você assista quando e onde
                   desejar.
                 </p>
+              </div>
+            )}
+          </li>
+          <li className={styles.question}>
+            <button onClick={() => setQ8(!q8)}>
+              Posso pegar o kit na loja por outra pessoa? Ou alguém pode pegar
+              por mim? {q8 ? <IoIosArrowUp /> : <IoIosArrowDown />}
+            </button>
+            {q8 && (
+              <div className={styles.text}>
+                <p>
+                  O titular da inscrição deve fazer o credenciamento facial, ele
+                  será seu acesso ao evento.
+                </p>
+                <a
+                  href="https://www.byface.com.br/login/cadastro"
+                  target="_blank"
+                >
+                  Faça seu cadastro facial.
+                </a>
+                <h4>Leve impresso até a loja no RIOMAR:</h4>
+                <ul>
+                  <li>Ingresso da pessoa com QR Code.</li>
+                  <li>
+                    ⁠Declaração informando que autoriza você a pegar por
+                    terceiros, assinado pelo GOV pelo titular.{" "}
+                    <a
+                      href={declarationConect}
+                      download="declaracao-autorizacao-terceiros.pdf"
+                    >
+                      Baixar declaração para assinar.
+                    </a>
+                  </li>
+                  <li>⁠Cópia da identidade da pessoa com foto.</li>
+                </ul>
               </div>
             )}
           </li>

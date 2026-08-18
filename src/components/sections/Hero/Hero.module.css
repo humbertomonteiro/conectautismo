@@ -1,8 +1,8 @@
 .section {
   background-color: var(--color-primary);
   position: relative;
-  height: 100vh;
-  min-height: 100vh;
+  height: 100dvh;
+  min-height: 100dvh;
   margin-top: 49px;
   z-index: 2;
 }
