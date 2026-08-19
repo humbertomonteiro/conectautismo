@@ -38,7 +38,7 @@ export default function Local() {
             modernos espaços do gênero na América Latina.
           </div>
           <div className={styles.button}>
-            <ButtonPretty link={"#tickets2"} text="Comprar Ingresso" />
+            <ButtonPretty link={"#tickets"} text="Comprar Ingresso" />
           </div>
         </div>
         <div className={styles.boxCarousel}>
