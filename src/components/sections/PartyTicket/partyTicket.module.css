@@ -9,7 +9,7 @@
 .section {
   position: relative;
   padding: 5rem 1rem 6rem;
-  background: linear-gradient(160deg, #000820 0%, #001037 50%, #000c28 100%);
+  background: linear-gradient(160deg, #0f0f18 0%, #001037 50%, #0f0f18 100%);
   overflow: hidden;
   z-index: 1;
 }

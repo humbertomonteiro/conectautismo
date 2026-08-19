@@ -6,7 +6,7 @@ export default function TopPromoBar() {
       {/* <span>Contagem regressiva para pré-venda</span> */}
       <span>ÚLTIMAS VAGAS.</span>
 
-      <a href="#tickets2">Aproveitar agora</a>
+      <a href="#tickets">Aproveitar agora</a>
     </div>
   );
 }

@@ -7,7 +7,7 @@
   --color-text-light: #e2e2e2;
   --color-text-white: #eeeeee;
 
-  --color-primary: #001236;
+  --color-primary: #0f0f18;
   --color-secondary: #cedeff;
   --color-tertiary: #e6eeff;
   --color-accent: #f6ad55;
@@ -35,7 +35,7 @@
   --color-text: #fff;
   --color-text-gray: #9c9c9c;
   --color-text-black: #494949;
-  --color-1: #0a0f1d;
+  --color-1: #0f0f18;
   --color-2: #c78317;
   --color-3: #12378d;
   --color-4: #dfa99e;
@@ -84,7 +84,7 @@ img {
   background-position: center;
   background-repeat: no-repeat;*/
   position: fixed;
-  background-color: #072c4d;
+  background-color: #0f0f18;
   top: 0;
   bottom: 0;
   right: 0;

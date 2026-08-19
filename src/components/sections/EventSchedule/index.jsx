@@ -8,7 +8,7 @@ const EventSchedule = ({ id }) => {
   const scheduleData = [
     {
       day: "SEXTA",
-      time: "Início Meio-dia (12h)",
+      time: "13 pm",
       title: "Primeiro dia de Congresso",
       description: [
         "Credenciamento",
@@ -20,7 +20,7 @@ const EventSchedule = ({ id }) => {
     },
     {
       day: "SEXTA NOITE",
-      time: "Horário a definir",
+      time: "20 pm",
       title: "White Party Conect Autismo",
       description: "Festa exclusiva do Conect Autismo",
       type: "party",
@@ -28,7 +28,7 @@ const EventSchedule = ({ id }) => {
     },
     {
       day: "SÁBADO",
-      time: "Manhã e Tarde",
+      time: "09:00 ás 18:00",
       title: "Palestras",
       description: "Palestras com especialistas e profissionais renomados",
       type: "talk",
@@ -36,7 +36,7 @@ const EventSchedule = ({ id }) => {
     },
     {
       day: "DOMINGO",
-      time: "Manhã e Tarde",
+      time: "09:00 às 18:00",
       title: "Palestras",
       description: "Palestras e encerramento do evento",
       type: "talk",

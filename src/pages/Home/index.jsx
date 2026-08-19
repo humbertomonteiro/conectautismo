@@ -22,14 +22,11 @@ import Testimonials from "../../components/sections/Testionials";
 import Tickets from "../../components/sections/Tickets";
 import Certificate from "../../components/sections/Certificate";
 
-import PosMayra from "../../components/sections/PosMayra";
+import PresentationVideo from "../../components/sections/PresentationVideo";
 // import TicketsMinimalistSale from "../../components/sections/TicketsMinimalistSale";
 import ScrollToTop from "../../components/shared/ScrollToTop";
 import PartyTicket from "../../components/sections/PartyTicket";
 import Supporters from "../../components/sections/Supporters";
-
-import flayerUltimosIngressos from "../../assets/imgs/speakers/flayer-ultimos-ingressos.jpeg";
-import CarouselScrollInfinity from "../../components/shared/CarouselScrollInfinity";
 
 export default function Home() {
   useEffect(() => {
@@ -50,18 +47,12 @@ export default function Home() {
       <TopPromoBar />
       <div className={styles.container}>
         <Hero />
-        {/* <HeroPromo /> */}
-        <CarouselScrollInfinity
-          dataSlideDouble={{ first: "ULTIMOS", second: "INGRESSOS" }}
-        />
-        <img src={flayerUltimosIngressos} alt="Flayer ultimos ingressos" />
-
+        <PresentationVideo />
         <Authority />
         <Testimonials />
         <PartyTicket />
         <Tickets />
         {/* <TicketsMinimalistSale saleName={"SEMANA DO CONSUMIDOR"} /> */}
-        <PosMayra />
         <EventSchedule />
         {/* <BoxesTickts /> */}
         <Certificate />

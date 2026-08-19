@@ -170,16 +170,16 @@ const Tickets = () => {
   };
 
   return (
-    <section className={styles.section}>
+    <section className={styles.section} id="tickets">
       <div className={styles.container}>
         <div className={styles.header}>
           <Title text="Garanta Seu Ingresso" color="black" />
           <p className={styles.subtitleText}>
-            Escolha a melhor forma de participar do Conect 2026
+            Escolha a melhor forma de participar do Conect 2027
           </p>
         </div>
 
-        <div className={styles.ticketOptions} id="tickets2" data-aos="zoom-in">
+        <div className={styles.ticketOptions} data-aos="zoom-in">
           {TICKETS.map((ticket) => {
             const data = ticket.getData(links);
             const activeIndex = selected[ticket.id];
