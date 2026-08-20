@@ -8,29 +8,21 @@ import Local from "../../components/sections/Local";
 import PatrocinadorEExpositor from "../../components/sections/PatrocinadorEExpositor";
 import AuthorityStats from "../../components/sections/AuthorityStats";
 import Authority from "../../components/sections/Authority";
-// import BoxesTickts from "../../components/sections/BoxesTickts";
 import CommonQuestions from "../../components/sections/CommonQuestions";
 import RedesSociais from "../../components/shared/RedesSociais";
 import Politica from "../../components/sections/Politica";
 import Footer from "../../components/template/Footer";
-
-// import HeroPromo from "../../components/sections/HeroPromo";
-
-import EventSchedule from "../../components/sections/EventSchedule";
-
 import TopPromoBar from "../../components/shared/TopPromoBar";
 import SocialProof from "../../components/sections/SocialProof";
-// import Testimonials from "../../components/sections/Testionials";
 import Tickets from "../../components/sections/Tickets";
 import Certificate from "../../components/sections/Certificate";
-
 import PresentationVideo from "../../components/sections/PresentationVideo";
-// import TicketsMinimalistSale from "../../components/sections/TicketsMinimalistSale";
 import ScrollToTop from "../../components/shared/ScrollToTop";
 import WhiteParty from "../../components/sections/WhiteParty";
 import Supporters from "../../components/sections/Supporters";
 import SpeakersCarousel from "../../components/sections/SpeakersCarousel";
 import ExperienceGallery from "../../components/sections/ExperienceGallery";
+import PreSaleScarcity from "../../components/sections/PreSaleScarcity";
 
 export default function Home() {
   useEffect(() => {
@@ -59,9 +51,7 @@ export default function Home() {
         <Authority />
         <WhiteParty />
         <Tickets />
-        {/* <TicketsMinimalistSale saleName={"SEMANA DO CONSUMIDOR"} /> */}
-        <EventSchedule />
-        {/* <BoxesTickts /> */}
+        <PreSaleScarcity />
         <Certificate />
         <PatrocinadorEExpositor />
         <Local />

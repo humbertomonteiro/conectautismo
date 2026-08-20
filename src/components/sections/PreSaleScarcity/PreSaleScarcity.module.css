@@ -1,0 +1,155 @@
+.section {
+  position: relative;
+  background: var(--color-primary);
+  padding: 5.5rem 1.5rem;
+  overflow: hidden;
+}
+
+/* ---------- Background: image or seat-map pattern, referencing tickets/lugares ---------- */
+
+.bgLayer {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.bgImage {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.5;
+}
+
+.bgPattern {
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(
+    rgba(206, 222, 255, 0.16) 1.5px,
+    transparent 1.5px
+  );
+  background-size: 22px 22px;
+  -webkit-mask-image: radial-gradient(
+    ellipse 70% 70% at 50% 40%,
+    black 30%,
+    transparent 80%
+  );
+  mask-image: radial-gradient(
+    ellipse 70% 70% at 50% 40%,
+    black 30%,
+    transparent 80%
+  );
+}
+
+.bgFade {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    var(--color-primary) 0%,
+    rgba(15, 15, 24, 0.75) 35%,
+    var(--color-primary) 100%
+  );
+}
+
+/* ---------- Content ---------- */
+
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 560px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.eyebrow {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--color-secondary);
+  margin-bottom: 1rem;
+}
+
+.lead {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: clamp(1.3rem, 2.6vw, 1.75rem);
+  color: var(--color-text-white);
+  margin-bottom: 2rem;
+}
+
+/* ---------- Progress ---------- */
+
+.progressBlock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.9rem;
+  margin-bottom: 1.25rem;
+}
+
+.blocks {
+  display: flex;
+  gap: 4px;
+}
+
+.block {
+  width: 22px;
+  height: 14px;
+  border-radius: 2px;
+  background: rgba(238, 238, 238, 0.08);
+  border: 1px solid rgba(238, 238, 238, 0.14);
+  transition: background 0.35s ease, border-color 0.35s ease;
+}
+
+.blockFilled {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
+.percent {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--color-accent-light);
+  min-width: 3ch;
+  text-align: left;
+}
+
+.remaining {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--color-text-light);
+  margin-bottom: 1.5rem;
+}
+
+.remaining strong {
+  color: var(--color-text-white);
+  font-weight: 700;
+}
+
+.note {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  line-height: 1.55;
+  color: var(--color-text-gray);
+  max-width: 420px;
+  margin: 0 auto 2rem;
+}
+
+/* ---------- CTA ---------- */
+
+.ctaArea {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 420px) {
+  .block {
+    width: 18px;
+  }
+}
