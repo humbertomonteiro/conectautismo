@@ -27,7 +27,7 @@ import Certificate from "../../components/sections/Certificate";
 import PresentationVideo from "../../components/sections/PresentationVideo";
 // import TicketsMinimalistSale from "../../components/sections/TicketsMinimalistSale";
 import ScrollToTop from "../../components/shared/ScrollToTop";
-import PartyTicket from "../../components/sections/PartyTicket";
+import WhiteParty from "../../components/sections/WhiteParty";
 import Supporters from "../../components/sections/Supporters";
 import SpeakersCarousel from "../../components/sections/SpeakersCarousel";
 import ExperienceGallery from "../../components/sections/ExperienceGallery";
@@ -57,7 +57,7 @@ export default function Home() {
         <ExperienceGallery />
         <SocialProof />
         <Authority />
-        <PartyTicket />
+        <WhiteParty />
         <Tickets />
         {/* <TicketsMinimalistSale saleName={"SEMANA DO CONSUMIDOR"} /> */}
         <EventSchedule />

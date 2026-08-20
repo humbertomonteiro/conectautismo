@@ -1,0 +1,274 @@
+.section {
+  position: relative;
+  background: var(--color-primary);
+  padding: 6rem 0 5rem;
+  overflow: hidden;
+}
+
+/* ---------- Detailed background, same story as the Hero ---------- */
+
+.glow {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+      circle at 20% 15%,
+      rgba(206, 222, 255, 0.12),
+      transparent 42%
+    ),
+    radial-gradient(
+      circle at 82% 70%,
+      rgba(246, 173, 85, 0.08),
+      transparent 45%
+    ),
+    var(--bg-gradient);
+  pointer-events: none;
+}
+
+.beams {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.beams span {
+  position: absolute;
+  width: 240%;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(206, 222, 255, 0.16),
+    rgba(206, 222, 255, 0.3),
+    rgba(206, 222, 255, 0.16),
+    transparent
+  );
+  top: var(--t);
+  left: -40%;
+  transform: rotate(var(--r));
+}
+
+/* ---------- Layout ---------- */
+
+.container {
+  position: relative;
+  z-index: 1;
+}
+
+.header {
+  max-width: 620px;
+  margin: 0 auto 3rem;
+  padding: 0 1.5rem;
+  text-align: center;
+}
+
+.eyebrow {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--color-secondary);
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: clamp(1.7rem, 3.6vw, 2.6rem);
+  line-height: 1.35;
+  color: var(--color-text-white);
+}
+
+.titleAccent {
+  color: var(--color-secondary);
+}
+
+/* ---------- Gallery ---------- */
+
+.galleryWrapper {
+  position: relative;
+}
+
+.swiper {
+  padding: 0.5rem 0 1rem;
+}
+
+.slide {
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  transform: scale(0.94);
+  opacity: 0.5;
+}
+
+.slide:global(.swiper-slide-active) {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border-radius: 8px;
+  overflow: hidden;
+  background: linear-gradient(160deg, #171729, var(--color-primary));
+  border: 1px solid rgba(206, 222, 255, 0.14);
+}
+
+.photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.photoFallback {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: rgba(206, 222, 255, 0.45);
+  background: linear-gradient(160deg, #1c1c31, var(--color-primary));
+}
+
+/* ---------- Controls ---------- */
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+.navButton {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid rgba(206, 222, 255, 0.3);
+  background: transparent;
+  color: var(--color-secondary);
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+}
+
+.navButton:hover {
+  background: var(--color-secondary);
+  color: var(--color-primary);
+  border-color: var(--color-secondary);
+}
+
+.navButton:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+.counter {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+  color: var(--color-text-light);
+  min-width: 3.5rem;
+  text-align: center;
+}
+
+.counterDivider {
+  color: var(--color-text-gray);
+  font-weight: 400;
+}
+
+/* ---------- Teaser (sem venda, só antecipação) ---------- */
+
+.teaser {
+  position: relative;
+  max-width: 480px;
+  margin: 4rem auto 0;
+  padding: 0 1.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.teaserPulse {
+  position: absolute;
+  top: -6px;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(206, 222, 255, 0.14) 0%,
+    transparent 70%
+  );
+  animation: pulseGlow 3.4s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.teaserBadge {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  color: var(--color-secondary);
+  padding: 0.55rem 1.1rem;
+  border-radius: 999px;
+  border: 1px solid rgba(206, 222, 255, 0.3);
+}
+
+.teaserDot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--color-accent);
+  box-shadow: 0 0 0 3px rgba(246, 173, 85, 0.25);
+}
+
+.teaserText {
+  position: relative;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--color-text-gray);
+}
+
+@keyframes pulseGlow {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scale(1.15);
+    opacity: 0.3;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .slide,
+  .teaserPulse {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 4.5rem 0 3.5rem;
+  }
+}
