@@ -3,37 +3,29 @@ import styles from "./Authority.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay, Navigation } from "swiper/modules";
 
-import {
-  FaEye,
-  FaExchangeAlt,
-  FaGraduationCap,
-  FaUserTie,
-  FaTools,
-  FaBrain,
-  FaHandsHelping,
-} from "react-icons/fa";
+import { FaBrain, FaExchangeAlt, FaHandsHelping, FaEye } from "react-icons/fa";
 import Title from "../../shared/Title";
 
 const benefits = [
   {
     title: "CIÊNCIA",
-    icon: <FaEye />,
+    icon: <FaBrain />,
     description: "Conhecimento que amplia perspectivas.",
   },
   {
     title: "ATUALIZAÇÃO",
     icon: <FaExchangeAlt />,
     description:
-      "Lugar onde os maiores profissionais, líderes e entusiastas doGrandes especialistas discutindo o presente e o futuro do neurodesenvolvimento.",
+      "Grandes especialistas discutindo o presente e o futuro do neurodesenvolvimento.",
   },
   {
     title: "CONEXÃO",
-    icon: <FaGraduationCap />,
+    icon: <FaHandsHelping />,
     description: "Pessoas de diferentes lugares reunidas pelo mesmo propósito.",
   },
   {
     title: "EXPERIÊNCIA",
-    icon: <FaUserTie />,
+    icon: <FaEye />,
     description:
       "Porque algumas coisas precisam ser vividas para serem compreendidas.",
   },
@@ -43,15 +35,7 @@ export default function Authority() {
   return (
     <div className={styles.container}>
       <div className={styles.backgroundOverlay}></div>
-      <Title text="Oportunidades" color="black" />
-      {/* <Title text="Inédito" color="black" />
-      <p className={styles.subtitleMain} data-aos="zoom-in">
-        O primeiro congresso com um dia inteiro de prática.
-      </p> */}
-      <p className={styles.subtitle} data-aos="zoom-in">
-        O Congresso Conect é o maior espaço de crescimento, aprendizado e
-        conexões sobre transtornos do neurodesenvolvimento do Norte e Nordeste.
-      </p>
+      <Title text="Por que estar no Conect?" color="black" />
 
       <div className={styles.boxes} data-aos="zoom-in" data-delay="200">
         <Swiper
