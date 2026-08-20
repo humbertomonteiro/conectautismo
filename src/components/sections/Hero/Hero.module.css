@@ -73,7 +73,7 @@
   }
 
   .content {
-    bottom: -350px;
+    bottom: -370px;
     background-color: var(--color-1);
   }
 }
@@ -81,5 +81,9 @@
 @media (max-width: 570px) {
   .text h1 {
     font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .text p {
+    margin-bottom: 1.5rem;
   }
 }
