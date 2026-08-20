@@ -23,6 +23,7 @@ import Supporters from "../../components/sections/Supporters";
 import SpeakersCarousel from "../../components/sections/SpeakersCarousel";
 import ExperienceGallery from "../../components/sections/ExperienceGallery";
 import PreSaleScarcity from "../../components/sections/PreSaleScarcity";
+import FinalCall from "../../components/sections/FinalCall";
 
 export default function Home() {
   useEffect(() => {
@@ -52,6 +53,7 @@ export default function Home() {
         <WhiteParty />
         <Tickets />
         <PreSaleScarcity />
+        <FinalCall />
         <Certificate />
         <PatrocinadorEExpositor />
         <Local />
