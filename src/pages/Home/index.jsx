@@ -19,7 +19,8 @@ import Footer from "../../components/template/Footer";
 import EventSchedule from "../../components/sections/EventSchedule";
 
 import TopPromoBar from "../../components/shared/TopPromoBar";
-import Testimonials from "../../components/sections/Testionials";
+import SocialProof from "../../components/sections/SocialProof";
+// import Testimonials from "../../components/sections/Testionials";
 import Tickets from "../../components/sections/Tickets";
 import Certificate from "../../components/sections/Certificate";
 
@@ -54,7 +55,7 @@ export default function Home() {
         <AuthorityStats />
         <SpeakersCarousel />
         <ExperienceGallery />
-        <Testimonials />
+        <SocialProof />
         <Authority />
         <PartyTicket />
         <Tickets />

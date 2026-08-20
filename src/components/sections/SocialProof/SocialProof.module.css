@@ -1,0 +1,320 @@
+.section {
+  position: relative;
+  background: var(--color-primary);
+  padding: 6rem 0 5rem;
+  overflow: hidden;
+}
+
+/* ---------- Elaborated background ---------- */
+
+.glow {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+      circle at 15% 10%,
+      rgba(246, 173, 85, 0.14),
+      transparent 40%
+    ),
+    radial-gradient(
+      circle at 85% 25%,
+      rgba(206, 222, 255, 0.1),
+      transparent 45%
+    ),
+    var(--bg-gradient);
+  pointer-events: none;
+}
+
+.particles {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.particles li {
+  position: absolute;
+  bottom: -120px;
+  list-style: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.12);
+  animation: floatUp 22s linear infinite;
+}
+
+.particles li:nth-child(1) {
+  left: 8%;
+  width: 14px;
+  height: 14px;
+  animation-delay: 0s;
+}
+
+.particles li:nth-child(2) {
+  left: 28%;
+  width: 22px;
+  height: 22px;
+  animation-delay: 5s;
+  animation-duration: 28s;
+}
+
+.particles li:nth-child(3) {
+  left: 55%;
+  width: 10px;
+  height: 10px;
+  animation-delay: 3s;
+  animation-duration: 18s;
+}
+
+.particles li:nth-child(4) {
+  left: 72%;
+  width: 18px;
+  height: 18px;
+  animation-delay: 9s;
+  animation-duration: 26s;
+}
+
+.particles li:nth-child(5) {
+  left: 90%;
+  width: 12px;
+  height: 12px;
+  animation-delay: 2s;
+  animation-duration: 20s;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0);
+    opacity: 0.9;
+  }
+  100% {
+    transform: translateY(-720px);
+    opacity: 0;
+  }
+}
+
+/* ---------- Layout ---------- */
+
+.container {
+  position: relative;
+  z-index: 1;
+}
+
+.header {
+  max-width: 620px;
+  margin: 0 auto 3rem;
+  padding: 0 1.5rem;
+  text-align: center;
+}
+
+.eyebrow {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: clamp(1.6rem, 3.4vw, 2.4rem);
+  color: var(--color-text-white);
+  margin-bottom: 0.6rem;
+}
+
+.subtitle {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: var(--color-text-light);
+}
+
+/* ---------- Gallery ---------- */
+
+.galleryWrapper {
+  position: relative;
+}
+
+.swiper {
+  padding: 0.5rem 0 1rem;
+}
+
+.slide {
+  height: auto;
+}
+
+/* shared card footprint so video and quote slides ornam together */
+.videoFrame,
+.quoteFrame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+/* ---------- Video card ---------- */
+
+.videoFrame {
+  background: linear-gradient(160deg, #171729, var(--color-primary));
+  border: 1px solid rgba(206, 222, 255, 0.14);
+}
+
+.video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.videoFallback {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  color: rgba(238, 238, 238, 0.35);
+  background: linear-gradient(160deg, #1c1c31, var(--color-primary));
+}
+
+.playButton {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(238, 238, 238, 0.92);
+  color: var(--color-primary);
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.playButton:hover {
+  background: var(--color-accent);
+  transform: translate(-50%, -50%) scale(1.06);
+}
+
+.videoCaption {
+  position: absolute;
+  inset: auto 0 0 0;
+  padding: 2.5rem 1.1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to top, rgba(2, 2, 2, 0.75), transparent);
+}
+
+.captionName {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: #ffffff;
+}
+
+.captionRole {
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  color: var(--color-text-light);
+}
+
+/* ---------- Quote card ---------- */
+
+.quoteFrame {
+  background: linear-gradient(180deg, #12121f, var(--color-primary));
+  border: 1px solid rgba(246, 173, 85, 0.22);
+  padding: 2.2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.quoteMark {
+  font-size: 2.2rem;
+  color: var(--color-accent);
+  opacity: 0.5;
+  margin-bottom: 0.75rem;
+}
+
+.quoteText {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: clamp(1.3rem, 2.4vw, 1.7rem);
+  line-height: 1.3;
+  color: var(--color-text-white);
+  margin-bottom: 1.25rem;
+}
+
+.quoteName {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  color: var(--color-text-gray);
+}
+
+/* ---------- Controls ---------- */
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.navButton {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid rgba(206, 222, 255, 0.3);
+  background: transparent;
+  color: var(--color-secondary);
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+}
+
+.navButton:hover {
+  background: var(--color-secondary);
+  color: var(--color-primary);
+  border-color: var(--color-secondary);
+}
+
+.navButton:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+/* ---------- Closing ---------- */
+
+.closing {
+  margin-top: 4rem;
+  text-align: center;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: clamp(1.5rem, 3.2vw, 2.2rem);
+  line-height: 1.4;
+  color: var(--color-text-white);
+  padding: 0 1.5rem;
+}
+
+.closingAccent {
+  color: var(--color-accent-light);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .particles li,
+  .playButton {
+    animation: none !important;
+    transition: none !important;
+  }
+}
