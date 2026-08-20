@@ -29,6 +29,7 @@ import ScrollToTop from "../../components/shared/ScrollToTop";
 import PartyTicket from "../../components/sections/PartyTicket";
 import Supporters from "../../components/sections/Supporters";
 import SpeakersCarousel from "../../components/sections/SpeakersCarousel";
+import ExperienceGallery from "../../components/sections/ExperienceGallery";
 
 export default function Home() {
   useEffect(() => {
@@ -52,6 +53,7 @@ export default function Home() {
         <PresentationVideo />
         <AuthorityStats />
         <SpeakersCarousel />
+        <ExperienceGallery />
         <Testimonials />
         <Authority />
         <PartyTicket />
