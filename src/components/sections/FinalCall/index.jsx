@@ -22,7 +22,7 @@ export default function FinalCall({
         ) : (
           <div className={styles.bgFallback} />
         )}
-        <div className={styles.bgFade} />
+        {/* <div className={styles.bgFade} /> */}
       </div>
 
       <div className={styles.container}>
