@@ -1,6 +1,5 @@
 .section {
   position: relative;
-  min-height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -102,7 +101,6 @@
 
 @media (max-width: 480px) {
   .section {
-    min-height: 80vh;
     padding: 3rem 1.25rem 3.5rem;
   }
 }
