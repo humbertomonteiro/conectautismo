@@ -1,0 +1,328 @@
+.section {
+  position: relative;
+  padding: 6rem 0 5rem;
+  overflow: hidden;
+}
+
+/* ---------- Header ---------- */
+
+.header {
+  max-width: 720px;
+  margin: 0 auto 3rem;
+  padding: 0 1.5rem;
+  text-align: center;
+}
+
+.eyebrow {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: clamp(1.6rem, 3.2vw, 2.4rem);
+  line-height: 1.35;
+  color: var(--color-text-white);
+}
+
+/* ---------- Carousel shell ---------- */
+
+.carouselWrapper {
+  position: relative;
+}
+
+.track {
+  display: flex;
+  gap: 1.25rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 0.5rem clamp(1.5rem, 6vw, 6rem) 1rem;
+  scrollbar-width: none;
+}
+
+.track::-webkit-scrollbar {
+  display: none;
+}
+
+/* ---------- Card ---------- */
+
+.card {
+  flex: 0 0 auto;
+  width: clamp(220px, 24vw, 300px);
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  overflow: hidden;
+  background: var(--color-primary);
+}
+
+.photoBox {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  background: linear-gradient(160deg, #171729, var(--color-primary));
+}
+
+.photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: grayscale(35%) contrast(1.05);
+  transition: filter 0.4s ease, transform 0.5s ease;
+}
+
+.card:hover .photo {
+  filter: grayscale(0%) contrast(1.05);
+  transform: scale(1.03);
+}
+
+.photoFallback {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-heading);
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--color-secondary);
+  background: linear-gradient(160deg, #1c1c31, var(--color-primary));
+}
+
+/* fade that ties the photo into the plate below, same technique as the hero background */
+.photoFade {
+  position: absolute;
+  inset: auto 0 0 0;
+  height: 45%;
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    var(--color-primary) 100%
+  );
+  pointer-events: none;
+}
+
+.plate {
+  padding: 1.1rem 1.25rem 1.5rem;
+  border-top: 1px solid rgba(206, 222, 255, 0.12);
+}
+
+.name {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.25;
+  color: var(--color-text-white);
+  margin-bottom: 0.35rem;
+}
+
+.role {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: var(--color-text-gray);
+}
+
+/* ---------- Mystery card ---------- */
+
+.mysteryCard {
+  background: linear-gradient(180deg, #12121f, var(--color-primary));
+  border: 1px solid rgba(246, 173, 85, 0.25);
+}
+
+.mysteryPhotoBox {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(
+    circle at 50% 40%,
+    rgba(246, 173, 85, 0.14),
+    var(--color-primary) 70%
+  );
+}
+
+.mysterySilhouette {
+  position: relative;
+  width: 60%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(
+    circle,
+    rgba(246, 173, 85, 0.16) 0%,
+    rgba(246, 173, 85, 0.04) 55%,
+    transparent 75%
+  );
+  animation: pulseGlow 3.2s ease-in-out infinite;
+}
+
+.mysteryMark {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 3.5rem;
+  color: var(--color-accent-light);
+  opacity: 0.85;
+}
+
+.orbit {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--color-secondary);
+  opacity: 0.7;
+  top: 50%;
+  left: 50%;
+  animation: orbitSpin linear infinite;
+}
+
+.orbit:nth-child(2) {
+  width: 55%;
+  height: 55%;
+  margin: -27.5% 0 0 -27.5%;
+  animation-duration: 9s;
+}
+
+.orbit:nth-child(3) {
+  width: 78%;
+  height: 78%;
+  margin: -39% 0 0 -39%;
+  animation-duration: 14s;
+  animation-direction: reverse;
+  opacity: 0.45;
+}
+
+.orbit:nth-child(4) {
+  width: 100%;
+  height: 100%;
+  margin: -50% 0 0 -50%;
+  animation-duration: 20s;
+  opacity: 0.25;
+}
+
+.mysteryTitle {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.15rem;
+  line-height: 1.3;
+  color: var(--color-text-white);
+  margin-bottom: 0.6rem;
+}
+
+.mysteryText {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: var(--color-text-gray);
+  margin-bottom: 1.1rem;
+}
+
+.mysteryCta {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  padding: 0.65rem 1rem;
+  border-radius: 999px;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: var(--color-primary);
+  background: var(--color-accent);
+  transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.mysteryCta:hover {
+  background: var(--color-accent-light);
+  transform: translateY(-1px);
+}
+
+/* ---------- Nav controls ---------- */
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.navButton {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid rgba(206, 222, 255, 0.3);
+  background: transparent;
+  color: var(--color-secondary);
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+}
+
+.navButton:hover {
+  background: var(--color-secondary);
+  color: var(--color-primary);
+  border-color: var(--color-secondary);
+}
+
+.navButton:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+/* ---------- Motion ---------- */
+
+@keyframes pulseGlow {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(246, 173, 85, 0.25);
+  }
+  50% {
+    box-shadow: 0 0 0 14px rgba(246, 173, 85, 0);
+  }
+}
+
+@keyframes orbitSpin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mysterySilhouette,
+  .orbit,
+  .photo,
+  .mysteryCta {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .section {
+    padding: 4rem 0 3rem;
+  }
+
+  .card {
+    width: 72vw;
+  }
+}

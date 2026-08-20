@@ -1,0 +1,138 @@
+.section {
+  background: var(--bg-white);
+  padding: 6rem 1.5rem;
+}
+
+.inner {
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.eyebrow {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--color-1);
+  margin-bottom: 1.25rem;
+}
+
+.title {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: clamp(1.75rem, 4vw, 2.75rem);
+  line-height: 1.35;
+  color: var(--color-text-black-2);
+}
+
+.titleAccent {
+  position: relative;
+  display: inline-block;
+  padding: 0 0.15em;
+  background-image: linear-gradient(
+    to bottom,
+    transparent 62%,
+    var(--color-accent-light) 62%
+  );
+  background-repeat: no-repeat;
+}
+
+/* ---------- Stats ---------- */
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  margin: 3.5rem 0 3rem;
+  border-top: var(--border-black);
+  border-bottom: var(--border-black);
+}
+
+.statItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 2rem 1rem;
+  border-right: var(--border-black);
+}
+
+.statItem:last-child {
+  border-right: none;
+}
+
+.statNumber {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: clamp(1.9rem, 3.4vw, 2.6rem);
+  line-height: 1;
+  background: linear-gradient(135deg, var(--color-1), var(--color-3));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.statLabel {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-text-black);
+  text-align: center;
+}
+
+/* ---------- Badge ---------- */
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  color: var(--color-1);
+  padding: 0.55rem 1.25rem;
+  border-radius: 999px;
+  border: 1px solid rgba(15, 15, 24, 0.15);
+}
+
+.badgeDot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--color-accent);
+  box-shadow: 0 0 0 3px rgba(246, 173, 85, 0.25);
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 720px) {
+  .statsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .statItem {
+    border-right: var(--border-black);
+  }
+
+  .statItem:nth-child(2n) {
+    border-right: none;
+  }
+
+  .statItem:nth-child(n + 3) {
+    border-top: var(--border-black);
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 4rem 1.25rem;
+  }
+
+  .statItem {
+    padding: 1.5rem 0.75rem;
+  }
+}

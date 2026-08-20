@@ -36,7 +36,11 @@
 }
 
 .text h1 {
-  margin-bottom: 1rem;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: clamp(1.6rem, 3.2vw, 2rem);
+  line-height: 1.35;
+  color: var(--color-text-white);
 }
 
 .text p {

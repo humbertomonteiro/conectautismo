@@ -6,6 +6,7 @@ import styles from "./home.module.css";
 import Hero from "../../components/sections/Hero";
 import Local from "../../components/sections/Local";
 import PatrocinadorEExpositor from "../../components/sections/PatrocinadorEExpositor";
+import AuthorityStats from "../../components/sections/AuthorityStats";
 import Authority from "../../components/sections/Authority";
 // import BoxesTickts from "../../components/sections/BoxesTickts";
 import CommonQuestions from "../../components/sections/CommonQuestions";
@@ -27,6 +28,7 @@ import PresentationVideo from "../../components/sections/PresentationVideo";
 import ScrollToTop from "../../components/shared/ScrollToTop";
 import PartyTicket from "../../components/sections/PartyTicket";
 import Supporters from "../../components/sections/Supporters";
+import SpeakersCarousel from "../../components/sections/SpeakersCarousel";
 
 export default function Home() {
   useEffect(() => {
@@ -48,8 +50,10 @@ export default function Home() {
       <div className={styles.container}>
         <Hero />
         <PresentationVideo />
-        <Authority />
+        <AuthorityStats />
+        <SpeakersCarousel />
         <Testimonials />
+        <Authority />
         <PartyTicket />
         <Tickets />
         {/* <TicketsMinimalistSale saleName={"SEMANA DO CONSUMIDOR"} /> */}

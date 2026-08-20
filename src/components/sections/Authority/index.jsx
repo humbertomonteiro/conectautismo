@@ -16,46 +16,26 @@ import Title from "../../shared/Title";
 
 const benefits = [
   {
-    title: "Visibilidade e Reconhecimento",
+    title: "CIÊNCIA",
     icon: <FaEye />,
-    description:
-      "Um palco de destaque para expositores e palestrantes, que apresentam produtos, serviços e pesquisas a um público altamente qualificado.",
+    description: "Conhecimento que amplia perspectivas.",
   },
   {
-    title: "Troca de Experiências",
+    title: "ATUALIZAÇÃO",
     icon: <FaExchangeAlt />,
     description:
-      "Lugar onde os maiores profissionais, líderes e entusiastas do Neurodesenvolvimento do Brasil e do mundo compartilham ideias, fortalecem redes de colaboração e constroem novas oportunidades.",
+      "Lugar onde os maiores profissionais, líderes e entusiastas doGrandes especialistas discutindo o presente e o futuro do neurodesenvolvimento.",
   },
   {
-    title: "Aprendizado Contínuo",
+    title: "CONEXÃO",
     icon: <FaGraduationCap />,
-    description:
-      "Pesquisas atuais, conteúdos respaldados por pesquisas e estudos científicos classificados como nível 1A ou 1B e estratégias eficazes e inovadoras que transformam práticas e ampliam horizontes.",
+    description: "Pessoas de diferentes lugares reunidas pelo mesmo propósito.",
   },
   {
-    title: "Desenvolvimento Profissional e Pessoal",
+    title: "EXPERIÊNCIA",
     icon: <FaUserTie />,
     description:
-      "Atualize suas habilidades, absorva novas abordagens terapêuticas e esteja à frente das tendências no campo do neurodesenvolvimento. Um evento que enriquece tanto sua carreira quanto sua vida.",
-  },
-  {
-    title: "Acesso a Recursos",
-    icon: <FaTools />,
-    description:
-      "Conecte-se a serviços, organizações e informações de ponta, ampliando sua rede de conhecimento e apoio.",
-  },
-  {
-    title: "Ampliação de Conhecimento",
-    icon: <FaBrain />,
-    description:
-      "Especialistas de renome nacional e internacional apresentam as descobertas mais recentes, moldando o futuro do neurodesenvolvimento.",
-  },
-  {
-    title: "Ações Sociais",
-    icon: <FaHandsHelping />,
-    description:
-      "Cada ingresso contribui com causas solidárias, como a Casa Ronald McDonald, reforçando o compromisso do Conect com a transformação social.",
+      "Porque algumas coisas precisam ser vividas para serem compreendidas.",
   },
 ];
 
@@ -96,8 +76,8 @@ export default function Authority() {
               spaceBetween: 20,
             },
             1024: {
-              slidesPerView: 3,
-              spaceBetween: 30,
+              slidesPerView: 4,
+              spaceBetween: 10,
             },
           }}
           modules={[Pagination, Autoplay, Navigation]}
