@@ -3,27 +3,27 @@ import { doc, setDoc, increment } from "firebase/firestore";
 import { db } from "../../firebaseConfig";
 import styles from "./home.module.css";
 
+import ScrollToTop from "../../components/shared/ScrollToTop";
+import TopPromoBar from "../../components/shared/TopPromoBar";
 import Hero from "../../components/sections/Hero";
-import Local from "../../components/sections/Local";
-// import SpeakersCarousel from "../../components/sections/SpeakersCarousel";
 import AuthorityStats from "../../components/sections/AuthorityStats";
+// import SpeakersCarousel from "../../components/sections/SpeakersCarousel";
+// import ExperienceGallery from "../../components/sections/ExperienceGallery";
+// import SocialProof from "../../components/sections/SocialProof";
 import Authority from "../../components/sections/Authority";
-import CommonQuestions from "../../components/sections/CommonQuestions";
+// import WhiteParty from "../../components/sections/WhiteParty";
 import RedesSociais from "../../components/shared/RedesSociais";
 import Politica from "../../components/sections/Politica";
-import Footer from "../../components/template/Footer";
-import TopPromoBar from "../../components/shared/TopPromoBar";
-import SocialProof from "../../components/sections/SocialProof";
 import Tickets from "../../components/sections/Tickets";
 import Certificate from "../../components/sections/Certificate";
 import PresentationVideo from "../../components/sections/PresentationVideo";
-import ScrollToTop from "../../components/shared/ScrollToTop";
-import WhiteParty from "../../components/sections/WhiteParty";
-import Supporters from "../../components/sections/Supporters";
 import PatrocinadorEExpositor from "../../components/sections/PatrocinadorEExpositor";
-import ExperienceGallery from "../../components/sections/ExperienceGallery";
 import PreSaleScarcity from "../../components/sections/PreSaleScarcity";
 import FinalCall from "../../components/sections/FinalCall";
+import Local from "../../components/sections/Local";
+import CommonQuestions from "../../components/sections/CommonQuestions";
+import Supporters from "../../components/sections/Supporters";
+import Footer from "../../components/template/Footer";
 
 export default function Home() {
   useEffect(() => {
@@ -47,10 +47,10 @@ export default function Home() {
         <PresentationVideo />
         <AuthorityStats />
         {/* <SpeakersCarousel /> */}
-        <ExperienceGallery />
-        <SocialProof />
+        {/* <ExperienceGallery /> */}
+        {/* <SocialProof /> */}
         <Authority />
-        <WhiteParty />
+        {/* <WhiteParty /> */}
         <Tickets />
         <PreSaleScarcity />
         <FinalCall />

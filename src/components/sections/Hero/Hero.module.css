@@ -67,7 +67,8 @@
 
 @media (max-width: 870px) {
   .container {
-    margin-bottom: 450px;
+    margin-bottom: 370px;
+    margin-top: 50px;
   }
   .bgDesktop {
     display: none;
@@ -80,12 +81,19 @@
   }
 
   .content {
-    bottom: -450px;
+    bottom: -355px;
     background-color: var(--color-1);
   }
 }
 
 @media (max-width: 570px) {
+  .container {
+    margin-bottom: 500px;
+  }
+
+  .content {
+    bottom: -450px;
+  }
   .text h1 {
     font-size: 1.5rem;
     margin-bottom: 1rem;

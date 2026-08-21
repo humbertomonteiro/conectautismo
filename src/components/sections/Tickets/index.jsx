@@ -66,12 +66,12 @@ const withComputedDiscount = (data) => {
 // (ver getActiveData mais abaixo).
 const CASH_PRICES = {
   inteira: {
-    withoutParty: "R$ 299,00",
-    withParty: "R$ 399,00",
+    withoutParty: "R$ 499,00",
+    withParty: "R$ 599,00",
   },
   meia: {
-    withoutParty: "R$ 629,90",
-    withParty: "R$ 679,90",
+    withoutParty: "R$ 29,90",
+    withParty: "R$ 39,90",
   },
   grupo: {
     group4: "R$ 3.455,68",
@@ -91,25 +91,25 @@ const getActiveData = (ticketId, variantKey, rawData) => {
 };
 
 const TICKETS = [
-  // {
-  //   id: "meia",
-  //   name: "Meia-Entrada",
-  //   tagline: "Ideal para estudantes",
-  //   benefits: [
-  //     "Acesso completo aos 3 dias de evento",
-  //     "Certificado de participação",
-  //     "Material de apoio digital",
-  //     "Acesso à gravação por 30 dias",
-  //   ],
-  //   variants: [
-  //     { key: "withoutParty", label: "Sem Festa" },
-  //     { key: "withParty", label: "Com Festa" },
-  //   ],
-  //   getData: (links) => ({
-  //     withoutParty: links.halfTicketWithoutParty,
-  //     withParty: links.halfTicketWithParty,
-  //   }),
-  // },
+  {
+    id: "meia",
+    name: "Meia-Entrada",
+    tagline: "Ideal para estudantes",
+    benefits: [
+      "Acesso completo aos 3 dias de evento",
+      "Certificado de participação",
+      "Material de apoio digital",
+      "Acesso à gravação por 30 dias",
+    ],
+    variants: [
+      { key: "withoutParty", label: "Sem Festa" },
+      { key: "withParty", label: "Com Festa" },
+    ],
+    getData: (links) => ({
+      withoutParty: links.halfTicketWithoutParty,
+      withParty: links.halfTicketWithParty,
+    }),
+  },
   {
     id: "inteira",
     name: "Inteira",
