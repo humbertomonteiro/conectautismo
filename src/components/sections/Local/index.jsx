@@ -25,7 +25,7 @@ export default function Local() {
               <p>Av. Washington Soares, 999 - Edson Queiroz</p>
             </li>
             <li>
-              <span>QUANDO</span> <p>Dias 21, 22 e 23 de agosto de 2026</p>
+              <span>QUANDO</span> <p>Dias 14 e 15 de agosto de 2027</p>
             </li>
             {/* <li>
               <span>INÉDITO</span>{" "}

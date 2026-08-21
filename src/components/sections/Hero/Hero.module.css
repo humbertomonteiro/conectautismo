@@ -1,7 +1,7 @@
 .container {
   background-color: var(--color-primary);
   position: relative;
-  margin-bottom: 250px;
+  margin-bottom: 370px;
 }
 
 .background {
@@ -25,14 +25,21 @@
   width: 100%;
   z-index: 1;
   position: absolute;
-  bottom: -250px;
+  bottom: -400px;
   text-align: center;
+}
+
+.logo {
+  width: 400px;
+  max-width: 90%;
+  margin-bottom: 1rem;
+  padding-top: 3rem;
 }
 
 .text {
   max-width: 700px;
   margin: 0 auto;
-  padding: 3rem 1rem;
+  padding: 0 1rem 3rem 1rem;
 }
 
 .text h1 {
@@ -60,7 +67,7 @@
 
 @media (max-width: 870px) {
   .container {
-    margin-bottom: 350px;
+    margin-bottom: 450px;
   }
   .bgDesktop {
     display: none;
@@ -73,7 +80,7 @@
   }
 
   .content {
-    bottom: -390px;
+    bottom: -450px;
     background-color: var(--color-1);
   }
 }

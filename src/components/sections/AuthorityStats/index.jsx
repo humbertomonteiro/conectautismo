@@ -67,7 +67,7 @@ function StatItem({ stat }) {
 
 export default function AuthorityStats({
   stats = DEFAULT_STATS,
-  edition = "5ª edição",
+  edition = "4ª edição",
   year = "2027",
 }) {
   return (
@@ -76,16 +76,16 @@ export default function AuthorityStats({
         <span className={styles.eyebrow}>Você sabe onde está comprando</span>
 
         <h2 className={styles.title}>
-          4 edições construíram essa história.
+          3 edições construíram essa história.
           <br />
-          <span className={styles.titleAccent}>A 5ª começa agora.</span>
+          <span className={styles.titleAccent}>A 4ª começa agora.</span>
         </h2>
 
-        <div className={styles.statsGrid}>
+        {/* <div className={styles.statsGrid}>
           {stats.map((stat, index) => (
             <StatItem stat={stat} key={`${stat.label}-${index}`} />
           ))}
-        </div>
+        </div> */}
 
         <div className={styles.badge}>
           <span className={styles.badgeDot} />

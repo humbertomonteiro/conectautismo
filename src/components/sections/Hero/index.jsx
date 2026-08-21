@@ -2,6 +2,7 @@ import styles from "./Hero.module.css";
 import bgDesktop from "../../../assets/imgs/background/bg-910x410.jpeg";
 import bgMobile from "../../../assets/imgs/background/bg-500x500.jpeg";
 import ButtonPretty from "../../shared/ButtonPretty";
+import logo from "../../../assets/imgs/logo/logo.png";
 
 export default function Hero() {
   return (
@@ -19,6 +20,7 @@ export default function Hero() {
         />
       </div>
       <div className={styles.content}>
+        <img className={styles.logo} src={logo} alt="Logo Conect" />
         <div className={styles.text}>
           <h1>
             TEM COISA QUE VOCÊ APRENDE. TEM COISA QUE VOCÊ VIVE. NO CONECT, AS

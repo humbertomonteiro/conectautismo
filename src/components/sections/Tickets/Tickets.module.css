@@ -19,13 +19,19 @@
   margin-top: 0.5rem;
 }
 
+.noteTax {
+  font-size: 0.75rem;
+  color: var(--color-text-black-2);
+}
+
 /* ------------------------------------------------------------------ */
 /* Grid                                                                */
 /* ------------------------------------------------------------------ */
 
 .ticketOptions {
   display: flex;
-  align-items: stretch;
+  justify-content: center;
+  align-items: center;
   gap: 1.5rem;
   flex-wrap: wrap;
   margin-top: 1rem;

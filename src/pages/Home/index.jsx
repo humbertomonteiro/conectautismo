@@ -20,7 +20,7 @@ import PresentationVideo from "../../components/sections/PresentationVideo";
 import ScrollToTop from "../../components/shared/ScrollToTop";
 import WhiteParty from "../../components/sections/WhiteParty";
 import Supporters from "../../components/sections/Supporters";
-import SpeakersCarousel from "../../components/sections/SpeakersCarousel";
+// import SpeakersCarousel from "../../components/sections/SpeakersCarousel";
 import ExperienceGallery from "../../components/sections/ExperienceGallery";
 import PreSaleScarcity from "../../components/sections/PreSaleScarcity";
 import FinalCall from "../../components/sections/FinalCall";
@@ -46,7 +46,7 @@ export default function Home() {
         <Hero />
         <PresentationVideo />
         <AuthorityStats />
-        <SpeakersCarousel />
+        {/* <SpeakersCarousel /> */}
         <ExperienceGallery />
         <SocialProof />
         <Authority />

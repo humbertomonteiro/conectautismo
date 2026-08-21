@@ -3,24 +3,6 @@ import { createContext, useContext, useState } from "react";
 export const LinkContext = createContext({});
 
 export function LinkProvider({ children }) {
-  const [ticketAll, setTicketAll] = useState({
-    link: "https://pay.hotmart.com/D101401576U?off=2id7i2k7",
-    price: "12 x R$ 103,22",
-  });
-  const [ticketHalf, setTicketHalf] = useState({
-    // link: "https://pay.hotmart.com/D101401576U?off=45mef41r",
-    link: "https://pay.hotmart.com/D101401576U?off=45mef41r&_gl=1*1w8wynw*_ga*MTk4MzI0NzcyOC4xNzYzOTAwNjU1*_ga_1PCEYDM0JC*czE3NjM5Nzg3NzMkbzMkZzAkdDE3NjM5Nzg3NzMkajYwJGwwJGgw",
-    price: "12 x R$ 61,93",
-  });
-  const [ticketGroup4, setTicketGroup4] = useState({
-    link: "https://pay.hotmart.com/D101401576U?off=ny9zl0te&_gl=1*ovrrrb*_ga*MTgwMzY2OTc0OS4xNzcwNjYxNzgy*_ga_1PCEYDM0JC*czE3NzA2NjE3ODEkbzEkZzAkdDE3NzA2NjE3ODEkajYwJGwwJGgw&bid=1770663152185",
-    price: "12 x R$ 82,57",
-  });
-  const [ticketGroup5, setTicketGroup5] = useState({
-    link: "https://pay.hotmart.com/D101401576U?off=b5diwahh",
-    price: "12 x R$ 72,25",
-  });
-
   //tickets black friday
   const [ticketBlack10, setTicketBlack10] = useState({
     link: "https://pay.hotmart.com/D101401576U?off=zx4epga5",
@@ -43,14 +25,13 @@ export function LinkProvider({ children }) {
     price: "12 x R$ 309,65",
   });
 
-  //terceiro lote
   const [ticketWithParty, setTicketWithParty] = useState({
-    link: "https://pay.hotmart.com/D101401576U?off=j1emhj6w",
-    price: "12 x de R$ 116,86",
+    link: "https://eurekha.com.br/v/4545/congresso-conect-2027",
+    price: "12 x R$ 39,90",
   });
   const [ticketWithoutParty, setTicketWithoutParty] = useState({
-    link: "https://pay.hotmart.com/D101401576U?off=zbkk9spr",
-    price: "12 x de R$ 111,69",
+    link: "https://eurekha.com.br/v/4545/congresso-conect-2027",
+    price: "12 x R$ 29,90",
   });
   const [halfTicketWithParty, setHalfTicketWithParty] = useState({
     link: "https://pay.hotmart.com/D101401576U?off=8d613w7r",
@@ -75,14 +56,6 @@ export function LinkProvider({ children }) {
   return (
     <LinkContext.Provider
       value={{
-        ticketAll,
-        setTicketAll,
-        ticketHalf,
-        setTicketHalf,
-        ticketGroup4,
-        setTicketGroup4,
-        ticketGroup5,
-        setTicketGroup5,
         ticketBlack10,
         ticketBlack15,
         ticketBlack25,
