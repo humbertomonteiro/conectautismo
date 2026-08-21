@@ -5,7 +5,7 @@ import styles from "./home.module.css";
 
 import Hero from "../../components/sections/Hero";
 import Local from "../../components/sections/Local";
-import PatrocinadorEExpositor from "../../components/sections/PatrocinadorEExpositor";
+// import SpeakersCarousel from "../../components/sections/SpeakersCarousel";
 import AuthorityStats from "../../components/sections/AuthorityStats";
 import Authority from "../../components/sections/Authority";
 import CommonQuestions from "../../components/sections/CommonQuestions";
@@ -20,7 +20,7 @@ import PresentationVideo from "../../components/sections/PresentationVideo";
 import ScrollToTop from "../../components/shared/ScrollToTop";
 import WhiteParty from "../../components/sections/WhiteParty";
 import Supporters from "../../components/sections/Supporters";
-// import SpeakersCarousel from "../../components/sections/SpeakersCarousel";
+import PatrocinadorEExpositor from "../../components/sections/PatrocinadorEExpositor";
 import ExperienceGallery from "../../components/sections/ExperienceGallery";
 import PreSaleScarcity from "../../components/sections/PreSaleScarcity";
 import FinalCall from "../../components/sections/FinalCall";

@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import ButtonPretty from "../../shared/ButtonPretty";
 import styles from "./PreSaleScarcity.module.css";
 
-const TICKET_LINK = "https://pay.hotmart.com/D101401576U?off=irh31vpd";
+const TICKET_LINK = "https://eurekha.com.br/v/4545/congresso-conect-2027";
 
 export default function PreSaleScarcity({
   totalTickets = 500,

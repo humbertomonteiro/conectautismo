@@ -20,8 +20,13 @@ export default function Hero() {
         />
       </div>
       <div className={styles.content}>
-        <img className={styles.logo} src={logo} alt="Logo Conect" />
-        <div className={styles.text}>
+        <img
+          className={styles.logo}
+          src={logo}
+          alt="Logo Conect"
+          data-aos="zoom-in"
+        />
+        <div className={styles.text} data-aos="zoom-in">
           <h1>
             TEM COISA QUE VOCÊ APRENDE. TEM COISA QUE VOCÊ VIVE. NO CONECT, AS
             DUAS ACONTECEM.
