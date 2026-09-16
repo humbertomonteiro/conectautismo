@@ -7,7 +7,7 @@ import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import { FaWhatsapp } from "react-icons/fa";
 import Title from "../../shared/Title";
 
-import declarationConect from "../../../assets/pdfs/conect-declaracao.pdf";
+import declarationConect from "../../../assets/pdfs/declaracao-autorizacao-terceiros.pdf";
 
 export default function CommunQuestions() {
   const [q0, setQ0] = useState(false);
