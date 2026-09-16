@@ -1,8 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import styles from "./PresentationVideo.module.css";
 import { FaVolumeMute, FaVolumeUp, FaExpand, FaCompress } from "react-icons/fa";
-import Title from "../../shared/Title";
-import conect2026 from "../../../assets/videos/conect2026.mp4";
+import conect2026 from "../../../assets/videos/filme-congresso-2026.mov";
 import ButtonPretty from "../../shared/ButtonPretty";
 
 export default function PresentationVideo() {
