@@ -27,23 +27,23 @@ export function LinkProvider({ children }) {
 
   const [ticketWithParty, setTicketWithParty] = useState({
     link: "https://eurekha.com.br/v/4545/congresso-conect-2027",
-    price: "12 x R$ 59,90",
+    price: "10 x R$ 69,90",
   });
   const [ticketWithoutParty, setTicketWithoutParty] = useState({
     link: "https://eurekha.com.br/v/4545/congresso-conect-2027",
-    price: "12 x R$ 49,90",
+    price: "10 x R$ 58,20",
   });
   const [halfTicketWithParty, setHalfTicketWithParty] = useState({
     link: "https://eurekha.com.br/v/4545/congresso-conect-2027",
-    price: "12 x R$ 39.90",
+    price: "10 x R$ 46,52",
   });
   const [halfTicketWithoutParty, setHalfTicketWithoutParty] = useState({
     link: "https://eurekha.com.br/v/4545/congresso-conect-2027",
-    price: "12 x R$ 29,90",
+    price: "10 x R$ 34,87",
   });
   const [groupTicketWithParty4, setGroupTicketWithParty4] = useState({
     link: "https://pay.hotmart.com/D101401576U?off=u9ywuixz",
-    price: "12 x de R$ 357,40",
+    price: "10 x de R$ 357,40",
   });
   const [groupTicketWithParty8, setGroupTicketWithParty8] = useState({
     link: "https://pay.hotmart.com/D101401576U?off=k7y4szad",

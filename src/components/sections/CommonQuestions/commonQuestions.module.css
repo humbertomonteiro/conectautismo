@@ -89,6 +89,7 @@
 
 .questions li p {
   color: var(--color-text-black);
+  margin-bottom: 0.75rem;
 }
 
 .questions li .text ul {

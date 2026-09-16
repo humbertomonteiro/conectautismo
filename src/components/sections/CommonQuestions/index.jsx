@@ -10,6 +10,7 @@ import Title from "../../shared/Title";
 import declarationConect from "../../../assets/pdfs/conect-declaracao.pdf";
 
 export default function CommunQuestions() {
+  const [q0, setQ0] = useState(false);
   const [q1, setQ1] = useState(false);
   const [q2, setQ2] = useState(false);
   const [q3, setQ3] = useState(false);
@@ -37,6 +38,32 @@ export default function CommunQuestions() {
           />
         </div>
         <ul className={styles.questions} data-aos="zoom-in">
+          <li className={styles.question}>
+            <button onClick={() => setQ0(!q0)}>
+              CAPTAÇÃO DE IMAGEM E VÍDEO{" "}
+              {q0 ? <IoIosArrowUp /> : <IoIosArrowDown />}
+            </button>
+            {q0 && (
+              <div className={styles.text}>
+                <p>
+                  O Congresso Conect possui cobertura oficial de fotografia e
+                  vídeo.
+                </p>
+                <p>
+                  Durante o evento, poderão ser realizadas imagens dos
+                  ambientes, auditórios, feira, palestras e demais atividades,
+                  podendo os participantes aparecer de forma coletiva ou
+                  incidental.
+                </p>
+                <p>
+                  Esses registros poderão integrar a cobertura e os materiais
+                  institucionais, promocionais e de divulgação do Conect e de
+                  suas futuras edições, nos termos da nossa Política de Uso de
+                  Imagem e Privacidade.
+                </p>
+              </div>
+            )}
+          </li>
           <li className={styles.question}>
             <button onClick={() => setQ1(!q1)}>
               Para quem é o Congresso Conect 2026?{" "}

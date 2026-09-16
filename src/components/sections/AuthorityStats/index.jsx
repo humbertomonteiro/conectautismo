@@ -1,5 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import styles from "./AuthorityStats.module.css";
+import ButtonPretty from "../../shared/ButtonPretty";
+import { FaWhatsapp } from "react-icons/fa";
 
 // value: número final (sem o "+"). suffix: texto livre tipo "estados representados".
 // prefix: "+" quando for "mais de", vazio quando for número fechado (ex: 4 edições).
@@ -81,11 +83,19 @@ export default function AuthorityStats({
           <span className={styles.titleAccent}>A 4ª começa agora.</span>
         </h2>
 
-        {/* <div className={styles.statsGrid}>
-          {stats.map((stat, index) => (
-            <StatItem stat={stat} key={`${stat.label}-${index}`} />
-          ))}
-        </div> */}
+        <div className={styles.whatsappGroup}>
+          <p>
+            Entre na nossa comunidade para receber bônus, benefícios e
+            informações em primeira mão.
+          </p>
+          <ButtonPretty
+            data-color="blue"
+            text="Entrar para familia Conect"
+            icon={<FaWhatsapp />}
+            link="https://chat.whatsapp.com/Jk4RP0kn3Jz18YTzYHidK5?s=sw&p=i&mlu=0&ilr=0"
+            target="_blank"
+          />
+        </div>
 
         <div className={styles.badge}>
           <span className={styles.badgeDot} />

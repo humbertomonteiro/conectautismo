@@ -15,7 +15,7 @@ export default function Local() {
 
       <div className={styles.boxes} data-aos="zoom-in">
         <div className={styles.boxLocal}>
-          <h3>O PALCO DO CONECT AUTISMO 2026</h3>
+          <h3>O PALCO DO CONECT AUTISMO 2027</h3>
           <ul className={styles.highlight}>
             <li>
               <span>ONDE</span> <p>Centro de Eventos do Ceará</p>

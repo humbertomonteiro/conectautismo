@@ -22,7 +22,7 @@ import PreSaleScarcity from "../../components/sections/PreSaleScarcity";
 import FinalCall from "../../components/sections/FinalCall";
 import Local from "../../components/sections/Local";
 import CommonQuestions from "../../components/sections/CommonQuestions";
-import Supporters from "../../components/sections/Supporters";
+// import Supporters from "../../components/sections/Supporters";
 import Footer from "../../components/template/Footer";
 
 export default function Home() {
@@ -58,7 +58,7 @@ export default function Home() {
         <PatrocinadorEExpositor />
         <Local />
         <RedesSociais />
-        <Supporters />
+        {/* <Supporters /> */}
         <CommonQuestions />
         <Politica />
         <Footer />

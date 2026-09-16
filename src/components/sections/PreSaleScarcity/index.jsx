@@ -5,8 +5,8 @@ import styles from "./PreSaleScarcity.module.css";
 const TICKET_LINK = "https://eurekha.com.br/v/4545/congresso-conect-2027";
 
 export default function PreSaleScarcity({
-  totalTickets = 500,
-  soldTickets = 389,
+  totalTickets = 1000,
+  soldTickets = 700,
   backgroundImage = "",
   ticketLink = TICKET_LINK,
 }) {
@@ -50,10 +50,6 @@ export default function PreSaleScarcity({
       <div className={styles.container}>
         <span className={styles.eyebrow}>Pré-venda limitada</span>
 
-        <p className={styles.lead}>
-          {totalTickets} ingressos disponibilizados nesta fase.
-        </p>
-
         <div className={styles.progressBlock}>
           <div className={styles.blocks}>
             {Array.from({ length: 10 }).map((_, i) => (
@@ -70,8 +66,7 @@ export default function PreSaleScarcity({
         </div>
 
         <p className={styles.remaining}>
-          <strong>{remaining}</strong> lugares restantes na condição de
-          pré-venda.
+          <strong>30%</strong> dos lugares restantes na condição de pré-venda.
         </p>
 
         <p className={styles.note}>
