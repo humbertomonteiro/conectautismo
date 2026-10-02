@@ -4,34 +4,15 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay, Navigation } from "swiper/modules";
 import Title from "../../shared/Title";
 
-// Static image imports
-import img1 from "../../../assets/imgs/stands/img-1.jpeg";
-import img2 from "../../../assets/imgs/stands/img-2.jpeg";
-import img3 from "../../../assets/imgs/stands/img-3.jpeg";
-import img4 from "../../../assets/imgs/stands/img-4.jpeg";
-import img5 from "../../../assets/imgs/stands/img-5.jpeg";
-import img6 from "../../../assets/imgs/stands/img-6.jpeg";
-import img7 from "../../../assets/imgs/stands/img-7.jpeg";
-import img8 from "../../../assets/imgs/stands/img-8.jpeg";
-import img9 from "../../../assets/imgs/stands/img-9.jpeg";
-import img10 from "../../../assets/imgs/stands/img-10.jpeg";
-import img11 from "../../../assets/imgs/stands/img-11.jpeg";
-import img12 from "../../../assets/imgs/stands/img-12.jpeg";
+// Imagens otimizadas (webp, 1200px de largura)
+import img1 from "../../../assets/imgs/stands/optimized/stand1.webp";
+import img2 from "../../../assets/imgs/stands/optimized/stand2.webp";
+import img3 from "../../../assets/imgs/stands/optimized/stand3.webp";
 
-// Array of images for the carousel
 const standImages = [
   { src: img1, alt: "Stand 1" },
   { src: img2, alt: "Stand 2" },
   { src: img3, alt: "Stand 3" },
-  { src: img4, alt: "Stand 4" },
-  { src: img5, alt: "Stand 5" },
-  { src: img6, alt: "Stand 6" },
-  { src: img7, alt: "Stand 7" },
-  { src: img8, alt: "Stand 8" },
-  { src: img9, alt: "Stand 9" },
-  { src: img10, alt: "Stand 10" },
-  { src: img11, alt: "Stand 11" },
-  { src: img12, alt: "Stand 12" },
 ];
 
 export default function PatrocinadorEExpositor() {
@@ -42,11 +23,11 @@ export default function PatrocinadorEExpositor() {
         <Title text="Patrocinador & Expositor" color="black" />
         <div className={styles.contentWrapper} data-aos="fade-up">
           <div className={styles.carouselSection}>
-            <h3 className={styles.sponsorsHeader}>Faça parte você também</h3>
+            <h3 className={styles.sponsorsHeader}>SUA MARCA NO CONECT 2027</h3>
             <p className={styles.subtitle}>
-              Garantindo visibilidade e posicionamento, ideal para quem quer se
-              posicionar e mostrar sua marca. Focado em trazer sua relevância ao
-              mercado.
+              Empresas, clínicas e profissionais autônomos também podem fazer
+              parte. Apresente seu trabalho, fortaleça sua marca e crie novas
+              conexões
             </p>
             <Swiper
               pagination={{ clickable: true }}
@@ -68,8 +49,11 @@ export default function PatrocinadorEExpositor() {
                     src={image.src}
                     alt={image.alt}
                     className={styles.standImage}
+                    loading="lazy"
+                    decoding="async"
                     onError={(e) => {
-                      e.target.src = "/fallback-image.jpg";
+                      e.currentTarget.onerror = null; // evita loop infinito
+                      e.currentTarget.src = "/fallback-image.jpg";
                     }}
                   />
                   <div className={styles.slideOverlay}>{image.alt}</div>
@@ -80,7 +64,7 @@ export default function PatrocinadorEExpositor() {
               <ButtonPretty
                 data-color="blue"
                 link="https://api.whatsapp.com/send/?phone=558592742323&text&type=phone_number&app_absent=0"
-                text="QUERO SER EXPOSITOR 2027"
+                text="CONHECER AS OPORTUNIDADES"
               />
             </div>
           </div>

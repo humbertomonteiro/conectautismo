@@ -48,7 +48,7 @@ export default function PreSaleScarcity({
       </div>
 
       <div className={styles.container}>
-        <span className={styles.eyebrow}>Pré-venda limitada</span>
+        <span className={styles.eyebrow}>Venda limitada</span>
 
         <div className={styles.progressBlock}>
           <div className={styles.blocks}>

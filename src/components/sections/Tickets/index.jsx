@@ -66,12 +66,12 @@ const withComputedDiscount = (data) => {
 // (ver getActiveData mais abaixo).
 const CASH_PRICES = {
   inteira: {
-    withoutParty: "R$ 499,00",
-    withParty: "R$ 599,00",
+    withoutParty: "R$ 539,00",
+    withParty: "R$ 639,90",
   },
   meia: {
-    withoutParty: "R$ 299,00",
-    withParty: "R$ 399,00",
+    withoutParty: "R$ 339,00",
+    withParty: "R$ 439,90",
   },
   grupo: {
     group4: "R$ 3.455,68",
