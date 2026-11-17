@@ -98,6 +98,7 @@
 @media (max-width: 570px) {
   .container {
     margin-bottom: 350px;
+    margin-top: 0px;
   }
 
   .bgMeddium {

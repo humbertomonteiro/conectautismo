@@ -1,28 +1,116 @@
-.carousel {
-  margin: 0 auto;
-  padding: 20px 0;
+/* =========================================================
+   CarouselScrollInfinit – carrossel infinito comum
+   Imagens ou texto, com direção e inclinação configuráveis
+   ========================================================= */
+
+/* ---------- Wrapper + tokens (ajuste as cores aqui) ---------- */
+.wrapper {
+  --band-bg: transparent;
+  --band-border: transparent;
+  --text: #1c1c1c;
+  --separator: rgba(0, 0, 0, 0.35);
+
+  --tilt: 0deg;
+  --pad-y: 0rem;
+
+  position: relative;
   width: 100%;
-  max-width: 1800px;
-  overflow: hidden;
-  display: flex;
-
-  > * {
-    flex: 0 0 100%;
-  }
-
-  &:hover .group {
-    animation-play-state: paused;
-  }
+  padding: var(--pad-y) 0;
+  overflow-x: clip; /* corta só as pontas laterais */
+  overflow-y: visible; /* faixa inclinada não é cortada */
 }
 
+/* ---------- Temas ---------- */
+.light {
+  --band-bg: white;
+  --band-border: transparent;
+  --text: #1c1c1c;
+  --separator: rgba(0, 0, 0, 0.35);
+}
+
+.dark {
+  --band-bg: #141414;
+  --band-border: rgba(255, 255, 255, 0.08);
+  --text: #ffffff;
+  --separator: rgba(255, 255, 255, 0.45);
+}
+
+/* ---------- Variantes de inclinação ---------- */
+.straight {
+  --tilt: 0deg;
+  --pad-y: 0rem;
+}
+
+/* esquerda mais alta que a direita */
+.tiltLeft {
+  --tilt: 1.5deg;
+  --pad-y: 1.5rem;
+}
+
+/* direita mais alta que a esquerda */
+.tiltRight {
+  --tilt: -1.5deg;
+  --pad-y: 1.5rem;
+}
+
+/* diagonal mais marcada */
+.diagonal {
+  --tilt: -3deg;
+  --pad-y: 3rem;
+}
+
+/* ---------- Faixa ---------- */
+.carousel {
+  display: flex;
+  width: 110%;
+  margin-left: -5%; /* sobra nas laterais para a rotação não deixar vão */
+  padding: 20px 0;
+  overflow: hidden;
+  background: var(--band-bg);
+  border-top: 1px solid var(--band-border);
+  border-bottom: 1px solid var(--band-border);
+  transform: rotate(var(--tilt));
+}
+
+.carousel > * {
+  flex: 0 0 auto;
+  min-width: 100%;
+}
+
+.carousel:hover .group {
+  animation-play-state: paused;
+}
+
+/* ---------- Grupo animado ---------- */
+.group {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+  padding-right: 20px; /* igual ao gap: o loop emenda sem pulo */
+  will-change: transform;
+
+  animation-name: scrolling;
+  animation-duration: var(--speed, 60s);
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+/* direção: direita = mesma animação ao contrário */
+.reverse .group {
+  animation-direction: reverse;
+}
+
+/* ---------- Item: imagem ---------- */
 .card {
-  width: 250px;
-  border-radius: 24px;
-  padding: 20px;
-  font-size: xx-large;
+  flex: none;
+  display: flex;
   justify-content: center;
   align-items: center;
+  width: 250px;
   min-height: 200px;
+  padding: 20px;
+  border-radius: 24px;
 }
 
 .img {
@@ -30,19 +118,59 @@
   border-radius: 1rem;
 }
 
-.group {
+/* ---------- Item: texto ---------- */
+.textItem {
+  flex: none;
   display: flex;
-  gap: 20px;
-  padding-right: 20px;
-  will-change: transform;
-  animation: scrolling 110s linear infinite;
+  align-items: center;
+  gap: 1.25rem;
+  white-space: nowrap;
+  font-size: clamp(0.95rem, 2vw, 1.15rem);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text);
 }
 
+.separator {
+  font-style: normal;
+  font-weight: 800;
+  color: var(--separator);
+}
+
+/* ---------- Keyframes ---------- */
 @keyframes scrolling {
-  0% {
+  from {
     transform: translateX(0);
   }
-  100% {
+  to {
     transform: translateX(-100%);
+  }
+}
+
+/* ---------- Responsivo ---------- */
+@media (max-width: 480px) {
+  .card {
+    width: 180px;
+    min-height: 140px;
+    padding: 12px;
+  }
+
+  .group {
+    gap: 14px;
+    padding-right: 14px;
+  }
+
+  .diagonal {
+    --tilt: -2deg;
+    --pad-y: 2rem;
+  }
+}
+
+/* ---------- Acessibilidade ---------- */
+/* Não para o carrossel: apenas deixa 3x mais lento */
+@media (prefers-reduced-motion: reduce) {
+  .group {
+    animation-duration: calc(var(--speed, 60s) * 3);
   }
 }

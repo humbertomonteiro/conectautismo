@@ -3,11 +3,19 @@ import bgDesktop from "../../../assets/imgs/background/bg-910x410.png";
 import bgMeddium from "../../../assets/imgs/background/bg-500x500.png";
 import bgMobile from "../../../assets/imgs/background/bg-1920x1080.png";
 import ButtonPretty from "../../shared/ButtonPretty";
-// import logo from "../../../assets/imgs/logo/logo.png";
+import CarouselScrollInfinitPromo from "../../shared/CarouselScrollInfinitPromo";
 
 export default function Hero() {
   return (
     <div className={styles.container}>
+      <CarouselScrollInfinitPromo
+        dataSlideDouble={{ first: "Black", second: "Friday" }}
+        variant="tiltRight"
+        placement="top"
+        direction="right"
+        speed={10}
+      />
+
       <div className={styles.background}>
         <img
           className={styles.bgDesktop}
@@ -26,12 +34,6 @@ export default function Hero() {
         />
       </div>
       <div className={styles.content}>
-        {/* <img
-          className={styles.logo}
-          src={logo}
-          alt="Logo Conect"
-          data-aos="zoom-in"
-        /> */}
         <div className={styles.text} data-aos="zoom-in">
           <h1>
             TEM COISA QUE <span>VOCÊ APRENDE</span>. TEM COISA QUE{" "}

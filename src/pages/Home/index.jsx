@@ -3,8 +3,8 @@ import { doc, setDoc, increment } from "firebase/firestore";
 import { db } from "../../firebaseConfig";
 import styles from "./home.module.css";
 
+// import TopPromoBar from "../../components/shared/TopPromoBar";
 import ScrollToTop from "../../components/shared/ScrollToTop";
-import TopPromoBar from "../../components/shared/TopPromoBar";
 import Hero from "../../components/sections/Hero";
 import AuthorityStats from "../../components/sections/AuthorityStats";
 // import SpeakersCarousel from "../../components/sections/SpeakersCarousel";
@@ -24,6 +24,7 @@ import Local from "../../components/sections/Local";
 import CommonQuestions from "../../components/sections/CommonQuestions";
 // import Supporters from "../../components/sections/Supporters";
 import Footer from "../../components/template/Footer";
+import CarouselScrollInfinit from "../../components/shared/CarouselScrollInfinit";
 
 export default function Home() {
   useEffect(() => {
@@ -41,14 +42,24 @@ export default function Home() {
 
   return (
     <>
-      <TopPromoBar />
+      {/* <TopPromoBar /> */}
       <div className={styles.container}>
         <Hero />
         <PresentationVideo />
-        <AuthorityStats />
         {/* <SpeakersCarousel /> */}
         {/* <ExperienceGallery /> */}
         {/* <SocialProof /> */}
+        <AuthorityStats />
+        <CarouselScrollInfinit
+          array={[
+            { name: "Neurociência" },
+            { name: "Comportamento humano" },
+            { name: "Psicanálise" },
+          ]}
+          theme="light"
+          direction="right"
+          speed={30}
+        />
         <Authority />
         {/* <WhiteParty /> */}
         <Tickets />

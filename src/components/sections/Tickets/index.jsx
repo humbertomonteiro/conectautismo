@@ -4,92 +4,11 @@ import ButtonPretty from "../../shared/ButtonPretty";
 
 import Title from "../../shared/Title";
 import useLink from "../../../contexts/LinkContexts";
+import CarouselScrollInfinitPromo from "../../shared/CarouselScrollInfinitPromo";
 
 // Cada ticket pode ter mais de uma "variante" (ex: sem festa / com festa).
-// Ajuste os textos de benefícios livremente — são só um ponto de partida.
-// Extrai APENAS o valor numérico que vem depois de "R$" — ignora prefixos
-// como "12x de", que antes eram lidos por engano como parte do número.
-const parseBRLPrice = (value) => {
-  if (typeof value !== "string") return null;
-  const match = value.match(/R\$\s*([\d.]*\d(?:,\d+)?)/);
-  if (!match) return null;
-  const normalized = match[1].replace(/\./g, "").replace(",", ".");
-  const num = parseFloat(normalized);
-  return Number.isNaN(num) ? null : num;
-};
-
-// Extrai o número de parcelas de textos como "12x de R$ 111,69" -> 12
-const parseInstallmentCount = (value) => {
-  if (typeof value !== "string") return null;
-  const match = value.match(/(\d+)\s*x/i);
-  return match ? parseInt(match[1], 10) : null;
-};
-
-const formatBRLPrice = (num) =>
-  new Intl.NumberFormat("pt-BR", {
-    style: "currency",
-    currency: "BRL",
-  }).format(num);
-
-// Se o ingresso não trouxer um originalPrice manual, calculamos automaticamente
-// um preço "de" que reflita um desconto de X% sobre o preço atual.
-// Fórmula correta de desconto: precoOriginal = precoAtual / (1 - desconto)
-// Ex: 25% de desconto -> precoOriginal = precoAtual / 0.75 (não precoAtual * 1.3)
-const DISCOUNT_PERCENT = 40; // ajuste aqui, mantenha entre 20 e 30
-
-const withComputedDiscount = (data) => {
-  if (!data || !data.price) return data;
-  if (data.originalPrice) return data; // já veio pronto do LinkContext, respeita
-
-  const installmentValue = parseBRLPrice(data.price);
-  if (installmentValue === null) return data;
-
-  // Se o preço atual for parcelado (ex: "12x de R$ 111,69"), o valor "De:"
-  // deve ser o total à vista, não o valor da parcela.
-  const installments = parseInstallmentCount(data.price);
-  const currentTotal = installments
-    ? installmentValue * installments
-    : installmentValue;
-
-  const discount = data.discountPercent ?? DISCOUNT_PERCENT;
-  const originalTotal = currentTotal / (1 - discount / 100);
-
-  return {
-    ...data,
-    originalPrice: formatBRLPrice(originalTotal), // valor cheio, sem "Nx de"
-    discountPercent: discount,
-  };
-};
-
-// Valores "à vista" informados manualmente por ticket/variante.
-// Se o LinkContext já trouxer um installmentNote próprio, ele tem prioridade
-// (ver getActiveData mais abaixo).
-const CASH_PRICES = {
-  inteira: {
-    withoutParty: "R$ 539,00",
-    withParty: "R$ 639,90",
-  },
-  meia: {
-    withoutParty: "R$ 339,00",
-    withParty: "R$ 439,90",
-  },
-  grupo: {
-    group4: "R$ 3.455,68",
-    group8: "R$ 6.047,44",
-  },
-};
-
-const getActiveData = (ticketId, variantKey, rawData) => {
-  const cashPrice = CASH_PRICES[ticketId]?.[variantKey];
-  const withCashNote = {
-    ...rawData,
-    installmentNote:
-      rawData?.installmentNote ??
-      (cashPrice ? `ou ${cashPrice} à vista` : undefined),
-  };
-  return withComputedDiscount(withCashNote);
-};
-
+// Os preços, links, parcelas, "De:" e selo vêm prontos de links.tickets
+// (ver LinkContexts.jsx). Aqui ficam só textos e estrutura dos cards.
 const TICKETS = [
   {
     id: "meia",
@@ -101,15 +20,12 @@ const TICKETS = [
       "Material de apoio digital",
       "Acesso à gravação por 30 dias",
       "Kit de boas-vindas",
+      "É obrigatória a apresentação do documento de meia-entrada.",
     ],
     variants: [
       { key: "withParty", label: "Com Festa" },
       { key: "withoutParty", label: "Sem Festa" },
     ],
-    getData: (links) => ({
-      withoutParty: links.halfTicketWithoutParty,
-      withParty: links.halfTicketWithParty,
-    }),
   },
   {
     id: "inteira",
@@ -128,35 +44,11 @@ const TICKETS = [
       { key: "withParty", label: "Com Festa" },
       { key: "withoutParty", label: "Sem Festa" },
     ],
-    getData: (links) => ({
-      withoutParty: links.ticketWithoutParty,
-      withParty: links.ticketWithParty,
-    }),
   },
-  // {
-  //   id: "grupo",
-  //   name: "Desconto em Grupo",
-  //   tagline: "Leve seu time com desconto",
-  //   badge: "Melhor Custo-Benefício",
-  //   benefits: [
-  //     "Tudo do ingresso Inteira",
-  //     "Desconto progressivo por integrante",
-  //     "Festa de encerramento inclusa",
-  //     "Check-in prioritário em grupo",
-  //   ],
-  //   variants: [
-  //     { key: "group4", label: "4 Pessoas", tag: "20% OFF" },
-  //     { key: "group8", label: "8 Pessoas", tag: "30% OFF" },
-  //   ],
-  //   getData: (links) => ({
-  //     group4: links.groupTicketWithParty4,
-  //     group8: links.groupTicketWithParty8,
-  //   }),
-  // },
 ];
 
 const Tickets = () => {
-  const links = useLink();
+  const { tickets } = useLink();
 
   // guarda a variante selecionada (índice) para cada card
   const [selected, setSelected] = useState(
@@ -172,6 +64,13 @@ const Tickets = () => {
 
   return (
     <section className={styles.section} id="tickets">
+      <CarouselScrollInfinitPromo
+        dataSlideDouble={{ first: "Black", second: "Friday" }}
+        variant="tiltRight"
+        placement="top"
+        direction="right"
+        speed={10}
+      />
       <div className={styles.container}>
         <div className={styles.header}>
           <Title text="Garanta Seu Ingresso" color="black" />
@@ -182,14 +81,12 @@ const Tickets = () => {
 
         <div className={styles.ticketOptions} data-aos="zoom-in">
           {TICKETS.map((ticket) => {
-            const data = ticket.getData(links);
             const activeIndex = selected[ticket.id];
             const activeVariant = ticket.variants[activeIndex];
-            const activeData = getActiveData(
-              ticket.id,
-              activeVariant.key,
-              data[activeVariant.key] || {}
-            );
+            const activeData = tickets?.[ticket.id]?.[activeVariant.key];
+
+            // se faltar dado no contexto, não quebra a página
+            if (!activeData) return null;
 
             return (
               <div

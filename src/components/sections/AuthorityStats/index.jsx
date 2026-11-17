@@ -1,76 +1,11 @@
-import { useEffect, useRef, useState } from "react";
 import styles from "./AuthorityStats.module.css";
 import ButtonPretty from "../../shared/ButtonPretty";
 import { FaWhatsapp } from "react-icons/fa";
 
-// value: número final (sem o "+"). suffix: texto livre tipo "estados representados".
-// prefix: "+" quando for "mais de", vazio quando for número fechado (ex: 4 edições).
-const DEFAULT_STATS = [
-  { value: 4000, prefix: "+", label: "Congressistas" },
-  { value: 30, prefix: "+", label: "Grandes referências" },
-  { value: 15, prefix: "", label: "Estados representados" },
-  { value: 4, prefix: "", label: "Edições realizadas" },
-];
-
-function useCountUp(target, active) {
-  const [value, setValue] = useState(0);
-
-  useEffect(() => {
-    if (!active) return;
-    let frame;
-    const duration = 1400;
-    const start = performance.now();
-
-    const tick = (now) => {
-      const progress = Math.min((now - start) / duration, 1);
-      const eased = 1 - Math.pow(1 - progress, 3); // ease-out cubic
-      setValue(Math.round(target * eased));
-      if (progress < 1) frame = requestAnimationFrame(tick);
-    };
-
-    frame = requestAnimationFrame(tick);
-    return () => cancelAnimationFrame(frame);
-  }, [active, target]);
-
-  return value;
-}
-
-function StatItem({ stat }) {
-  const ref = useRef(null);
-  const [active, setActive] = useState(false);
-  const count = useCountUp(stat.value, active);
-
-  useEffect(() => {
-    const el = ref.current;
-    if (!el) return;
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setActive(true);
-          observer.disconnect();
-        }
-      },
-      { threshold: 0.4 }
-    );
-    observer.observe(el);
-    return () => observer.disconnect();
-  }, []);
-
-  return (
-    <div className={styles.statItem} ref={ref}>
-      <span className={styles.statNumber}>
-        {stat.prefix}
-        {count.toLocaleString("pt-BR")}
-      </span>
-      <span className={styles.statLabel}>{stat.label}</span>
-    </div>
-  );
-}
-
 export default function AuthorityStats({
-  stats = DEFAULT_STATS,
-  edition = "4ª edição",
+  edition = "4ª",
   year = "2027",
+  linkGroup = "https://chat.whatsapp.com/J4YPyyOhufFIdp4x3rZSeQ?s=cl&p=i&mlu=4&ilr=4&iam=2",
 }) {
   return (
     <section className={styles.section}>
@@ -80,7 +15,7 @@ export default function AuthorityStats({
         <h2 className={styles.title}>
           3 edições construíram essa história.
           <br />
-          <span className={styles.titleAccent}>A 4ª começa agora.</span>
+          <span className={styles.titleAccent}>A {edition} começa agora.</span>
         </h2>
 
         <div className={styles.whatsappGroup}>
@@ -92,14 +27,14 @@ export default function AuthorityStats({
             data-color="blue"
             text="Entrar para familia Conect"
             icon={<FaWhatsapp />}
-            link="https://chat.whatsapp.com/Jk4RP0kn3Jz18YTzYHidK5?s=sw&p=i&mlu=0&ilr=0"
+            link={linkGroup}
             target="_blank"
           />
         </div>
 
         <div className={styles.badge}>
           <span className={styles.badgeDot} />
-          {edition.toUpperCase()} • {year}
+          {edition.toUpperCase()} EDIÇÃO • {year}
         </div>
       </div>
     </section>

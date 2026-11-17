@@ -1,0 +1,158 @@
+/* ---------- Tokens (ajuste as cores aqui) ---------- */
+.wrapper {
+  --band-bg: #0a0a0a;
+  --accent: #ff8a00;
+  --accent-2: #ffb347;
+  --text: #ffffff;
+
+  --tilt: 0deg;
+  --offset: 1.5rem;
+
+  width: 100%;
+  overflow-x: clip; /* corta só as pontas laterais */
+  overflow-y: visible; /* a faixa inclinada pode "sair" da caixa sem ser cortada */
+  position: relative;
+  z-index: 1;
+}
+
+/* ---------- Posicionamento: sobreposto ao layout ---------- */
+.top,
+.bottom {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  pointer-events: none; /* não bloqueia cliques no que está embaixo */
+}
+
+.top {
+  top: var(--offset);
+}
+
+.bottom {
+  bottom: var(--offset);
+}
+
+.inline {
+  position: relative;
+  padding: 1.5rem 0;
+}
+
+/* ---------- Variantes de inclinação ---------- */
+.straight {
+  --tilt: 0deg;
+}
+
+/* esquerda mais alta que a direita (cai para a direita) */
+.tiltLeft {
+  --tilt: 1deg;
+}
+
+/* direita mais alta que a esquerda (sobe para a direita) */
+.tiltRight {
+  --tilt: -1deg;
+}
+
+/* diagonal forte */
+.diagonal {
+  --tilt: -6deg;
+}
+
+/* ---------- Faixa ---------- */
+.carousel {
+  width: 110%;
+  margin-left: -5%; /* sobra nas laterais para a rotação não deixar vão */
+  display: flex;
+  overflow: hidden;
+  background: var(--band-bg);
+  border-top: 2px solid var(--accent);
+  border-bottom: 2px solid var(--accent);
+  padding: 0.55rem 0;
+  transform: rotate(var(--tilt));
+  box-shadow: 0 0 30px color-mix(in srgb, var(--accent) 35%, transparent);
+
+  > * {
+    flex: 0 0 auto;
+    min-width: 100%;
+  }
+}
+
+/* ---------- Grupo animado ---------- */
+.group {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1.5rem;
+  padding-right: 1.5rem; /* = gap, para o loop emendar sem pulo */
+  will-change: transform;
+  animation: scrollLeft var(--speed, 25s) linear infinite;
+}
+
+/* direita: só inverte o sentido da animação */
+.reverse .group {
+  animation-direction: reverse;
+}
+
+/* ---------- Item ---------- */
+.item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  white-space: nowrap;
+  font-family: "Anton", "Bebas Neue", Impact, "Arial Narrow Bold", sans-serif;
+  font-size: clamp(1.4rem, 3vw, 2.2rem);
+  font-style: italic;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.first {
+  color: var(--accent);
+}
+
+.second {
+  color: var(--text);
+}
+
+.secondOutline {
+  color: transparent;
+  -webkit-text-stroke: 1.5px var(--accent-2);
+}
+
+.slashes {
+  color: var(--accent);
+  letter-spacing: -0.15em;
+  opacity: 0.9;
+}
+
+/* ---------- Animação ---------- */
+@keyframes scrollLeft {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* ---------- Responsivo ---------- */
+@media (max-width: 480px) {
+  .group {
+    gap: 1rem;
+    padding-right: 1rem;
+  }
+
+  .diagonal {
+    --tilt: -4deg;
+  }
+}
+
+/* ---------- Acessibilidade ---------- */
+/* Não paramos o carrossel: só deixamos mais lento para quem prefere menos movimento */
+@media (prefers-reduced-motion: reduce) {
+  .group {
+    animation-duration: calc(var(--speed, 25s) * 3);
+  }
+}

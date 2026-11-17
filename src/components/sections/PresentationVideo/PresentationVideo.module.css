@@ -1,5 +1,8 @@
 .section {
-  padding: 4rem 1rem;
+  /* Sem carrosel */
+  /* padding: 4rem 1rem; */
+  /* Com carrosel */
+  padding: 7rem 1rem 4rem 1rem;
   position: relative;
   background-image: radial-gradient(
       ellipse at 50% 60%,

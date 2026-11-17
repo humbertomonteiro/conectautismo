@@ -3,6 +3,7 @@ import styles from "./PresentationVideo.module.css";
 import { FaVolumeMute, FaVolumeUp, FaExpand, FaCompress } from "react-icons/fa";
 import conect2026 from "../../../assets/videos/filme-congresso-2026-web.mp4";
 import ButtonPretty from "../../shared/ButtonPretty";
+import CarouselScrollInfinitPromo from "../../shared/CarouselScrollInfinitPromo";
 
 export default function PresentationVideo() {
   const videoRef = useRef(null);
@@ -81,6 +82,13 @@ export default function PresentationVideo() {
 
   return (
     <section className={styles.section}>
+      <CarouselScrollInfinitPromo
+        dataSlideDouble={{ first: "Black", second: "Friday" }}
+        variant="tiltLeft"
+        placement="top"
+        direction="left"
+        speed={10}
+      />
       <div className={styles.container}>
         <div className={styles.content}>
           <div className={styles.videoContainer} data-aos="zoom-in">

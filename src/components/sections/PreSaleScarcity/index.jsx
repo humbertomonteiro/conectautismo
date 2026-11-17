@@ -6,7 +6,7 @@ const TICKET_LINK = "https://eurekha.com.br/v/4545/congresso-conect-2027";
 
 export default function PreSaleScarcity({
   totalTickets = 1000,
-  soldTickets = 700,
+  soldTickets = 400,
   backgroundImage = "",
   ticketLink = TICKET_LINK,
 }) {
@@ -66,7 +66,7 @@ export default function PreSaleScarcity({
         </div>
 
         <p className={styles.remaining}>
-          <strong>30%</strong> dos lugares restantes na condição de pré-venda.
+          <strong>60%</strong> dos lugares restantes do segundo lote.
         </p>
 
         <p className={styles.note}>

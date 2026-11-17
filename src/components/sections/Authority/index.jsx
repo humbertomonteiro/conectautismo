@@ -1,10 +1,12 @@
 import styles from "./Authority.module.css";
 
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Autoplay, Navigation } from "swiper/modules";
-
 import { FaBrain, FaExchangeAlt, FaHandsHelping, FaEye } from "react-icons/fa";
-import Title from "../../shared/Title";
+
+// Textos de cabeçalho (edite aqui)
+const EYEBROW = "O CONGRESSO";
+const TITLE_LINE_1 = "Por que estar";
+const TITLE_LINE_2 = "no Conect?";
+const INTRO = ""; // opcional: parágrafo curto abaixo do título
 
 const benefits = [
   {
@@ -33,51 +35,40 @@ const benefits = [
 
 export default function Authority() {
   return (
-    <div className={styles.container}>
-      <div className={styles.backgroundOverlay}></div>
-      <Title text="Por que estar no Conect?" color="black" />
+    <section className={styles.container}>
+      <div className={styles.inner}>
+        <header className={styles.header} data-aos="fade-up">
+          <span className={styles.eyebrow}>{EYEBROW}</span>
+          <h2 className={styles.heading}>
+            {TITLE_LINE_1}
+            <br />
+            <span className={styles.headingAccent}>{TITLE_LINE_2}</span>
+          </h2>
+          {INTRO && <p className={styles.intro}>{INTRO}</p>}
+        </header>
 
-      <div className={styles.boxes} data-aos="zoom-in" data-delay="200">
-        <Swiper
-          grabCursor={true}
-          autoplay={{
-            delay: 3500,
-            disableOnInteraction: false,
-          }}
-          navigation={true}
-          pagination={{
-            clickable: true,
-          }}
-          breakpoints={{
-            320: {
-              // @0.00
-              slidesPerView: 1,
-              spaceBetween: 10,
-            },
-            768: {
-              // @0.75
-              slidesPerView: 2,
-              spaceBetween: 20,
-            },
-            1024: {
-              slidesPerView: 4,
-              spaceBetween: 10,
-            },
-          }}
-          modules={[Pagination, Autoplay, Navigation]}
-          className={styles.mySwiper}
-        >
-          {benefits.map((benefit) => (
-            <SwiperSlide key={benefit.title}>
-              <div className={styles.box}>
-                <div className={styles.iconContainer}>{benefit.icon}</div>
-                <h4 className={styles.title}>{benefit.title}</h4>
+        <ol className={styles.list}>
+          {benefits.map((benefit, index) => (
+            <li
+              key={benefit.title}
+              className={styles.card}
+              data-aos="fade-up"
+              data-aos-delay={index * 100}
+            >
+              <div className={styles.cardText}>
+                <span className={styles.number}>
+                  {String(index + 1).padStart(2, "0")}
+                </span>
+                <h3 className={styles.cardTitle}>{benefit.title}</h3>
                 <p className={styles.description}>{benefit.description}</p>
               </div>
-            </SwiperSlide>
+              <div className={styles.icon} aria-hidden="true">
+                {benefit.icon}
+              </div>
+            </li>
           ))}
-        </Swiper>
+        </ol>
       </div>
-    </div>
+    </section>
   );
 }

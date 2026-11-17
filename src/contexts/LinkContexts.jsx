@@ -2,72 +2,68 @@ import { createContext, useContext, useState } from "react";
 
 export const LinkContext = createContext({});
 
-export function LinkProvider({ children }) {
-  //tickets black friday
-  const [ticketBlack10, setTicketBlack10] = useState({
-    link: "https://pay.hotmart.com/D101401576U?off=zx4epga5",
-    price: "12 x R$ 92,89",
-  });
-  const [ticketBlack15, setTicketBlack15] = useState({
-    link: "https://pay.hotmart.com/D101401576U?off=11fiu5r4",
-    price: "12 x R$ 175,46",
-  });
-  const [ticketBlack25, setTicketBlack25] = useState({
-    link: "https://pay.hotmart.com/D101401576U?off=66gkftgt",
-    price: "12 x R$ 232,23",
-  });
-  const [ticketBlack30, setTicketBlack30] = useState({
-    link: "https://pay.hotmart.com/D101401576U?off=b5diwahh",
-    price: "12 x R$ 289,00",
-  });
-  const [ticketBlack40, setTicketBlack40] = useState({
-    link: "https://pay.hotmart.com/D101401576U?off=rorp1x93",
-    price: "12 x R$ 309,65",
-  });
+const LOTE = {
+  discountPercent: 30,
+  installments: 10,
+  installmentFee: 0.1664, // acréscimo do parcelamento (16,64%)
+};
 
-  const [ticketWithParty, setTicketWithParty] = useState({
-    link: "https://eurekha.com.br/v/4545/congresso-conect-2027",
-    price: "10 x R$ 74,63",
-  });
-  const [ticketWithoutParty, setTicketWithoutParty] = useState({
-    link: "https://eurekha.com.br/v/4545/congresso-conect-2027",
-    price: "10 x R$ 62,87",
-  });
-  const [halfTicketWithParty, setHalfTicketWithParty] = useState({
-    link: "https://eurekha.com.br/v/4545/congresso-conect-2027",
-    price: "10 x R$ 51,31",
-  });
-  const [halfTicketWithoutParty, setHalfTicketWithoutParty] = useState({
-    link: "https://eurekha.com.br/v/4545/congresso-conect-2027",
-    price: "10 x R$ 39,54",
-  });
-  const [groupTicketWithParty4, setGroupTicketWithParty4] = useState({
-    link: "https://pay.hotmart.com/D101401576U?off=u9ywuixz",
-    price: "10 x de R$ 357,40",
-  });
-  const [groupTicketWithParty8, setGroupTicketWithParty8] = useState({
-    link: "https://pay.hotmart.com/D101401576U?off=k7y4szad",
-    price: "12 x de R$ 625,44",
-  });
-  const [partyTicket, setPartyTicket] = useState({
-    link: "https://pay.hotmart.com/D101401576U?off=irh31vpd",
-    price: "10 x de R$ 12,02",
-  });
+const LINK_EUREKHA = "https://eurekha.com.br/v/4545/congresso-conect-2027";
+
+const TICKET_PRICES = {
+  inteira: {
+    withoutParty: { cash: 639.0, link: LINK_EUREKHA },
+    withParty: { cash: 699.0, link: LINK_EUREKHA },
+  },
+  meia: {
+    withoutParty: { cash: 439.0, link: LINK_EUREKHA },
+    withParty: { cash: 499.0, link: LINK_EUREKHA },
+  },
+};
+
+const formatBRL = (num) =>
+  new Intl.NumberFormat("pt-BR", {
+    style: "currency",
+    currency: "BRL",
+  }).format(num);
+
+const buildTicket = ({ cash, link, installmentValue }) => {
+  const { discountPercent, installments, installmentFee } = LOTE;
+
+  // parcela calculada; se quiser forçar um valor, passe installmentValue
+  const parcel =
+    installmentValue ??
+    Math.round(((cash * (1 + installmentFee)) / installments) * 100) / 100;
+
+  const original = cash / (1 - discountPercent / 100);
+
+  return {
+    link,
+    price: `${installments} x ${formatBRL(parcel)}`,
+    installmentNote: `ou ${formatBRL(cash)} à vista`,
+    originalPrice: formatBRL(original),
+    // selo derivado dos dois valores exibidos (De x valor à vista)
+    discountPercent: Math.round((1 - cash / original) * 100),
+  };
+};
+
+const buildTickets = (prices) =>
+  Object.fromEntries(
+    Object.entries(prices).map(([id, variants]) => [
+      id,
+      Object.fromEntries(
+        Object.entries(variants).map(([key, v]) => [key, buildTicket(v)])
+      ),
+    ])
+  );
+
+const TICKETS_DATA = buildTickets(TICKET_PRICES);
+
+export function LinkProvider({ children }) {
   return (
     <LinkContext.Provider
       value={{
-        ticketBlack10,
-        ticketBlack15,
-        ticketBlack25,
-        ticketBlack30,
-        ticketBlack40,
-        ticketWithParty,
-        ticketWithoutParty,
-        halfTicketWithParty,
-        halfTicketWithoutParty,
-        groupTicketWithParty4,
-        groupTicketWithParty8,
-        partyTicket,
+        tickets: TICKETS_DATA,
       }}
     >
       {children}

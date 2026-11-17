@@ -1,6 +1,10 @@
 .section {
-  padding: 4rem 1rem;
+  /* sem promoção */
+  /* padding: 4rem 1rem;
+  com promoção */
+  padding: 7rem 1rem 4rem 1rem;
   background: var(--bg-white);
+  position: relative;
 }
 
 .container {
