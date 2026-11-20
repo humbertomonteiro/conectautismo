@@ -3,7 +3,7 @@ import { createContext, useContext, useState } from "react";
 export const LinkContext = createContext({});
 
 const LOTE = {
-  discountPercent: 30,
+  discountPercent: 40,
   installments: 10,
   installmentFee: 0.1664, // acréscimo do parcelamento (16,64%)
 };
@@ -12,12 +12,12 @@ const LINK_EUREKHA = "https://eurekha.com.br/v/4545/congresso-conect-2027";
 
 const TICKET_PRICES = {
   inteira: {
-    withoutParty: { cash: 639.0, link: LINK_EUREKHA },
-    withParty: { cash: 699.0, link: LINK_EUREKHA },
+    withoutParty: { cash: 499.0, link: LINK_EUREKHA },
+    withParty: { cash: 559.0, link: LINK_EUREKHA },
   },
   meia: {
-    withoutParty: { cash: 439.0, link: LINK_EUREKHA },
-    withParty: { cash: 499.0, link: LINK_EUREKHA },
+    withoutParty: { cash: 299.0, link: LINK_EUREKHA },
+    withParty: { cash: 359.0, link: LINK_EUREKHA },
   },
 };
 

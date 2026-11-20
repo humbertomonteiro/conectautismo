@@ -1,7 +1,4 @@
 .section {
-  /* Sem carrosel */
-  /* padding: 4rem 1rem; */
-  /* Com carrosel */
   padding: 7rem 1rem 4rem 1rem;
   position: relative;
   background-image: radial-gradient(
@@ -45,31 +42,7 @@
 .container {
   max-width: 1200px;
   margin: 0 auto;
-}
-
-.header {
-  text-align: center;
-  margin-bottom: 1rem;
-}
-
-.title {
-  font-family: var(--font-heading);
-  font-weight: 700;
-  font-size: clamp(1.6rem, 3.2vw, 2.4rem);
-  line-height: 1.35;
-  color: var(--color-text-white);
-}
-
-.subtitle {
-  font-size: 1.25rem;
-  color: var(--color-text-black-2);
-  font-style: italic;
-}
-
-.content {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
+  position: relative;
 }
 
 .buttons {
@@ -78,38 +51,37 @@
   margin-top: 2rem;
 }
 
-.price {
-  display: block;
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #2d3748;
-}
+/* ---------- Carrossel ---------- */
 
-.ticketButton {
-  background: #48bb78;
-  color: white;
-  border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background 0.3s ease;
+.stage {
   width: 100%;
-}
-
-.ticketButton:hover {
-  background: #38a169;
-}
-
-.videoContainer {
-  /* background: white; */
-  width: 90%;
-  max-width: 400px;
-  /* height: fit-content; */
+  max-width: 760px;
   margin: 0 auto;
-  border-radius: 12px;
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
-    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.swiper {
+  width: 100%;
+  padding: 1rem 0 4rem;
+}
+
+/* Todos os vídeos são verticais (9:16). Largura fixa; a altura vem da proporção. */
+.slide {
+  width: clamp(220px, 58vw, 300px);
+  height: auto;
+  border-radius: 1rem;
+  box-shadow: 0 18px 40px -12px rgba(0, 0, 0, 0.55);
+  transition: opacity 0.35s ease, filter 0.35s ease;
+}
+
+/* Vídeo que não está em foco fica mais apagado, convidando ao toque */
+.slide:not(:global(.swiper-slide-active)) {
+  opacity: 0.6;
+  filter: saturate(0.7) brightness(0.8);
+}
+
+.slide:global(.swiper-slide-active) {
+  box-shadow: 0 22px 50px -10px rgba(0, 0, 0, 0.7),
+    0 0 0 2px rgba(246, 173, 85, 0.55);
 }
 
 .videoWrapper {
@@ -118,6 +90,7 @@
   width: 100%;
   overflow: hidden;
   border-radius: 1rem;
+  background: #000;
 }
 
 .videoWrapper video {
@@ -128,20 +101,45 @@
   cursor: pointer;
 }
 
-.videoContainer h3 {
-  font-size: 1.25rem;
-  color: var(--color-text-black-2);
-  margin: 0.75rem 0;
+.badge {
+  position: absolute;
+  top: 0.75rem;
+  left: 0.75rem;
+  z-index: 2;
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  background: #f6ad55;
+  color: #1a1a1a;
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 700;
+  pointer-events: none;
 }
 
-.videoContainer p {
-  color: var(--color-text-black-2);
-  font-size: 0.9rem;
+/* ---------- Paginação (vira abas com o nome do vídeo) ---------- */
+
+.swiper :global(.swiper-pagination) {
+  bottom: 0.5rem;
 }
 
-.videoContainer h3,
-.videoContainer p {
-  color: #4a5568;
+.swiper :global(.swiper-pagination-bullet) {
+  width: auto;
+  height: auto;
+  margin: 0 0.3rem !important;
+  padding: 0.45rem 0.95rem;
+  border-radius: 999px;
+  background: rgba(206, 222, 255, 0.12);
+  color: #ffffff;
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  font-weight: 600;
+  opacity: 1;
+  transition: background 0.25s ease, color 0.25s ease;
+}
+
+.swiper :global(.swiper-pagination-bullet-active) {
+  background: #f6ad55;
+  color: #1a1a1a;
 }
 
 /* ---------- Controls (som + fullscreen) ---------- */
@@ -157,10 +155,20 @@
   justify-content: space-between;
   gap: 0.5rem;
   pointer-events: none;
+  transition: opacity 0.25s ease;
 }
 
 .controlsRow > * {
   pointer-events: auto;
+}
+
+/* nos vídeos laterais os controles ficam ocultos; o toque só traz o vídeo pro centro */
+.slide:not(:global(.swiper-slide-active)) .controlsRow {
+  opacity: 0;
+}
+
+.slide:not(:global(.swiper-slide-active)) .controlsRow > * {
+  pointer-events: none;
 }
 
 .soundButton,
@@ -232,40 +240,9 @@
   }
 }
 
-/* Desktop: formato widescreen em vez do vertical usado no mobile */
-@media (min-width: 769px) {
-  .videoContainer {
-    width: 100%;
-    max-width: 800px;
-  }
-
-  .videoWrapper {
-    aspect-ratio: 16 / 9;
-  }
-}
-
-@media (max-width: 768px) {
-  .content {
-    flex-direction: column;
-  }
-
-  .videoContainer {
-    width: 65%;
-  }
-
-  .ticketOptions {
-    flex-direction: column;
-  }
-
-  .speakerImage .desktop {
-    display: none;
-  }
-
-  .speakerImage .mobile {
-    display: flex;
-  }
-
-  .title {
-    font-size: 2rem;
+@media (prefers-reduced-motion: reduce) {
+  .slide,
+  .controlsRow {
+    transition: none;
   }
 }
